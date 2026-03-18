@@ -50,6 +50,9 @@
         <button id="copyTodayPlan" class="ghost-button" type="button">
           Copy Today Plan
         </button>
+        <button id="copyStalledList" class="ghost-button" type="button">
+          Copy Stalled List
+        </button>
         <button id="copyDueList" class="ghost-button" type="button">
           Copy Due List
         </button>
@@ -157,6 +160,11 @@
             <p class="eyebrow">Waiting Deposit</p>
             <div id="kanbanDeposit" class="kanban-list"></div>
           </div>
+        </div>
+        <div class="due-panel">
+          <p class="eyebrow">Stalled</p>
+          <h2>Replied targets that still need a push.</h2>
+          <div id="stalledList" class="due-list"></div>
         </div>
         <div class="filter-bar">
           <input

@@ -268,10 +268,12 @@ const exportCsvButton = document.getElementById("exportCsv");
 const copyDmQueueButton = document.getElementById("copyDmQueue");
 const copyRepliedQueueButton = document.getElementById("copyRepliedQueue");
 const copyTodayPlanButton = document.getElementById("copyTodayPlan");
+const copyStalledListButton = document.getElementById("copyStalledList");
 const copyDueListButton = document.getElementById("copyDueList");
 const importButton = document.getElementById("importDashboard");
 const importFile = document.getElementById("importFile");
 const dueList = document.getElementById("dueList");
+const stalledList = document.getElementById("stalledList");
 const kanbanNeedsDm = document.getElementById("kanbanNeedsDm");
 const kanbanDue = document.getElementById("kanbanDue");
 const kanbanReplied = document.getElementById("kanbanReplied");
@@ -588,6 +590,15 @@ const kanbanCard = (item, label) => {
   return card;
 };
 
+const stalledItems = () =>
+  state
+    .filter((item) => item.replied && !item.paymentPage)
+    .sort((a, b) => {
+      const rankDiff = sortRank(a) - sortRank(b);
+      if (rankDiff !== 0) return rankDiff;
+      return a.priority - b.priority;
+    });
+
 const render = () => {
   pipelineBody.innerHTML = "";
 
@@ -671,6 +682,7 @@ const render = () => {
   });
 
   dueList.innerHTML = "";
+  stalledList.innerHTML = "";
   kanbanNeedsDm.innerHTML = "";
   kanbanDue.innerHTML = "";
   kanbanReplied.innerHTML = "";
@@ -692,6 +704,21 @@ const render = () => {
       chip.className = "due-chip";
       chip.textContent = `${item.name} · ${meta.date}`;
       dueList.appendChild(chip);
+    });
+  }
+
+  const stalled = stalledItems();
+  if (stalled.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "due-empty";
+    empty.textContent = "No replied targets are currently stalled.";
+    stalledList.appendChild(empty);
+  } else {
+    stalled.forEach((item) => {
+      const chip = document.createElement("div");
+      chip.className = "due-chip";
+      chip.textContent = `${item.name} · ${nextActionMeta(item).label}`;
+      stalledList.appendChild(chip);
     });
   }
 
@@ -805,6 +832,30 @@ copyDueListButton?.addEventListener("click", async () => {
     copyDueListButton.textContent = "Copied";
     window.setTimeout(() => {
       copyDueListButton.textContent = "Copy Due List";
+    }, 900);
+  } catch (_error) {
+    window.alert(text);
+  }
+});
+
+copyStalledListButton?.addEventListener("click", async () => {
+  const items = stalledItems().map(
+    (item) =>
+      `${item.priority}. ${item.name} (${item.batch}) - ${nextActionMeta(item).label}${
+        item.lastTouch ? ` - last touch ${item.lastTouch}` : ""
+      }`
+  );
+
+  const text =
+    items.length === 0
+      ? "No replied targets are currently stalled."
+      : `Stalled Replied List\n\n${items.join("\n")}`;
+
+  try {
+    await navigator.clipboard.writeText(text);
+    copyStalledListButton.textContent = "Copied";
+    window.setTimeout(() => {
+      copyStalledListButton.textContent = "Copy Stalled List";
     }, 900);
   } catch (_error) {
     window.alert(text);
