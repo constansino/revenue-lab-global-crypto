@@ -82,6 +82,7 @@
 - Partner Intro Public Proof Page: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-public-proof-page-board.html
 - Partner Intro Public Case Study Page: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-public-case-study-page-board.html
 - Partner Intro Case Study Converter: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-case-study-converter-board.html
+- Partner Intro Referral: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-board.html
 - Partner Intro Objections: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-objection-board.html
 - Partner Intro Conversion: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-conversion-board.html
 - Partner Intro Owner: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-owner-board.html
