@@ -1,0 +1,6 @@
+company,website,priority,reason,first_move,follow_up_move
+Privy,https://www.privy.io/,1,wallet onboarding fit and strong direct-settlement audience overlap,send custom DM,send no reply follow-up after 48-72h
+Dynamic,https://www.dynamic.xyz/,2,wallet onboarding fit and likely CTA/handoff gap,send custom DM,send no reply follow-up after 48-72h
+OnchainInvoice,https://www.onchaininvoice.com/,3,onchain payments context and clear next-step gap,send custom DM,send no reply follow-up after 48-72h
+Loop Crypto,https://www.loopcrypto.xyz/,4,crypto payment infra fit and likely capture/handoff gap,send custom DM,send no reply follow-up after 48-72h
+WCT Pay,https://wctpay.com/invoicing,5,crypto invoicing page with response-layer gap,send custom DM,send no reply follow-up after 48-72h

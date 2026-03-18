@@ -43,6 +43,8 @@
 - `top5-teardowns.md`: 对方回复后可直接发送的 3 点 mini teardown
 - `wave3-top3-custom-outreach.md`: 第三波里最优先 3 个 crypto-native 目标的定制外联
 - `wave3-top3-priority.csv`: 第三波最优先 3 个目标顺序
+- `wave3-remaining-custom-outreach.md`: 第三波剩余 2 个目标的定制外联
+- `wave3-full-priority.csv`: 第三波 5 个目标完整优先顺序
 
 ## 立即预览
 
