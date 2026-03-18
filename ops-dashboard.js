@@ -55,6 +55,8 @@ const replyCount = document.getElementById("replyCount");
 const depositCount = document.getElementById("depositCount");
 const resetButton = document.getElementById("resetDashboard");
 const exportButton = document.getElementById("exportDashboard");
+const importButton = document.getElementById("importDashboard");
+const importFile = document.getElementById("importFile");
 const dueList = document.getElementById("dueList");
 const filterButtons = Array.from(document.querySelectorAll("[data-filter]"));
 const searchInput = document.getElementById("searchInput");
@@ -330,6 +332,31 @@ exportButton?.addEventListener("click", () => {
   link.download = "revenue-ops-dashboard.json";
   link.click();
   window.URL.revokeObjectURL(url);
+});
+
+importButton?.addEventListener("click", () => {
+  importFile?.click();
+});
+
+importFile?.addEventListener("change", async () => {
+  const file = importFile.files?.[0];
+  if (!file) return;
+
+  try {
+    const text = await file.text();
+    const parsed = JSON.parse(text);
+    if (!Array.isArray(parsed)) {
+      throw new Error("Invalid dashboard data");
+    }
+
+    state.splice(0, state.length, ...parsed);
+    saveState(state);
+    render();
+  } catch (_error) {
+    window.alert("Import failed");
+  } finally {
+    importFile.value = "";
+  }
 });
 
 filterButtons.forEach((button) => {
