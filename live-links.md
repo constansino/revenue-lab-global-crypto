@@ -6,6 +6,15 @@
 - Tier 1 close pack: https://constansino.github.io/revenue-lab-global-crypto/tier1-close-pack.html
 - Tier 2 close pack: https://constansino.github.io/revenue-lab-global-crypto/tier2-close-pack.html
 - Tier 3 close pack: https://constansino.github.io/revenue-lab-global-crypto/tier3-close-pack.html
+- Supercharged Studio target URL: https://constansino.github.io/revenue-lab-global-crypto/tier1-close-pack.html#supercharged
+- Digital Growth Studio target URL: https://constansino.github.io/revenue-lab-global-crypto/tier1-close-pack.html#digital-growth-studio
+- Upgrow target URL: https://constansino.github.io/revenue-lab-global-crypto/tier1-close-pack.html#upgrow
+- Privy target URL: https://constansino.github.io/revenue-lab-global-crypto/tier2-close-pack.html#privy
+- Dynamic target URL: https://constansino.github.io/revenue-lab-global-crypto/tier2-close-pack.html#dynamic
+- OnchainInvoice target URL: https://constansino.github.io/revenue-lab-global-crypto/tier2-close-pack.html#onchaininvoice
+- Sitekick target URL: https://constansino.github.io/revenue-lab-global-crypto/tier3-close-pack.html#sitekick
+- Newsletter Compass target URL: https://constansino.github.io/revenue-lab-global-crypto/tier3-close-pack.html#newsletter-compass
+- Creatomate target URL: https://constansino.github.io/revenue-lab-global-crypto/tier3-close-pack.html#creatomate
 - Payment page: https://constansino.github.io/revenue-lab-global-crypto/pay.html
 - Local services niche page: https://constansino.github.io/revenue-lab-global-crypto/local-services.html
 - Repository: https://github.com/constansino/revenue-lab-global-crypto
