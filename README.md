@@ -31,6 +31,8 @@
 - `sample-leads.csv`: 线索填写示例
 - `generate-outreach.mjs`: 根据线索表生成 DM / 邮件
 - `audit-leads.mjs`: 抓取目标站点并生成问题观察点
+- `post-to-discourse.mjs`: 把本次更新发布到 Discourse 主题或新帖子
+- `discourse-post-template.md`: Discourse 发布模板
 - `proposal-template.md`: 可直接发送的简版报价模板
 - `global-crypto-profit-map.md`: 全球获客和链上收款路径
 - `global-posts.md`: 可直接发到全球平台的帖子和私信模板
@@ -115,6 +117,39 @@ node audit-leads.mjs
 输出文件会写到 `lead-audits.md`
 
 如果你要先看格式，可以参考 `sample-leads.csv`
+
+## 发布到 Discourse
+
+先准备一个正文文件，默认可直接改 `discourse-post-template.md`，然后设置环境变量：
+
+```bash
+export DISCOURSE_BASE_URL="https://your-forum.example"
+export DISCOURSE_API_KEY="your_api_key"
+export DISCOURSE_API_USERNAME="system"
+export DISCOURSE_TOPIC_ID="123"
+```
+
+回帖到已有主题：
+
+```bash
+cd /Users/macbookm1air8g/revenue-lab-20260318
+node post-to-discourse.mjs discourse-post-template.md
+```
+
+如果要先看预览而不发帖：
+
+```bash
+cd /Users/macbookm1air8g/revenue-lab-20260318
+node post-to-discourse.mjs discourse-post-template.md --dry-run
+```
+
+如果要新建主题而不是回帖：
+
+```bash
+cd /Users/macbookm1air8g/revenue-lab-20260318
+export DISCOURSE_CATEGORY_ID="5"
+node post-to-discourse.mjs discourse-post-template.md --title "Revenue Lab Update"
+```
 
 ## 立即部署
 
