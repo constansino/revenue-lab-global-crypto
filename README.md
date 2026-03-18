@@ -53,6 +53,8 @@
 - `wave4-send-order.md`: 第四波 3 个目标的发送节奏
 - `today-send-list.md`: 当前最强 6 个目标的即发清单
 - `today-checklist.csv`: 今日发送和回复跟踪表
+- `today-dm-pack.md`: 今天最强 6 个目标的可直接复制私信
+- `today-followup-pack.md`: 今天最强 6 个目标的无回复跟进文案
 
 ## 立即预览
 
