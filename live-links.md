@@ -65,6 +65,7 @@
 - Partner Intro Follow-Up: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-followup-board.html
 - Partner Intro Conversion: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-conversion-board.html
 - Partner Intro Scope: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-scope-board.html
+- Partner Intro Approval Pack: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-approval-pack-board.html
 - Partner Handoff: https://constansino.github.io/revenue-lab-global-crypto/partner-handoff-board.html
 - Partner Activation: https://constansino.github.io/revenue-lab-global-crypto/partner-activation-board.html
 - Partner Payout: https://constansino.github.io/revenue-lab-global-crypto/partner-payout-board.html
