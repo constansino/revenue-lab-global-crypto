@@ -471,6 +471,37 @@ const quickCopyButtons = (item) => {
     wrap.appendChild(button);
   });
 
+  const summaryButton = document.createElement("button");
+  summaryButton.type = "button";
+  summaryButton.className = "table-link table-button";
+  summaryButton.textContent = "Summary";
+  summaryButton.addEventListener("click", async () => {
+    const summary = [
+      `Target: ${item.name}`,
+      `Batch: ${item.batch}`,
+      `Website: ${item.website}`,
+      `First DM: ${item.firstDm ? "yes" : "no"}`,
+      `Replied: ${item.replied ? "yes" : "no"}`,
+      `Follow-Up: ${item.followUp ? "yes" : "no"}`,
+      `Offer Page: ${item.offerPage ? "yes" : "no"}`,
+      `Payment Page: ${item.paymentPage ? "yes" : "no"}`,
+      `Last Touch: ${item.lastTouch || "-"}`,
+      `Next Action: ${nextActionMeta(item).label}`,
+      `Notes: ${item.notes || "-"}`,
+    ].join("\n");
+
+    try {
+      await navigator.clipboard.writeText(summary);
+      summaryButton.textContent = "Copied";
+      window.setTimeout(() => {
+        summaryButton.textContent = "Summary";
+      }, 900);
+    } catch (_error) {
+      window.alert(summary);
+    }
+  });
+  wrap.appendChild(summaryButton);
+
   return wrap;
 };
 
