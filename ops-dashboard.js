@@ -262,6 +262,7 @@ const followupDueCount = document.getElementById("followupDueCount");
 const resetButton = document.getElementById("resetDashboard");
 const exportButton = document.getElementById("exportDashboard");
 const exportCsvButton = document.getElementById("exportCsv");
+const copyDueListButton = document.getElementById("copyDueList");
 const importButton = document.getElementById("importDashboard");
 const importFile = document.getElementById("importFile");
 const dueList = document.getElementById("dueList");
@@ -761,6 +762,33 @@ exportCsvButton?.addEventListener("click", () => {
   link.download = "revenue-ops-dashboard.csv";
   link.click();
   window.URL.revokeObjectURL(url);
+});
+
+copyDueListButton?.addEventListener("click", async () => {
+  const dueItems = state
+    .filter((item) => {
+      const meta = dueMeta(item);
+      return meta && (meta.overdue || meta.dueToday);
+    })
+    .map((item) => {
+      const meta = dueMeta(item);
+      return `${item.priority}. ${item.name} (${item.batch}) - due ${meta?.date || "-"}`;
+    });
+
+  const text =
+    dueItems.length === 0
+      ? "No overdue or due-today follow-ups."
+      : `Follow-Up Due List\n\n${dueItems.join("\n")}`;
+
+  try {
+    await navigator.clipboard.writeText(text);
+    copyDueListButton.textContent = "Copied";
+    window.setTimeout(() => {
+      copyDueListButton.textContent = "Copy Due List";
+    }, 900);
+  } catch (_error) {
+    window.alert(text);
+  }
 });
 
 importButton?.addEventListener("click", () => {
