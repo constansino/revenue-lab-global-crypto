@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Brief Board</title>
+    <meta
+      name="description"
+      content="Public brief board for post-payment project briefs: current leak, scope, success metric, links, and constraints."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Brief Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./kickoff-board.html">Kickoff Board</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Project brief page</p>
+          <h1>Make the brief short enough to send and strong enough to start.</h1>
+          <p class="lead">
+            This page gives a fixed structure for the post-payment project
+            brief. The goal is not a long questionnaire. The goal is enough
+            context to start the sprint without delay.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#brief-template">Open Brief Template</a>
+            <a class="secondary-button" href="./kickoff-board.html">Open Kickoff Board</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>5</strong>
+              <span>core brief items</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>main bottleneck</span>
+            </li>
+            <li>
+              <strong>72h</strong>
+              <span>speed still matters</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Brief Rule</p>
+            <h2>One bottleneck is better than ten vague ideas.</h2>
+            <p>
+              The best brief names the current leak, the desired outcome, the
+              relevant links, and any hard constraints. That is enough to start.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Need</dt>
+                <dd>current leak</dd>
+              </div>
+              <div>
+                <dt>Need</dt>
+                <dd>desired outcome</dd>
+              </div>
+              <div>
+                <dt>Need</dt>
+                <dd>relevant links</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="brief-template" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Brief Template</p>
+            <h2>Use this exact structure.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>1. Current Leak</h3>
+            <p>
+              What is the specific bottleneck right now?
+              <br />
+              Example:
+              <br />
+              leads can request a quote or make contact without getting a fast
+              next step
+            </p>
+          </article>
+          <article>
+            <h3>2. Desired Outcome</h3>
+            <p>
+              What should improve first?
+              <br />
+              Example:
+              <br />
+              faster first response time, fewer missed quote opportunities, and
+              cleaner intake details
+            </p>
+          </article>
+          <article>
+            <h3>3. Relevant Links</h3>
+            <p>
+              Send the main page URLs, docs, or screenshots that show the
+              current funnel or handoff problem.
+            </p>
+          </article>
+          <article>
+            <h3>4. Constraints</h3>
+            <p>
+              Note any brand, compliance, timing, or tooling constraints that
+              cannot be ignored during the sprint.
+            </p>
+          </article>
+          <article>
+            <h3>5. Owner</h3>
+            <p>
+              Name the person who will approve revisions or answer questions so
+              the sprint does not stall.
+            </p>
+          </article>
+          <article>
+            <h3>6. Scope Reminder</h3>
+            <p>
+              Keep the first sprint narrow:
+              <br />
+              one follow-up message flow
+              <br />
+              one intake summary structure
+              <br />
+              one quote-prep or callback handoff
+              <br />
+              one owner-facing SOP
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Copyable Version</p>
+            <h2>Send this to the client after payment if needed.</h2>
+          </div>
+        </div>
+        <div class="dashboard-shell">
+          <div class="dashboard-table">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>Project Brief</strong>
+                    <br />
+                    <br />
+                    1. What is the main bottleneck you want fixed first?
+                    <br />
+                    2. What should improve when this sprint is done?
+                    <br />
+                    3. What page links, docs, or screenshots should I review?
+                    <br />
+                    4. Any hard constraints I should know up front?
+                    <br />
+                    5. Who is the final approver if questions come up?
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section wallet reveal">
+        <div class="wallet-shell">
+          <div>
+            <p class="eyebrow">Flow</p>
+            <h2>Payment, then brief, then sprint.</h2>
+            <p class="wallet-note">
+              This page sits after payment and before execution. Use it to
+              reduce kickoff delay, not to add more process.
+            </p>
+          </div>
+          <div class="wallet-box">
+            <code>0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            <a class="primary-button" href="./kickoff-board.html">Open Kickoff Board</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Short brief. Clear start. Fast delivery.</p>
+    </footer>
+  </body>
+</html>
