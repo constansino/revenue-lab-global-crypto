@@ -35,6 +35,7 @@
 - Inbound Router: https://constansino.github.io/revenue-lab-global-crypto/inbound-router-board.html
 - Proof To Payment: https://constansino.github.io/revenue-lab-global-crypto/proof-to-payment-board.html
 - Client Recovery: https://constansino.github.io/revenue-lab-global-crypto/client-recovery-board.html
+- Case Converter: https://constansino.github.io/revenue-lab-global-crypto/case-study-converter-board.html
 - Referral Board: https://constansino.github.io/revenue-lab-global-crypto/referral-board.html
 - Case Study Board: https://constansino.github.io/revenue-lab-global-crypto/case-study-board.html
 - Kickoff Board: https://constansino.github.io/revenue-lab-global-crypto/kickoff-board.html
