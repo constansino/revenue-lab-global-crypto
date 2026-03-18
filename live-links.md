@@ -51,6 +51,7 @@
 - Next Cycle Lock: https://constansino.github.io/revenue-lab-global-crypto/next-cycle-lock-board.html
 - Partner Activation: https://constansino.github.io/revenue-lab-global-crypto/partner-activation-board.html
 - Partner Payout: https://constansino.github.io/revenue-lab-global-crypto/partner-payout-board.html
+- Channel Repeat: https://constansino.github.io/revenue-lab-global-crypto/channel-repeat-board.html
 - Deposit Lock: https://constansino.github.io/revenue-lab-global-crypto/deposit-lock-board.html
 - Global Channels: https://constansino.github.io/revenue-lab-global-crypto/global-channel-board.html
 - Profile Funnel: https://constansino.github.io/revenue-lab-global-crypto/profile-funnel-board.html
