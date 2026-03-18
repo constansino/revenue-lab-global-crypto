@@ -74,6 +74,8 @@
 - `master-send-checklist.csv`: 前三批 9 个目标的总跟踪表
 - `reply-matrix.md`: 常见回复类型的标准回法
 - `live-reply-checklist.md`: 收到回复后的现场执行顺序
+- `deal-advance-pack.md`: 从有兴趣推进到明确 scope 的短消息模板
+- `deposit-request-pack.md`: 对方同意后直接要订金的模板
 
 ## 立即预览
 
