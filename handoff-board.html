@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Handoff Board</title>
+    <meta
+      name="description"
+      content="Public handoff board for delivery approval, remaining balance, owner handoff, and scope boundary after sprint completion."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Handoff Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./delivery-board.html">Delivery Board</a>
+        <a class="ghost-button" href="./brief-board.html">Brief Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Delivery completion page</p>
+          <h1>Finish cleanly, collect the balance, and hand off clearly.</h1>
+          <p class="lead">
+            This page covers the part after delivery: what gets approved, what
+            triggers the remaining balance, what gets handed over, and what does
+            not automatically expand into a new scope.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#handoff-path">Open Handoff Path</a>
+            <a class="secondary-button" href="./delivery-board.html">Open Delivery Board</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>delivery approval step</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>remaining balance step</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>owner handoff step</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Handoff Rule</p>
+            <h2>Close the sprint before opening a new one.</h2>
+            <p>
+              The goal of handoff is clarity: confirm the delivered assets,
+              collect the balance, transfer the owner-facing material, and then
+              decide separately whether any new scope is needed.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Approve</dt>
+                <dd>delivered sprint assets</dd>
+              </div>
+              <div>
+                <dt>Collect</dt>
+                <dd>remaining balance</dd>
+              </div>
+              <div>
+                <dt>Transfer</dt>
+                <dd>owner handoff material</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="handoff-path" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Handoff Path</p>
+            <h2>Use the same path when the sprint is complete.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>1. Confirm Delivery</h3>
+            <p>
+              Confirm that the agreed sprint assets were delivered and that the
+              light revision pass is complete if one was needed.
+            </p>
+          </article>
+          <article>
+            <h3>2. Collect Balance</h3>
+            <p>
+              Remaining balance is due on delivery. Do not blur completion and
+              future scope into one open-ended conversation.
+            </p>
+          </article>
+          <article>
+            <h3>3. Hand Off Material</h3>
+            <p>
+              Transfer the owner-facing SOP, final assets, and any notes needed
+              to use the sprint output without guesswork.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">What Gets Handed Over</p>
+            <h2>Keep the final package simple and obvious.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Delivered Assets</h3>
+            <p>
+              Final message flow, intake structure, quote-prep or callback
+              handoff, and owner-facing SOP or usage note.
+            </p>
+          </article>
+          <article>
+            <h3>Owner Notes</h3>
+            <p>
+              Any short explanation needed so the client can run the assets
+              without needing a long walkthrough.
+            </p>
+          </article>
+          <article>
+            <h3>Boundary Notes</h3>
+            <p>
+              Clarify which requested ideas were outside the original sprint so
+              they do not silently become unpaid scope.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">After This Sprint</p>
+            <h2>Separate optimization from the completed sprint.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Optimize Later</h3>
+            <p>
+              If the client wants a second bottleneck solved, treat it as a new
+              scoped sprint instead of burying it inside the completed one.
+            </p>
+          </article>
+          <article>
+            <h3>Keep Proof</h3>
+            <p>
+              The completed sprint becomes useful sales proof for the next close
+              because it stayed narrow and understandable.
+            </p>
+          </article>
+          <article>
+            <h3>Protect Margin</h3>
+            <p>
+              Clear handoff and clear scope boundaries protect both delivery
+              speed and margin.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wallet reveal">
+        <div class="wallet-shell">
+          <div>
+            <p class="eyebrow">Flow</p>
+            <h2>Deliver. Approve. Collect. Hand off.</h2>
+            <p class="wallet-note">
+              This page sits after delivery and before any new sprint decision.
+            </p>
+          </div>
+          <div class="wallet-box">
+            <code>0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            <a class="primary-button" href="./delivery-board.html">Open Delivery Board</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Finish cleanly. Then decide whether a new sprint is worth it.</p>
+    </footer>
+  </body>
+</html>
