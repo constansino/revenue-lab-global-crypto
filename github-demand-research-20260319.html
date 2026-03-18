@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Demand Research 2026-03-19</title>
+    <meta
+      name="description"
+      content="GitHub-driven market validation for real monetizable software categories, with a recommended MVP direction focused on secure document intake, redaction, and approval workflows."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f5efe2;
+        --panel: rgba(255, 252, 247, 0.9);
+        --ink: #182028;
+        --muted: #5f6b73;
+        --line: rgba(24, 32, 40, 0.12);
+        --accent: #115e59;
+        --accent-2: #c4492d;
+        --gold: #d9a441;
+        --shadow: 0 24px 60px rgba(24, 32, 40, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Manrope", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(17, 94, 89, 0.18), transparent 34%),
+          radial-gradient(circle at top right, rgba(196, 73, 45, 0.14), transparent 28%),
+          linear-gradient(180deg, #f7f1e6 0%, #efe5d1 100%);
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .wrap {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 24px 0 80px;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 28px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .mark {
+        width: 46px;
+        height: 46px;
+        display: grid;
+        place-items: center;
+        border-radius: 14px;
+        background: linear-gradient(135deg, var(--accent), #0f766e);
+        color: #fff;
+        font-weight: 800;
+      }
+
+      .brand p,
+      .brand small {
+        margin: 0;
+      }
+
+      .toolbar {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .toolbar a,
+      .hero-actions a,
+      .source-list a {
+        text-decoration: none;
+      }
+
+      .ghost,
+      .secondary,
+      .source-list a {
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.62);
+        color: var(--ink);
+        padding: 12px 16px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.35fr 0.9fr;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+
+      .panel {
+        background: var(--panel);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.55);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+      }
+
+      .hero-main,
+      .hero-side,
+      .section,
+      .repo-card,
+      .decision-card {
+        padding: 28px;
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        font-size: 12px;
+        color: var(--accent-2);
+        font-weight: 800;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0 0 12px;
+        font-family: "Fraunces", serif;
+        line-height: 1.04;
+      }
+
+      h1 {
+        font-size: clamp(2.3rem, 5vw, 4.8rem);
+      }
+
+      h2 {
+        font-size: clamp(1.5rem, 2.8vw, 2.5rem);
+      }
+
+      h3 {
+        font-size: 1.18rem;
+      }
+
+      .lead,
+      .muted {
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .hero-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 20px 0 26px;
+      }
+
+      .primary {
+        background: linear-gradient(135deg, var(--accent), #0b4f4b);
+        color: #fff;
+        padding: 14px 18px;
+        border-radius: 999px;
+      }
+
+      .stats,
+      .matrix,
+      .decision-grid,
+      .sources,
+      .repos {
+        display: grid;
+        gap: 16px;
+      }
+
+      .stats {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .stat,
+      .matrix-item {
+        padding: 18px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid var(--line);
+      }
+
+      .stat strong {
+        display: block;
+        font-size: 1.9rem;
+        margin-bottom: 6px;
+      }
+
+      .hero-side ul,
+      .decision-card ul,
+      .repo-card ul {
+        margin: 0;
+        padding-left: 18px;
+        line-height: 1.7;
+      }
+
+      .section {
+        margin-top: 20px;
+      }
+
+      .repos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .repo-card,
+      .decision-card {
+        background: rgba(255, 255, 255, 0.68);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+      }
+
+      .repo-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: flex-start;
+        margin-bottom: 10px;
+      }
+
+      .pill {
+        border-radius: 999px;
+        padding: 8px 12px;
+        background: rgba(17, 94, 89, 0.1);
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .metrics {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 14px 0 18px;
+      }
+
+      .metrics span {
+        border-radius: 999px;
+        padding: 8px 12px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.75);
+        font-size: 14px;
+      }
+
+      .matrix {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .matrix-item strong {
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+      }
+
+      .decision-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+      }
+
+      .source-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        background: rgba(24, 32, 40, 0.06);
+        padding: 2px 6px;
+        border-radius: 8px;
+      }
+
+      @media (max-width: 960px) {
+        .hero,
+        .decision-grid,
+        .repos,
+        .matrix,
+        .stats {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <div class="brand">
+          <div class="mark">RL</div>
+          <div>
+            <p><strong>Revenue Lab</strong></p>
+            <small>GitHub Demand Research</small>
+          </div>
+        </div>
+        <nav class="toolbar">
+          <a class="ghost" href="./command-center.html">Command Center</a>
+          <a class="ghost" href="./links-hub.html">Links Hub</a>
+          <a class="ghost" href="https://github.com/constansino/revenue-lab-global-crypto">Repository</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="panel hero-main">
+          <p class="eyebrow">Research First</p>
+          <h1>别再堆模板页，先切进真正有人持续付费的工作流。</h1>
+          <p class="lead">
+            这次直接用 GitHub 上的开源龙头项目做需求验证。目标不是判断什么“看起来能卖”，而是找已经被全球用户反复验证、有持续维护、有明确商业化路径的赛道，然后从里面切一个更快盈利的 wedge。
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="#winner">看推荐 MVP</a>
+            <a class="secondary" href="#sources">看 GitHub 来源</a>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <strong>5</strong>
+              <span>个赛道做了证据比对</span>
+            </div>
+            <div class="stat">
+              <strong>1</strong>
+              <span>个明确推荐切入口</span>
+            </div>
+            <div class="stat">
+              <strong>0xB3...</strong>
+              <span>默认链上收款地址已保留</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel hero-side">
+          <p class="eyebrow">Current Call</p>
+          <h2>推荐方向：DocSafe Flow</h2>
+          <p class="muted">
+            从 PDF workflow 和 e-sign 两个大赛道中切出更窄的高付费工作流，而不是直接重做通用平台。
+          </p>
+          <ul>
+            <li>安全上传入口</li>
+            <li>自动分类与脱敏副本</li>
+            <li>待审批 / 待签 / 已交付状态流</li>
+            <li>安全分享链接</li>
+            <li>白标 / 私有托管 / Setup fee</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="panel section">
+        <p class="eyebrow">Category Matrix</p>
+        <h2>赛道判断</h2>
+        <div class="matrix">
+          <div class="matrix-item">
+            <strong>需求最强</strong>
+            <p class="muted">Workflow automation、PDF workflow、e-sign、feedback 都成立，但自动化平台已经过于拥挤。</p>
+          </div>
+          <div class="matrix-item">
+            <strong>变现最清晰</strong>
+            <p class="muted">PDF workflow 和 e-sign 天然靠流程预算、合规预算、权限预算收费。</p>
+          </div>
+          <div class="matrix-item">
+            <strong>竞争最危险</strong>
+            <p class="muted">`n8n`、`Activepieces` 这类平台级自动化产品太重，不适合作为第一刀。</p>
+          </div>
+          <div class="matrix-item">
+            <strong>最快拿首单</strong>
+            <p class="muted">文档收集、脱敏、审批、签回、交付的窄流程，最容易讲清 ROI。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="eyebrow">Evidence</p>
+        <h2>GitHub 证据面</h2>
+        <div class="repos">
+          <article class="repo-card">
+            <div class="repo-top">
+              <div>
+                <h3>Stirling-PDF</h3>
+                <p class="muted">PDF workflow / compliance</p>
+              </div>
+              <span class="pill">最强文档赛道证据</span>
+            </div>
+            <div class="metrics">
+              <span>75.5k stars</span>
+              <span>342 issues</span>
+              <span>170 releases</span>
+              <span>latest: last week</span>
+              <span>commit: yesterday</span>
+            </div>
+            <ul>
+              <li>README 直接写明 browser UI、self-hosted server、private API。</li>
+              <li>明确覆盖 sign、redact、OCR、convert、automation。</li>
+              <li>还有 server plan & enterprise，说明商业化路径已经被验证。</li>
+            </ul>
+          </article>
+
+          <article class="repo-card">
+            <div class="repo-top">
+              <div>
+                <h3>Documenso</h3>
+                <p class="muted">E-sign / approval</p>
+              </div>
+              <span class="pill">签批链路强</span>
+            </div>
+            <div class="metrics">
+              <span>12.5k stars</span>
+              <span>166 issues</span>
+              <span>46 releases</span>
+              <span>latest: last week</span>
+              <span>commit: 11 hours ago</span>
+            </div>
+            <ul>
+              <li>定位就是 Open Source DocuSign Alternative。</li>
+              <li>多种 self-hosting 路径说明企业采购和私有部署需求真实存在。</li>
+              <li>如果直接做通用电子签，会被更重的合规与信任要求拖慢。</li>
+            </ul>
+          </article>
+
+          <article class="repo-card">
+            <div class="repo-top">
+              <div>
+                <h3>Formbricks</h3>
+                <p class="muted">Feedback / survey</p>
+              </div>
+              <span class="pill">企业反馈需求成立</span>
+            </div>
+            <div class="metrics">
+              <span>12k stars</span>
+              <span>204 issues</span>
+              <span>162 releases</span>
+              <span>latest: 12 hours ago</span>
+              <span>commit: 10 hours ago</span>
+            </div>
+            <ul>
+              <li>开源核心 + 企业授权，是很标准的可持续收费模型。</li>
+              <li>适合更偏产品团队、增长团队的长期 SaaS。</li>
+              <li>但作为我们第一笔收入切口，不如文档流程直观。</li>
+            </ul>
+          </article>
+
+          <article class="repo-card">
+            <div class="repo-top">
+              <div>
+                <h3>Activepieces / n8n</h3>
+                <p class="muted">Workflow automation</p>
+              </div>
+              <span class="pill">需求超强但太拥挤</span>
+            </div>
+            <div class="metrics">
+              <span>Activepieces: 21.3k stars</span>
+              <span>n8n: 180k stars</span>
+              <span>commits: 2 hours ago</span>
+              <span>releases: weekly to daily</span>
+            </div>
+            <ul>
+              <li>这类市场已经被验证得不能再验证了。</li>
+              <li>问题不在有没有需求，而在第一版很难切出足够锋利的差异化。</li>
+              <li>更适合作为我们以后接入的底层，而不是正面造平台。</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="winner" class="panel section">
+        <p class="eyebrow">Recommended Wedge</p>
+        <h2>推荐 MVP：DocSafe Flow</h2>
+        <div class="decision-grid">
+          <article class="decision-card">
+            <h3>我们具体卖什么</h3>
+            <p class="muted">
+              一个面向跨境 agency、咨询交付、法务外包、招聘和签约团队的安全文档工作台，把客户资料收集、脱敏、审批、签回和交付从聊天记录里拉出来。
+            </p>
+            <ul>
+              <li>安全上传入口</li>
+              <li>PDF / image 自动归类</li>
+              <li>一键生成脱敏副本</li>
+              <li>待审批 / 待签 / 已交付状态流</li>
+              <li>可分享交付页和链上付款说明</li>
+            </ul>
+          </article>
+
+          <article class="decision-card">
+            <h3>为什么这刀更容易赚钱</h3>
+            <ul>
+              <li>比通用 PDF 平台小得多，但仍然踩在强需求上。</li>
+              <li>比通用 e-sign 更聚焦，用户痛点更具体。</li>
+              <li>Setup fee、白标、私有托管、文件量订阅都能收费。</li>
+              <li>买家能直接把它替换掉邮箱、网盘、聊天工具里的混乱流程。</li>
+            </ul>
+            <p class="muted">
+              默认收款地址：<code>0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel section">
+        <p class="eyebrow">Buyer</p>
+        <h2>第一批该卖给谁</h2>
+        <div class="decision-grid">
+          <article class="decision-card">
+            <h3>Buyer Persona</h3>
+            <ul>
+              <li>每月处理 30 到 300 份客户文件的小团队负责人</li>
+              <li>当前靠邮箱、微信、Telegram、Google Drive 手工推进文件流程</li>
+              <li>对文件混乱、版本混乱、隐私风险、催签耗时有明确痛感</li>
+            </ul>
+          </article>
+          <article class="decision-card">
+            <h3>变现顺序</h3>
+            <ul>
+              <li>先收 setup fee</li>
+              <li>再收月订阅</li>
+              <li>然后加白标 / self-hosting / 行业模板包</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="sources" class="panel section">
+        <p class="eyebrow">Sources</p>
+        <h2>本轮直接参考的 GitHub 页面</h2>
+        <div class="source-list">
+          <a href="https://github.com/Stirling-Tools/Stirling-PDF">Stirling-PDF</a>
+          <a href="https://github.com/documenso/documenso">Documenso</a>
+          <a href="https://github.com/formbricks/formbricks">Formbricks</a>
+          <a href="https://github.com/activepieces/activepieces">Activepieces</a>
+          <a href="https://github.com/n8n-io/n8n">n8n</a>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

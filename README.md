@@ -33,6 +33,8 @@
 - `audit-leads.mjs`: 抓取目标站点并生成问题观察点
 - `post-to-discourse.mjs`: 把本次更新发布到 Discourse 主题或新帖子
 - `discourse-post-template.md`: Discourse 发布模板
+- `github-demand-research-20260319.md`: 本轮 GitHub 需求调研结论
+- `github-demand-research-20260319.html`: 公开访问版调研页
 - `proposal-template.md`: 可直接发送的简版报价模板
 - `global-crypto-profit-map.md`: 全球获客和链上收款路径
 - `global-posts.md`: 可直接发到全球平台的帖子和私信模板
