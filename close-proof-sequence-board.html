@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Close Proof Sequence Board</title>
+    <meta
+      name="description"
+      content="Public close-proof sequence board for deciding which proof asset to send first and when to move from proof into payment."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Close Proof Sequence Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./proof-library-board.html">Proof Library</a>
+        <a class="ghost-button" href="./trust-board.html">Trust Board</a>
+        <a class="ghost-button" href="./close-board.html">Close Board</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Proof-to-payment sequence</p>
+          <h1>Send the shortest proof that clears doubt, then move to payment.</h1>
+          <p class="lead">
+            Prospects stall when too much proof arrives in no order. This page
+            fixes the sequence: identify the kind of doubt, send one matching
+            proof asset, confirm fit, then move to the payment path without
+            reopening the whole conversation.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#sequence-map">Open Sequence Map</a>
+            <a class="secondary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>3</strong>
+              <span>proof types that matter most</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>proof asset at a time</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>payment move after clarity</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Sequence Rule</p>
+            <h2>Proof should clear doubt, not create another research project.</h2>
+            <p>
+              The best close sequence is simple. Match the doubt, send one
+              proof asset, and once the buyer is clear, stop feeding more proof
+              and ask for the next decision.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Trust doubt</dt>
+                <dd>send trust</dd>
+              </div>
+              <div>
+                <dt>Similarity doubt</dt>
+                <dd>send case</dd>
+              </div>
+              <div>
+                <dt>Delivery doubt</dt>
+                <dd>send proof pack</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="sequence-map" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Sequence Map</p>
+            <h2>Use one proof asset, then the close move that follows it.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Trust First</h3>
+            <p>
+              If the buyer mainly questions legitimacy, process, or payment
+              flow, send the trust page first. If that clears the concern, move
+              straight to offer or payment instead of sending five more links.
+            </p>
+            <a class="table-link" href="./trust-board.html">Open Trust Board</a>
+          </article>
+          <article>
+            <h3>Case Similarity First</h3>
+            <p>
+              If the buyer asks for something similar, send one concise case
+              narrative. Once they see the pattern, shift into package and
+              payment logic.
+            </p>
+            <a class="table-link" href="./case-study-board.html">Open Case Study Board</a>
+          </article>
+          <article>
+            <h3>Delivery Evidence First</h3>
+            <p>
+              If the buyer wants proof that real assets get shipped, send the
+              delivery proof pack. After that, move to deposit rather than
+              staying in endless proof mode.
+            </p>
+            <a class="table-link" href="./delivery-proof-pack.html">Open Delivery Proof Pack</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Bad Sequences</p>
+            <h2>These proof habits slow the close instead of helping it.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Too Many Links</h3>
+            <p>
+              Dumping the whole library creates homework. Send the one asset
+              that matches the current doubt.
+            </p>
+          </article>
+          <article>
+            <h3>Proof With No Ask</h3>
+            <p>
+              Proof should lead to a next decision. If the proof lands, ask for
+              the move instead of waiting for vague momentum.
+            </p>
+          </article>
+          <article>
+            <h3>Payment Too Early</h3>
+            <p>
+              Do not send payment while the buyer is still unconvinced. Clear
+              the main doubt first, then switch modes.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Short Sequence Lines</p>
+            <h2>Use compact transitions from proof into close.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Trust Transition</h3>
+            <p>
+              The easiest way to judge the fit is the trust page. If that
+              answers the process question, the next move is the payment route.
+            </p>
+          </article>
+          <article>
+            <h3>Case Transition</h3>
+            <p>
+              Here is the closest before-after pattern. If that feels close
+              enough to your case, I can point you to the clean package and
+              payment step.
+            </p>
+          </article>
+          <article>
+            <h3>Delivery Transition</h3>
+            <p>
+              This shows the kind of assets that get shipped. If that is the
+              level you need, the next step is the sprint deposit.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Next Route</p>
+            <h2>Move out of proof mode once the doubt is cleared.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Needs Package Clarity</h3>
+            <p>
+              If the proof works but the buyer still needs scope clarity, route
+              into the package comparison.
+            </p>
+            <a class="table-link" href="./offer-comparison-board.html">Open Offer Comparison</a>
+          </article>
+          <article>
+            <h3>Needs Objection Handling</h3>
+            <p>
+              If a specific objection remains after proof, route it to the
+              objection page instead of adding unrelated evidence.
+            </p>
+            <a class="table-link" href="./objection-board.html">Open Objection Board</a>
+          </article>
+          <article>
+            <h3>Ready To Pay</h3>
+            <p>
+              If the proof did its job, stop expanding the asset stack and send
+              the payment route.
+            </p>
+            <a class="table-link" href="./pay.html">Open Payment Page</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Good proof sequences reduce doubt quickly and preserve the close path.</p>
+    </footer>
+  </body>
+</html>
