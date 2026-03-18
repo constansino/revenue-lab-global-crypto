@@ -91,6 +91,7 @@
 - Partner Intro Delivery: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-delivery-board.html
 - Partner Intro Revision: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-revision-board.html
 - Partner Intro Proof Pack: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-proof-pack-board.html
+- Partner Intro Recovery: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-recovery-board.html
 - Partner Intro Balance: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-balance-collection-board.html
 - Partner Intro Final Handoff: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-final-handoff-board.html
 - Partner Intro Proof Capture: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-proof-capture-board.html
