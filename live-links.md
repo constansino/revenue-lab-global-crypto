@@ -26,6 +26,7 @@
 - White Label: https://constansino.github.io/revenue-lab-global-crypto/white-label-board.html
 - Audit To Sprint: https://constansino.github.io/revenue-lab-global-crypto/audit-to-sprint-board.html
 - Close Proof: https://constansino.github.io/revenue-lab-global-crypto/close-proof-sequence-board.html
+- Fast Lane: https://constansino.github.io/revenue-lab-global-crypto/fast-lane-board.html
 - Referral Board: https://constansino.github.io/revenue-lab-global-crypto/referral-board.html
 - Case Study Board: https://constansino.github.io/revenue-lab-global-crypto/case-study-board.html
 - Kickoff Board: https://constansino.github.io/revenue-lab-global-crypto/kickoff-board.html
