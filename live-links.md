@@ -77,6 +77,7 @@
 - Partner Intro Reuse Boundary: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-reuse-boundary-board.html
 - Partner Intro Case Study Boundary: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-case-study-boundary-board.html
 - Partner Intro Proof Library Slot: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-proof-library-slot-board.html
+- Partner Intro Public Story Boundary: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-public-story-boundary-board.html
 - Partner Intro Objections: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-objection-board.html
 - Partner Intro Conversion: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-conversion-board.html
 - Partner Intro Owner: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-owner-board.html
