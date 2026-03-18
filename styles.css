@@ -401,6 +401,11 @@ h2 {
   font-weight: 700;
 }
 
+.table-button {
+  cursor: pointer;
+  font: inherit;
+}
+
 .due-badge {
   display: inline-flex;
   align-items: center;

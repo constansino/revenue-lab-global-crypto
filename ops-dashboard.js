@@ -53,6 +53,7 @@ const pipelineBody = document.getElementById("pipelineBody");
 const sentCount = document.getElementById("sentCount");
 const replyCount = document.getElementById("replyCount");
 const depositCount = document.getElementById("depositCount");
+const followupDueCount = document.getElementById("followupDueCount");
 const resetButton = document.getElementById("resetDashboard");
 const exportButton = document.getElementById("exportDashboard");
 const importButton = document.getElementById("importDashboard");
@@ -67,6 +68,12 @@ const metrics = () => {
   sentCount.textContent = String(state.filter((item) => item.firstDm).length);
   replyCount.textContent = String(state.filter((item) => item.replied).length);
   depositCount.textContent = String(state.filter((item) => item.paymentPage).length);
+  followupDueCount.textContent = String(
+    state.filter((item) => {
+      const meta = dueMeta(item);
+      return meta && (meta.overdue || meta.dueToday);
+    }).length
+  );
 };
 
 const cellCheckbox = (item, key) => {
@@ -219,6 +226,38 @@ const actionLinks = (item) => {
   return wrap;
 };
 
+const quickCopyButtons = (item) => {
+  const wrap = document.createElement("div");
+  wrap.className = "actions-cell";
+
+  const entries = [
+    { label: "Offer", value: "https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html" },
+    { label: "Pay", value: "https://constansino.github.io/revenue-lab-global-crypto/pay.html" },
+    { label: "Site", value: item.website },
+  ];
+
+  entries.forEach((entry) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "table-link table-button";
+    button.textContent = entry.label;
+    button.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(entry.value);
+        button.textContent = "Copied";
+        window.setTimeout(() => {
+          button.textContent = entry.label;
+        }, 900);
+      } catch (_error) {
+        window.alert(entry.value);
+      }
+    });
+    wrap.appendChild(button);
+  });
+
+  return wrap;
+};
+
 const nextActionBadge = (item) => {
   const meta = nextActionMeta(item);
   const span = document.createElement("span");
@@ -291,6 +330,10 @@ const render = () => {
     const actions = document.createElement("td");
     actions.appendChild(actionLinks(item));
     row.appendChild(actions);
+
+    const quickCopy = document.createElement("td");
+    quickCopy.appendChild(quickCopyButtons(item));
+    row.appendChild(quickCopy);
 
     pipelineBody.appendChild(row);
   });
