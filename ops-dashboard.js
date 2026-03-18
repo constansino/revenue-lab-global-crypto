@@ -264,6 +264,10 @@ const exportButton = document.getElementById("exportDashboard");
 const importButton = document.getElementById("importDashboard");
 const importFile = document.getElementById("importFile");
 const dueList = document.getElementById("dueList");
+const kanbanNeedsDm = document.getElementById("kanbanNeedsDm");
+const kanbanDue = document.getElementById("kanbanDue");
+const kanbanReplied = document.getElementById("kanbanReplied");
+const kanbanDeposit = document.getElementById("kanbanDeposit");
 const filterButtons = Array.from(document.querySelectorAll("[data-filter]"));
 const searchInput = document.getElementById("searchInput");
 let activeFilter = "all";
@@ -547,6 +551,21 @@ const nextActionBadge = (item) => {
   return span;
 };
 
+const kanbanCard = (item, label) => {
+  const card = document.createElement("div");
+  card.className = "kanban-card";
+
+  const title = document.createElement("strong");
+  title.textContent = item.name;
+  card.appendChild(title);
+
+  const meta = document.createElement("span");
+  meta.textContent = label;
+  card.appendChild(meta);
+
+  return card;
+};
+
 const render = () => {
   pipelineBody.innerHTML = "";
 
@@ -630,6 +649,10 @@ const render = () => {
   });
 
   dueList.innerHTML = "";
+  kanbanNeedsDm.innerHTML = "";
+  kanbanDue.innerHTML = "";
+  kanbanReplied.innerHTML = "";
+  kanbanDeposit.innerHTML = "";
   const dueItems = state.filter((item) => {
     const meta = dueMeta(item);
     return meta && (meta.overdue || meta.dueToday);
@@ -649,6 +672,25 @@ const render = () => {
       dueList.appendChild(chip);
     });
   }
+
+  state.forEach((item) => {
+    const next = nextActionMeta(item);
+    if (next.label === "Send first DM") {
+      kanbanNeedsDm.appendChild(kanbanCard(item, item.batch));
+      return;
+    }
+    if (next.label === "Send follow-up") {
+      kanbanDue.appendChild(kanbanCard(item, item.lastTouch || "follow-up due"));
+      return;
+    }
+    if (next.label === "Send teardown + opener") {
+      kanbanReplied.appendChild(kanbanCard(item, "reply received"));
+      return;
+    }
+    if (next.label === "Advance to deposit" || next.label === "Waiting on deposit") {
+      kanbanDeposit.appendChild(kanbanCard(item, next.label));
+    }
+  });
 
   metrics();
 };

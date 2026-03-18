@@ -324,6 +324,45 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.kanban-shell {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.kanban-column {
+  background: var(--paper);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: var(--shadow);
+  border-radius: 1.4rem;
+  padding: 1rem;
+}
+
+.kanban-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.kanban-card {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(17, 32, 24, 0.08);
+}
+
+.kanban-card strong {
+  font-size: 0.95rem;
+}
+
+.kanban-card span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 .due-list {
   display: flex;
   flex-wrap: wrap;
@@ -547,7 +586,8 @@ input[type="range"] {
   .proof-grid,
   .packages-grid,
   .outreach-grid,
-  .wallet-shell {
+  .wallet-shell,
+  .kanban-shell {
     grid-template-columns: 1fr;
   }
 
