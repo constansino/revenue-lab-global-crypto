@@ -19,6 +19,9 @@ If useful, I can send the one section I would tighten first.`,
 From the outside, this looks less like a positioning issue and more like a handoff issue once the service already makes sense to the right visitor.
 
 If useful, I can package that into a short fixed-scope sprint and send the clean version of the scope.`,
+    teardown: `- The service offer is understandable already.
+- The weaker part is how a warm visitor gets pushed into the next concrete action.
+- I would tighten the service-page handoff before changing broader messaging.`,
   },
   "Digital Growth Studio": {
     dm: `I checked Digital Growth Studio and one thing stood out: the category and offer are understandable, but the response layer still feels lighter than it could be for a high-intent visitor.
@@ -38,6 +41,9 @@ If useful, I can send the one section I would start with.`,
 My read is that the bigger opportunity is probably not more explanation, but tightening how warm leads get routed once interest is already there.
 
 If you want, I can turn that into a compact sprint and send the scoped version with pricing.`,
+    teardown: `- The offer is understandable.
+- The softer part is the movement from interest to response.
+- I would tighten lead capture and response structure before broad messaging changes.`,
   },
   Upgrow: {
     dm: `I checked the Upgrow pricing page and it feels informative, but the next-step layer still looks lighter than it could be for a warm visitor already comparing options.
@@ -57,6 +63,9 @@ If useful, I can send the one point I would tighten first.`,
 The pricing page already explains enough, so I would probably focus first on the movement from comparison into the strongest next action.
 
 If useful, I can package that as a short sprint and send over the tightest version of the fix.`,
+    teardown: `- The pricing page explains clearly enough.
+- The weaker part is how a serious visitor gets moved into the next action.
+- I would tighten the pricing-page handoff before touching larger site structure.`,
   },
   Privy: {
     dm: `I checked Privy and the product is easy to understand fast, but the path for a high-intent visitor still feels more informational than directional.
@@ -76,6 +85,9 @@ If useful, I can send the one exact point I would start with.`,
 From the outside, this looks less like a top-level messaging issue and more like a handoff issue once the right visitor already understands the product.
 
 If useful, I can package that into a small fixed-scope sprint and send the clean package version.`,
+    teardown: `- The product positioning is clear, which is good.
+- The weaker part is how interest gets routed into the clearest next action once the visitor understands the value.
+- I would tighten the handoff layer first before expanding more explanation.`,
   },
   Dynamic: {
     dm: `I checked Dynamic and the wallet / identity use case is easy enough to follow, but the next-step path still feels lighter than the traffic quality probably deserves.
@@ -95,6 +107,9 @@ Happy to send the exact spot I mean if useful.`,
 My read is that the bigger win is probably not more explanation, but making the strongest next action easier to reach once interest is already there.
 
 If useful, I can package that as a short sprint and send over the tightest version of the scope.`,
+    teardown: `- The category and use case are understandable.
+- The likely leak is between product understanding and the strongest next step for a serious visitor.
+- I would tighten CTA hierarchy and handoff before touching broader messaging.`,
   },
   OnchainInvoice: {
     dm: `I checked OnchainInvoice and the niche is clear quickly, which is good.
@@ -116,6 +131,9 @@ If useful, I can send the exact spot I would start with.`,
 The niche is already clear enough that I would probably focus first on the path from relevance to action, not on expanding the story.
 
 If you want, I can send the short sprint version of that fix with pricing.`,
+    teardown: `- The niche is clear enough already.
+- The softer part is how a relevant visitor gets moved into the next concrete step after that.
+- I would focus first on capture and next-step structure, not a broad rewrite.`,
   },
   Sitekick: {
     dm: `I checked Sitekick and the offer category is clear fast, but the path from “this is useful” to the next concrete action still feels lighter than it could be.
@@ -135,6 +153,9 @@ If useful, I can send the one section I would tighten first.`,
 My read is that the page already makes the category understandable, so the bigger win is probably in how warm visitors get pushed into the clearest next action after that.
 
 If useful, I can package that into a short fixed-scope sprint and send the clean version of the scope.`,
+    teardown: `- The category and promise are understandable.
+- The softer part is how a warm visitor gets moved into the strongest next action after that.
+- I would tighten capture and next-step structure before touching broader messaging.`,
   },
   "Newsletter Compass": {
     dm: `I checked Newsletter Compass and the product niche is clear enough, but the path from interest to next action still feels lighter than the traffic probably deserves.
@@ -154,6 +175,9 @@ If useful, I can send the one point I would start with.`,
 From the outside, this looks less like a niche problem and more like a handoff problem once the right visitor already recognizes the offer.
 
 If you want, I can turn that into a compact sprint and send the scoped version with pricing.`,
+    teardown: `- The niche is clear enough already.
+- The softer part is how relevant visitors get moved into a stronger next action.
+- I would focus first on capture and handoff, not on rewriting the whole page.`,
   },
   Creatomate: {
     dm: `I checked Creatomate and the product category comes across clearly, but the next-step layer still feels lighter than it could be for a high-intent visitor.
@@ -175,6 +199,9 @@ If useful, I can send the exact spot I would start with.`,
 The category is already clear enough, so I would probably focus first on the movement from interest into the strongest next action.
 
 If useful, I can package that as a short sprint and send over the tightest version of the fix.`,
+    teardown: `- The product category is understandable.
+- The softer part is how a serious visitor gets pushed into the strongest next step.
+- I would tighten handoff and CTA structure before broad messaging changes.`,
   },
 };
 
@@ -446,6 +473,7 @@ const quickMessageButtons = (item) => {
     { label: "DM", value: bank.dm },
     { label: "FU", value: bank.followup },
     { label: "Close", value: bank.closer },
+    { label: "TD", value: bank.teardown },
   ].forEach((entry) => {
     const button = document.createElement("button");
     button.type = "button";
