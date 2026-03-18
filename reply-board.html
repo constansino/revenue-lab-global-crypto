@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Reply Board</title>
+    <meta
+      name="description"
+      content="Public reply board with response handling, pricing replies, proof replies, and deal-advance scripts."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Reply Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./send-board.html">Send Board</a>
+        <a class="ghost-button" href="./launchpad.html">Launchpad</a>
+        <a class="ghost-button" href="./crypto-native.html">Offer</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Public response handling page</p>
+          <h1>Reply without improvising.</h1>
+          <p class="lead">
+            This page compresses the common reply paths into fixed responses:
+            interest, price, proof, hesitation, call requests, and fast-close
+            requests. Use it to keep momentum instead of rewriting every reply.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#reply-cases">Open Reply Cases</a>
+            <a class="secondary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>8</strong>
+              <span>reply situations</span>
+            </li>
+            <li>
+              <strong>3</strong>
+              <span>pricing buckets</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>deal-advance path</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Reply Rule</p>
+            <h2>Classify first. Reply second.</h2>
+            <p>
+              Do not draft from scratch. Identify the reply type, use the
+              matching response, then move to teardown, offer, or payment only
+              when the conversation has earned that step.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Step 1</dt>
+                <dd>classify reply</dd>
+              </div>
+              <div>
+                <dt>Step 2</dt>
+                <dd>send fixed response</dd>
+              </div>
+              <div>
+                <dt>Step 3</dt>
+                <dd>advance only if interest grows</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="reply-cases" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Reply Cases</p>
+            <h2>Match the reply type, then send the next line.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Positive Interest</h3>
+            <p>
+              Makes sense.
+              <br />
+              <br />
+              The short version is that I see one higher-friction step between
+              interest and the next action.
+              <br />
+              <br />
+              I can send a tight 3-point teardown first, and if it feels useful,
+              package the fix as a short sprint.
+            </p>
+          </article>
+          <article>
+            <h3>Ask For Details</h3>
+            <p>
+              The practical version is:
+              <br />
+              <br />
+              1. identify the highest-friction step
+              <br />
+              2. tighten the page or next-step structure
+              <br />
+              3. tighten the follow-up or handoff path
+              <br />
+              <br />
+              I usually keep it narrow so it is easy to buy and easy to ship.
+            </p>
+          </article>
+          <article>
+            <h3>Ask For Price</h3>
+            <p>
+              Usually this fits one of three buckets:
+              <br />
+              <br />
+              `$299` for a short teardown
+              <br />
+              `$799` for the core sprint
+              <br />
+              `$1,500` for a fuller setup
+              <br />
+              <br />
+              If useful, I can point to which bucket your current setup fits.
+            </p>
+          </article>
+          <article>
+            <h3>Ask For Proof</h3>
+            <p>
+              Fair ask.
+              <br />
+              <br />
+              I am keeping the offer intentionally narrow: one bottleneck, one
+              sprint, one fixed package.
+              <br />
+              <br />
+              Offer page:
+              <br />
+              https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html
+            </p>
+          </article>
+          <article>
+            <h3>Soft No</h3>
+            <p>
+              Understood.
+              <br />
+              <br />
+              I will leave it there.
+              <br />
+              <br />
+              If useful, I can still send the one issue I noticed so you have it
+              on hand for later.
+            </p>
+          </article>
+          <article>
+            <h3>Hard No</h3>
+            <p>
+              Understood, I will leave it there.
+            </p>
+          </article>
+          <article>
+            <h3>Wants Fast Call</h3>
+            <p>
+              Happy to keep it simple.
+              <br />
+              <br />
+              Before a call, I can send the exact friction point I noticed so we
+              both know whether it is worth discussing.
+            </p>
+          </article>
+          <article>
+            <h3>Wants To Move Fast</h3>
+            <p>
+              Makes sense.
+              <br />
+              <br />
+              Offer page:
+              <br />
+              https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html
+              <br />
+              <br />
+              Payment page:
+              <br />
+              https://constansino.github.io/revenue-lab-global-crypto/pay.html
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Advance Path</p>
+            <h2>When interest is real, move through the same sequence every time.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>1. Send Mini Teardown</h3>
+            <p>
+              The short version:
+              <br />
+              your offer already makes sense
+              <br />
+              the leak is mostly in the handoff from interest to the next action
+              <br />
+              I would tighten that first before changing broader messaging
+            </p>
+          </article>
+          <article>
+            <h3>2. Send Scoped Sprint</h3>
+            <p>
+              Keep it narrow:
+              <br />
+              identify the highest-friction step
+              <br />
+              tighten the page or pricing handoff
+              <br />
+              tighten the next-step or follow-up structure
+            </p>
+          </article>
+          <article>
+            <h3>3. Ask For Deposit</h3>
+            <p>
+              If that scope works, the next step is the deposit.
+              <br />
+              <br />
+              Payment page:
+              <br />
+              https://constansino.github.io/revenue-lab-global-crypto/pay.html
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wallet reveal">
+        <div class="wallet-shell">
+          <div>
+            <p class="eyebrow">Close Path</p>
+            <h2>Use offer and payment only after the reply quality is high enough.</h2>
+            <p class="wallet-note">
+              This page is for replies. `Send Board` is for target navigation.
+              `Launchpad` is for the full public directory.
+            </p>
+          </div>
+          <div class="wallet-box">
+            <code>0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            <a class="primary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Reply cleanly. Advance only when the signal is real.</p>
+    </footer>
+  </body>
+</html>
