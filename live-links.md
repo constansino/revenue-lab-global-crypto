@@ -62,6 +62,7 @@
 - Partner Referral Forward: https://constansino.github.io/revenue-lab-global-crypto/partner-referral-forward-board.html
 - Partner Intro Pack: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-pack-board.html
 - Partner Intro Messages: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-message-board.html
+- Partner Intro Follow-Up: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-followup-board.html
 - Partner Handoff: https://constansino.github.io/revenue-lab-global-crypto/partner-handoff-board.html
 - Partner Activation: https://constansino.github.io/revenue-lab-global-crypto/partner-activation-board.html
 - Partner Payout: https://constansino.github.io/revenue-lab-global-crypto/partner-payout-board.html
