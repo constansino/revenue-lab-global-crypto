@@ -38,6 +38,7 @@
 - Case Converter: https://constansino.github.io/revenue-lab-global-crypto/case-study-converter-board.html
 - Partner Close Pack: https://constansino.github.io/revenue-lab-global-crypto/partner-close-pack-board.html
 - Micro Offer: https://constansino.github.io/revenue-lab-global-crypto/micro-offer-board.html
+- Reseller: https://constansino.github.io/revenue-lab-global-crypto/reseller-board.html
 - Referral Board: https://constansino.github.io/revenue-lab-global-crypto/referral-board.html
 - Case Study Board: https://constansino.github.io/revenue-lab-global-crypto/case-study-board.html
 - Kickoff Board: https://constansino.github.io/revenue-lab-global-crypto/kickoff-board.html
