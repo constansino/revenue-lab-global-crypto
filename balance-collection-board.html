@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Balance Collection Board</title>
+    <meta
+      name="description"
+      content="Public balance collection board for collecting the remaining payment after delivery, confirming approval, and separating light revisions from new scope."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Balance Collection Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./handoff-board.html">Handoff Board</a>
+        <a class="ghost-button" href="./delivery-proof-pack.html">Delivery Proof Pack</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Final payment page</p>
+          <h1>Confirm delivery, collect the balance, and close the sprint cleanly.</h1>
+          <p class="lead">
+            This page handles the part right after delivery: what counts as
+            approval, when to ask for the remaining balance, how to frame light
+            revisions, and when a request becomes new scope instead.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#balance-path">Open Balance Path</a>
+            <a class="secondary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>approval step</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>balance request</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>scope boundary</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Collection Rule</p>
+            <h2>Tie the balance request to delivered value, not pressure.</h2>
+            <p>
+              The cleanest balance collection happens after a concise delivery
+              summary and a clear approval point. Keep the ask direct and avoid
+              reopening the sprint while collecting the remaining payment.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Show</dt>
+                <dd>what shipped</dd>
+              </div>
+              <div>
+                <dt>Ask</dt>
+                <dd>for approval and balance</dd>
+              </div>
+              <div>
+                <dt>Protect</dt>
+                <dd>scope boundary</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="balance-path" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Balance Path</p>
+            <h2>Use the same sequence after delivery every time.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>1. Summarize Delivery</h3>
+            <p>
+              Send the delivery proof pack or a short summary so the client can
+              see exactly what changed before you ask for the remaining balance.
+            </p>
+            <a class="table-link" href="./delivery-proof-pack.html">Open Delivery Proof Pack</a>
+          </article>
+          <article>
+            <h3>2. Confirm Approval</h3>
+            <p>
+              Ask whether the agreed sprint assets look good or whether one
+              light revision is needed inside the original boundary.
+            </p>
+          </article>
+          <article>
+            <h3>3. Collect Remaining Balance</h3>
+            <p>
+              Once delivery is confirmed, send the payment route for the
+              remaining balance and keep the next step simple.
+            </p>
+            <a class="table-link" href="./pay.html">Open Payment Page</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Ready-To-Send Lines</p>
+            <h2>Keep the balance ask calm and specific.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Standard Balance Ask</h3>
+            <p>
+              The agreed sprint assets are now delivered. If everything looks
+              good, the next step is the remaining balance, then I will finalize
+              the handoff package.
+            </p>
+          </article>
+          <article>
+            <h3>With Light Revision</h3>
+            <p>
+              If there is one light revision inside the original scope, send it
+              now and I will tighten it before final handoff.
+            </p>
+          </article>
+          <article>
+            <h3>Short Version</h3>
+            <p>
+              Delivered and ready for approval. If it looks good, send the
+              remaining balance and I will close out the sprint cleanly.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Scope Boundary</p>
+            <h2>Do not let balance collection reopen the sprint.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Light Revision</h3>
+            <p>
+              Small tightening on copy, CTA wording, or structural clarity is a
+              normal close-out step if it stays inside the original sprint.
+            </p>
+          </article>
+          <article>
+            <h3>New Scope</h3>
+            <p>
+              New flows, extra pages, or another bottleneck belong in a new
+              sprint and should not block the current balance collection.
+            </p>
+            <a class="table-link" href="./renewal-board.html">Open Renewal Board</a>
+          </article>
+          <article>
+            <h3>Final Handoff</h3>
+            <p>
+              After balance and approval, hand over the final assets, notes, and
+              owner-facing material in one clean package.
+            </p>
+            <a class="table-link" href="./handoff-board.html">Open Handoff Board</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Collect cleanly. Then close the sprint without reopening it.</p>
+    </footer>
+  </body>
+</html>

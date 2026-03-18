@@ -11,6 +11,7 @@
 - Trust Board: https://constansino.github.io/revenue-lab-global-crypto/trust-board.html
 - Intake Board: https://constansino.github.io/revenue-lab-global-crypto/intake-board.html
 - Delivery Proof Pack: https://constansino.github.io/revenue-lab-global-crypto/delivery-proof-pack.html
+- Balance Collection: https://constansino.github.io/revenue-lab-global-crypto/balance-collection-board.html
 - Referral Board: https://constansino.github.io/revenue-lab-global-crypto/referral-board.html
 - Case Study Board: https://constansino.github.io/revenue-lab-global-crypto/case-study-board.html
 - Kickoff Board: https://constansino.github.io/revenue-lab-global-crypto/kickoff-board.html
