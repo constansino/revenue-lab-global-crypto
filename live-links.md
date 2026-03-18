@@ -16,6 +16,7 @@
 - Client Status: https://constansino.github.io/revenue-lab-global-crypto/client-status-board.html
 - Partner Board: https://constansino.github.io/revenue-lab-global-crypto/partner-board.html
 - Offer Audit: https://constansino.github.io/revenue-lab-global-crypto/offer-audit-board.html
+- Niche Router: https://constansino.github.io/revenue-lab-global-crypto/niche-router-board.html
 - Referral Board: https://constansino.github.io/revenue-lab-global-crypto/referral-board.html
 - Case Study Board: https://constansino.github.io/revenue-lab-global-crypto/case-study-board.html
 - Kickoff Board: https://constansino.github.io/revenue-lab-global-crypto/kickoff-board.html
