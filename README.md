@@ -1,0 +1,111 @@
+# Revenue Lab 2026-03-18
+
+这是一个全新创建的最小盈利项目，不依赖你本机现有代码库。
+
+## 这是什么
+
+一个可直接上线的静态销售页，定位为 `AI 自动化冲刺服务`：
+
+- 卖服务，而不是空泛卖 AI
+- 默认展示你的链上收款地址
+- 自带三档报价
+- 自带 ROI 估算器
+- 自带外联脚本
+
+## 为什么选这个方向
+
+- Upwork 官方 2025 数据显示 AI 与自动化相关技能仍处于增长区间，适合以项目制服务切入。
+- GitHub Pages 和 Vercel 都可以直接部署静态站，启动非常快。
+- 收款先走链上订金最简单，后续再补卡支付或 Stripe 稳定币。
+
+## 文件
+
+- `index.html`: 页面结构
+- `local-services.html`: 面向本地高客单服务商的垂直版本
+- `pay.html`: 面向全球客户的加密支付页
+- `crypto-native.html`: 面向全球加密原生客户的英文页
+- `styles.css`: 页面视觉
+- `app.js`: 钱包复制和 ROI 估算器
+- `PLAYBOOK.md`: 第一周外联执行方案
+- `leads.csv`: 线索表模板
+- `sample-leads.csv`: 线索填写示例
+- `generate-outreach.mjs`: 根据线索表生成 DM / 邮件
+- `audit-leads.mjs`: 抓取目标站点并生成问题观察点
+- `proposal-template.md`: 可直接发送的简版报价模板
+- `global-crypto-profit-map.md`: 全球获客和链上收款路径
+- `global-posts.md`: 可直接发到全球平台的帖子和私信模板
+
+## 立即预览
+
+```bash
+cd /Users/macbookm1air8g/revenue-lab-20260318
+python3 -m http.server 4321
+```
+
+然后打开 `http://localhost:4321`
+
+本地垂直页地址：
+
+- `http://localhost:4321/local-services.html`
+
+## 批量生成外联文案
+
+先在 `leads.csv` 填入线索，然后执行：
+
+```bash
+cd /Users/macbookm1air8g/revenue-lab-20260318
+node generate-outreach.mjs
+```
+
+输出文件会写到 `outreach-output.txt`
+
+## 自动生成站点审计
+
+把目标网址填进 `leads.csv` 后执行：
+
+```bash
+cd /Users/macbookm1air8g/revenue-lab-20260318
+node audit-leads.mjs
+```
+
+输出文件会写到 `lead-audits.md`
+
+如果你要先看格式，可以参考 `sample-leads.csv`
+
+## 立即部署
+
+### GitHub Pages
+
+1. 新建一个公开仓库。
+2. 把本目录内容推上去。
+3. 在仓库设置里启用 GitHub Pages。
+
+### Vercel
+
+1. 安装 CLI: `npm i -g vercel`
+2. 进入目录执行: `vercel`
+3. 按提示完成首次绑定
+
+## 第一批外联对象
+
+优先找这三类：
+
+1. 手工报价的本地服务商
+2. 线索回复慢的跨境独立站卖家
+3. 内容团队或小 agency
+
+如果要先冲第一单，优先做第 1 类，因为单条线索价值更高，回复慢的问题也更直观。
+
+## 建议动作
+
+1. 先用这个页面跑 30 个精准外联，不要泛发垃圾消息。
+2. 第一单只卖 `$299` 或 `$799`，目标是出案例，不是拉满客单价。
+3. 同一类需求成交 3 次后，再把其中重复交付抽成模板或小 SaaS。
+
+## 可自行替换的内容
+
+- 品牌名 `Signal Foundry`
+- 外联文案
+- 三档报价
+- 钱包地址
+- 目标客群

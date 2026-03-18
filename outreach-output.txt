@@ -1,0 +1,19 @@
+# Example Services
+Website: https://example.com
+Contact: owner@example.com
+Package: $799
+
+DM
+Hi Example Services, I checked https://example.com and noticed a slow follow-up step.
+I build 72-hour AI follow-up and quoting sprints for local service teams so warm leads get a faster next step.
+If useful, I can send a short teardown and a $799 implementation option.
+
+Email
+Subject: One intake issue I noticed on Example Services
+
+I reviewed https://example.com and found one obvious delay in the intake flow.
+I help local service operators ship a lightweight AI follow-up and quote-prep workflow in 72 hours.
+If you want, I can send a 3-step fix and price tiers.
+
+
+---

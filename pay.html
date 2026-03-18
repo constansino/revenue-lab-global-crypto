@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pay Deposit | Signal Foundry</title>
+    <meta
+      name="description"
+      content="Pay a crypto deposit for AI automation sprints. Direct wallet payment instructions and package tiers."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Crypto Deposit Page</small>
+        </div>
+      </div>
+      <a class="ghost-button" href="./index.html">Back to Offer</a>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Direct crypto settlement</p>
+          <h1>Pay the deposit. Work starts after confirmation.</h1>
+          <p class="lead">
+            This page is for direct clients. Send the agreed deposit to the
+            wallet below, then send the transaction hash with your project name.
+          </p>
+          <div class="hero-actions">
+            <button id="copyWalletTop" class="primary-button" type="button">
+              Copy Wallet
+            </button>
+            <a class="secondary-button" href="#tiers">See Deposit Tiers</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>30%</strong>
+              <span>standard deposit</span>
+            </li>
+            <li>
+              <strong>USDC</strong>
+              <span>preferred for stable pricing</span>
+            </li>
+            <li>
+              <strong>Hash</strong>
+              <span>required to confirm payment</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Wallet</p>
+            <h2>0xB3e9568A9cbB624403743340358c85CCce130893</h2>
+            <p>
+              Preferred network for simple client payments: Base or Ethereum.
+              Preferred asset: USDC.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Preferred</dt>
+                <dd>USDC on Base</dd>
+              </div>
+              <div>
+                <dt>Fallback</dt>
+                <dd>USDC or ETH on Ethereum</dd>
+              </div>
+              <div>
+                <dt>After payment</dt>
+                <dd>Send tx hash + project brief</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section wallet reveal">
+        <div class="wallet-shell">
+          <div>
+            <p class="eyebrow">Payment instructions</p>
+            <h2>Send deposit, then share the transaction hash.</h2>
+            <p class="wallet-note">
+              Use stablecoins unless you explicitly agreed on another asset.
+              Keep the same network on both sides to avoid support friction.
+            </p>
+          </div>
+          <div class="wallet-box">
+            <code id="walletAddress">0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            <button id="copyWalletMain" class="primary-button" type="button">
+              Copy Address
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="tiers" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Deposit tiers</p>
+          <h2>Quote clearly. Collect deposit before implementation.</h2>
+        </div>
+        <div class="packages-grid">
+          <article class="package-card">
+            <p class="package-tag">Entry</p>
+            <h3>$299</h3>
+            <p class="package-title">$90 deposit</p>
+            <ul>
+              <li>single workflow teardown</li>
+              <li>light offer page polish</li>
+              <li>1 revision</li>
+            </ul>
+          </article>
+          <article class="package-card featured">
+            <p class="package-tag">Best Start</p>
+            <h3>$799</h3>
+            <p class="package-title">$240 deposit</p>
+            <ul>
+              <li>sales page + outreach kit</li>
+              <li>ROI framing</li>
+              <li>delivery SOP</li>
+            </ul>
+          </article>
+          <article class="package-card">
+            <p class="package-tag">Premium</p>
+            <h3>$1,500</h3>
+            <p class="package-title">$450 deposit</p>
+            <ul>
+              <li>full sprint setup</li>
+              <li>handoff docs</li>
+              <li>post-delivery optimization</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Global clients. Direct settlement. Clear scope.</p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

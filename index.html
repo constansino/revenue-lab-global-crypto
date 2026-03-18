@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signal Foundry | AI 自动化冲刺服务</title>
+    <meta
+      name="description"
+      content="面向小团队和独立卖家的 AI 自动化冲刺服务。72 小时内交付可用流程、线索表单、报价页和转化脚本。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>AI Revenue Sprint</small>
+        </div>
+      </div>
+      <button id="copyWalletTop" class="ghost-button" type="button">
+        复制收款地址
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">For founders, agencies, and lean operators</p>
+          <h1>把 AI 自动化打包成一单能卖的服务，不等完整 SaaS。</h1>
+          <p class="lead">
+            你卖的是结果，不是功能。72 小时内交付一个可成交的自动化方案：获客页、服务分层、交付范围、报价、收款方式、外联话术。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#packages">查看报价</a>
+            <a class="secondary-button" href="#outreach">拿外联脚本</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>72h</strong>
+              <span>最快交付周期</span>
+            </li>
+            <li>
+              <strong>3 tiers</strong>
+              <span>标准报价结构</span>
+            </li>
+            <li>
+              <strong>Crypto</strong>
+              <span>可直接链上收款</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Recommended niche</p>
+            <h2>AI 自动化冲刺</h2>
+            <p>
+              适合给跨境卖家、本地服务商、内容团队做自动报价、自动跟进、自动线索整理、客服归档。
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>交付</dt>
+                <dd>Landing page + SOP + outreach kit</dd>
+              </div>
+              <div>
+                <dt>定价</dt>
+                <dd>$299 / $799 / $1,500</dd>
+              </div>
+              <div>
+                <dt>收款</dt>
+                <dd>ETH / Base / Polygon compatible wallet</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section proof reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Why this angle</p>
+          <h2>先卖服务，再把重复流程产品化。</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>需求还在增长</h3>
+            <p>
+              Upwork 2025 官方数据把 AI 相关技能和自动化列进增长最快类别，说明“帮别人把流程跑起来”比空泛卖 AI 更容易成交。
+            </p>
+          </article>
+          <article>
+            <h3>启动成本低</h3>
+            <p>
+              静态站点可以直接部署到 GitHub Pages 或 Vercel，不需要先搭后端，也不需要先注册复杂支付系统。
+            </p>
+          </article>
+          <article>
+            <h3>收款路径明确</h3>
+            <p>
+              对链上客户，先收订金最直接；对企业客户，后续可以切 Stripe 稳定币或普通卡支付。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="packages" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Packages</p>
+          <h2>不要自由报价，直接三档出售。</h2>
+        </div>
+        <div class="packages-grid">
+          <article class="package-card">
+            <p class="package-tag">Entry</p>
+            <h3>$299</h3>
+            <p class="package-title">Lead Capture Sprint</p>
+            <ul>
+              <li>单页获客站</li>
+              <li>1 个自动化场景梳理</li>
+              <li>报价描述模板</li>
+              <li>1 轮修改</li>
+            </ul>
+          </article>
+          <article class="package-card featured">
+            <p class="package-tag">Best Margin</p>
+            <h3>$799</h3>
+            <p class="package-title">Revenue Sprint</p>
+            <ul>
+              <li>双语销售页</li>
+              <li>外联 DM / 邮件脚本</li>
+              <li>ROI 估算器</li>
+              <li>订金收款说明</li>
+            </ul>
+          </article>
+          <article class="package-card">
+            <p class="package-tag">Premium</p>
+            <h3>$1,500</h3>
+            <p class="package-title">Automation Setup</p>
+            <ul>
+              <li>完整成交页</li>
+              <li>交付 SOP</li>
+              <li>客户 onboarding 文案</li>
+              <li>后续产品化建议</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section calculator reveal">
+        <div class="section-heading">
+          <p class="eyebrow">ROI framing</p>
+          <h2>别谈 AI，多谈回本周期。</h2>
+        </div>
+        <div class="calc-shell">
+          <div class="calc-panel">
+            <label for="hours">每月节省工时</label>
+            <input id="hours" type="range" min="5" max="120" value="30" />
+            <label for="rate">团队小时成本（USD）</label>
+            <input id="rate" type="range" min="10" max="150" value="35" />
+            <label for="price">服务报价（USD）</label>
+            <input id="price" type="range" min="299" max="3000" value="799" />
+          </div>
+          <div class="calc-output">
+            <p>预计每月节省</p>
+            <strong id="monthlySaving">$1,050</strong>
+            <p>预计回本周期</p>
+            <strong id="payback">0.8 months</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="outreach" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Outbound</p>
+          <h2>外联不要求“合作”，要给出具体改造点。</h2>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Cold DM</h3>
+            <p>
+              I noticed you still handle inbound leads manually. I can ship a
+              lightweight AI follow-up and quoting flow in 72 hours so your
+              team stops losing warm leads. Want the teardown?
+            </p>
+          </article>
+          <article>
+            <h3>Short Email</h3>
+            <p>
+              Subject: 1 workflow on your site I would automate this week
+              <br />
+              I mapped one obvious revenue leak in your intake flow. I can send
+              a 3-step fix with price tiers if useful.
+            </p>
+          </article>
+          <article>
+            <h3>成交动作</h3>
+            <p>
+              只卖一个结果：更快回访、更快报价、更少人工整理。先收 30% 订金，再开始实施。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wallet reveal">
+        <div class="wallet-shell">
+          <div>
+            <p class="eyebrow">Crypto payment</p>
+            <h2>默认链上收款地址</h2>
+            <p class="wallet-note">
+              建议作为订金地址使用。页面目前展示的是你提供的钱包地址。
+            </p>
+          </div>
+          <div class="wallet-box">
+            <code id="walletAddress">0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            <button id="copyWalletMain" class="primary-button" type="button">
+              复制地址
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Build fast. Sell first. Productize later.</p>
+      <p>
+        部署后你可以把这个页面当作外联落地页，先卖服务，再把高频交付抽成产品。
+      </p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
