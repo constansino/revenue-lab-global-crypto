@@ -51,6 +51,7 @@
 - Next Cycle Lock: https://constansino.github.io/revenue-lab-global-crypto/next-cycle-lock-board.html
 - Partner Qualification: https://constansino.github.io/revenue-lab-global-crypto/partner-qualification-board.html
 - Partner Status: https://constansino.github.io/revenue-lab-global-crypto/partner-status-board.html
+- Partner Handoff: https://constansino.github.io/revenue-lab-global-crypto/partner-handoff-board.html
 - Partner Activation: https://constansino.github.io/revenue-lab-global-crypto/partner-activation-board.html
 - Partner Payout: https://constansino.github.io/revenue-lab-global-crypto/partner-payout-board.html
 - Channel Repeat: https://constansino.github.io/revenue-lab-global-crypto/channel-repeat-board.html

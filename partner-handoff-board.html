@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Partner Handoff Board</title>
+    <meta
+      name="description"
+      content="Public partner handoff board for moving a partner deal from activation into clean execution: buyer owner, payer, tx hash, minimum context, and kickoff path."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Partner Handoff Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./partner-status-board.html">Partner Status</a>
+        <a class="ghost-button" href="./partner-board.html">Partner Board</a>
+        <a class="ghost-button" href="./partner-close-pack-board.html">Partner Close Pack</a>
+        <a class="ghost-button" href="./partner-activation-board.html">Partner Activation</a>
+        <a class="ghost-button" href="./partner-payout-board.html">Partner Payout</a>
+        <a class="ghost-button" href="./kickoff-board.html">Kickoff Board</a>
+        <a class="ghost-button" href="./intake-board.html">Intake Board</a>
+        <a class="ghost-button" href="./white-label-board.html">White Label</a>
+        <a class="ghost-button" href="./reseller-board.html">Reseller</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Partner execution handoff page</p>
+          <h1>Move the partner deal into execution without commercial drift.</h1>
+          <p class="lead">
+            A partner deal often breaks at the moment when the intro is made,
+            the payer is known, but nobody has cleanly handed over the buyer
+            context, links, owner, and transfer proof. This page turns that
+            messy moment into a repeatable operating handoff.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#handoff-map">Open Partner Handoff Map</a>
+            <a class="secondary-button" href="./kickoff-board.html">Open Kickoff Board</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>buyer owner named</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>payer and hash confirmed</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>minimum context package</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Handoff Rule</p>
+            <h2>One clean handoff beats ten scattered chat fragments.</h2>
+            <p>
+              A partner handoff should answer five things fast: who owns the
+              buyer relationship, who pays, what the bottleneck is, what links
+              matter, and what kickoff path should happen next.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Owner</dt>
+                <dd>name the relationship owner</dd>
+              </div>
+              <div>
+                <dt>Payer</dt>
+                <dd>name the transfer source</dd>
+              </div>
+              <div>
+                <dt>Context</dt>
+                <dd>send the minimum useful packet</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="handoff-map" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Partner Handoff Map</p>
+            <h2>Use one path from partner introduction to live kickoff.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>1. Confirm Relationship Owner</h3>
+            <p>
+              Decide whether the partner keeps the client-facing role, whether
+              there is a shared channel, or whether the client now speaks directly.
+            </p>
+          </article>
+          <article>
+            <h3>2. Confirm The Payer</h3>
+            <p>
+              Name whether the direct client pays, the partner pays, or the
+              partner wraps delivery inside their own billing.
+            </p>
+            <a class="table-link" href="./partner-activation-board.html">Open Partner Activation</a>
+          </article>
+          <article>
+            <h3>3. Share The Context Packet</h3>
+            <p>
+              Send the bottleneck, desired outcome, links, approver, and any
+              screenshots or notes that prevent re-explaining the whole deal.
+            </p>
+            <a class="table-link" href="./intake-board.html">Open Intake Board</a>
+          </article>
+          <article>
+            <h3>4. Share The Payment Proof</h3>
+            <p>
+              If funds already moved, include the tx hash or equivalent payment
+              confirmation inside the handoff packet.
+            </p>
+            <a class="table-link" href="./partner-payout-board.html">Open Partner Payout</a>
+          </article>
+          <article>
+            <h3>5. Choose The Kickoff Route</h3>
+            <p>
+              Decide whether the work is clear enough for a light intake or
+              whether a fuller kickoff note is still required.
+            </p>
+            <a class="table-link" href="./kickoff-board.html">Open Kickoff Board</a>
+            <a class="table-link" href="./intake-board.html">Open Intake Board</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">By Model</p>
+            <h2>The handoff changes slightly depending on the partner model.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Referral Handoff</h3>
+            <p>
+              Keep it light: partner introduces the buyer, states the
+              bottleneck, and leaves a simple payout rule in the background.
+            </p>
+            <a class="table-link" href="./referral-board.html">Open Referral Board</a>
+          </article>
+          <article>
+            <h3>White-Label Handoff</h3>
+            <p>
+              Keep the brand and client control with the partner, but make the
+              delivery context explicit enough that work can begin cleanly.
+            </p>
+            <a class="table-link" href="./white-label-board.html">Open White Label</a>
+          </article>
+          <article>
+            <h3>Reseller Handoff</h3>
+            <p>
+              Confirm what the reseller controls, what the internal delivery
+              base is, and how much direct client visibility exists.
+            </p>
+            <a class="table-link" href="./reseller-board.html">Open Reseller</a>
+          </article>
+          <article>
+            <h3>Operator Handoff</h3>
+            <p>
+              If an operator is steering the project, the handoff should name
+              who approves, who gives assets, and where the real bottleneck sits.
+            </p>
+            <a class="table-link" href="./founder-operator-board.html">Open Founder Operator</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Minimum Packet</p>
+            <h2>Use one compact package instead of scattered context.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Buyer Owner</h3>
+            <p>
+              Name who owns the relationship now: partner, shared contact, or
+              direct client route.
+            </p>
+          </article>
+          <article>
+            <h3>Main Bottleneck</h3>
+            <p>
+              State the one issue to fix first so the sprint does not inherit
+              five competing problems on day one.
+            </p>
+          </article>
+          <article>
+            <h3>Desired Outcome</h3>
+            <p>
+              State what should improve first: response speed, intake clarity,
+              payment path, close path, or another narrow result.
+            </p>
+          </article>
+          <article>
+            <h3>Relevant Links</h3>
+            <p>
+              Send the pages, docs, screenshots, and assets that make the
+              current commercial path understandable.
+            </p>
+          </article>
+          <article>
+            <h3>Payer And Proof</h3>
+            <p>
+              If funds have moved, include the tx hash. If not, name the payer
+              so the transfer route is not ambiguous later.
+            </p>
+          </article>
+          <article>
+            <h3>Approver</h3>
+            <p>
+              Name the person who can answer questions and approve the work so
+              the handoff does not stall midstream.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Do Not Do This</p>
+            <h2>Most partner handoff problems are avoidable.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Do Not Dump Raw Chat Logs</h3>
+            <p>
+              Summarize the buyer situation instead of forwarding long message
+              threads and expecting someone else to reconstruct the deal.
+            </p>
+          </article>
+          <article>
+            <h3>Do Not Blur Ownership</h3>
+            <p>
+              If nobody knows whether the partner or the client is driving the
+              project, the work will drift before kickoff.
+            </p>
+          </article>
+          <article>
+            <h3>Do Not Over-Collect</h3>
+            <p>
+              Use the minimum context needed to start. Do not turn a qualified
+              paid deal into a new discovery maze.
+            </p>
+          </article>
+          <article>
+            <h3>Do Not Skip Payment Proof</h3>
+            <p>
+              If the transfer already happened, attach the hash so commercial
+              uncertainty does not spill into execution.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Best Next Routes</p>
+            <h2>Route the blocker to the right next page.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Need Stage Label</h3>
+            <p>
+              If the partner is already moving but you need one lifecycle
+              label, use partner status first.
+            </p>
+            <a class="table-link" href="./partner-status-board.html">Open Partner Status</a>
+          </article>
+          <article>
+            <h3>Need Activation First</h3>
+            <p>
+              If the payer and model are not even confirmed yet, route back to
+              activation before trying to hand off execution.
+            </p>
+            <a class="table-link" href="./partner-activation-board.html">Open Partner Activation</a>
+          </article>
+          <article>
+            <h3>Need Payment Proof</h3>
+            <p>
+              If the handoff is blocked by settlement questions, route to
+              partner payout and close the loop there.
+            </p>
+            <a class="table-link" href="./partner-payout-board.html">Open Partner Payout</a>
+          </article>
+          <article>
+            <h3>Need Kickoff Path</h3>
+            <p>
+              If the context is already clear, move into kickoff instead of
+              reopening the commercial discussion.
+            </p>
+            <a class="table-link" href="./kickoff-board.html">Open Kickoff Board</a>
+          </article>
+          <article>
+            <h3>Need Minimal Inputs</h3>
+            <p>
+              If the sprint is already well-defined, use the intake board and
+              collect only the minimum package.
+            </p>
+            <a class="table-link" href="./intake-board.html">Open Intake Board</a>
+          </article>
+          <article>
+            <h3>Need Repeat Channel Logic</h3>
+            <p>
+              If this handoff pattern may happen again, route to the repeat
+              channel page and standardize the motion.
+            </p>
+            <a class="table-link" href="./channel-repeat-board.html">Open Channel Repeat</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wallet reveal">
+        <div class="wallet-shell">
+          <div>
+            <p class="eyebrow">Wallet</p>
+            <h2>Preferred route: transfer, context packet, then kickoff.</h2>
+            <p class="wallet-note">
+              If payment is already part of the handoff, include the tx hash in
+              the same packet so the sprint can move without extra drift.
+            </p>
+          </div>
+          <div class="wallet-box">
+            <code>0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            <a class="primary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Clean partner handoff protects both close speed and delivery clarity.</p>
+    </footer>
+  </body>
+</html>
