@@ -354,6 +354,33 @@ h2 {
   font-weight: 700;
 }
 
+.due-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 6.5rem;
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  background: rgba(17, 32, 24, 0.08);
+}
+
+.due-badge[data-state="future"] {
+  color: var(--forest);
+  background: rgba(36, 69, 52, 0.1);
+}
+
+.due-badge[data-state="today"] {
+  color: #8a4b00;
+  background: rgba(228, 108, 47, 0.16);
+}
+
+.due-badge[data-state="overdue"] {
+  color: #8b1e12;
+  background: rgba(180, 45, 28, 0.16);
+}
+
 .proof-grid h3,
 .package-title,
 .outreach-grid h3 {

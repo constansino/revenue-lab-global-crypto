@@ -22,6 +22,7 @@ const loadState = () => {
       followUp: false,
       offerPage: false,
       paymentPage: false,
+      lastTouch: "",
       notes: "",
     }));
   }
@@ -36,6 +37,7 @@ const loadState = () => {
       followUp: false,
       offerPage: false,
       paymentPage: false,
+      lastTouch: "",
       notes: "",
     }));
   }
@@ -66,8 +68,11 @@ const cellCheckbox = (item, key) => {
   input.checked = Boolean(item[key]);
   input.addEventListener("change", () => {
     item[key] = input.checked;
+    if (input.checked && !item.lastTouch) {
+      item.lastTouch = new Date().toISOString().slice(0, 10);
+    }
     saveState(state);
-    metrics();
+    render();
   });
   return input;
 };
@@ -83,6 +88,47 @@ const notesInput = (item) => {
     saveState(state);
   });
   return input;
+};
+
+const touchInput = (item) => {
+  const input = document.createElement("input");
+  input.type = "date";
+  input.value = item.lastTouch || "";
+  input.className = "notes-input";
+  input.addEventListener("change", () => {
+    item.lastTouch = input.value;
+    saveState(state);
+    render();
+  });
+  return input;
+};
+
+const dueLabel = (item) => {
+  const span = document.createElement("span");
+  span.className = "due-badge";
+
+  if (!item.firstDm || item.replied || item.followUp || !item.lastTouch) {
+    span.textContent = "-";
+    return span;
+  }
+
+  const last = new Date(`${item.lastTouch}T00:00:00`);
+  const due = new Date(last);
+  due.setDate(due.getDate() + 2);
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const text = due.toISOString().slice(0, 10);
+  const overdue = due < today;
+  const dueToday = due.getTime() === today.getTime();
+
+  span.textContent = text;
+  if (overdue) span.dataset.state = "overdue";
+  else if (dueToday) span.dataset.state = "today";
+  else span.dataset.state = "future";
+
+  return span;
 };
 
 const actionLinks = (item) => {
@@ -134,6 +180,14 @@ const render = () => {
       cell.appendChild(cellCheckbox(item, key));
       row.appendChild(cell);
     });
+
+    const lastTouch = document.createElement("td");
+    lastTouch.appendChild(touchInput(item));
+    row.appendChild(lastTouch);
+
+    const due = document.createElement("td");
+    due.appendChild(dueLabel(item));
+    row.appendChild(due);
 
     const notes = document.createElement("td");
     notes.appendChild(notesInput(item));
