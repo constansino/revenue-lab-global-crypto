@@ -59,6 +59,8 @@
 - `wave5-top3-priority.csv`: 第五波最优先 3 个目标顺序
 - `wave5-reply-closers.md`: 第五波 3 个目标回复后的承接句和 closing
 - `wave5-send-order.md`: 第五波 3 个目标的发送节奏
+- `master-battle-order.md`: 三条主线的总作战顺序
+- `master-priority.csv`: 当前总优先级表
 
 ## 立即预览
 

@@ -1,0 +1,12 @@
+tier,priority,company,website,segment,why_now,first_action
+1,1,Supercharged Studio,https://www.supercharged.studio/website-design,service operator,direct handoff issue and easy short-sprint fit,send custom DM
+1,2,Digital Growth Studio,https://www.digitalgrowthstudio.com/,agency,warm lead response issue and clear service fit,send custom DM
+1,3,Upgrow,https://www.upgrow.io/pricing,agency pricing surface,pricing page handoff issue and strong buyer intent,send custom DM
+2,4,Privy,https://www.privy.io/,crypto-native builder,high wallet/payment fit but possibly slower internal decision,send custom DM
+2,5,Dynamic,https://www.dynamic.xyz/,crypto-native builder,high wallet onboarding fit,send custom DM
+2,6,OnchainInvoice,https://www.onchaininvoice.com/,crypto payments tool,direct onchain context with likely next-step gap,send custom DM
+3,7,Sitekick,https://www.sitekick.ai/,creator tool,good fit but slightly less direct than service/crypto leads,send custom DM
+3,8,Newsletter Compass,https://www.newslettercompass.com/,newsletter tool,good audience capture angle,send custom DM
+3,9,Creatomate,https://creatomate.com/,creator automation,good conversion angle,send custom DM
+3,10,Loop Crypto,https://www.loopcrypto.xyz/,crypto infra,good fit but lower urgency than top 6,send custom DM
+3,11,WCT Pay,https://wctpay.com/invoicing,crypto invoicing,good fit but lower urgency than top 6,send custom DM
