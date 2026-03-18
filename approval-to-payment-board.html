@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Approval To Payment Board</title>
+    <meta
+      name="description"
+      content="Public approval-to-payment board for the post-signoff step: confirm approved scope, align deposit, route wallet instructions, collect the tx hash, and move into kickoff."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Approval To Payment Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./approval-pack-board.html">Approval Pack</a>
+        <a class="ghost-button" href="./payment-guide-board.html">Payment Guide</a>
+        <a class="ghost-button" href="./deposit-lock-board.html">Deposit Lock</a>
+        <a class="ghost-button" href="./kickoff-board.html">Kickoff Board</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Post-signoff conversion page</p>
+          <h1>Once approval is done, compress the next move into payment.</h1>
+          <p class="lead">
+            This page is for the moment after the internal yes. The buyer and
+            approver are aligned, but payment still has not happened. Instead
+            of drifting back into discussion, use one page to restate the
+            approved scope, confirm the deposit step, route any wallet help,
+            collect the tx hash, and move directly into kickoff.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#approval-payment-map">Open Approval To Payment Map</a>
+            <a class="secondary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>approved scope</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>payment path</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>kickoff handoff</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Post-Approval Rule</p>
+            <h2>Do not treat internal approval like the finish line.</h2>
+            <p>
+              Approval only matters if it turns into a concrete payment move.
+              The cleanest path is short: confirm what was approved, confirm
+              the deposit, remove payment friction, then collect the hash and
+              start. Do not reopen the whole sale once the yes exists.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Confirm</dt>
+                <dd>what got approved</dd>
+              </div>
+              <div>
+                <dt>Remove</dt>
+                <dd>payment friction</dd>
+              </div>
+              <div>
+                <dt>Convert</dt>
+                <dd>approval into kickoff</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="approval-payment-map" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Approval To Payment Map</p>
+            <h2>Use one written sequence from sign-off to tx hash.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>1. Confirm The Approval Scope</h3>
+            <p>
+              Restate the bottleneck, the delivery line, and the approved
+              package so everyone knows what the payment is actually for.
+            </p>
+            <a class="table-link" href="./approval-pack-board.html">Open Approval Pack</a>
+          </article>
+          <article>
+            <h3>2. Confirm The Deposit Step</h3>
+            <p>
+              Keep the commercial move explicit. The buyer should know the
+              deposit amount and what that deposit secures.
+            </p>
+            <a class="table-link" href="./deposit-lock-board.html">Open Deposit Lock</a>
+          </article>
+          <article>
+            <h3>3. Remove Wallet Confusion</h3>
+            <p>
+              If the payer is new to crypto or wants a safer first pass, route
+              them into the short payment guide instead of improvising.
+            </p>
+            <a class="table-link" href="./payment-guide-board.html">Open Payment Guide</a>
+          </article>
+          <article>
+            <h3>4. Collect The Tx Hash</h3>
+            <p>
+              Once the transfer lands, the next operational proof is the
+              transaction hash, not another discussion loop.
+            </p>
+            <a class="table-link" href="./pay.html">Open Payment Page</a>
+          </article>
+          <article>
+            <h3>5. Move Into Kickoff</h3>
+            <p>
+              After the payment is confirmed, collect the minimum brief and
+              shift immediately into a live start path.
+            </p>
+            <a class="table-link" href="./kickoff-board.html">Open Kickoff Board</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Where Deals Stall</p>
+            <h2>Approval can still leak if the payment handoff is vague.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Approved But No Owner</h3>
+            <p>
+              One common stall is that approval exists, but no one owns the
+              actual payment action. Give them one path and one ask.
+            </p>
+          </article>
+          <article>
+            <h3>Approved But New To Wallets</h3>
+            <p>
+              Another stall is simple payment uncertainty. If that is the only
+              blocker, route to the payment guide and keep the steps minimal.
+            </p>
+          </article>
+          <article>
+            <h3>Approved But Timing Drifts</h3>
+            <p>
+              If the team says yes but lets timing slip, tie the deposit to the
+              current build window so the approval does not decay.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Best Next Routes</p>
+            <h2>Match the remaining blocker to one final page.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Need Approval Recap</h3>
+            <p>
+              If the payer still needs the approved scope summarized one more
+              time, send the approval pack first.
+            </p>
+            <a class="table-link" href="./approval-pack-board.html">Open Approval Pack</a>
+          </article>
+          <article>
+            <h3>Need Payment Confidence</h3>
+            <p>
+              If approval is done but wallet confidence is still low, use the
+              payment guide before asking them to send funds.
+            </p>
+            <a class="table-link" href="./payment-guide-board.html">Open Payment Guide</a>
+          </article>
+          <article>
+            <h3>Need Slot Reservation</h3>
+            <p>
+              If timing matters and the scope is already approved, use the
+              deposit lock path to connect payment to the current slot.
+            </p>
+            <a class="table-link" href="./deposit-lock-board.html">Open Deposit Lock</a>
+          </article>
+          <article>
+            <h3>Ready To Pay</h3>
+            <p>
+              If the buyer and approver are aligned and the payer understands
+              the route, move straight to the payment page now.
+            </p>
+            <a class="table-link" href="./pay.html">Open Payment Page</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wallet reveal">
+        <div class="wallet-shell">
+          <div>
+            <p class="eyebrow">Wallet</p>
+            <h2>Preferred route: approved scope, deposit sent, tx hash shared.</h2>
+            <p class="wallet-note">
+              Preferred asset is USDC. Preferred network is Base. Fallback is
+              Ethereum if agreed first. Once payment lands, send the hash and
+              move into kickoff without reopening the whole deal.
+            </p>
+          </div>
+          <div class="wallet-box">
+            <code>0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            <a class="primary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Short Post-Approval Lines</p>
+            <h2>Use direct language that turns alignment into action.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Approval Line</h3>
+            <p>
+              Since the scope is approved, the cleanest next move is the
+              deposit step rather than another review loop.
+            </p>
+          </article>
+          <article>
+            <h3>Payment Line</h3>
+            <p>
+              If useful, I can keep the payment path to one short sequence:
+              wallet, network, transfer, tx hash, kickoff.
+            </p>
+          </article>
+          <article>
+            <h3>Kickoff Line</h3>
+            <p>
+              Once the payment lands, send the tx hash and brief and I move it
+              directly into kickoff.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Approval only matters when it becomes payment, then kickoff.</p>
+    </footer>
+  </body>
+</html>
