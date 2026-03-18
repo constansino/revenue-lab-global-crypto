@@ -103,6 +103,28 @@
           <p class="eyebrow">Pipeline</p>
           <h2>Update status after every touch.</h2>
         </div>
+        <div class="filter-bar">
+          <button class="ghost-button active-filter" data-filter="all" type="button">
+            All
+          </button>
+          <button class="ghost-button" data-filter="Batch 1" type="button">
+            Batch 1
+          </button>
+          <button class="ghost-button" data-filter="Batch 2" type="button">
+            Batch 2
+          </button>
+          <button class="ghost-button" data-filter="Batch 3" type="button">
+            Batch 3
+          </button>
+          <button class="ghost-button" data-filter="due" type="button">
+            Follow-Up Due
+          </button>
+        </div>
+        <div class="due-panel">
+          <p class="eyebrow">Today</p>
+          <h2>Targets that need a follow-up.</h2>
+          <div id="dueList" class="due-list"></div>
+        </div>
         <div class="dashboard-shell">
           <div class="dashboard-table">
             <table>

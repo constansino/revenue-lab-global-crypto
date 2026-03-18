@@ -55,6 +55,9 @@ const replyCount = document.getElementById("replyCount");
 const depositCount = document.getElementById("depositCount");
 const resetButton = document.getElementById("resetDashboard");
 const exportButton = document.getElementById("exportDashboard");
+const dueList = document.getElementById("dueList");
+const filterButtons = Array.from(document.querySelectorAll("[data-filter]"));
+let activeFilter = "all";
 
 const metrics = () => {
   sentCount.textContent = String(state.filter((item) => item.firstDm).length);
@@ -131,6 +134,25 @@ const dueLabel = (item) => {
   return span;
 };
 
+const dueMeta = (item) => {
+  if (!item.firstDm || item.replied || item.followUp || !item.lastTouch) {
+    return null;
+  }
+
+  const last = new Date(`${item.lastTouch}T00:00:00`);
+  const due = new Date(last);
+  due.setDate(due.getDate() + 2);
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  return {
+    date: due.toISOString().slice(0, 10),
+    overdue: due < today,
+    dueToday: due.getTime() === today.getTime(),
+  };
+};
+
 const actionLinks = (item) => {
   const wrap = document.createElement("div");
   wrap.className = "actions-cell";
@@ -156,7 +178,13 @@ const actionLinks = (item) => {
 const render = () => {
   pipelineBody.innerHTML = "";
 
-  state.forEach((item) => {
+  const filtered = state.filter((item) => {
+    if (activeFilter === "all") return true;
+    if (activeFilter === "due") return Boolean(dueMeta(item));
+    return item.batch === activeFilter;
+  });
+
+  filtered.forEach((item) => {
     const row = document.createElement("tr");
 
     const priority = document.createElement("td");
@@ -200,6 +228,27 @@ const render = () => {
     pipelineBody.appendChild(row);
   });
 
+  dueList.innerHTML = "";
+  const dueItems = state.filter((item) => {
+    const meta = dueMeta(item);
+    return meta && (meta.overdue || meta.dueToday);
+  });
+
+  if (dueItems.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "due-empty";
+    empty.textContent = "No overdue or due-today follow-ups.";
+    dueList.appendChild(empty);
+  } else {
+    dueItems.forEach((item) => {
+      const meta = dueMeta(item);
+      const chip = document.createElement("div");
+      chip.className = "due-chip";
+      chip.textContent = `${item.name} · ${meta.date}`;
+      dueList.appendChild(chip);
+    });
+  }
+
   metrics();
 };
 
@@ -216,6 +265,15 @@ exportButton?.addEventListener("click", () => {
   link.download = "revenue-ops-dashboard.json";
   link.click();
   window.URL.revokeObjectURL(url);
+});
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    activeFilter = button.dataset.filter || "all";
+    filterButtons.forEach((entry) => entry.classList.remove("active-filter"));
+    button.classList.add("active-filter");
+    render();
+  });
 });
 
 render();

@@ -297,6 +297,48 @@ h2 {
   overflow: auto;
 }
 
+.filter-bar {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.active-filter {
+  background: var(--forest);
+  color: white;
+}
+
+.due-panel {
+  background: var(--paper);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: var(--shadow);
+  border-radius: 1.6rem;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.due-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.due-chip,
+.due-empty {
+  padding: 0.65rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(228, 108, 47, 0.14);
+  color: var(--accent-deep);
+  font-weight: 700;
+}
+
+.due-empty {
+  background: rgba(17, 32, 24, 0.08);
+  color: var(--muted);
+}
+
 .dashboard-table table {
   width: 100%;
   border-collapse: collapse;
