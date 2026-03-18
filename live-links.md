@@ -4,6 +4,7 @@
 - GitHub Demand Research: https://constansino.github.io/revenue-lab-global-crypto/github-demand-research-20260319.html
 - DocSafe Flow: https://constansino.github.io/revenue-lab-global-crypto/docsafe-flow.html
 - DocSafe Agency Client Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-agency-client-ops.html
+- DocSafe Legal Signing Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-legal-signing-ops.html
 - Command Center: https://constansino.github.io/revenue-lab-global-crypto/command-center.html
 - Links Hub: https://constansino.github.io/revenue-lab-global-crypto/links-hub.html
 - Lifecycle Board: https://constansino.github.io/revenue-lab-global-crypto/lifecycle-board.html
@@ -97,6 +98,7 @@
 - Partner Intro Referral Payment Follow-Up: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-payment-followup-board.html
 - Partner Intro Referral Payment Proof: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-payment-proof-board.html
 - Partner Intro Referral Activation: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-activation-board.html
+- Partner Intro Referral Visibility: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-visibility-board.html
 - Partner Intro Referral Kickoff: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-kickoff-board.html
 - Partner Intro Referral Handoff: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-handoff-board.html
 - Partner Intro Referral Intake: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-intake-board.html
