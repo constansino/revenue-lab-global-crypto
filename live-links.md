@@ -1,6 +1,7 @@
 # Live Links
 
 - Home: https://constansino.github.io/revenue-lab-global-crypto/
+- Launchpad: https://constansino.github.io/revenue-lab-global-crypto/launchpad.html
 - Crypto-native offer: https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html
 - Tier 1 close pack: https://constansino.github.io/revenue-lab-global-crypto/tier1-close-pack.html
 - Tier 2 close pack: https://constansino.github.io/revenue-lab-global-crypto/tier2-close-pack.html
