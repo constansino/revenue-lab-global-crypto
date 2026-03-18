@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Partner FAQ Board</title>
+    <meta
+      name="description"
+      content="Public partner FAQ board for recurring partner questions about ownership, payment, payout timing, handoff, white-label logic, reseller logic, and repeat channel rules."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Partner FAQ Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./partner-board.html">Partner Board</a>
+        <a class="ghost-button" href="./partner-status-board.html">Partner Status</a>
+        <a class="ghost-button" href="./partner-close-pack-board.html">Partner Close Pack</a>
+        <a class="ghost-button" href="./partner-activation-board.html">Partner Activation</a>
+        <a class="ghost-button" href="./partner-handoff-board.html">Partner Handoff</a>
+        <a class="ghost-button" href="./partner-payout-board.html">Partner Payout</a>
+        <a class="ghost-button" href="./channel-repeat-board.html">Channel Repeat</a>
+        <a class="ghost-button" href="./white-label-board.html">White Label</a>
+        <a class="ghost-button" href="./reseller-board.html">Reseller</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Partner question page</p>
+          <h1>Answer recurring partner questions once, then reuse the page.</h1>
+          <p class="lead">
+            Partner deals slow down when the same questions keep getting asked
+            in scattered chats: who owns the client, who pays, when payout
+            happens, what gets handed off, and what changes after the first
+            deal. This page keeps those answers reusable and compact.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#partner-faq">Open Partner FAQ</a>
+            <a class="secondary-button" href="./partner-status-board.html">Open Partner Status</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>8</strong>
+              <span>core partner questions</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>route per answer</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>need to rewrite every time</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">FAQ Rule</p>
+            <h2>Keep partner answers short, operational, and stage-aware.</h2>
+            <p>
+              Good partner answers should reduce ambiguity and point to the next
+              usable page. They should not reopen the whole model every time a
+              partner asks one practical question.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Owner</dt>
+                <dd>clarify who controls what</dd>
+              </div>
+              <div>
+                <dt>Money</dt>
+                <dd>clarify who pays and when</dd>
+              </div>
+              <div>
+                <dt>Next</dt>
+                <dd>clarify the next route</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="partner-faq" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Partner FAQ</p>
+            <h2>Answer the practical questions first.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Who owns the client relationship?</h3>
+            <p>
+              That depends on the model. Referral usually becomes a lighter
+              intro path. White-label keeps the client relationship with the
+              partner. Reseller logic depends on how much visibility the
+              reseller wants to maintain.
+            </p>
+            <a class="table-link" href="./partner-board.html">Open Partner Board</a>
+          </article>
+          <article>
+            <h3>Who actually pays?</h3>
+            <p>
+              The payer should be named explicitly before activation: direct
+              client, partner, or partner-controlled billing. Do not leave this
+              implied or discover it after the work starts.
+            </p>
+            <a class="table-link" href="./partner-activation-board.html">Open Partner Activation</a>
+          </article>
+          <article>
+            <h3>When does partner payout happen?</h3>
+            <p>
+              Payout should follow a clear commercial trigger such as a cleared
+              first sprint payment or a defined internal delivery settlement,
+              depending on the partner model.
+            </p>
+            <a class="table-link" href="./partner-payout-board.html">Open Partner Payout</a>
+          </article>
+          <article>
+            <h3>What if I want white-label instead of referral?</h3>
+            <p>
+              Then keep the relationship and brand on the partner side, make
+              the delivery boundary explicit, and use a defined internal rate
+              plus partner margin instead of vague revenue share.
+            </p>
+            <a class="table-link" href="./white-label-board.html">Open White Label</a>
+          </article>
+          <article>
+            <h3>What if I want reseller markup control?</h3>
+            <p>
+              Then use a stable internal delivery base and let the reseller
+              control the client-side pricing on top of that base.
+            </p>
+            <a class="table-link" href="./reseller-board.html">Open Reseller</a>
+          </article>
+          <article>
+            <h3>What needs to be handed off after payment?</h3>
+            <p>
+              At minimum: buyer owner, payer, tx hash if funds moved, main
+              bottleneck, desired outcome, relevant links, and approver.
+            </p>
+            <a class="table-link" href="./partner-handoff-board.html">Open Partner Handoff</a>
+          </article>
+          <article>
+            <h3>What happens after the first successful deal?</h3>
+            <p>
+              Then the question shifts from “is this partnership real?” to “can
+              this buyer pattern, asset, and commercial rule happen again?”
+            </p>
+            <a class="table-link" href="./channel-repeat-board.html">Open Channel Repeat</a>
+          </article>
+          <article>
+            <h3>How do I know what stage we are in?</h3>
+            <p>
+              Use one status label instead of guessing. That tells you whether
+              the next move is screening, activation, handoff, payout, or
+              repeat-channel design.
+            </p>
+            <a class="table-link" href="./partner-status-board.html">Open Partner Status</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Short Answers</p>
+            <h2>Useful one-liners for chats and threads.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Ownership Line</h3>
+            <p>
+              The clean version is simple: define who owns the client, who owns
+              delivery, and who owns the next commercial step.
+            </p>
+          </article>
+          <article>
+            <h3>Payout Line</h3>
+            <p>
+              Payout works best when the trigger is explicit and the proof is
+              easy to share after settlement.
+            </p>
+          </article>
+          <article>
+            <h3>Handoff Line</h3>
+            <p>
+              Once the model and payer are clear, the next job is one clean
+              context packet, not more scattered explanation.
+            </p>
+          </article>
+          <article>
+            <h3>Repeat Line</h3>
+            <p>
+              One good deal proves the fit. Repeated deals prove there is a
+              real channel worth protecting.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Best Next Routes</p>
+            <h2>Route the question to the page that resolves it fastest.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Need Partner Fit</h3>
+            <p>
+              If the question is whether the partner is worth building with at
+              all, screen the relationship first.
+            </p>
+            <a class="table-link" href="./partner-qualification-board.html">Open Partner Qualification</a>
+          </article>
+          <article>
+            <h3>Need Stage Label</h3>
+            <p>
+              If the relationship is real but the stage is fuzzy, label it
+              before trying to solve the wrong problem.
+            </p>
+            <a class="table-link" href="./partner-status-board.html">Open Partner Status</a>
+          </article>
+          <article>
+            <h3>Need Live Deal Movement</h3>
+            <p>
+              If the partner is aligned and the next job is getting the first
+              deal moving, use activation.
+            </p>
+            <a class="table-link" href="./partner-activation-board.html">Open Partner Activation</a>
+          </article>
+          <article>
+            <h3>Need Context Transfer</h3>
+            <p>
+              If the deal is live but the handoff is messy, route to the
+              partner handoff page.
+            </p>
+            <a class="table-link" href="./partner-handoff-board.html">Open Partner Handoff</a>
+          </article>
+          <article>
+            <h3>Need Settlement Logic</h3>
+            <p>
+              If the repeated question is about payout timing or proof, route
+              to the payout page.
+            </p>
+            <a class="table-link" href="./partner-payout-board.html">Open Partner Payout</a>
+          </article>
+          <article>
+            <h3>Need Repeatability</h3>
+            <p>
+              If the first deal worked and the next question is channel design,
+              route to repeat planning.
+            </p>
+            <a class="table-link" href="./channel-repeat-board.html">Open Channel Repeat</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wallet reveal">
+        <div class="wallet-shell">
+          <div>
+            <p class="eyebrow">Wallet</p>
+            <h2>Direct transfer remains the cleanest route when payment is part of the answer.</h2>
+            <p class="wallet-note">
+              If the partner question is really about how funds move, answer
+              the commercial rule and then route to the payment path directly.
+            </p>
+          </div>
+          <div class="wallet-box">
+            <code>0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            <a class="primary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Reusable partner answers remove friction without reopening the whole model.</p>
+    </footer>
+  </body>
+</html>
