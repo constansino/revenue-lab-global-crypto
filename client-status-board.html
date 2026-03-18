@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Client Status Board</title>
+    <meta
+      name="description"
+      content="Public client status board for tracking where a client is in the revenue lifecycle: lead, active, awaiting payment, in delivery, awaiting approval, retained, or expanded."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Client Status Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./ops-dashboard.html">Ops Dashboard</a>
+        <a class="ghost-button" href="./lifecycle-board.html">Lifecycle Board</a>
+        <a class="ghost-button" href="./retainer-conversion-board.html">Retainer Conversion</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Status control page</p>
+          <h1>Know exactly where each client stands and what happens next.</h1>
+          <p class="lead">
+            This page turns the revenue lifecycle into explicit status labels so
+            you can move clients forward without mixing lead handling, delivery,
+            approval, balance collection, and retainer conversion into one blur.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#status-map">Open Status Map</a>
+            <a class="secondary-button" href="./ops-dashboard.html">Open Ops Dashboard</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>7</strong>
+              <span>client statuses</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>next action per status</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>reason to guess</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Status Rule</p>
+            <h2>One client, one status, one next move.</h2>
+            <p>
+              Confusion starts when one client is treated as half lead, half
+              active project, and half future retainer all at once. Pick the
+              real status, then do the matching next action.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Status</dt>
+                <dd>name the stage</dd>
+              </div>
+              <div>
+                <dt>Action</dt>
+                <dd>do one next move</dd>
+              </div>
+              <div>
+                <dt>Advance</dt>
+                <dd>only when earned</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="status-map" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Status Map</p>
+            <h2>Use the label that matches the real commercial state.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Lead</h3>
+            <p>
+              The person is still being qualified. Main job is signal, reply,
+              scope clarity, and first commercial interest.
+            </p>
+          </article>
+          <article>
+            <h3>Awaiting Payment</h3>
+            <p>
+              Scope is agreed and the next step is deposit. This is not a lead
+              anymore, but it is not yet an active project either.
+            </p>
+          </article>
+          <article>
+            <h3>Active</h3>
+            <p>
+              Deposit is confirmed, intake is in, and the sprint is now live.
+            </p>
+          </article>
+          <article>
+            <h3>In Delivery</h3>
+            <p>
+              The sprint work is underway and the next focus is shipped assets,
+              not new selling.
+            </p>
+          </article>
+          <article>
+            <h3>Awaiting Approval</h3>
+            <p>
+              Delivery is complete enough to review. The next step is approval,
+              light revision if needed, and remaining balance.
+            </p>
+          </article>
+          <article>
+            <h3>Expanded</h3>
+            <p>
+              The client moved into a second sprint or a new scoped project
+              after the first one closed cleanly.
+            </p>
+          </article>
+          <article>
+            <h3>Retained</h3>
+            <p>
+              The client is now on a monthly rhythm with defined recurring work
+              instead of one-off sprint packaging.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Next Action By Status</p>
+            <h2>Every status should point to one operational page.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Lead</h3>
+            <p>
+              Next move is reply, objection handling, pricing, or close logic.
+            </p>
+            <a class="table-link" href="./reply-board.html">Open Reply Board</a>
+          </article>
+          <article>
+            <h3>Awaiting Payment</h3>
+            <p>
+              Next move is offer confirmation and payment request.
+            </p>
+            <a class="table-link" href="./close-board.html">Open Close Board</a>
+          </article>
+          <article>
+            <h3>Active</h3>
+            <p>
+              Next move is collecting the minimum kickoff inputs so work can
+              begin without delay.
+            </p>
+            <a class="table-link" href="./intake-board.html">Open Intake Board</a>
+          </article>
+          <article>
+            <h3>In Delivery</h3>
+            <p>
+              Next move is shipping the narrow sprint assets and protecting the
+              scope boundary.
+            </p>
+            <a class="table-link" href="./delivery-board.html">Open Delivery Board</a>
+          </article>
+          <article>
+            <h3>Awaiting Approval</h3>
+            <p>
+              Next move is summary, approval, and balance collection.
+            </p>
+            <a class="table-link" href="./balance-collection-board.html">Open Balance Collection</a>
+          </article>
+          <article>
+            <h3>Expanded</h3>
+            <p>
+              Next move is scoping the next bottleneck as its own sprint.
+            </p>
+            <a class="table-link" href="./renewal-board.html">Open Renewal Board</a>
+          </article>
+          <article>
+            <h3>Retained</h3>
+            <p>
+              Next move is running the defined monthly support rhythm, not
+              dropping back into ad hoc request handling.
+            </p>
+            <a class="table-link" href="./retainer-conversion-board.html">Open Retainer Conversion</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Status Shift Rules</p>
+            <h2>Move the label only when the trigger is real.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Lead To Awaiting Payment</h3>
+            <p>
+              Shift only after scope is agreed and the next expected action is
+              deposit, not more broad conversation.
+            </p>
+          </article>
+          <article>
+            <h3>Awaiting Payment To Active</h3>
+            <p>
+              Shift only after deposit is confirmed and the kickoff inputs are
+              actually in motion.
+            </p>
+          </article>
+          <article>
+            <h3>Awaiting Approval To Expanded Or Retained</h3>
+            <p>
+              Shift only after the current sprint is closed cleanly, not while
+              approval and balance are still unresolved.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Clear status labels stop revenue work from becoming operational blur.</p>
+    </footer>
+  </body>
+</html>
