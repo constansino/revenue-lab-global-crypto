@@ -10,6 +10,7 @@
 - Expansion Board: https://constansino.github.io/revenue-lab-global-crypto/expansion-board.html
 - Proof Board: https://constansino.github.io/revenue-lab-global-crypto/proof-board.html
 - Renewal Board: https://constansino.github.io/revenue-lab-global-crypto/renewal-board.html
+- Productize Board: https://constansino.github.io/revenue-lab-global-crypto/productize-board.html
 - Launchpad: https://constansino.github.io/revenue-lab-global-crypto/launchpad.html
 - Send Board: https://constansino.github.io/revenue-lab-global-crypto/send-board.html
 - Reply Board: https://constansino.github.io/revenue-lab-global-crypto/reply-board.html
