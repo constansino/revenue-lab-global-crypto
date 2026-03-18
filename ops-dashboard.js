@@ -1,15 +1,15 @@
 const STORAGE_KEY = "revenue-lab-dashboard-v1";
 
 const defaultTargets = [
-  { priority: 1, name: "Supercharged Studio", batch: "Batch 1" },
-  { priority: 2, name: "Digital Growth Studio", batch: "Batch 1" },
-  { priority: 3, name: "Upgrow", batch: "Batch 1" },
-  { priority: 4, name: "Privy", batch: "Batch 2" },
-  { priority: 5, name: "Dynamic", batch: "Batch 2" },
-  { priority: 6, name: "OnchainInvoice", batch: "Batch 2" },
-  { priority: 7, name: "Sitekick", batch: "Batch 3" },
-  { priority: 8, name: "Newsletter Compass", batch: "Batch 3" },
-  { priority: 9, name: "Creatomate", batch: "Batch 3" },
+  { priority: 1, name: "Supercharged Studio", batch: "Batch 1", source: "batch1", website: "https://www.supercharged.studio/website-design" },
+  { priority: 2, name: "Digital Growth Studio", batch: "Batch 1", source: "batch1", website: "https://www.digitalgrowthstudio.com/" },
+  { priority: 3, name: "Upgrow", batch: "Batch 1", source: "batch1", website: "https://www.upgrow.io/pricing" },
+  { priority: 4, name: "Privy", batch: "Batch 2", source: "batch2", website: "https://www.privy.io/" },
+  { priority: 5, name: "Dynamic", batch: "Batch 2", source: "batch2", website: "https://www.dynamic.xyz/" },
+  { priority: 6, name: "OnchainInvoice", batch: "Batch 2", source: "batch2", website: "https://www.onchaininvoice.com/" },
+  { priority: 7, name: "Sitekick", batch: "Batch 3", source: "batch3", website: "https://www.sitekick.ai/" },
+  { priority: 8, name: "Newsletter Compass", batch: "Batch 3", source: "batch3", website: "https://www.newslettercompass.com/" },
+  { priority: 9, name: "Creatomate", batch: "Batch 3", source: "batch3", website: "https://creatomate.com/" },
 ];
 
 const loadState = () => {
@@ -85,6 +85,28 @@ const notesInput = (item) => {
   return input;
 };
 
+const actionLinks = (item) => {
+  const wrap = document.createElement("div");
+  wrap.className = "actions-cell";
+
+  const links = [
+    { label: "Site", href: item.website },
+    { label: "DM Pack", href: `./${item.source}-dm-pack.md` },
+    { label: "Follow-Up", href: `./${item.source}-followup-pack.md` },
+    { label: "Closers", href: `./${item.source}-closers.md` },
+  ];
+
+  links.forEach((entry) => {
+    const link = document.createElement("a");
+    link.href = entry.href;
+    link.textContent = entry.label;
+    link.className = "table-link";
+    wrap.appendChild(link);
+  });
+
+  return wrap;
+};
+
 const render = () => {
   pipelineBody.innerHTML = "";
 
@@ -103,6 +125,10 @@ const render = () => {
     batch.textContent = item.batch;
     row.appendChild(batch);
 
+    const source = document.createElement("td");
+    source.textContent = item.source;
+    row.appendChild(source);
+
     ["firstDm", "replied", "followUp", "offerPage", "paymentPage"].forEach((key) => {
       const cell = document.createElement("td");
       cell.appendChild(cellCheckbox(item, key));
@@ -112,6 +138,10 @@ const render = () => {
     const notes = document.createElement("td");
     notes.appendChild(notesInput(item));
     row.appendChild(notes);
+
+    const actions = document.createElement("td");
+    actions.appendChild(actionLinks(item));
+    row.appendChild(actions);
 
     pipelineBody.appendChild(row);
   });
