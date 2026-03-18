@@ -72,6 +72,8 @@
 - `batch3-closers.md`: 总优先级第 7-9 个目标的回复承接和 closing
 - `master-send-pack.md`: 前三批 9 个目标合并后的单文件总发送包
 - `master-send-checklist.csv`: 前三批 9 个目标的总跟踪表
+- `reply-matrix.md`: 常见回复类型的标准回法
+- `live-reply-checklist.md`: 收到回复后的现场执行顺序
 
 ## 立即预览
 
