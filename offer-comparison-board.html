@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Offer Comparison Board</title>
+    <meta
+      name="description"
+      content="Public offer comparison board for choosing the right sprint tier, matching the offer to the client profile, and knowing when to upgrade scope."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Offer Comparison Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./pricing-board.html">Pricing Board</a>
+        <a class="ghost-button" href="./crypto-native.html">Offer</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Package selection page</p>
+          <h1>Choose the offer that matches the client, not just the budget.</h1>
+          <p class="lead">
+            This page compares the three public sprint offers, the kind of
+            buyer each one fits, and the signals that tell you to move up a
+            tier instead of forcing a weak match.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#comparison">Open Comparison</a>
+            <a class="secondary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>3</strong>
+              <span>live offer tiers</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>best-fit client at a time</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>reason to force bad fit</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Selection Rule</p>
+            <h2>Match the package to scope shape and buyer maturity.</h2>
+            <p>
+              Good offer selection comes from two variables: how defined the
+              bottleneck is, and how much implementation the client expects.
+              When both rise, the tier should rise too.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>$299</dt>
+                <dd>narrow diagnosis</dd>
+              </div>
+              <div>
+                <dt>$799</dt>
+                <dd>single core sprint</dd>
+              </div>
+              <div>
+                <dt>$1,500</dt>
+                <dd>broader setup</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="comparison" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Offer Comparison</p>
+            <h2>See the difference before you quote.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>$299 Workflow Teardown</h3>
+            <p>
+              Best for a founder or operator who mainly needs diagnosis,
+              message clarity, or one narrow directional fix before buying a
+              larger sprint.
+            </p>
+          </article>
+          <article>
+            <h3>$799 Automation Sprint</h3>
+            <p>
+              Best for a buyer with one meaningful commercial choke point who
+              wants the page, flow, and close path tightened fast.
+            </p>
+          </article>
+          <article>
+            <h3>$1,500 Productized Setup</h3>
+            <p>
+              Best for a team that needs broader packaging, onboarding, SOP,
+              and a more complete setup around the revenue path.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Best-Fit Buyers</p>
+            <h2>Each tier maps to a different client state.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>$299 Buyer</h3>
+            <p>
+              Curious but not fully committed. They can name the friction, but
+              still want confidence before buying implementation.
+            </p>
+          </article>
+          <article>
+            <h3>$799 Buyer</h3>
+            <p>
+              Ready to act on one defined bottleneck and wants a sprint that
+              closes the gap between interest and payment.
+            </p>
+          </article>
+          <article>
+            <h3>$1,500 Buyer</h3>
+            <p>
+              Already believes the direction and wants the surrounding setup to
+              feel more complete, reusable, and easier to hand off.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Upgrade Signals</p>
+            <h2>Move up the tier when the ask broadens.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Move From $299 To $799</h3>
+            <p>
+              If the client wants execution, page structure, payment flow, or a
+              clearer close route, the teardown is no longer the right fit.
+            </p>
+          </article>
+          <article>
+            <h3>Move From $799 To $1,500</h3>
+            <p>
+              If the ask includes more packaging, onboarding, SOP, or multiple
+              linked deliverables, the broader setup tier is cleaner.
+            </p>
+          </article>
+          <article>
+            <h3>Split Into Another Sprint</h3>
+            <p>
+              If the buyer keeps adding new bottlenecks, separate them into a
+              second sprint instead of stretching the current one.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Fast Decision Lines</p>
+            <h2>Use short language when the buyer asks which package fits.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Teardown Line</h3>
+            <p>
+              If you mainly want a narrow diagnosis and the best next move, the
+              teardown tier is enough.
+            </p>
+          </article>
+          <article>
+            <h3>Core Sprint Line</h3>
+            <p>
+              If you want one real bottleneck tightened end to end, the core
+              sprint is the better fit.
+            </p>
+          </article>
+          <article>
+            <h3>Broader Setup Line</h3>
+            <p>
+              If you want the surrounding packaging and handoff built out too,
+              the broader setup tier is the cleaner route.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Good offer comparison removes hesitation before pricing becomes a fight.</p>
+    </footer>
+  </body>
+</html>
