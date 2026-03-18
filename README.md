@@ -47,6 +47,8 @@
 - `wave3-full-priority.csv`: 第三波 5 个目标完整优先顺序
 - `wave3-reply-closers.md`: 第三波 5 个目标回复后的承接句和 closing
 - `wave3-send-order.md`: 第三波 5 个目标的发送节奏
+- `wave4-top3-custom-outreach.md`: 第四波里最优先 3 个目标的定制外联
+- `wave4-top3-priority.csv`: 第四波最优先 3 个目标顺序
 
 ## 立即预览
 
