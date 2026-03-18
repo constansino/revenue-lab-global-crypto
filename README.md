@@ -37,6 +37,8 @@
 - `live-links.md`: 已上线公开网址
 - `global-prospects.csv`: 全球潜在客户记录模板
 - `global-prospecting-playbook.md`: 全球冷启动筛选和私信规则
+- `top5-custom-outreach.md`: 最优先 5 个目标的定制私信和邮件
+- `top5-priority.csv`: 当前最优先外联顺序
 
 ## 立即预览
 
