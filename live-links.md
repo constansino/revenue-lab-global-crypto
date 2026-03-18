@@ -67,6 +67,7 @@
 - Partner Intro Scope: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-scope-board.html
 - Partner Intro Approval Pack: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-approval-pack-board.html
 - Partner Intro Approval Follow-Up: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-approval-followup-board.html
+- Partner Intro Approval To Payment: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-approval-to-payment-board.html
 - Partner Intro Deposit Lock: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-deposit-lock-board.html
 - Partner Intro Payment Follow-Up: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-payment-followup-board.html
 - Partner Intro Payment Proof: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-payment-proof-board.html
