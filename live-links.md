@@ -102,6 +102,7 @@
 - Partner Intro Referral Revision: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-revision-board.html
 - Partner Intro Referral Proof Pack: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-proof-pack-board.html
 - Partner Intro Referral Balance: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-balance-collection-board.html
+- Partner Intro Referral Final Handoff: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-final-handoff-board.html
 - Partner Intro Objections: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-objection-board.html
 - Partner Intro Conversion: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-conversion-board.html
 - Partner Intro Owner: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-owner-board.html
