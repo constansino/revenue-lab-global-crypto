@@ -88,6 +88,7 @@
 - Partner Intro Referral Follow-Up: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-followup-board.html
 - Partner Intro Referral Conversion: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-conversion-board.html
 - Partner Intro Referral Close Pack: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-close-pack-board.html
+- Partner Intro Referral Approval Pack: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-approval-pack-board.html
 - Partner Intro Objections: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-objection-board.html
 - Partner Intro Conversion: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-conversion-board.html
 - Partner Intro Owner: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-owner-board.html
