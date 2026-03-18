@@ -58,6 +58,7 @@
 - Partner Retainer: https://constansino.github.io/revenue-lab-global-crypto/partner-retainer-board.html
 - Partner Expansion: https://constansino.github.io/revenue-lab-global-crypto/partner-expansion-board.html
 - Partner Renewal: https://constansino.github.io/revenue-lab-global-crypto/partner-renewal-board.html
+- Partner Proof Capture: https://constansino.github.io/revenue-lab-global-crypto/partner-proof-capture-board.html
 - Partner Handoff: https://constansino.github.io/revenue-lab-global-crypto/partner-handoff-board.html
 - Partner Activation: https://constansino.github.io/revenue-lab-global-crypto/partner-activation-board.html
 - Partner Payout: https://constansino.github.io/revenue-lab-global-crypto/partner-payout-board.html
