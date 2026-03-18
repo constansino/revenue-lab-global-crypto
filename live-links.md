@@ -46,6 +46,7 @@
 - Risk Control: https://constansino.github.io/revenue-lab-global-crypto/risk-control-board.html
 - Buyer Checklist: https://constansino.github.io/revenue-lab-global-crypto/buyer-checklist-board.html
 - Approval To Payment: https://constansino.github.io/revenue-lab-global-crypto/approval-to-payment-board.html
+- Payment Follow-Up: https://constansino.github.io/revenue-lab-global-crypto/payment-followup-board.html
 - Deposit Lock: https://constansino.github.io/revenue-lab-global-crypto/deposit-lock-board.html
 - Global Channels: https://constansino.github.io/revenue-lab-global-crypto/global-channel-board.html
 - Profile Funnel: https://constansino.github.io/revenue-lab-global-crypto/profile-funnel-board.html

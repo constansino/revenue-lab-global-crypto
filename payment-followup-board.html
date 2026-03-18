@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Payment Follow-Up Board</title>
+    <meta
+      name="description"
+      content="Public payment follow-up board for the stage after agreement and before transfer: confirm the payer, remove last-minute friction, resend the correct route, collect the tx hash, and keep the deal from drifting."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Payment Follow-Up Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./approval-to-payment-board.html">Approval To Payment</a>
+        <a class="ghost-button" href="./async-close-board.html">Async Close</a>
+        <a class="ghost-button" href="./deposit-lock-board.html">Deposit Lock</a>
+        <a class="ghost-button" href="./payment-guide-board.html">Payment Guide</a>
+        <a class="ghost-button" href="./kickoff-board.html">Kickoff Board</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Post-agreement follow-up page</p>
+          <h1>When the buyer says yes but the transfer still has not happened, shorten the follow-up path.</h1>
+          <p class="lead">
+            This page is for the gap between agreement and payment. The goal is
+            not to restart the sale. The goal is to confirm who is sending the
+            deposit, remove the last blocker, resend the cleanest payment path,
+            and collect the tx hash before momentum leaks out.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#followup-map">Open Payment Follow-Up Map</a>
+            <a class="secondary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>payer owner confirmed</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>last blocker isolated</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>tx hash collected</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Follow-Up Rule</p>
+            <h2>Good follow-up removes friction. It does not reopen the entire close.</h2>
+            <p>
+              If the buyer already agreed, the follow-up should stay narrow.
+              Confirm the payer, confirm the route, confirm the timing, and
+              confirm what happens after the transfer. If a blocker remains,
+              route to the exact page that solves it.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Confirm</dt>
+                <dd>who pays</dd>
+              </div>
+              <div>
+                <dt>Resend</dt>
+                <dd>one clean route</dd>
+              </div>
+              <div>
+                <dt>Collect</dt>
+                <dd>the tx hash</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="followup-map" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Payment Follow-Up Map</p>
+            <h2>Use the shortest sequence that turns agreement into transfer.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>1. Confirm Who Is Sending</h3>
+            <p>
+              If a founder approved but someone else handles the wallet, name
+              the exact payer so the next message reaches the right person.
+            </p>
+            <a class="table-link" href="./approval-to-payment-board.html">Open Approval To Payment</a>
+          </article>
+          <article>
+            <h3>2. Confirm The Deposit And Network</h3>
+            <p>
+              Keep the follow-up concrete: amount, asset, network, wallet, and
+              what the deposit secures right now.
+            </p>
+            <a class="table-link" href="./deposit-lock-board.html">Open Deposit Lock</a>
+          </article>
+          <article>
+            <h3>3. Remove Wallet Friction</h3>
+            <p>
+              If the payer is hesitating because of wallet steps, route them to
+              the short payment guide instead of writing a custom explanation.
+            </p>
+            <a class="table-link" href="./payment-guide-board.html">Open Payment Guide</a>
+          </article>
+          <article>
+            <h3>4. Resend The Payment Route</h3>
+            <p>
+              Once the blocker is gone, send the payment page again and keep
+              the ask limited to one action.
+            </p>
+            <a class="table-link" href="./pay.html">Open Payment Page</a>
+          </article>
+          <article>
+            <h3>5. Collect The Hash And Start</h3>
+            <p>
+              After funds move, ask for the tx hash immediately so the deal
+              turns into kickoff instead of another silent gap.
+            </p>
+            <a class="table-link" href="./kickoff-board.html">Open Kickoff Board</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Common Follow-Up Leaks</p>
+            <h2>Most pending payments stall for one of these reasons.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>No Named Payer</h3>
+            <p>
+              A deal can be approved but still stall if no one is clearly
+              responsible for sending the transfer.
+            </p>
+          </article>
+          <article>
+            <h3>Wallet Friction</h3>
+            <p>
+              Some payers are ready in principle but pause when they have to
+              choose a network or confirm the address.
+            </p>
+          </article>
+          <article>
+            <h3>Timing Drift</h3>
+            <p>
+              Others simply let the payment slip because the follow-up message
+              never reconnects the transfer to the current build window.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Best Next Routes</p>
+            <h2>Match the blocker to one narrow page.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Need Payer Alignment</h3>
+            <p>
+              If the deal is approved but you still need the exact payer or
+              approver path, return to approval-to-payment first.
+            </p>
+            <a class="table-link" href="./approval-to-payment-board.html">Open Approval To Payment</a>
+          </article>
+          <article>
+            <h3>Need Written No-Call Follow-Up</h3>
+            <p>
+              If the buyer wants to keep everything in writing, use the async
+              close path and fold the follow-up into that thread.
+            </p>
+            <a class="table-link" href="./async-close-board.html">Open Async Close</a>
+          </article>
+          <article>
+            <h3>Need Payment Confidence</h3>
+            <p>
+              If the payer is ready but cautious, the payment guide is still
+              the shortest way to remove wallet friction.
+            </p>
+            <a class="table-link" href="./payment-guide-board.html">Open Payment Guide</a>
+          </article>
+          <article>
+            <h3>Ready To Send</h3>
+            <p>
+              If the payer is confirmed and the route is clear, send them to
+              the payment page now and ask only for the tx hash after transfer.
+            </p>
+            <a class="table-link" href="./pay.html">Open Payment Page</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wallet reveal">
+        <div class="wallet-shell">
+          <div>
+            <p class="eyebrow">Wallet</p>
+            <h2>Preferred route: USDC on Base, then tx hash back into kickoff.</h2>
+            <p class="wallet-note">
+              Keep the follow-up simple. Confirm the network, copy the wallet,
+              send the transfer, and share the hash so the work can move from
+              pending to active.
+            </p>
+          </div>
+          <div class="wallet-box">
+            <code>0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            <a class="primary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Short Follow-Up Lines</p>
+            <h2>Use calm lines that advance the payment without sounding needy.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Owner Line</h3>
+            <p>
+              Since the scope is already agreed, the only thing I want to
+              confirm is who is sending the deposit so I can route the payment
+              page to the right person.
+            </p>
+          </article>
+          <article>
+            <h3>Friction Line</h3>
+            <p>
+              If the blocker is just the wallet step, I can keep it to one
+              short route: network, address, transfer, tx hash.
+            </p>
+          </article>
+          <article>
+            <h3>Timing Line</h3>
+            <p>
+              If you still want the current slot, the next useful move is the
+              deposit and hash so I can move it into kickoff.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Good follow-up turns agreement into transfer, then kickoff.</p>
+    </footer>
+  </body>
+</html>
