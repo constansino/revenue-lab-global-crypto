@@ -78,6 +78,7 @@
 - Partner Intro Case Study Boundary: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-case-study-boundary-board.html
 - Partner Intro Proof Library Slot: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-proof-library-slot-board.html
 - Partner Intro Public Story Boundary: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-public-story-boundary-board.html
+- Partner Intro Public Trust Page: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-public-trust-page-board.html
 - Partner Intro Public Proof Page: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-public-proof-page-board.html
 - Partner Intro Objections: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-objection-board.html
 - Partner Intro Conversion: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-conversion-board.html
