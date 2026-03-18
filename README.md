@@ -39,6 +39,8 @@
 - `global-prospecting-playbook.md`: 全球冷启动筛选和私信规则
 - `top5-custom-outreach.md`: 最优先 5 个目标的定制私信和邮件
 - `top5-priority.csv`: 当前最优先外联顺序
+- `top5-followups.md`: 最优先 5 个目标的第二轮跟进和异议回复
+- `top5-teardowns.md`: 对方回复后可直接发送的 3 点 mini teardown
 
 ## 立即预览
 
