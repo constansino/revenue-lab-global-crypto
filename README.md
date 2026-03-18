@@ -55,6 +55,8 @@
 - `today-checklist.csv`: 今日发送和回复跟踪表
 - `today-dm-pack.md`: 今天最强 6 个目标的可直接复制私信
 - `today-followup-pack.md`: 今天最强 6 个目标的无回复跟进文案
+- `wave5-top3-custom-outreach.md`: 第五波里最优先 3 个 agency / service 目标的定制外联
+- `wave5-top3-priority.csv`: 第五波最优先 3 个目标顺序
 
 ## 立即预览
 
