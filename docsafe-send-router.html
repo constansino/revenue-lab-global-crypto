@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Send Router</title>
+    <meta
+      name="description"
+      content="A routing page for DocSafe outreach: which buyer gets which landing page, when to send it, and what to send after the first reply."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SR</span>
+        <div>
+          <p>DocSafe Router</p>
+          <small>Buyer-Specific Send Order</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-agency-client-ops.html">Agency</a>
+        <a class="ghost-button" href="./docsafe-legal-signing-ops.html">Legal</a>
+        <a class="ghost-button" href="./docsafe-recruiting-onboarding-ops.html">Recruiting</a>
+        <a class="ghost-button" href="./pay.html">Wallet Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Execution layer</p>
+          <h1>Do not send the same DocSafe page to every lead.</h1>
+          <p class="lead">
+            The offer is one workflow thesis, but the send path should change
+            by buyer type. This page fixes the routing problem: who gets the
+            main page, who gets the vertical page first, and what should be
+            sent only after the first sign of interest.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#send-table">Open Send Table</a>
+            <a class="secondary-button" href="./docsafe-flow.html">Open Main Offer</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>4</strong>
+              <span>public DocSafe pages now live</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>router for buyer-specific sending</span>
+            </li>
+            <li>
+              <strong>0xB3...</strong>
+              <span>payment route stays consistent</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Send Rule</p>
+            <h2>Generic interest gets the main page. Concrete pain gets the vertical page.</h2>
+            <p>
+              The goal is not to show every possible version at once. The goal
+              is to send the shortest page that makes the buyer feel directly
+              understood.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Cold</dt>
+                <dd>DM first, link only if asked</dd>
+              </div>
+              <div>
+                <dt>Warm</dt>
+                <dd>send best-fit vertical page</dd>
+              </div>
+              <div>
+                <dt>Interested</dt>
+                <dd>send payment page after scope</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Routing Logic</p>
+          <h2>Match the page to the operational pain, not to the industry label alone.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Agency page first</h3>
+            <p>
+              Use when the lead complains about client asset chaos, buried
+              approvals, revisions, handoff confusion, or billing proof.
+            </p>
+          </article>
+          <article>
+            <h3>Legal page first</h3>
+            <p>
+              Use when the lead complains about draft control, signer readiness,
+              version uncertainty, approval trail, or final archive clarity.
+            </p>
+          </article>
+          <article>
+            <h3>Recruiting page first</h3>
+            <p>
+              Use when the lead complains about missing candidate documents,
+              onboarding delays, compliance readiness, or messy client handoff.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="send-table" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Send Table</p>
+          <h2>Use this sequence when routing leads.</h2>
+        </div>
+        <div class="dashboard-shell">
+          <div class="dashboard-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Buyer Type</th>
+                  <th>Use This Page First</th>
+                  <th>When To Send</th>
+                  <th>Signal To Watch</th>
+                  <th>Next Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Generic ops pain</td>
+                  <td><a class="table-link" href="./docsafe-flow.html">DocSafe Flow</a></td>
+                  <td>After warm interest or explicit workflow pain</td>
+                  <td>They acknowledge scattered files or unclear approval path</td>
+                  <td><a class="table-link" href="./pay.html">Payment</a></td>
+                </tr>
+                <tr>
+                  <td>Agency account / client ops</td>
+                  <td><a class="table-link" href="./docsafe-agency-client-ops.html">Agency Version</a></td>
+                  <td>After they mention client approvals, assets, revisions, or billing friction</td>
+                  <td>They talk about files in chat or unclear sign-off</td>
+                  <td><a class="table-link" href="./docsafe-flow.html">Main Offer</a></td>
+                </tr>
+                <tr>
+                  <td>Legal / signing ops</td>
+                  <td><a class="table-link" href="./docsafe-legal-signing-ops.html">Legal Version</a></td>
+                  <td>After they mention contract control, signers, or archive clarity</td>
+                  <td>They are unsure which version was approved or sent</td>
+                  <td><a class="table-link" href="./docsafe-flow.html">Main Offer</a></td>
+                </tr>
+                <tr>
+                  <td>Recruiting / onboarding ops</td>
+                  <td><a class="table-link" href="./docsafe-recruiting-onboarding-ops.html">Recruiting Version</a></td>
+                  <td>After they mention missing candidate docs, onboarding readiness, or handoff mess</td>
+                  <td>They are repeatedly chasing documents</td>
+                  <td><a class="table-link" href="./docsafe-flow.html">Main Offer</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Short Order</p>
+          <h2>Use these three rules to stay disciplined.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Do not cold-send the payment page</h3>
+            <p>
+              The payment page is for movement, not for prospecting. Use it only
+              after the buyer accepts the scope direction.
+            </p>
+          </article>
+          <article>
+            <h3>Do not overload the first send</h3>
+            <p>
+              Send one page, not four. If the buyer wants detail, then branch to
+              the main offer or payment route.
+            </p>
+          </article>
+          <article>
+            <h3>Keep the wallet route stable</h3>
+            <p>
+              Offer pages may change by buyer, but the settlement route can stay
+              consistent to reduce friction.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Route by pain. Then advance by evidence.</p>
+    </footer>
+  </body>
+</html>

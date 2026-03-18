@@ -3,6 +3,7 @@
 - Home: https://constansino.github.io/revenue-lab-global-crypto/
 - GitHub Demand Research: https://constansino.github.io/revenue-lab-global-crypto/github-demand-research-20260319.html
 - DocSafe Flow: https://constansino.github.io/revenue-lab-global-crypto/docsafe-flow.html
+- DocSafe Send Router: https://constansino.github.io/revenue-lab-global-crypto/docsafe-send-router.html
 - DocSafe Agency Client Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-agency-client-ops.html
 - DocSafe Legal Signing Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-legal-signing-ops.html
 - DocSafe Recruiting Onboarding Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-recruiting-onboarding-ops.html
