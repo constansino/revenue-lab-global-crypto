@@ -60,6 +60,7 @@
 - Partner Renewal: https://constansino.github.io/revenue-lab-global-crypto/partner-renewal-board.html
 - Partner Proof Capture: https://constansino.github.io/revenue-lab-global-crypto/partner-proof-capture-board.html
 - Partner Referral Forward: https://constansino.github.io/revenue-lab-global-crypto/partner-referral-forward-board.html
+- Partner Intro Referral Forward: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-forward-board.html
 - Partner Intro Pack: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-pack-board.html
 - Partner Intro Messages: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-message-board.html
 - Partner Intro Follow-Up: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-followup-board.html
