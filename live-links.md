@@ -70,6 +70,7 @@
 - Partner Intro Proof: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-proof-board.html
 - Partner Intro Proof Safety: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-proof-safety-board.html
 - Partner Intro Anonymous Proof: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-anonymous-proof-board.html
+- Partner Intro Brandless Proof: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-brandless-proof-board.html
 - Partner Intro Quote: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-quote-board.html
 - Partner Intro Objections: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-objection-board.html
 - Partner Intro Conversion: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-conversion-board.html
