@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Async Close Board</title>
+    <meta
+      name="description"
+      content="Public async close board for written, no-call deal flow: scope confirmation, proof, deposit, and kickoff without scheduling friction."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Async Close Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./reply-board.html">Reply Board</a>
+        <a class="ghost-button" href="./close-board.html">Close Board</a>
+        <a class="ghost-button" href="./deal-desk-board.html">Deal Desk</a>
+        <a class="ghost-button" href="./sameday-close-board.html">Same Day Close</a>
+        <a class="ghost-button" href="./deposit-lock-board.html">Deposit Lock</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">No-call close path</p>
+          <h1>Close in writing when a call would only slow the deal down.</h1>
+          <p class="lead">
+            This page is for buyers who are serious but do not want another
+            scheduling step. If the scope is mostly clear, confidence is high
+            enough, and the next useful move is written confirmation plus
+            payment, keep the deal asynchronous.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#async-map">Open Async Map</a>
+            <a class="secondary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>0</strong>
+              <span>calls required</span>
+            </li>
+            <li>
+              <strong>4</strong>
+              <span>written steps</span>
+            </li>
+            <li>
+              <strong>30%</strong>
+              <span>standard deposit</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Async Rule</p>
+            <h2>Written clarity beats a live call when the real blocker is already small.</h2>
+            <p>
+              Calls are useful when the scope is fuzzy or trust is low. They are
+              wasteful when the buyer mainly needs one clean written summary, one
+              proof asset if needed, and a direct deposit path.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Confirm</dt>
+                <dd>scope in writing</dd>
+              </div>
+              <div>
+                <dt>Send</dt>
+                <dd>one proof asset</dd>
+              </div>
+              <div>
+                <dt>Collect</dt>
+                <dd>deposit without delay</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="async-map" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Async Map</p>
+            <h2>Use the shortest written route that still protects the close.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>1. Restate The Sprint</h3>
+            <p>
+              Write the bottleneck, the delivery boundary, and the package in
+              one compact note so the buyer knows exactly what the yes means.
+            </p>
+            <a class="table-link" href="./deal-desk-board.html">Open Deal Desk</a>
+          </article>
+          <article>
+            <h3>2. Send One Proof Asset If Needed</h3>
+            <p>
+              If confidence is the last blocker, send one matching proof asset
+              in writing instead of setting up a call to explain it.
+            </p>
+            <a class="table-link" href="./close-proof-sequence-board.html">Open Close Proof</a>
+          </article>
+          <article>
+            <h3>3. Lock The Window</h3>
+            <p>
+              Once the buyer is aligned, route them into a written deposit path
+              that makes timing and commitment concrete.
+            </p>
+            <a class="table-link" href="./deposit-lock-board.html">Open Deposit Lock</a>
+          </article>
+          <article>
+            <h3>4. Start After The Hash</h3>
+            <p>
+              After payment, collect the tx hash and minimum brief, then move
+              directly into kickoff without adding another meeting.
+            </p>
+            <a class="table-link" href="./kickoff-board.html">Open Kickoff Board</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Best Async Signals</p>
+            <h2>Use this when the buyer is warm and scheduling is the friction.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Wants Everything In Writing</h3>
+            <p>
+              Some buyers simply prefer written decisions. If the questions are
+              already concrete, keep the deal written.
+            </p>
+          </article>
+          <article>
+            <h3>Cross-Timezone Deal</h3>
+            <p>
+              If time zones are slowing the next step, use a fixed written
+              close path instead of waiting for a calendar window.
+            </p>
+          </article>
+          <article>
+            <h3>Asks For Scope And Payment</h3>
+            <p>
+              If they mostly want a short scope summary and a payment route,
+              the call is probably not the blocker anymore.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Short Async Lines</p>
+            <h2>Use direct written lines that end in a clear next move.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Scope Line</h3>
+            <p>
+              The clean fit is one narrow sprint around the bottleneck we
+              already identified. I can keep the whole close path written.
+            </p>
+          </article>
+          <article>
+            <h3>Proof Line</h3>
+            <p>
+              If useful, I can send one matching proof asset here, then move
+              straight into the deposit step instead of scheduling a call.
+            </p>
+          </article>
+          <article>
+            <h3>Deposit Line</h3>
+            <p>
+              If that scope works, the next useful move is the deposit. Once
+              the tx hash is in, I will move directly into kickoff.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Do Not Use It</p>
+            <h2>Do not force async close when the buyer still needs a different blocker solved.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Scope Is Still Fuzzy</h3>
+            <p>
+              If the buyer cannot yet name the main bottleneck or package, go
+              back to audit or deal-desk logic first.
+            </p>
+            <a class="table-link" href="./offer-audit-board.html">Open Offer Audit</a>
+          </article>
+          <article>
+            <h3>Too Many Stakeholders</h3>
+            <p>
+              If the buyer needs live alignment across several people, a written
+              close may not be enough to keep momentum.
+            </p>
+            <a class="table-link" href="./close-board.html">Open Close Board</a>
+          </article>
+          <article>
+            <h3>Trust Is Still Low</h3>
+            <p>
+              If confidence is still weak, route through proof or trust assets
+              first instead of trying to skip directly to payment.
+            </p>
+            <a class="table-link" href="./proof-to-payment-board.html">Open Proof To Payment</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wallet reveal">
+        <div class="wallet-shell">
+          <div>
+            <p class="eyebrow">Wallet</p>
+            <h2>Written path stays simple: deposit, tx hash, kickoff.</h2>
+            <p class="wallet-note">
+              Preferred asset is USDC. Preferred network is Base or Ethereum.
+              The async path removes scheduling friction, not scope discipline.
+            </p>
+          </div>
+          <div class="wallet-box">
+            <code>0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            <a class="primary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>When the buyer is ready, written clarity can close faster than a call.</p>
+    </footer>
+  </body>
+</html>
