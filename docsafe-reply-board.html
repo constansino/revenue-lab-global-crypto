@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Reply Board</title>
+    <meta
+      name="description"
+      content="A reply handling page for DocSafe outreach: how to respond when buyers ask for details, worry about risk, or are ready to move."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">RB</span>
+        <div>
+          <p>DocSafe Reply</p>
+          <small>Response Handling</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-send-router.html">Send Router</a>
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./pay.html">Wallet Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">After the first reply</p>
+          <h1>Classify the response before you send the next DocSafe link.</h1>
+          <p class="lead">
+            Most reply mistakes happen because the operator reacts to tone
+            instead of identifying the real state: wants detail, worries about
+            risk, or is ready to move. This page compresses those reply paths
+            into fixed next steps.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#reply-cases">Open Reply Cases</a>
+            <a class="secondary-button" href="./docsafe-send-router.html">Open Send Router</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>3</strong>
+              <span>main reply states</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>best next link per state</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>need to improvise the close path</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Reply Rule</p>
+            <h2>Do not answer with all the links at once.</h2>
+            <p>
+              The job after a reply is to reduce uncertainty in the next step,
+              not to dump the entire stack. Send the one page that resolves the
+              current objection or information gap.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Detail</dt>
+                <dd>send best-fit page</dd>
+              </div>
+              <div>
+                <dt>Risk</dt>
+                <dd>send tighter explanation first</dd>
+              </div>
+              <div>
+                <dt>Ready</dt>
+                <dd>send payment path</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="reply-cases" class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Reply Cases</p>
+          <h2>Use the signal, then send the shortest useful next asset.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Wants details</h3>
+            <p>
+              Reply:
+              <br /><br />
+              The short version is that I would tighten the document path around
+              intake, approval, and final handoff instead of trying to replace
+              everything at once.
+              <br /><br />
+              I can send the exact version that fits your workflow.
+            </p>
+            <a class="table-link" href="./docsafe-send-router.html">Open Send Router</a>
+          </article>
+          <article>
+            <h3>Worries about risk</h3>
+            <p>
+              Reply:
+              <br /><br />
+              That is exactly why the workflow stays narrow.
+              <br /><br />
+              The goal is one cleaner intake and approval path, not a broad
+              system rebuild. I can show the version that matches your setup so
+              the scope stays obvious.
+            </p>
+            <a class="table-link" href="./docsafe-flow.html">Open Main Offer</a>
+          </article>
+          <article>
+            <h3>Ready to move</h3>
+            <p>
+              Reply:
+              <br /><br />
+              Makes sense.
+              <br /><br />
+              If the direction works, the next step is the deposit and then I
+              will lock the implementation around the workflow we discussed.
+            </p>
+            <a class="table-link" href="./pay.html">Open Payment</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Fast Map</p>
+          <h2>When the buyer asks one of these, answer with the matching next step.</h2>
+        </div>
+        <div class="dashboard-shell">
+          <div class="dashboard-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Buyer Signal</th>
+                  <th>Meaning</th>
+                  <th>Next Step</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>"What exactly do you mean?"</td>
+                  <td>They want a clearer picture, not the full stack.</td>
+                  <td><a class="table-link" href="./docsafe-send-router.html">Route to the right page</a></td>
+                </tr>
+                <tr>
+                  <td>"How big is this change?"</td>
+                  <td>They are testing scope risk.</td>
+                  <td><a class="table-link" href="./docsafe-flow.html">Send main DocSafe framing</a></td>
+                </tr>
+                <tr>
+                  <td>"Looks good, what is next?"</td>
+                  <td>They are ready for commercial movement.</td>
+                  <td><a class="table-link" href="./pay.html">Send payment page</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Discipline</p>
+          <h2>Use the same sequence every time.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>1. Identify the real question</h3>
+            <p>
+              Do not confuse curiosity, risk concern, and buying intent.
+            </p>
+          </article>
+          <article>
+            <h3>2. Send one next asset</h3>
+            <p>
+              Use the best-fit page, not a pile of links.
+            </p>
+          </article>
+          <article>
+            <h3>3. Advance only after movement</h3>
+            <p>
+              Payment comes after scope acceptance, not before.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Classify reply. Send one asset. Advance with intent.</p>
+    </footer>
+  </body>
+</html>

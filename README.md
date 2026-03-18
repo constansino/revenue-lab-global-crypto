@@ -37,6 +37,7 @@
 - `github-demand-research-20260319.html`: 公开访问版调研页
 - `docsafe-flow.html`: 基于调研结果收敛出的文档工作流 MVP 公共页
 - `docsafe-send-router.html`: DocSafe 的买家路由与发送顺序页
+- `docsafe-reply-board.html`: DocSafe 的回复分类与下一步发送页
 - `docsafe-agency-client-ops.html`: 面向 agency account / client ops 的垂直版公开页
 - `docsafe-legal-signing-ops.html`: 面向 legal / signing ops 的垂直版公开页
 - `docsafe-recruiting-onboarding-ops.html`: 面向 recruiting / onboarding ops 的垂直版公开页

@@ -1,39 +1,39 @@
 # Revenue Lab Update
 
 New live URL:
-https://constansino.github.io/revenue-lab-global-crypto/docsafe-send-router.html
+https://constansino.github.io/revenue-lab-global-crypto/docsafe-reply-board.html
 
 What this update is:
-- Added an execution layer on top of the DocSafe pages.
-- This new page is a send router:
-  which buyer gets which DocSafe page, when to send it, and what to send next.
-- It turns the growing set of vertical landing pages into a usable outreach system instead of a loose page collection.
+- Added the next execution layer after the send router.
+- This new page is a DocSafe reply board:
+  how to respond when the buyer wants details, worries about risk, or is ready to move.
+- It turns the send path into a fuller sequence: send router first, reply board second, payment only after movement.
 
 Decision:
-- Keep the workflow thesis stable, but make the send order explicit.
-- At this point, the bottleneck is less “what page do we have” and more “which page should be sent to which buyer”.
+- Keep the same workflow thesis and routing logic, but add a clearer post-reply step.
+- At this point the bottleneck is not page coverage. It is reply handling discipline.
 
 Why this wedge:
-- A router reduces sending mistakes.
-- It prevents over-sending multiple links too early.
-- It makes the current agency, legal, and recruiting vertical pages easier to use in practice.
+- Most outreach falls apart after the first response, not before.
+- A reply board reduces improvisation and keeps the conversation moving toward one next asset.
+- It makes the current pages easier to use in a real sequence.
 
 What the page now sells:
-- one buyer-to-page routing rule
-- one table for first send
-- one rule for when to send payment
-- one stable path from interest to the right vertical page
+- one reply classification rule
+- one next asset for detail requests
+- one next asset for risk concerns
+- one next asset for ready-to-move replies
 
 Target buyers:
 - internal operator
 - founder doing outreach
 - account lead
-- anyone deciding which DocSafe link to send
+- anyone handling reply-stage conversations
 
 Wallet kept visible for future payment flows:
 - 0xB3e9568A9cbB624403743340358c85CCce130893
 
 Verification:
-- Added the new router page and linked it from the main DocSafe page, navigation, and live links.
+- Added the new reply board and linked it from the router, main DocSafe page, navigation, and live links.
 - Local href validation passed.
 - Page will be checked on GitHub Pages before or after posting.
