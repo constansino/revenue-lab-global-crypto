@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue FAQ Board</title>
+    <meta
+      name="description"
+      content="Public FAQ board for common client questions about payment, timeline, revisions, kickoff, wallet settlement, and delivery scope."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue FAQ Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+        <a class="ghost-button" href="./kickoff-board.html">Kickoff Board</a>
+        <a class="ghost-button" href="./objection-board.html">Objection Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Client question page</p>
+          <h1>Answer the recurring questions once, then reuse the page.</h1>
+          <p class="lead">
+            This page handles repeated client questions about payment, timing,
+            scope, revisions, kickoff, and wallet settlement so you do not keep
+            rewriting the same explanations in every thread.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#faq-list">Open FAQ</a>
+            <a class="secondary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>6</strong>
+              <span>core client questions</span>
+            </li>
+            <li>
+              <strong>72h</strong>
+              <span>standard sprint framing</span>
+            </li>
+            <li>
+              <strong>30%</strong>
+              <span>standard deposit</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">FAQ Rule</p>
+            <h2>Keep answers short and operational.</h2>
+            <p>
+              Good FAQ answers remove friction by clarifying the next step. They
+              do not turn into essays. Each answer should leave the buyer
+              clearer on what happens next.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Payment</dt>
+                <dd>clarify route</dd>
+              </div>
+              <div>
+                <dt>Scope</dt>
+                <dd>clarify boundary</dd>
+              </div>
+              <div>
+                <dt>Timing</dt>
+                <dd>clarify start and delivery</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="faq-list" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">FAQ</p>
+            <h2>Answer the practical questions first.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>How does payment work?</h3>
+            <p>
+              Standard route is a 30 percent deposit paid directly to the
+              wallet, usually in USDC on Base. After payment, send the tx hash
+              and project brief so kickoff can start immediately.
+            </p>
+            <a class="table-link" href="./pay.html">Open Payment Page</a>
+          </article>
+          <article>
+            <h3>When does work start?</h3>
+            <p>
+              Work starts after deposit confirmation and receipt of the minimum
+              kickoff items: tx hash, brief, and any relevant links.
+            </p>
+            <a class="table-link" href="./kickoff-board.html">Open Kickoff Board</a>
+          </article>
+          <article>
+            <h3>How long does delivery take?</h3>
+            <p>
+              The standard framing is a short sprint, usually within 72 hours
+              once scope is clear and kickoff inputs are in.
+            </p>
+          </article>
+          <article>
+            <h3>What is included?</h3>
+            <p>
+              The answer depends on the agreed tier. Scope stays narrow on
+              purpose: one bottleneck, one sprint, one clear delivery boundary.
+            </p>
+            <a class="table-link" href="./offer-comparison-board.html">Open Offer Comparison</a>
+          </article>
+          <article>
+            <h3>How do revisions work?</h3>
+            <p>
+              Revisions apply inside the agreed sprint boundary. New bottlenecks
+              or new deliverables are treated as new scope, not hidden add-ons.
+            </p>
+            <a class="table-link" href="./renewal-board.html">Open Renewal Board</a>
+          </article>
+          <article>
+            <h3>Why direct crypto payment?</h3>
+            <p>
+              Because it is the fastest clean route to start. Direct USDC
+              settlement reduces banking delay, platform custody, and extra
+              process before work begins.
+            </p>
+            <a class="table-link" href="./objection-board.html">Open Objection Board</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Short Answers</p>
+            <h2>Useful one-liners for threads and chats.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Payment Line</h3>
+            <p>
+              Standard route is 30 percent upfront in USDC, then kickoff starts
+              once the tx hash and brief are in.
+            </p>
+          </article>
+          <article>
+            <h3>Timeline Line</h3>
+            <p>
+              It runs as a short sprint, usually around 72 hours once the scope
+              is confirmed.
+            </p>
+          </article>
+          <article>
+            <h3>Scope Line</h3>
+            <p>
+              I keep it narrow on purpose so it stays easy to approve, easy to
+              ship, and easy to measure.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Repeatable answers make the close path smoother.</p>
+    </footer>
+  </body>
+</html>

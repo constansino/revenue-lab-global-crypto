@@ -7,6 +7,7 @@
 - Pricing Board: https://constansino.github.io/revenue-lab-global-crypto/pricing-board.html
 - Offer Comparison: https://constansino.github.io/revenue-lab-global-crypto/offer-comparison-board.html
 - Objection Board: https://constansino.github.io/revenue-lab-global-crypto/objection-board.html
+- FAQ Board: https://constansino.github.io/revenue-lab-global-crypto/faq-board.html
 - Referral Board: https://constansino.github.io/revenue-lab-global-crypto/referral-board.html
 - Case Study Board: https://constansino.github.io/revenue-lab-global-crypto/case-study-board.html
 - Kickoff Board: https://constansino.github.io/revenue-lab-global-crypto/kickoff-board.html
