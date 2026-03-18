@@ -23,6 +23,7 @@
 - Vs Agencies: https://constansino.github.io/revenue-lab-global-crypto/comparison-vs-agencies-board.html
 - ROI Board: https://constansino.github.io/revenue-lab-global-crypto/roi-board.html
 - Why Now: https://constansino.github.io/revenue-lab-global-crypto/why-now-board.html
+- White Label: https://constansino.github.io/revenue-lab-global-crypto/white-label-board.html
 - Referral Board: https://constansino.github.io/revenue-lab-global-crypto/referral-board.html
 - Case Study Board: https://constansino.github.io/revenue-lab-global-crypto/case-study-board.html
 - Kickoff Board: https://constansino.github.io/revenue-lab-global-crypto/kickoff-board.html
