@@ -261,6 +261,7 @@ const depositCount = document.getElementById("depositCount");
 const followupDueCount = document.getElementById("followupDueCount");
 const resetButton = document.getElementById("resetDashboard");
 const exportButton = document.getElementById("exportDashboard");
+const exportCsvButton = document.getElementById("exportCsv");
 const importButton = document.getElementById("importDashboard");
 const importFile = document.getElementById("importFile");
 const dueList = document.getElementById("dueList");
@@ -706,6 +707,58 @@ exportButton?.addEventListener("click", () => {
   const link = document.createElement("a");
   link.href = url;
   link.download = "revenue-ops-dashboard.json";
+  link.click();
+  window.URL.revokeObjectURL(url);
+});
+
+exportCsvButton?.addEventListener("click", () => {
+  const headers = [
+    "priority",
+    "name",
+    "batch",
+    "website",
+    "firstDm",
+    "replied",
+    "followUp",
+    "offerPage",
+    "paymentPage",
+    "lastTouch",
+    "nextAction",
+    "notes",
+  ];
+
+  const escape = (value) => {
+    const text = String(value ?? "");
+    if (text.includes(",") || text.includes('"') || text.includes("\n")) {
+      return `"${text.replace(/"/g, '""')}"`;
+    }
+    return text;
+  };
+
+  const rows = state.map((item) => [
+    item.priority,
+    item.name,
+    item.batch,
+    item.website,
+    item.firstDm,
+    item.replied,
+    item.followUp,
+    item.offerPage,
+    item.paymentPage,
+    item.lastTouch || "",
+    nextActionMeta(item).label,
+    item.notes || "",
+  ]);
+
+  const csv = [headers, ...rows]
+    .map((row) => row.map(escape).join(","))
+    .join("\n");
+
+  const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
+  const url = window.URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "revenue-ops-dashboard.csv";
   link.click();
   window.URL.revokeObjectURL(url);
 });
