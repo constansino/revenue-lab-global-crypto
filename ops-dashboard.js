@@ -155,6 +155,32 @@ const dueMeta = (item) => {
   };
 };
 
+const nextActionMeta = (item) => {
+  const due = dueMeta(item);
+
+  if (!item.firstDm) {
+    return { label: "Send first DM", state: "future" };
+  }
+
+  if (item.replied && !item.offerPage) {
+    return { label: "Send teardown + opener", state: "today" };
+  }
+
+  if (item.replied && item.offerPage && !item.paymentPage) {
+    return { label: "Advance to deposit", state: "today" };
+  }
+
+  if (!item.replied && !item.followUp && due && (due.overdue || due.dueToday)) {
+    return { label: "Send follow-up", state: due.overdue ? "overdue" : "today" };
+  }
+
+  if (item.paymentPage) {
+    return { label: "Waiting on deposit", state: "future" };
+  }
+
+  return { label: "No action now", state: "future" };
+};
+
 const markSentTodayButton = (item) => {
   const button = document.createElement("button");
   button.type = "button";
@@ -189,6 +215,15 @@ const actionLinks = (item) => {
   });
 
   return wrap;
+};
+
+const nextActionBadge = (item) => {
+  const meta = nextActionMeta(item);
+  const span = document.createElement("span");
+  span.className = "due-badge";
+  span.dataset.state = meta.state;
+  span.textContent = meta.label;
+  return span;
 };
 
 const render = () => {
@@ -242,6 +277,10 @@ const render = () => {
     const due = document.createElement("td");
     due.appendChild(dueLabel(item));
     row.appendChild(due);
+
+    const nextAction = document.createElement("td");
+    nextAction.appendChild(nextActionBadge(item));
+    row.appendChild(nextAction);
 
     const notes = document.createElement("td");
     notes.appendChild(notesInput(item));
