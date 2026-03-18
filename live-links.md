@@ -4,6 +4,7 @@
 - Command Center: https://constansino.github.io/revenue-lab-global-crypto/command-center.html
 - Kickoff Board: https://constansino.github.io/revenue-lab-global-crypto/kickoff-board.html
 - Brief Board: https://constansino.github.io/revenue-lab-global-crypto/brief-board.html
+- Delivery Board: https://constansino.github.io/revenue-lab-global-crypto/delivery-board.html
 - Launchpad: https://constansino.github.io/revenue-lab-global-crypto/launchpad.html
 - Send Board: https://constansino.github.io/revenue-lab-global-crypto/send-board.html
 - Reply Board: https://constansino.github.io/revenue-lab-global-crypto/reply-board.html
