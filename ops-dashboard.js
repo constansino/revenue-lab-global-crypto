@@ -262,6 +262,8 @@ const followupDueCount = document.getElementById("followupDueCount");
 const resetButton = document.getElementById("resetDashboard");
 const exportButton = document.getElementById("exportDashboard");
 const exportCsvButton = document.getElementById("exportCsv");
+const copyDmQueueButton = document.getElementById("copyDmQueue");
+const copyRepliedQueueButton = document.getElementById("copyRepliedQueue");
 const copyDueListButton = document.getElementById("copyDueList");
 const importButton = document.getElementById("importDashboard");
 const importFile = document.getElementById("importFile");
@@ -785,6 +787,45 @@ copyDueListButton?.addEventListener("click", async () => {
     copyDueListButton.textContent = "Copied";
     window.setTimeout(() => {
       copyDueListButton.textContent = "Copy Due List";
+    }, 900);
+  } catch (_error) {
+    window.alert(text);
+  }
+});
+
+copyDmQueueButton?.addEventListener("click", async () => {
+  const items = state
+    .filter((item) => !item.firstDm)
+    .sort((a, b) => a.priority - b.priority)
+    .map((item) => `${item.priority}. ${item.name} (${item.batch})`);
+
+  const text = items.length === 0 ? "No targets currently need a first DM." : `DM Queue\n\n${items.join("\n")}`;
+
+  try {
+    await navigator.clipboard.writeText(text);
+    copyDmQueueButton.textContent = "Copied";
+    window.setTimeout(() => {
+      copyDmQueueButton.textContent = "Copy DM Queue";
+    }, 900);
+  } catch (_error) {
+    window.alert(text);
+  }
+});
+
+copyRepliedQueueButton?.addEventListener("click", async () => {
+  const items = state
+    .filter((item) => item.replied && !item.paymentPage)
+    .sort((a, b) => a.priority - b.priority)
+    .map((item) => `${item.priority}. ${item.name} (${item.batch}) - ${nextActionMeta(item).label}`);
+
+  const text =
+    items.length === 0 ? "No active replied targets right now." : `Replied Queue\n\n${items.join("\n")}`;
+
+  try {
+    await navigator.clipboard.writeText(text);
+    copyRepliedQueueButton.textContent = "Copied";
+    window.setTimeout(() => {
+      copyRepliedQueueButton.textContent = "Copy Replied Queue";
     }, 900);
   } catch (_error) {
     window.alert(text);
