@@ -76,6 +76,8 @@
 - `live-reply-checklist.md`: 收到回复后的现场执行顺序
 - `deal-advance-pack.md`: 从有兴趣推进到明确 scope 的短消息模板
 - `deposit-request-pack.md`: 对方同意后直接要订金的模板
+- `ops-dashboard.html`: 本地外联执行控制台
+- `ops-dashboard.js`: 控制台逻辑和本地状态存储
 
 ## 立即预览
 

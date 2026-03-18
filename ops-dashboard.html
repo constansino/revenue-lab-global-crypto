@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Ops Dashboard</title>
+    <meta
+      name="description"
+      content="Track outreach status, replies, follow-ups, and deposit progress for top-priority targets."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Ops Dashboard</small>
+        </div>
+      </div>
+      <button id="resetDashboard" class="ghost-button" type="button">
+        Reset Local Data
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Execution Console</p>
+          <h1>Track outreach like a pipeline, not a to-do list.</h1>
+          <p class="lead">
+            This local dashboard tracks the top 9 targets across three batches.
+            Status is stored in your browser only. Use it to keep momentum and
+            stop losing track of replies, follow-ups, and deposit asks.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#pipeline">Open Pipeline</a>
+            <a class="secondary-button" href="./master-send-pack.md">Open Message Pack</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong id="sentCount">0</strong>
+              <span>first DMs sent</span>
+            </li>
+            <li>
+              <strong id="replyCount">0</strong>
+              <span>targets replied</span>
+            </li>
+            <li>
+              <strong id="depositCount">0</strong>
+              <span>payment pages sent</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Priority Rule</p>
+            <h2>Batch 1 first. Batch 2 next.</h2>
+            <p>
+              Do not jump around randomly. The fastest path is to finish
+              high-probability service and pricing targets first, then move to
+              crypto-native and creator-tool targets.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Batch 1</dt>
+                <dd>Supercharged, Digital Growth, Upgrow</dd>
+              </div>
+              <div>
+                <dt>Batch 2</dt>
+                <dd>Privy, Dynamic, OnchainInvoice</dd>
+              </div>
+              <div>
+                <dt>Batch 3</dt>
+                <dd>Sitekick, Newsletter Compass, Creatomate</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="pipeline" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Pipeline</p>
+          <h2>Update status after every touch.</h2>
+        </div>
+        <div class="dashboard-shell">
+          <div class="dashboard-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Priority</th>
+                  <th>Target</th>
+                  <th>Batch</th>
+                  <th>First DM</th>
+                  <th>Reply</th>
+                  <th>Follow-Up</th>
+                  <th>Offer Page</th>
+                  <th>Payment Page</th>
+                </tr>
+              </thead>
+              <tbody id="pipelineBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Track sends. Track replies. Track money.</p>
+    </footer>
+
+    <script src="./ops-dashboard.js"></script>
+  </body>
+</html>

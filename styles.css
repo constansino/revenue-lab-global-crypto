@@ -279,6 +279,42 @@ h2 {
   padding: 1.4rem;
 }
 
+.dashboard-shell {
+  background: var(--paper);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: var(--shadow);
+  border-radius: 1.8rem;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.dashboard-table table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  text-align: left;
+  padding: 0.9rem 0.75rem;
+  border-bottom: 1px solid rgba(17, 32, 24, 0.08);
+}
+
+.dashboard-table th {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  letter-spacing: 0.06em;
+}
+
+.dashboard-table input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--accent);
+}
+
 .proof-grid h3,
 .package-title,
 .outreach-grid h3 {
