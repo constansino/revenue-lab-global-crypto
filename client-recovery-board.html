@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Client Recovery Board</title>
+    <meta
+      name="description"
+      content="Public client recovery board for saving at-risk clients, unsticking approvals, collecting delayed balances, and closing troubled projects cleanly."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Client Recovery Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./balance-collection-board.html">Balance Collection</a>
+        <a class="ghost-button" href="./delivery-proof-pack.html">Delivery Proof Pack</a>
+        <a class="ghost-button" href="./client-status-board.html">Client Status</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">At-risk client page</p>
+          <h1>Stabilize the client, protect the scope, and recover the money path.</h1>
+          <p class="lead">
+            This page is for projects that are wobbling near the end: approval
+            is slow, balance payment is drifting, confidence is softening, or
+            the client keeps circling without a clear close-out step. The goal
+            is to reduce risk, not to keep improvising.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#recovery-map">Open Recovery Map</a>
+            <a class="secondary-button" href="./balance-collection-board.html">Open Balance Collection</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>4</strong>
+              <span>recovery situations</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>clean next move</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>reason to reopen scope</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Recovery Rule</p>
+            <h2>When the client feels unstable, shrink the conversation back to value, approval, and payment.</h2>
+            <p>
+              Recovery works when the client sees what shipped, what decision is
+              needed now, and what remains outside the original scope. Do not
+              let anxiety turn into endless new requests.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Restate</dt>
+                <dd>what shipped</dd>
+              </div>
+              <div>
+                <dt>Clarify</dt>
+                <dd>what is still owed</dd>
+              </div>
+              <div>
+                <dt>Protect</dt>
+                <dd>the boundary</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="recovery-map" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Recovery Map</p>
+            <h2>Use the response that matches the exact way the client is slipping.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Approval Is Stalled</h3>
+            <p>
+              If the client is circling without approving, collapse the review
+              down to one summary, one decision, and one light revision window.
+            </p>
+          </article>
+          <article>
+            <h3>Balance Is Delayed</h3>
+            <p>
+              If the remaining payment is drifting, tie the request back to the
+              delivered assets and the agreed completion point.
+            </p>
+          </article>
+          <article>
+            <h3>Confidence Is Softening</h3>
+            <p>
+              If the client sounds less certain, route back through the delivery
+              proof pack so the result is visible again.
+            </p>
+          </article>
+          <article>
+            <h3>Scope Is Reopening</h3>
+            <p>
+              If new asks appear during close-out, separate them from the
+              current sprint instead of letting them block recovery.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Stabilization Moves</p>
+            <h2>Do the smallest thing that restores clarity and motion.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Resend The Delivery Summary</h3>
+            <p>
+              Re-ground the conversation in the shipped outcome, not in every
+              task or every message that happened during the sprint.
+            </p>
+          </article>
+          <article>
+            <h3>Offer One Light Revision</h3>
+            <p>
+              If the client needs a small adjustment inside scope, make it
+              explicit and final instead of letting ambiguity grow.
+            </p>
+          </article>
+          <article>
+            <h3>Reset The Decision</h3>
+            <p>
+              Ask for one clean decision now: approve and pay, request one light
+              revision, or move new needs into a new sprint.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Short Recovery Lines</p>
+            <h2>Keep the tone calm, direct, and commercially anchored.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Approval Line</h3>
+            <p>
+              The agreed sprint assets are delivered. If they look right, the
+              next step is approval and the remaining balance. If one light
+              revision is still needed inside scope, send it now.
+            </p>
+          </article>
+          <article>
+            <h3>Balance Line</h3>
+            <p>
+              The easiest next move is to close the current sprint cleanly,
+              settle the remaining balance, and then decide whether there is any
+              new work worth scoping separately.
+            </p>
+          </article>
+          <article>
+            <h3>Boundary Line</h3>
+            <p>
+              If there is another bottleneck you want fixed after this, I can
+              scope that as a separate sprint without muddying the current one.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Next Routes</p>
+            <h2>Route the recovered client by what happens after close-out.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Needs Balance Collection</h3>
+            <p>
+              If approval is basically there and money is the main step, route
+              straight into the balance collection flow.
+            </p>
+            <a class="table-link" href="./balance-collection-board.html">Open Balance Collection</a>
+          </article>
+          <article>
+            <h3>Needs Proof Reset</h3>
+            <p>
+              If confidence is the blocker, route into the delivery proof pack
+              instead of re-explaining the whole project manually.
+            </p>
+            <a class="table-link" href="./delivery-proof-pack.html">Open Delivery Proof Pack</a>
+          </article>
+          <article>
+            <h3>Needs New Scope</h3>
+            <p>
+              If the client wants more than a close-out fix, route the new work
+              into a fresh sprint instead of absorbing it here.
+            </p>
+            <a class="table-link" href="./renewal-board.html">Open Renewal Board</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Client recovery works best when you restore clarity before you try to restore momentum.</p>
+    </footer>
+  </body>
+</html>
