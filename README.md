@@ -70,6 +70,8 @@
 - `batch3-dm-pack.md`: 总优先级第 7-9 个目标的可直接复制私信
 - `batch3-followup-pack.md`: 总优先级第 7-9 个目标的无回复跟进
 - `batch3-closers.md`: 总优先级第 7-9 个目标的回复承接和 closing
+- `master-send-pack.md`: 前三批 9 个目标合并后的单文件总发送包
+- `master-send-checklist.csv`: 前三批 9 个目标的总跟踪表
 
 ## 立即预览
 
