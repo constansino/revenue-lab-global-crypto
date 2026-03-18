@@ -35,6 +35,8 @@
 - `global-crypto-profit-map.md`: 全球获客和链上收款路径
 - `global-posts.md`: 可直接发到全球平台的帖子和私信模板
 - `live-links.md`: 已上线公开网址
+- `global-prospects.csv`: 全球潜在客户记录模板
+- `global-prospecting-playbook.md`: 全球冷启动筛选和私信规则
 
 ## 立即预览
 

@@ -1,111 +1,164 @@
 # Global Launch Posts
 
-## Indie Hackers Post
+## Indie Hackers First Post
 
-I stopped thinking about AI services as “custom software” and started packaging them as 72-hour automation sprints.
+Over the last few weeks I kept noticing the same thing:
 
-The offer is simple:
+small teams say they want “AI automation”, but what they actually need is one tighter workflow they can start using this week.
 
-- one painful workflow
-- one landing page
-- one pricing structure
-- one outreach kit
-- one direct crypto payment flow
+So I stopped framing the offer as broad consulting and packaged it as a 72-hour automation sprint.
 
-The goal is not to build a full SaaS product on day one.
+The sprint is intentionally narrow:
 
-The goal is to help a small team or founder close faster, follow up faster, or package a service clearly enough to sell now.
+- one workflow bottleneck
+- one clear outcome
+- fixed pricing
+- a direct crypto deposit option
 
-I put together a lean landing page and direct deposit page so clients can pay in USDC and get started without platform friction.
+That feels easier to buy than “let’s hop on a call and scope a big project”.
 
-Live pages:
+I put together a simple public page for it here:
 
-- https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html
-- https://constansino.github.io/revenue-lab-global-crypto/pay.html
+https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html
 
-Curious whether other founders here have seen better conversion from “small sprint” offers than from open-ended consulting.
+And a direct payment page here:
+
+https://constansino.github.io/revenue-lab-global-crypto/pay.html
+
+Still early, but my bet is that productized AI service pages will convert better than vague agency language.
+
+If you have sold services this way before, I would like to know what part mattered most:
+
+- speed
+- fixed scope
+- fixed price
+- better proof
+
+## Indie Hackers Reply If People Ask What You Actually Do
+
+Fair question.
+
+The practical version is:
+
+I take one messy business workflow, tighten the offer around it, package the pricing, write the page, shape the outreach, and make it easy to pay a deposit in crypto.
+
+So instead of “we do AI”, the client gets something they can actually buy.
 
 ## Farcaster Cast Thread
 
 ### Cast 1
 
-Packaging AI work as 72-hour automation sprints feels stronger than vague “AI consulting”.
+I think “AI automation sprint” is a better offer than “AI consulting”.
 
 ### Cast 2
 
-Tighter scope:
+Why:
 
-- one workflow
-- one outcome
-- one price
-- one deposit
+- narrower scope
+- faster yes/no decision
+- easier pricing
+- easier delivery
 
 ### Cast 3
 
-I’m testing direct crypto settlement instead of waiting on platform rails.
+Current model is simple:
+
+one workflow bottleneck
+one fixed package
+one deposit
+one short delivery window
 
 ### Cast 4
 
-Current stack:
+I also prefer direct crypto settlement for small projects.
 
-- landing page
-- payment page
-- outreach templates
-- workflow teardown offer
+Less setup.
+Less friction.
+Faster start.
 
 ### Cast 5
 
-If you run a small team and have a messy intake / quoting / follow-up flow, I can map the bottleneck fast.
-
-Link:
-
+Offer page:
 https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html
 
-## Hacker News Show HN Style Draft
+Payment page:
+https://constansino.github.io/revenue-lab-global-crypto/pay.html
 
-Show HN: A simple crypto-native landing page for selling 72-hour AI automation sprints
+### Cast 6
 
-I built a small static site to test a narrower way of selling AI services.
+If you run a small team and your intake / follow-up / quoting flow is messy, I can probably spot the leak pretty fast.
 
-Instead of pitching a broad automation agency, the offer is packaged as a short sprint with:
+## Farcaster Reply If Someone Likes The Idea
 
-- a clear bottleneck
-- fixed price tiers
+The real constraint is not building the workflow.
+
+It is making the scope small enough that someone can say yes without a 2-week sales cycle.
+
+## Hacker News Show HN Draft
+
+Show HN: A small static site for selling short AI automation sprints with direct crypto payment
+
+I built this to test a narrower way of selling automation work.
+
+Instead of presenting an open-ended agency offer, the site frames the work as a short sprint with:
+
+- one bottleneck
+- fixed packages
 - direct crypto deposit instructions
-- lightweight delivery docs
+- simple delivery flow
 
-I wanted something small teams could buy quickly without a long sales cycle or a big platform setup.
+Site:
+https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html
 
-Still early, but I think productized service pages with direct settlement may work better than generic “book a call” sites.
+Payment page:
+https://constansino.github.io/revenue-lab-global-crypto/pay.html
 
-Interested in feedback on where this feels too rough or too abstract.
+The idea is that small teams often do not need a big custom system first.
+They need one painful workflow tightened enough to buy quickly and use quickly.
 
-Live link:
+Interested in criticism on the positioning more than the visual design.
+
+## Cold DM Version A
+
+I checked your current flow and noticed one place where the next step is still vague for an inbound lead.
+
+I package fixes like that as a short automation sprint with fixed pricing and a direct crypto deposit option.
+
+If useful, I can send a 3-point teardown of the bottleneck I spotted.
 
 https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html
 
-## Cold DM
+## Cold DM Version B
 
-I noticed your team still has a manual step in lead intake / quoting / follow-up.
+Noticed a gap in how your current offer moves from interest to the next clear step.
 
-I package fixes like that as a 72-hour automation sprint with a clear scope, fixed price, and direct crypto payment option.
+I work on that as a narrow sprint:
 
-If useful, I can send a short teardown of the bottleneck I spotted.
+- tighten the page
+- tighten the flow
+- tighten the pricing
+
+If you want, I can send the exact issue I saw.
+
+## Short Email Version A
+
+Subject: one workflow gap I noticed
+
+I spent a few minutes on your current flow and found one place where a lead or buyer could stall before the next clear action.
+
+I package this type of fix as a 72-hour automation sprint with fixed pricing and direct crypto payment.
+
+If useful, I can send a short teardown and the package options.
 
 Offer page:
-
 https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html
 
-## Short Email
+## Short Email Version B
 
-Subject: One workflow I would tighten this week
+Subject: quick teardown of your intake / follow-up flow
 
-I checked your current flow and found one place where leads or requests can slow down before the next clear step.
+Your current setup looks close, but there is still one point where momentum can drop between interest and response.
 
-I package this as a short automation sprint with fixed pricing and a direct crypto deposit option.
+I help tighten that kind of bottleneck as a small fixed-scope sprint.
 
-If useful, I can send a 3-point teardown and the pricing tiers.
-
-Offer:
-
-https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html
+If you want, I can send over the issue I noticed and how I would package the fix.
