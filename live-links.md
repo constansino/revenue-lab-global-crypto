@@ -81,6 +81,7 @@
 - Partner Intro Repeat: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-channel-repeat-board.html
 - Partner Intro Renewal: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-renewal-board.html
 - Partner Intro Retainer: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-retainer-board.html
+- Partner Intro Conversion: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-retainer-conversion-board.html
 - Partner Intro Stability: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-retainer-stability-board.html
 - Partner Handoff: https://constansino.github.io/revenue-lab-global-crypto/partner-handoff-board.html
 - Partner Activation: https://constansino.github.io/revenue-lab-global-crypto/partner-activation-board.html
