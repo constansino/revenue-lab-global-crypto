@@ -18,6 +18,11 @@ The goal is to help a small team or founder close faster, follow up faster, or p
 
 I put together a lean landing page and direct deposit page so clients can pay in USDC and get started without platform friction.
 
+Live pages:
+
+- https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html
+- https://constansino.github.io/revenue-lab-global-crypto/pay.html
+
 Curious whether other founders here have seen better conversion from “small sprint” offers than from open-ended consulting.
 
 ## Farcaster Cast Thread
@@ -52,6 +57,10 @@ Current stack:
 
 If you run a small team and have a messy intake / quoting / follow-up flow, I can map the bottleneck fast.
 
+Link:
+
+https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html
+
 ## Hacker News Show HN Style Draft
 
 Show HN: A simple crypto-native landing page for selling 72-hour AI automation sprints
@@ -71,6 +80,10 @@ Still early, but I think productized service pages with direct settlement may wo
 
 Interested in feedback on where this feels too rough or too abstract.
 
+Live link:
+
+https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html
+
 ## Cold DM
 
 I noticed your team still has a manual step in lead intake / quoting / follow-up.
@@ -78,6 +91,10 @@ I noticed your team still has a manual step in lead intake / quoting / follow-up
 I package fixes like that as a 72-hour automation sprint with a clear scope, fixed price, and direct crypto payment option.
 
 If useful, I can send a short teardown of the bottleneck I spotted.
+
+Offer page:
+
+https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html
 
 ## Short Email
 
@@ -88,3 +105,7 @@ I checked your current flow and found one place where leads or requests can slow
 I package this as a short automation sprint with fixed pricing and a direct crypto deposit option.
 
 If useful, I can send a 3-point teardown and the pricing tiers.
+
+Offer:
+
+https://constansino.github.io/revenue-lab-global-crypto/crypto-native.html

@@ -34,6 +34,7 @@
 - `proposal-template.md`: 可直接发送的简版报价模板
 - `global-crypto-profit-map.md`: 全球获客和链上收款路径
 - `global-posts.md`: 可直接发到全球平台的帖子和私信模板
+- `live-links.md`: 已上线公开网址
 
 ## 立即预览
 
