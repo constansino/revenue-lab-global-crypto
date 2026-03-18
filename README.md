@@ -51,6 +51,8 @@
 - `wave4-top3-priority.csv`: 第四波最优先 3 个目标顺序
 - `wave4-reply-closers.md`: 第四波 3 个目标回复后的承接句和 closing
 - `wave4-send-order.md`: 第四波 3 个目标的发送节奏
+- `today-send-list.md`: 当前最强 6 个目标的即发清单
+- `today-checklist.csv`: 今日发送和回复跟踪表
 
 ## 立即预览
 
