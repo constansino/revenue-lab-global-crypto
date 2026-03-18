@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Payment Guide Board</title>
+    <meta
+      name="description"
+      content="Public payment guide board for first-time crypto buyers: confirm network, copy the wallet, send the deposit safely, and share the tx hash for kickoff."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Payment Guide Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+        <a class="ghost-button" href="./faq-board.html">FAQ Board</a>
+        <a class="ghost-button" href="./deposit-lock-board.html">Deposit Lock</a>
+        <a class="ghost-button" href="./kickoff-board.html">Kickoff Board</a>
+        <a class="ghost-button" href="./approval-pack-board.html">Approval Pack</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">First-time wallet payment guide</p>
+          <h1>If the buyer is ready but new to crypto payment, keep the instructions brutally simple.</h1>
+          <p class="lead">
+            This page is for first-time or low-confidence crypto payers. The
+            goal is not to teach everything about wallets. The goal is to help
+            them send the correct deposit on the correct network to the correct
+            address, then share the tx hash so work can start.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#payment-map">Open Payment Map</a>
+            <a class="secondary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>USDC</strong>
+              <span>preferred asset</span>
+            </li>
+            <li>
+              <strong>Base</strong>
+              <span>preferred network</span>
+            </li>
+            <li>
+              <strong>Hash</strong>
+              <span>required after payment</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Guide Rule</p>
+            <h2>Fewer instructions close better than a full crypto lecture.</h2>
+            <p>
+              Buyers usually do not need a deep wallet tutorial. They need the
+              minimum safe route: correct asset, correct network, correct
+              address, and one confirmation step after sending.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Check</dt>
+                <dd>asset and network</dd>
+              </div>
+              <div>
+                <dt>Copy</dt>
+                <dd>the exact address</dd>
+              </div>
+              <div>
+                <dt>Send</dt>
+                <dd>then share the hash</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="payment-map" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Payment Map</p>
+            <h2>Use the same simple sequence every time.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>1. Confirm The Deposit Amount</h3>
+            <p>
+              Make sure the buyer knows the agreed deposit amount before they
+              open the wallet. Do not leave the payment number vague.
+            </p>
+            <a class="table-link" href="./pay.html">Open Payment Page</a>
+          </article>
+          <article>
+            <h3>2. Confirm The Network</h3>
+            <p>
+              Preferred route is USDC on Base. Fallback route is USDC or ETH on
+              Ethereum. The network needs to match on both sides.
+            </p>
+          </article>
+          <article>
+            <h3>3. Copy The Exact Wallet</h3>
+            <p>
+              The buyer should copy the address directly and compare the first
+              and last characters before sending.
+            </p>
+          </article>
+          <article>
+            <h3>4. Send The Payment</h3>
+            <p>
+              If they are unfamiliar, they can send a very small test first,
+              then the main deposit. After the transfer, send the tx hash.
+            </p>
+            <a class="table-link" href="./kickoff-board.html">Open Kickoff Board</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wallet reveal">
+        <div class="wallet-shell">
+          <div>
+            <p class="eyebrow">Wallet</p>
+            <h2>Preferred route: USDC on Base.</h2>
+            <p class="wallet-note">
+              Fallback route is USDC or ETH on Ethereum if agreed first. Use
+              the same network on both sides and send the tx hash after payment.
+            </p>
+          </div>
+          <div class="wallet-box">
+            <code>0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            <a class="primary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Common Mistakes</p>
+            <h2>Most payment friction comes from a few repeated errors.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Wrong Network</h3>
+            <p>
+              Sending on an unsupported network creates avoidable recovery risk.
+              Confirm Base or Ethereum before funds move.
+            </p>
+          </article>
+          <article>
+            <h3>Wrong Asset</h3>
+            <p>
+              Use the agreed asset only. Preferred is USDC for stable pricing,
+              not a random token held in the wallet.
+            </p>
+          </article>
+          <article>
+            <h3>No Tx Hash Sent</h3>
+            <p>
+              Payment is not operationally complete until the tx hash is shared
+              and kickoff can begin.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Short Payment Lines</p>
+            <h2>Use concise lines when the buyer just needs the next step.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Network Line</h3>
+            <p>
+              Preferred route is USDC on Base. If you want Ethereum instead,
+              confirm it first so the network matches on both sides.
+            </p>
+          </article>
+          <article>
+            <h3>Safety Line</h3>
+            <p>
+              Copy the wallet directly, check the first and last characters,
+              and if you are unfamiliar, send a tiny test first.
+            </p>
+          </article>
+          <article>
+            <h3>Kickoff Line</h3>
+            <p>
+              After the payment lands, send the tx hash and the project brief.
+              That is enough to move into kickoff.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Best Next Routes</p>
+            <h2>Route to the shortest page that solves the next blocker.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Need Scope First</h3>
+            <p>
+              If the buyer still needs package clarity, route back to the offer
+              or deal desk before sending them to pay.
+            </p>
+            <a class="table-link" href="./crypto-native.html">Open Offer Page</a>
+          </article>
+          <article>
+            <h3>Need Internal Sign-Off</h3>
+            <p>
+              If the buyer still needs approval, send the approval pack before
+              trying to walk them through wallet steps.
+            </p>
+            <a class="table-link" href="./approval-pack-board.html">Open Approval Pack</a>
+          </article>
+          <article>
+            <h3>Ready Now</h3>
+            <p>
+              If the buyer already understands the payment path, route back to
+              the main payment page and collect the deposit.
+            </p>
+            <a class="table-link" href="./pay.html">Open Payment Page</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Correct asset. Correct network. Correct wallet. Then send the hash.</p>
+    </footer>
+  </body>
+</html>
