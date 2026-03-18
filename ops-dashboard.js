@@ -267,6 +267,7 @@ const exportButton = document.getElementById("exportDashboard");
 const exportCsvButton = document.getElementById("exportCsv");
 const copyDmQueueButton = document.getElementById("copyDmQueue");
 const copyRepliedQueueButton = document.getElementById("copyRepliedQueue");
+const copyTodayPlanButton = document.getElementById("copyTodayPlan");
 const copyDueListButton = document.getElementById("copyDueList");
 const importButton = document.getElementById("importDashboard");
 const importFile = document.getElementById("importFile");
@@ -843,6 +844,70 @@ copyRepliedQueueButton?.addEventListener("click", async () => {
     copyRepliedQueueButton.textContent = "Copied";
     window.setTimeout(() => {
       copyRepliedQueueButton.textContent = "Copy Replied Queue";
+    }, 900);
+  } catch (_error) {
+    window.alert(text);
+  }
+});
+
+copyTodayPlanButton?.addEventListener("click", async () => {
+  const sorted = [...state].sort((a, b) => {
+    const rankDiff = sortRank(a) - sortRank(b);
+    if (rankDiff !== 0) return rankDiff;
+    return a.priority - b.priority;
+  });
+
+  const lines = [];
+
+  const addSection = (title, items, mapFn) => {
+    if (items.length === 0) return;
+    lines.push(title, "");
+    items.forEach((item, index) => {
+      lines.push(`${index + 1}. ${mapFn(item)}`);
+    });
+    lines.push("");
+  };
+
+  addSection(
+    "Advance To Deposit",
+    sorted.filter((item) => nextActionMeta(item).label === "Advance to deposit"),
+    (item) => `${item.name} (${item.batch})`
+  );
+
+  addSection(
+    "Reply With Teardown",
+    sorted.filter((item) => nextActionMeta(item).label === "Send teardown + opener"),
+    (item) => `${item.name} (${item.batch})`
+  );
+
+  addSection(
+    "Send Follow-Up",
+    sorted.filter((item) => nextActionMeta(item).label === "Send follow-up"),
+    (item) => `${item.name} (${item.batch})`
+  );
+
+  addSection(
+    "Send First DM",
+    sorted.filter((item) => nextActionMeta(item).label === "Send first DM"),
+    (item) => `${item.name} (${item.batch})`
+  );
+
+  addSection(
+    "Waiting On Deposit",
+    sorted.filter((item) => nextActionMeta(item).label === "Waiting on deposit"),
+    (item) => `${item.name} (${item.batch})`
+  );
+
+  const text =
+    lines.length === 0
+      ? "No actions queued right now."
+      : `Today Plan\n\n${lines.join("\n").trim()}`;
+
+  try {
+    await navigator.clipboard.writeText(text);
+    copyTodayPlanButton.textContent = "Copied";
+    window.setTimeout(() => {
+      copyTodayPlanButton.textContent = "Copy Today Plan";
     }, 900);
   } catch (_error) {
     window.alert(text);
