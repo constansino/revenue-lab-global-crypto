@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Kickoff Board</title>
+    <meta
+      name="description"
+      content="Public kickoff board for what happens after payment: tx hash, project brief, links, scope confirmation, and sprint start."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Kickoff Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./close-board.html">Close Board</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Post-payment startup page</p>
+          <h1>After payment, reduce friction and start fast.</h1>
+          <p class="lead">
+            This page handles the step that usually creates delay after payment:
+            what to send, what gets confirmed, and what is enough to begin the
+            sprint without extra back-and-forth.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#kickoff-path">Open Kickoff Path</a>
+            <a class="secondary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>tx hash required</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>project brief required</span>
+            </li>
+            <li>
+              <strong>72h</strong>
+              <span>delivery framing stays intact</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Kickoff Rule</p>
+            <h2>Do not over-collect before starting.</h2>
+            <p>
+              You only need enough to confirm the paid scope and begin. The
+              minimum package is transaction hash, brief, and any relevant links.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Need</dt>
+                <dd>tx hash</dd>
+              </div>
+              <div>
+                <dt>Need</dt>
+                <dd>project brief</dd>
+              </div>
+              <div>
+                <dt>Optional</dt>
+                <dd>relevant page links</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="kickoff-path" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Kickoff Path</p>
+            <h2>Use the same path every time after deposit.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>1. Confirm Payment</h3>
+            <p>
+              Ask for the transaction hash and confirm that the deposit landed
+              on the correct wallet and network.
+            </p>
+          </article>
+          <article>
+            <h3>2. Collect Brief</h3>
+            <p>
+              Get the project brief in the shortest usable form. Do not turn it
+              into a long discovery phase.
+            </p>
+          </article>
+          <article>
+            <h3>3. Start Sprint</h3>
+            <p>
+              Confirm scope in one short message and begin the sprint
+              deliverables.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">What To Send</p>
+            <h2>Keep the client request small and explicit.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Standard Request</h3>
+            <p>
+              After payment, send:
+              <br />
+              tx hash
+              <br />
+              project brief
+              <br />
+              any relevant page links
+              <br />
+              <br />
+              That is enough for me to begin.
+            </p>
+          </article>
+          <article>
+            <h3>Short Version</h3>
+            <p>
+              Send the tx hash after payment and the project brief. I will take
+              it from there.
+            </p>
+          </article>
+          <article>
+            <h3>If They Ask What Happens Next</h3>
+            <p>
+              After payment:
+              <br />
+              1. you send the tx hash
+              <br />
+              2. you send the project brief
+              <br />
+              3. I confirm scope
+              <br />
+              4. I start on the sprint deliverables
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Starter Scope</p>
+            <h2>Use the same core framing at kickoff.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Current Leak</h3>
+            <p>
+              Leads can request a quote or make contact without getting a fast
+              next step, so warm intent cools while the team is busy.
+            </p>
+          </article>
+          <article>
+            <h3>What Ships</h3>
+            <p>
+              One follow-up message flow, one intake summary structure, one
+              quote-prep or callback handoff, and one owner-facing SOP.
+            </p>
+          </article>
+          <article>
+            <h3>Commercial Frame</h3>
+            <p>
+              Package: `$799`
+              <br />
+              Deposit to start: `30%`
+              <br />
+              Remaining balance due on delivery
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wallet reveal">
+        <div class="wallet-shell">
+          <div>
+            <p class="eyebrow">Wallet</p>
+            <h2>Payment still routes through the same wallet path.</h2>
+            <p class="wallet-note">
+              Preferred asset is USDC. Preferred network is Base or Ethereum.
+              This page starts after payment, not before it.
+            </p>
+          </div>
+          <div class="wallet-box">
+            <code>0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            <a class="primary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Payment confirmed. Brief received. Sprint starts.</p>
+    </footer>
+  </body>
+</html>
