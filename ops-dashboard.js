@@ -369,6 +369,17 @@ const dueMeta = (item) => {
   };
 };
 
+const sortRank = (item) => {
+  const next = nextActionMeta(item);
+  if (next.label === "Advance to deposit") return 0;
+  if (next.label === "Send teardown + opener") return 1;
+  if (next.label === "Send follow-up" && next.state === "overdue") return 2;
+  if (next.label === "Send follow-up" && next.state === "today") return 3;
+  if (next.label === "Send first DM") return 4;
+  if (next.label === "Waiting on deposit") return 5;
+  return 6;
+};
+
 const nextActionMeta = (item) => {
   const due = dueMeta(item);
 
@@ -517,6 +528,10 @@ const render = () => {
     if (activeFilter === "all") return true;
     if (activeFilter === "due") return Boolean(dueMeta(item));
     return item.batch === activeFilter;
+  }).sort((a, b) => {
+    const rankDiff = sortRank(a) - sortRank(b);
+    if (rankDiff !== 0) return rankDiff;
+    return a.priority - b.priority;
   });
 
   filtered.forEach((item) => {
