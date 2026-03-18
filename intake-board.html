@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Intake Board</title>
+    <meta
+      name="description"
+      content="Public intake board for the minimum client inputs needed after payment: tx hash, main bottleneck, desired outcome, links, and approver."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Intake Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./kickoff-board.html">Kickoff Board</a>
+        <a class="ghost-button" href="./brief-board.html">Brief Board</a>
+        <a class="ghost-button" href="./faq-board.html">FAQ Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Minimum kickoff intake</p>
+          <h1>Collect only what is needed to start the sprint.</h1>
+          <p class="lead">
+            This page is the lightest version of post-payment intake. Use it
+            when the client does not need a long brief and you want the minimum
+            details required to confirm scope and begin work.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#minimum-inputs">Open Minimum Inputs</a>
+            <a class="secondary-button" href="./brief-board.html">Open Full Brief</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>5</strong>
+              <span>minimum inputs</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>main bottleneck</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>approver</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Intake Rule</p>
+            <h2>Collect the minimum, then move.</h2>
+            <p>
+              Intake should reduce delay, not create it. If the client can give
+              the tx hash, bottleneck, desired outcome, links, and approver,
+              there is enough to begin.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Need</dt>
+                <dd>tx hash</dd>
+              </div>
+              <div>
+                <dt>Need</dt>
+                <dd>main bottleneck</dd>
+              </div>
+              <div>
+                <dt>Need</dt>
+                <dd>relevant links</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="minimum-inputs" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Minimum Inputs</p>
+            <h2>These five items are enough to start.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>1. Tx Hash</h3>
+            <p>
+              Confirm the deposit first so the sprint is tied to a paid start
+              and the correct wallet transaction.
+            </p>
+          </article>
+          <article>
+            <h3>2. Main Bottleneck</h3>
+            <p>
+              Ask for the single issue that matters most right now. Do not let
+              the intake sprawl into ten competing problems.
+            </p>
+          </article>
+          <article>
+            <h3>3. Desired Outcome</h3>
+            <p>
+              Ask what should improve first once the sprint is done: approvals,
+              response speed, cleaner handoff, or another concrete shift.
+            </p>
+          </article>
+          <article>
+            <h3>4. Relevant Links</h3>
+            <p>
+              Collect the page URLs, docs, or screenshots that show the current
+              funnel, handoff, or payment path.
+            </p>
+          </article>
+          <article>
+            <h3>5. Final Approver</h3>
+            <p>
+              Name the person who can answer questions and approve the work so
+              the sprint does not stall midstream.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Copyable Intake</p>
+            <h2>Send this when the client asks what you need next.</h2>
+          </div>
+        </div>
+        <div class="dashboard-shell">
+          <div class="dashboard-table">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>Minimum Intake</strong>
+                    <br />
+                    <br />
+                    1. tx hash
+                    <br />
+                    2. the main bottleneck to fix first
+                    <br />
+                    3. the result you want from this sprint
+                    <br />
+                    4. relevant page links, docs, or screenshots
+                    <br />
+                    5. the final approver if questions come up
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">When To Use Full Brief</p>
+            <h2>Escalate only if the sprint actually needs more context.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Use Intake Board</h3>
+            <p>
+              Use this when the sprint is already clear and the client only
+              needs a fast handoff into production.
+            </p>
+          </article>
+          <article>
+            <h3>Use Brief Board</h3>
+            <p>
+              Use the fuller brief when constraints, stakeholders, or funnel
+              complexity mean you genuinely need more context upfront.
+            </p>
+            <a class="table-link" href="./brief-board.html">Open Brief Board</a>
+          </article>
+          <article>
+            <h3>Use FAQ Board</h3>
+            <p>
+              If the client is still asking process questions, answer those
+              first so intake does not turn into scattered chat.
+            </p>
+            <a class="table-link" href="./faq-board.html">Open FAQ Board</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Minimal intake keeps paid work moving.</p>
+    </footer>
+  </body>
+</html>
