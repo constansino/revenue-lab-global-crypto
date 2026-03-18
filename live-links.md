@@ -1,6 +1,7 @@
 # Live Links
 
 - Home: https://constansino.github.io/revenue-lab-global-crypto/
+- Command Center: https://constansino.github.io/revenue-lab-global-crypto/command-center.html
 - Launchpad: https://constansino.github.io/revenue-lab-global-crypto/launchpad.html
 - Send Board: https://constansino.github.io/revenue-lab-global-crypto/send-board.html
 - Reply Board: https://constansino.github.io/revenue-lab-global-crypto/reply-board.html
