@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Pricing Board</title>
+    <meta
+      name="description"
+      content="Public pricing board for choosing between the 299, 799, and 1500 sprint tiers and knowing when not to underprice."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Pricing Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./close-board.html">Close Board</a>
+        <a class="ghost-button" href="./renewal-board.html">Renewal Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Public pricing logic page</p>
+          <h1>Use the right price tier for the actual scope.</h1>
+          <p class="lead">
+            This page defines when the sprint fits the `$299`, `$799`, or
+            `$1,500` bucket, when to upgrade the scope, and when not to accept
+            a badly shaped project at the wrong price.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#price-map">Open Price Map</a>
+            <a class="secondary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>$299</strong>
+              <span>teardown tier</span>
+            </li>
+            <li>
+              <strong>$799</strong>
+              <span>default core sprint</span>
+            </li>
+            <li>
+              <strong>$1,500</strong>
+              <span>broader setup tier</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Pricing Rule</p>
+            <h2>Price the bottleneck, not the client's ambition.</h2>
+            <p>
+              The cleanest pricing comes from matching one real bottleneck to
+              one clear sprint. If the client keeps stacking needs, move up a
+              tier or split the work.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>$299</dt>
+                <dd>short teardown</dd>
+              </div>
+              <div>
+                <dt>$799</dt>
+                <dd>core sprint</dd>
+              </div>
+              <div>
+                <dt>$1,500</dt>
+                <dd>broader setup</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="price-map" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Price Map</p>
+            <h2>Pick the tier that matches the real work.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>$299</h3>
+            <p>
+              Use when the client mainly needs a short teardown, narrow audit,
+              or one directional fix rather than a full sprint execution.
+            </p>
+          </article>
+          <article>
+            <h3>$799</h3>
+            <p>
+              Use when the project fits one meaningful bottleneck with a real
+              delivery shape: message flow, intake structure, handoff, and SOP.
+            </p>
+          </article>
+          <article>
+            <h3>$1,500</h3>
+            <p>
+              Use when the scope is clearly broader: more packaging, more
+              systems, more handoff, or a more complete setup.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">When To Move Up</p>
+            <h2>Do not keep broad scope in the core tier.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Upgrade To $799</h3>
+            <p>
+              If the client wants execution instead of diagnosis, move out of
+              the teardown tier.
+            </p>
+          </article>
+          <article>
+            <h3>Upgrade To $1,500</h3>
+            <p>
+              If the client is stacking deliverables or asking for a fuller
+              setup, treat it as the broader package.
+            </p>
+          </article>
+          <article>
+            <h3>Split Into Another Sprint</h3>
+            <p>
+              If the scope keeps expanding beyond the broader tier, stop
+              discounting and break it into a second sprint.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Do Not Underprice</p>
+            <h2>Bad scope shape is a pricing problem first.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Too Many Deliverables</h3>
+            <p>
+              If the ask includes several unrelated outputs, the scope is too
+              broad for lower tiers.
+            </p>
+          </article>
+          <article>
+            <h3>Too Much Ambiguity</h3>
+            <p>
+              If the client cannot name the main bottleneck, diagnose first
+              before pretending the scope is priced.
+            </p>
+          </article>
+          <article>
+            <h3>Too Much “Just One More”</h3>
+            <p>
+              If new asks keep appearing, that is a renewal or new-scope
+              decision, not a reason to quietly absorb more work.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Good pricing follows good scope discipline.</p>
+    </footer>
+  </body>
+</html>

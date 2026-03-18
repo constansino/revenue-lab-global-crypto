@@ -3,6 +3,7 @@
 - Home: https://constansino.github.io/revenue-lab-global-crypto/
 - Command Center: https://constansino.github.io/revenue-lab-global-crypto/command-center.html
 - Lifecycle Board: https://constansino.github.io/revenue-lab-global-crypto/lifecycle-board.html
+- Pricing Board: https://constansino.github.io/revenue-lab-global-crypto/pricing-board.html
 - Kickoff Board: https://constansino.github.io/revenue-lab-global-crypto/kickoff-board.html
 - Brief Board: https://constansino.github.io/revenue-lab-global-crypto/brief-board.html
 - Delivery Board: https://constansino.github.io/revenue-lab-global-crypto/delivery-board.html
