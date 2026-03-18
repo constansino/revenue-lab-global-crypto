@@ -18,6 +18,7 @@
 - Offer Audit: https://constansino.github.io/revenue-lab-global-crypto/offer-audit-board.html
 - Niche Router: https://constansino.github.io/revenue-lab-global-crypto/niche-router-board.html
 - Proof Library: https://constansino.github.io/revenue-lab-global-crypto/proof-library-board.html
+- Speed To Cash: https://constansino.github.io/revenue-lab-global-crypto/speed-to-cash-board.html
 - Referral Board: https://constansino.github.io/revenue-lab-global-crypto/referral-board.html
 - Case Study Board: https://constansino.github.io/revenue-lab-global-crypto/case-study-board.html
 - Kickoff Board: https://constansino.github.io/revenue-lab-global-crypto/kickoff-board.html
