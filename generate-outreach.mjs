@@ -28,13 +28,13 @@ const records = lines.slice(1).map((line) => {
 
 const makeDm = (lead) =>
   `Hi ${lead.company || "there"}, I checked ${lead.website || "your site"} and noticed ${lead.problem_observed || "a slow follow-up step"}.\n` +
-  `I build 72-hour AI follow-up and quoting sprints for local service teams so warm leads get a faster next step.\n` +
+  `I build 72-hour AI automation sprints for small teams so warm leads, signups, or buyers get a faster next step.\n` +
   `If useful, I can send a short teardown and a ${lead.package_tier || "$799"} implementation option.`;
 
 const makeEmail = (lead) =>
   `Subject: One intake issue I noticed on ${lead.company || "your site"}\n\n` +
   `I reviewed ${lead.website || "your site"} and found ${lead.problem_observed || "one obvious delay in the intake flow"}.\n` +
-  `I help local service operators ship a lightweight AI follow-up and quote-prep workflow in 72 hours.\n` +
+  `I help small teams ship a lightweight AI automation sprint in 72 hours, usually around follow-up, onboarding, quoting, or packaging.\n` +
   `If you want, I can send a 3-step fix and price tiers.\n`;
 
 const output = records
