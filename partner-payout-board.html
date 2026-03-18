@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Partner Payout Board</title>
+    <meta
+      name="description"
+      content="Public partner payout board for explaining referral payout timing, white-label settlement, reseller markup logic, recurring work treatment, and proof of payment."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Partner Payout Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./partner-board.html">Partner Board</a>
+        <a class="ghost-button" href="./partner-activation-board.html">Partner Activation</a>
+        <a class="ghost-button" href="./partner-close-pack-board.html">Partner Close Pack</a>
+        <a class="ghost-button" href="./referral-board.html">Referral Board</a>
+        <a class="ghost-button" href="./white-label-board.html">White Label</a>
+        <a class="ghost-button" href="./reseller-board.html">Reseller</a>
+        <a class="ghost-button" href="./retainer-conversion-board.html">Retainer Conversion</a>
+        <a class="ghost-button" href="./payment-guide-board.html">Payment Guide</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Partner settlement page</p>
+          <h1>Make payout timing, settlement proof, and repeat-channel economics explicit.</h1>
+          <p class="lead">
+            This page is for the moment when a partner already likes the model
+            but wants clarity on what gets paid, when payout happens, how
+            settlement is confirmed, and whether recurring work creates more
+            upside or stops at the first deal.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#payout-map">Open Payout Map</a>
+            <a class="secondary-button" href="./partner-activation-board.html">Open Partner Activation</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>3</strong>
+              <span>main partner models</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>clear settlement trigger</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>proof of payout path</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Settlement Rule</p>
+            <h2>Pay on clear commercial events and document the proof.</h2>
+            <p>
+              Partner payout gets trusted when the trigger is simple: a client
+              payment clears, the agreed model determines what gets paid, and
+              the tx hash or equivalent payment proof closes the loop.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Trigger</dt>
+                <dd>paid work settles</dd>
+              </div>
+              <div>
+                <dt>Rule</dt>
+                <dd>share, margin, or markup</dd>
+              </div>
+              <div>
+                <dt>Proof</dt>
+                <dd>hash or payment record</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="payout-map" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Payout Map</p>
+            <h2>Use one settlement rule per partner model.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Referral Payout</h3>
+            <p>
+              Simple referral deals should usually pay from the first cleared
+              sprint payment, not from vague pipeline promises.
+            </p>
+            <a class="table-link" href="./referral-board.html">Open Referral Board</a>
+          </article>
+          <article>
+            <h3>White-Label Settlement</h3>
+            <p>
+              White-label work is usually cleaner as a defined internal
+              delivery rate that the partner pays against, while the partner
+              keeps their own client-side spread.
+            </p>
+            <a class="table-link" href="./white-label-board.html">Open White Label</a>
+          </article>
+          <article>
+            <h3>Reseller Markup Logic</h3>
+            <p>
+              Reseller payout should be tied to the agreed internal base and
+              the reseller-controlled markup, not renegotiated after the close.
+            </p>
+            <a class="table-link" href="./reseller-board.html">Open Reseller</a>
+          </article>
+          <article>
+            <h3>Recurring Work Rule</h3>
+            <p>
+              Decide up front whether partner upside ends after the first paid
+              sprint or also applies to later sprints or retainer work.
+            </p>
+            <a class="table-link" href="./retainer-conversion-board.html">Open Retainer Conversion</a>
+          </article>
+          <article>
+            <h3>Settlement Proof</h3>
+            <p>
+              Confirm the amount, network or payment rail, and tx hash or
+              transfer evidence so both sides can close the commercial loop.
+            </p>
+            <a class="table-link" href="./payment-guide-board.html">Open Payment Guide</a>
+          </article>
+          <article>
+            <h3>Need First Deal Live</h3>
+            <p>
+              Once the payout rule is chosen, activate the deal instead of
+              drifting inside more abstract discussion.
+            </p>
+            <a class="table-link" href="./partner-activation-board.html">Open Partner Activation</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Trigger Rules</p>
+            <h2>Keep the payout trigger obvious before work starts.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Client Pays Directly</h3>
+            <p>
+              If the client pays the wallet directly, partner payout should be
+              based on the cleared incoming payment and the agreed partner rule.
+            </p>
+          </article>
+          <article>
+            <h3>Partner Collects First</h3>
+            <p>
+              If the partner invoices or collects from the client on their own
+              side, settlement should be anchored to the agreed internal rate
+              and not re-priced after the fact.
+            </p>
+          </article>
+          <article>
+            <h3>Recurring Work Exception</h3>
+            <p>
+              If repeat work is in play, define yes or no explicitly instead of
+              assuming the first-deal economics will carry forward forever.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Model By Model</p>
+            <h2>Match the payout math to the collaboration type.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Referral Share</h3>
+            <p>
+              Referral deals stay easiest to trust when the partner gets a
+              fixed share on the first cleared sprint instead of open-ended
+              percentage claims on the whole account.
+            </p>
+          </article>
+          <article>
+            <h3>White-Label Margin</h3>
+            <p>
+              White-label partners typically keep the markup they add to a
+              defined delivery rate, so the settlement event is the internal
+              delivery payment rather than a second revenue-share payout.
+            </p>
+          </article>
+          <article>
+            <h3>Reseller Spread</h3>
+            <p>
+              Resellers keep the difference between their client price and the
+              known internal base, which makes the economics easier to repeat.
+            </p>
+          </article>
+          <article>
+            <h3>Retainer Or Next Cycle</h3>
+            <p>
+              If later work is included, state whether that upside is a smaller
+              share, a one-cycle bonus, or no ongoing payout at all.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Settlement Evidence</p>
+            <h2>Close the payout loop with one proof standard.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Confirm The Amount</h3>
+            <p>
+              State the project amount or internal delivery base clearly so the
+              partner can verify what the payout is calculated from.
+            </p>
+          </article>
+          <article>
+            <h3>Confirm The Trigger</h3>
+            <p>
+              Note whether the trigger is cleared client payment, internal
+              transfer received, or the first recurring cycle landing.
+            </p>
+          </article>
+          <article>
+            <h3>Share The Proof</h3>
+            <p>
+              A tx hash, wallet screenshot, or equivalent payment confirmation
+              removes most payout hesitation faster than more explanation.
+            </p>
+          </article>
+          <article>
+            <h3>Archive The Rule</h3>
+            <p>
+              Keep the settlement rule in writing so repeat deals do not reopen
+              the same negotiation every time.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Best Next Routes</p>
+            <h2>Route the remaining blocker to the right page.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Need Model Choice</h3>
+            <p>
+              If the partner still needs to choose referral, white-label, or
+              reseller, route back to the main partner board.
+            </p>
+            <a class="table-link" href="./partner-board.html">Open Partner Board</a>
+          </article>
+          <article>
+            <h3>Need Forwardable Pack</h3>
+            <p>
+              If the partner wants one page they can send internally, use the
+              partner close pack first.
+            </p>
+            <a class="table-link" href="./partner-close-pack-board.html">Open Partner Close Pack</a>
+          </article>
+          <article>
+            <h3>Need White-Label Margin</h3>
+            <p>
+              If the main question is internal delivery pricing and partner
+              markup, route to the white-label page.
+            </p>
+            <a class="table-link" href="./white-label-board.html">Open White Label</a>
+          </article>
+          <article>
+            <h3>Need Reseller Markup</h3>
+            <p>
+              If the partner wants to control distribution and price, route to
+              the reseller page and lock the internal base.
+            </p>
+            <a class="table-link" href="./reseller-board.html">Open Reseller</a>
+          </article>
+          <article>
+            <h3>Need Recurring Rule</h3>
+            <p>
+              If the first deal may expand into monthly work, define the next
+              cycle logic before the partner assumes ongoing payout rights.
+            </p>
+            <a class="table-link" href="./retainer-conversion-board.html">Open Retainer Conversion</a>
+          </article>
+          <article>
+            <h3>Ready To Settle</h3>
+            <p>
+              If the model and payer are already clear, move directly into the
+              payment page and collect the transfer proof.
+            </p>
+            <a class="table-link" href="./pay.html">Open Payment Page</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wallet reveal">
+        <div class="wallet-shell">
+          <div>
+            <p class="eyebrow">Wallet</p>
+            <h2>Preferred route: direct payment, clear rule, shared tx hash.</h2>
+            <p class="wallet-note">
+              Keep partner settlement simple enough to repeat. Confirm the
+              partner model, confirm the payout rule, send the transfer, then
+              share the proof so the next deal becomes easier.
+            </p>
+          </div>
+          <div class="wallet-box">
+            <code>0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            <a class="primary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Partner channels scale better when payout logic is explicit before the deal lands.</p>
+    </footer>
+  </body>
+</html>
