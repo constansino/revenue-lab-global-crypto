@@ -70,6 +70,7 @@
 - Partner Intro Proof: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-proof-board.html
 - Partner Intro Objections: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-objection-board.html
 - Partner Intro Conversion: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-conversion-board.html
+- Partner Intro Owner: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-owner-board.html
 - Partner Intro Scope: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-scope-board.html
 - Partner Intro Approval: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-approval-board.html
 - Partner Intro Approval Pack: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-approval-pack-board.html
