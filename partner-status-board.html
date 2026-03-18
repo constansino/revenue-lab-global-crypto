@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Partner Status Board</title>
+    <meta
+      name="description"
+      content="Public partner status board for labeling where a partner sits in the commercial path: unscreened, qualified, activation pending, payout pending, repeat testing, or active channel."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Revenue Partner Status Board</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./command-center.html">Command Center</a>
+        <a class="ghost-button" href="./partner-board.html">Partner Board</a>
+        <a class="ghost-button" href="./partner-qualification-board.html">Partner Qualification</a>
+        <a class="ghost-button" href="./partner-close-pack-board.html">Partner Close Pack</a>
+        <a class="ghost-button" href="./partner-activation-board.html">Partner Activation</a>
+        <a class="ghost-button" href="./partner-payout-board.html">Partner Payout</a>
+        <a class="ghost-button" href="./channel-repeat-board.html">Channel Repeat</a>
+        <a class="ghost-button" href="./global-channel-board.html">Global Channels</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Partner lifecycle control page</p>
+          <h1>Know exactly where each partner stands and what happens next.</h1>
+          <p class="lead">
+            The partner path is now large enough that vague labels create
+            wasted motion. This page turns partner work into explicit statuses
+            so you can tell whether the next job is screening, activation,
+            payout clarity, repeat testing, or building a real channel.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#status-map">Open Partner Status Map</a>
+            <a class="secondary-button" href="./partner-qualification-board.html">Open Partner Qualification</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>7</strong>
+              <span>partner statuses</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>next action per stage</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>reason to guess</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Status Rule</p>
+            <h2>One partner, one status, one next move.</h2>
+            <p>
+              Confusion starts when a partner is treated as half lead, half
+              active deal, and half future channel all at once. Name the real
+              stage first, then do the matching next action.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Status</dt>
+                <dd>name the stage</dd>
+              </div>
+              <div>
+                <dt>Action</dt>
+                <dd>route one next page</dd>
+              </div>
+              <div>
+                <dt>Advance</dt>
+                <dd>only when earned</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="status-map" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Partner Status Map</p>
+            <h2>Use the label that matches the real partner state.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Unscreened</h3>
+            <p>
+              The partner sounds interesting but the buyer pattern, first-deal
+              chance, and commercial model are still unproven.
+            </p>
+          </article>
+          <article>
+            <h3>Qualified</h3>
+            <p>
+              The partner passed the screen and there is a believable route to
+              one live deal, but activation has not started yet.
+            </p>
+          </article>
+          <article>
+            <h3>Awaiting Model Choice</h3>
+            <p>
+              The relationship looks real, but referral, white-label, or
+              reseller logic is still not explicitly chosen.
+            </p>
+          </article>
+          <article>
+            <h3>Activation Pending</h3>
+            <p>
+              The partner wants to move and the next job is confirming payer,
+              commercial logic, and first transfer.
+            </p>
+          </article>
+          <article>
+            <h3>Payout Pending</h3>
+            <p>
+              The first deal is live enough that settlement timing, proof, and
+              payout clarity now matter more than pitch language.
+            </p>
+          </article>
+          <article>
+            <h3>Repeat Test</h3>
+            <p>
+              One deal worked and the next question is whether the same buyer
+              pattern and economics can happen again.
+            </p>
+          </article>
+          <article>
+            <h3>Active Channel</h3>
+            <p>
+              The partner is now a repeat route and the main job is protecting
+              the lane, keeping assets reusable, and feeding more demand into it.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Next Action By Status</p>
+            <h2>Every status should point to one partner page.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Unscreened</h3>
+            <p>
+              Next move is screening the partner instead of discussing payout
+              or channel scale too early.
+            </p>
+            <a class="table-link" href="./partner-qualification-board.html">Open Partner Qualification</a>
+          </article>
+          <article>
+            <h3>Qualified</h3>
+            <p>
+              Next move is using one forwardable pack or model page to turn the
+              fit into a real first-deal path.
+            </p>
+            <a class="table-link" href="./partner-close-pack-board.html">Open Partner Close Pack</a>
+          </article>
+          <article>
+            <h3>Awaiting Model Choice</h3>
+            <p>
+              Next move is naming referral, white-label, or reseller and
+              refusing vague hybrid partner logic.
+            </p>
+            <a class="table-link" href="./partner-board.html">Open Partner Board</a>
+          </article>
+          <article>
+            <h3>Activation Pending</h3>
+            <p>
+              Next move is confirming payer, activation path, and first
+              transfer instead of broadening the conversation.
+            </p>
+            <a class="table-link" href="./partner-activation-board.html">Open Partner Activation</a>
+          </article>
+          <article>
+            <h3>Payout Pending</h3>
+            <p>
+              Next move is clarifying what gets paid, when the trigger lands,
+              and what proof closes the commercial loop.
+            </p>
+            <a class="table-link" href="./partner-payout-board.html">Open Partner Payout</a>
+          </article>
+          <article>
+            <h3>Repeat Test</h3>
+            <p>
+              Next move is checking whether the same buyer pattern, asset, and
+              economics can become a real lane.
+            </p>
+            <a class="table-link" href="./channel-repeat-board.html">Open Channel Repeat</a>
+          </article>
+          <article>
+            <h3>Active Channel</h3>
+            <p>
+              Next move is feeding the lane with more external traffic and
+              keeping the owned close path stable.
+            </p>
+            <a class="table-link" href="./global-channel-board.html">Open Global Channels</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Status Shift Rules</p>
+            <h2>Move the label only when the trigger is real.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Unscreened To Qualified</h3>
+            <p>
+              Shift only after the partner can name the buyer pattern, the
+              bottleneck, and the believable first route.
+            </p>
+          </article>
+          <article>
+            <h3>Qualified To Activation Pending</h3>
+            <p>
+              Shift only after the commercial model is clear and there is a
+              real first-deal motion, not just warm interest.
+            </p>
+          </article>
+          <article>
+            <h3>Activation Pending To Payout Pending</h3>
+            <p>
+              Shift only after the first commercial cycle is live enough that
+              settlement timing and proof are now the main blocker.
+            </p>
+          </article>
+          <article>
+            <h3>Payout Pending To Repeat Test</h3>
+            <p>
+              Shift only after the first deal closes cleanly and both sides can
+              now judge whether the motion can happen again.
+            </p>
+          </article>
+          <article>
+            <h3>Repeat Test To Active Channel</h3>
+            <p>
+              Shift only after the pattern repeats with enough consistency that
+              it is no longer just one lucky partner deal.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">What Not To Do</p>
+            <h2>Most partner confusion comes from skipping status discipline.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Do Not Call Everything A Channel</h3>
+            <p>
+              One intro or one warm conversation is not the same thing as a
+              repeatable lane.
+            </p>
+          </article>
+          <article>
+            <h3>Do Not Jump To Payout Too Early</h3>
+            <p>
+              If the partner is still unqualified, payout discussions will not
+              make the relationship more real.
+            </p>
+          </article>
+          <article>
+            <h3>Do Not Skip Activation</h3>
+            <p>
+              A qualified partner still needs one live commercial cycle before
+              repeat channel logic has any value.
+            </p>
+          </article>
+          <article>
+            <h3>Do Not Confuse Traffic With Qualification</h3>
+            <p>
+              External reach helps, but a real partner still needs a buyer fit,
+              a clean asset path, and stable commercial logic.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Clear partner statuses stop channel work from turning into commercial blur.</p>
+    </footer>
+  </body>
+</html>
