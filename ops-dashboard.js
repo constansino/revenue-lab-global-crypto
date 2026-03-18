@@ -57,7 +57,9 @@ const resetButton = document.getElementById("resetDashboard");
 const exportButton = document.getElementById("exportDashboard");
 const dueList = document.getElementById("dueList");
 const filterButtons = Array.from(document.querySelectorAll("[data-filter]"));
+const searchInput = document.getElementById("searchInput");
 let activeFilter = "all";
+let searchTerm = "";
 
 const metrics = () => {
   sentCount.textContent = String(state.filter((item) => item.firstDm).length);
@@ -153,6 +155,20 @@ const dueMeta = (item) => {
   };
 };
 
+const markSentTodayButton = (item) => {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "table-link";
+  button.textContent = "Set Today";
+  button.addEventListener("click", () => {
+    item.firstDm = true;
+    item.lastTouch = new Date().toISOString().slice(0, 10);
+    saveState(state);
+    render();
+  });
+  return button;
+};
+
 const actionLinks = (item) => {
   const wrap = document.createElement("div");
   wrap.className = "actions-cell";
@@ -179,6 +195,11 @@ const render = () => {
   pipelineBody.innerHTML = "";
 
   const filtered = state.filter((item) => {
+    const matchesSearch =
+      searchTerm.length === 0 ||
+      item.name.toLowerCase().includes(searchTerm) ||
+      item.batch.toLowerCase().includes(searchTerm);
+    if (!matchesSearch) return false;
     if (activeFilter === "all") return true;
     if (activeFilter === "due") return Boolean(dueMeta(item));
     return item.batch === activeFilter;
@@ -204,6 +225,11 @@ const render = () => {
     row.appendChild(source);
 
     ["firstDm", "replied", "followUp", "offerPage", "paymentPage"].forEach((key) => {
+      if (key === "replied") {
+        const sentToday = document.createElement("td");
+        sentToday.appendChild(markSentTodayButton(item));
+        row.appendChild(sentToday);
+      }
       const cell = document.createElement("td");
       cell.appendChild(cellCheckbox(item, key));
       row.appendChild(cell);
@@ -274,6 +300,11 @@ filterButtons.forEach((button) => {
     button.classList.add("active-filter");
     render();
   });
+});
+
+searchInput?.addEventListener("input", () => {
+  searchTerm = searchInput.value.trim().toLowerCase();
+  render();
 });
 
 render();
