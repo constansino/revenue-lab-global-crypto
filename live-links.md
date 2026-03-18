@@ -52,6 +52,7 @@
 - Partner Qualification: https://constansino.github.io/revenue-lab-global-crypto/partner-qualification-board.html
 - Partner Status: https://constansino.github.io/revenue-lab-global-crypto/partner-status-board.html
 - Partner FAQ: https://constansino.github.io/revenue-lab-global-crypto/partner-faq-board.html
+- Partner Objections: https://constansino.github.io/revenue-lab-global-crypto/partner-objection-board.html
 - Partner Handoff: https://constansino.github.io/revenue-lab-global-crypto/partner-handoff-board.html
 - Partner Activation: https://constansino.github.io/revenue-lab-global-crypto/partner-activation-board.html
 - Partner Payout: https://constansino.github.io/revenue-lab-global-crypto/partner-payout-board.html
