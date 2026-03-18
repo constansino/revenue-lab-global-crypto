@@ -38,6 +38,7 @@
 - `docsafe-flow.html`: 基于调研结果收敛出的文档工作流 MVP 公共页
 - `docsafe-agency-client-ops.html`: 面向 agency account / client ops 的垂直版公开页
 - `docsafe-legal-signing-ops.html`: 面向 legal / signing ops 的垂直版公开页
+- `docsafe-recruiting-onboarding-ops.html`: 面向 recruiting / onboarding ops 的垂直版公开页
 - `proposal-template.md`: 可直接发送的简版报价模板
 - `global-crypto-profit-map.md`: 全球获客和链上收款路径
 - `global-posts.md`: 可直接发到全球平台的帖子和私信模板

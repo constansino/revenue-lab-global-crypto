@@ -5,6 +5,7 @@
 - DocSafe Flow: https://constansino.github.io/revenue-lab-global-crypto/docsafe-flow.html
 - DocSafe Agency Client Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-agency-client-ops.html
 - DocSafe Legal Signing Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-legal-signing-ops.html
+- DocSafe Recruiting Onboarding Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-recruiting-onboarding-ops.html
 - Command Center: https://constansino.github.io/revenue-lab-global-crypto/command-center.html
 - Links Hub: https://constansino.github.io/revenue-lab-global-crypto/links-hub.html
 - Lifecycle Board: https://constansino.github.io/revenue-lab-global-crypto/lifecycle-board.html
