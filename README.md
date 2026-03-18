@@ -35,6 +35,7 @@
 - `discourse-post-template.md`: Discourse 发布模板
 - `github-demand-research-20260319.md`: 本轮 GitHub 需求调研结论
 - `github-demand-research-20260319.html`: 公开访问版调研页
+- `docsafe-flow.html`: 基于调研结果收敛出的文档工作流 MVP 公共页
 - `proposal-template.md`: 可直接发送的简版报价模板
 - `global-crypto-profit-map.md`: 全球获客和链上收款路径
 - `global-posts.md`: 可直接发到全球平台的帖子和私信模板

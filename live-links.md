@@ -2,6 +2,7 @@
 
 - Home: https://constansino.github.io/revenue-lab-global-crypto/
 - GitHub Demand Research: https://constansino.github.io/revenue-lab-global-crypto/github-demand-research-20260319.html
+- DocSafe Flow: https://constansino.github.io/revenue-lab-global-crypto/docsafe-flow.html
 - Command Center: https://constansino.github.io/revenue-lab-global-crypto/command-center.html
 - Links Hub: https://constansino.github.io/revenue-lab-global-crypto/links-hub.html
 - Lifecycle Board: https://constansino.github.io/revenue-lab-global-crypto/lifecycle-board.html
