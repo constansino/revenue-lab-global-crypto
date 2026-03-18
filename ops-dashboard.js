@@ -527,6 +527,9 @@ const render = () => {
     if (!matchesSearch) return false;
     if (activeFilter === "all") return true;
     if (activeFilter === "due") return Boolean(dueMeta(item));
+    if (activeFilter === "needs-dm") return !item.firstDm;
+    if (activeFilter === "replied") return item.replied && !item.paymentPage;
+    if (activeFilter === "waiting-deposit") return item.paymentPage;
     return item.batch === activeFilter;
   }).sort((a, b) => {
     const rankDiff = sortRank(a) - sortRank(b);
