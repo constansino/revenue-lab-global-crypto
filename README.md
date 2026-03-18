@@ -61,6 +61,9 @@
 - `wave5-send-order.md`: 第五波 3 个目标的发送节奏
 - `master-battle-order.md`: 三条主线的总作战顺序
 - `master-priority.csv`: 当前总优先级表
+- `batch1-dm-pack.md`: 总优先级前 3 个目标的可直接复制私信
+- `batch1-followup-pack.md`: 总优先级前 3 个目标的无回复跟进
+- `batch1-closers.md`: 总优先级前 3 个目标的回复承接和 closing
 
 ## 立即预览
 
