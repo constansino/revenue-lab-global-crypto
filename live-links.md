@@ -33,6 +33,7 @@
 - Founder Operator: https://constansino.github.io/revenue-lab-global-crypto/founder-operator-board.html
 - Deal Desk: https://constansino.github.io/revenue-lab-global-crypto/deal-desk-board.html
 - Inbound Router: https://constansino.github.io/revenue-lab-global-crypto/inbound-router-board.html
+- Proof To Payment: https://constansino.github.io/revenue-lab-global-crypto/proof-to-payment-board.html
 - Referral Board: https://constansino.github.io/revenue-lab-global-crypto/referral-board.html
 - Case Study Board: https://constansino.github.io/revenue-lab-global-crypto/case-study-board.html
 - Kickoff Board: https://constansino.github.io/revenue-lab-global-crypto/kickoff-board.html
