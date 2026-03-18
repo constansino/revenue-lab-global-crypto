@@ -41,6 +41,8 @@
 - `top5-priority.csv`: 当前最优先外联顺序
 - `top5-followups.md`: 最优先 5 个目标的第二轮跟进和异议回复
 - `top5-teardowns.md`: 对方回复后可直接发送的 3 点 mini teardown
+- `wave3-top3-custom-outreach.md`: 第三波里最优先 3 个 crypto-native 目标的定制外联
+- `wave3-top3-priority.csv`: 第三波最优先 3 个目标顺序
 
 ## 立即预览
 
