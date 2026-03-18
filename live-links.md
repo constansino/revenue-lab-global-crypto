@@ -28,6 +28,7 @@
 - Close Proof: https://constansino.github.io/revenue-lab-global-crypto/close-proof-sequence-board.html
 - Fast Lane: https://constansino.github.io/revenue-lab-global-crypto/fast-lane-board.html
 - Agency Rescue: https://constansino.github.io/revenue-lab-global-crypto/agency-rescue-board.html
+- Retainer Stability: https://constansino.github.io/revenue-lab-global-crypto/retainer-stability-board.html
 - Referral Board: https://constansino.github.io/revenue-lab-global-crypto/referral-board.html
 - Case Study Board: https://constansino.github.io/revenue-lab-global-crypto/case-study-board.html
 - Kickoff Board: https://constansino.github.io/revenue-lab-global-crypto/kickoff-board.html
