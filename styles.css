@@ -65,6 +65,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
+}
+
+.toolbar {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .brand {
@@ -315,6 +323,17 @@ h2 {
   accent-color: var(--accent);
 }
 
+.notes-input {
+  width: 100%;
+  min-width: 15rem;
+  padding: 0.65rem 0.8rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(17, 32, 24, 0.12);
+  background: rgba(255, 255, 255, 0.75);
+  font: inherit;
+  color: var(--ink);
+}
+
 .proof-grid h3,
 .package-title,
 .outreach-grid h3 {
@@ -456,6 +475,10 @@ input[type="range"] {
     gap: 1rem;
     align-items: start;
     flex-direction: column;
+  }
+
+  .toolbar {
+    justify-content: flex-start;
   }
 
   .section {

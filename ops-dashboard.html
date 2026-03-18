@@ -28,9 +28,17 @@
           <small>Revenue Ops Dashboard</small>
         </div>
       </div>
-      <button id="resetDashboard" class="ghost-button" type="button">
-        Reset Local Data
-      </button>
+      <div class="toolbar">
+        <a class="ghost-button" href="./master-send-pack.md">Message Pack</a>
+        <a class="ghost-button" href="./crypto-native.html">Offer Page</a>
+        <a class="ghost-button" href="./pay.html">Payment Page</a>
+        <button id="exportDashboard" class="ghost-button" type="button">
+          Export Data
+        </button>
+        <button id="resetDashboard" class="ghost-button" type="button">
+          Reset Local Data
+        </button>
+      </div>
     </header>
 
     <main>
@@ -108,6 +116,7 @@
                   <th>Follow-Up</th>
                   <th>Offer Page</th>
                   <th>Payment Page</th>
+                  <th>Notes</th>
                 </tr>
               </thead>
               <tbody id="pipelineBody"></tbody>

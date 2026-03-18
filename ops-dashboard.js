@@ -22,6 +22,7 @@ const loadState = () => {
       followUp: false,
       offerPage: false,
       paymentPage: false,
+      notes: "",
     }));
   }
 
@@ -35,6 +36,7 @@ const loadState = () => {
       followUp: false,
       offerPage: false,
       paymentPage: false,
+      notes: "",
     }));
   }
 };
@@ -50,6 +52,7 @@ const sentCount = document.getElementById("sentCount");
 const replyCount = document.getElementById("replyCount");
 const depositCount = document.getElementById("depositCount");
 const resetButton = document.getElementById("resetDashboard");
+const exportButton = document.getElementById("exportDashboard");
 
 const metrics = () => {
   sentCount.textContent = String(state.filter((item) => item.firstDm).length);
@@ -65,6 +68,19 @@ const cellCheckbox = (item, key) => {
     item[key] = input.checked;
     saveState(state);
     metrics();
+  });
+  return input;
+};
+
+const notesInput = (item) => {
+  const input = document.createElement("input");
+  input.type = "text";
+  input.value = item.notes || "";
+  input.placeholder = "reply summary / next step";
+  input.className = "notes-input";
+  input.addEventListener("change", () => {
+    item.notes = input.value.trim();
+    saveState(state);
   });
   return input;
 };
@@ -93,6 +109,10 @@ const render = () => {
       row.appendChild(cell);
     });
 
+    const notes = document.createElement("td");
+    notes.appendChild(notesInput(item));
+    row.appendChild(notes);
+
     pipelineBody.appendChild(row);
   });
 
@@ -102,6 +122,16 @@ const render = () => {
 resetButton?.addEventListener("click", () => {
   window.localStorage.removeItem(STORAGE_KEY);
   window.location.reload();
+});
+
+exportButton?.addEventListener("click", () => {
+  const blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+  const url = window.URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "revenue-ops-dashboard.json";
+  link.click();
+  window.URL.revokeObjectURL(url);
 });
 
 render();
