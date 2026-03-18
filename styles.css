@@ -205,6 +205,29 @@ h2 {
   margin-top: 1.8rem;
 }
 
+.funnel-bar {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.funnel-card {
+  background: rgba(255, 255, 255, 0.56);
+  border: 1px solid rgba(17, 32, 24, 0.08);
+  border-radius: 1.2rem;
+  padding: 1rem;
+}
+
+.funnel-card strong {
+  display: block;
+  font-size: 1.3rem;
+}
+
+.funnel-card span {
+  color: var(--muted);
+}
+
 .stat-grid li,
 .signal-card,
 .proof-grid article,
@@ -601,6 +624,10 @@ input[type="range"] {
   }
 
   .stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .funnel-bar {
     grid-template-columns: 1fr;
   }
 

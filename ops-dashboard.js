@@ -259,6 +259,9 @@ const sentCount = document.getElementById("sentCount");
 const replyCount = document.getElementById("replyCount");
 const depositCount = document.getElementById("depositCount");
 const followupDueCount = document.getElementById("followupDueCount");
+const replyRate = document.getElementById("replyRate");
+const offerRate = document.getElementById("offerRate");
+const paymentRate = document.getElementById("paymentRate");
 const resetButton = document.getElementById("resetDashboard");
 const exportButton = document.getElementById("exportDashboard");
 const exportCsvButton = document.getElementById("exportCsv");
@@ -278,15 +281,29 @@ let activeFilter = "all";
 let searchTerm = "";
 
 const metrics = () => {
-  sentCount.textContent = String(state.filter((item) => item.firstDm).length);
-  replyCount.textContent = String(state.filter((item) => item.replied).length);
-  depositCount.textContent = String(state.filter((item) => item.paymentPage).length);
+  const sent = state.filter((item) => item.firstDm).length;
+  const replied = state.filter((item) => item.replied).length;
+  const offer = state.filter((item) => item.offerPage).length;
+  const payment = state.filter((item) => item.paymentPage).length;
+
+  sentCount.textContent = String(sent);
+  replyCount.textContent = String(replied);
+  depositCount.textContent = String(payment);
   followupDueCount.textContent = String(
     state.filter((item) => {
       const meta = dueMeta(item);
       return meta && (meta.overdue || meta.dueToday);
     }).length
   );
+
+  const ratio = (num, den) => {
+    if (den === 0) return "0%";
+    return `${Math.round((num / den) * 100)}%`;
+  };
+
+  replyRate.textContent = ratio(replied, sent);
+  offerRate.textContent = ratio(offer, replied);
+  paymentRate.textContent = ratio(payment, offer);
 };
 
 const cellCheckbox = (item, key) => {
