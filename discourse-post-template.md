@@ -1,41 +1,38 @@
 # Revenue Lab Update
 
 New live URL:
-https://constansino.github.io/revenue-lab-global-crypto/docsafe-flow.html
+https://constansino.github.io/revenue-lab-global-crypto/docsafe-agency-client-ops.html
 
 What this update is:
-- Turned the research conclusion into a concrete public MVP page instead of stopping at analysis.
-- The page is focused on a narrow, monetizable wedge:
-  secure client document intake + redaction + approval workspace
-- This is the first public version of `DocSafe Flow`.
+- Added a verticalized buyer-facing page on top of the main DocSafe offer.
+- This version is specifically for agency account management and client ops teams.
+- It narrows the pitch from “document workflow” to “protect margin by fixing client file chaos”.
 
 Decision:
-- Keep the strategy anchored in PDF workflow + approval demand.
-- Sell a smaller workflow product before attempting any broad platform build.
-- Use the public page to test buyer response from agencies, legal ops, consulting teams, and recruiting operators.
+- Keep moving deeper into one real buyer group instead of broadening again.
+- Agency account / client ops is one of the cleanest first wedges because the pain is tied to delivery, approval, and collections.
 
 Why this wedge:
-- It maps to a workflow teams already spend money to clean up.
-- It is specific enough to explain quickly.
-- It supports setup fees, monthly retainers, white-labeling, and self-hosting later.
+- Agencies already feel the cost in lost time, delayed kickoff, revision confusion, and billing friction.
+- The ROI is easier to explain in commercial language, not technical language.
+- This gives us a more direct page to send during outreach.
 
 What the page now sells:
-- one secure intake link
-- sorted document flow
-- redacted copies
-- approval states
-- clean final delivery
+- one client-facing intake path
+- one approval trail
+- one delivery proof layer
+- one margin-protection story for account teams
 
 Target buyers:
-- agencies
-- legal / signing teams
-- consulting delivery teams
-- recruiting / outsourcing teams
+- agency founders
+- account managers
+- project leads
+- client ops owners
 
 Wallet kept visible for future payment flows:
 - 0xB3e9568A9cbB624403743340358c85CCce130893
 
 Verification:
-- Added the new public MVP page and linked it into navigation and live links.
+- Added the new vertical page and linked it from the main DocSafe page, navigation, and live links.
 - Local href validation passed.
 - Page will be checked on GitHub Pages before or after posting.
