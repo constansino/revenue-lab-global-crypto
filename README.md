@@ -64,6 +64,9 @@
 - `batch1-dm-pack.md`: 总优先级前 3 个目标的可直接复制私信
 - `batch1-followup-pack.md`: 总优先级前 3 个目标的无回复跟进
 - `batch1-closers.md`: 总优先级前 3 个目标的回复承接和 closing
+- `batch2-dm-pack.md`: 总优先级第 4-6 个目标的可直接复制私信
+- `batch2-followup-pack.md`: 总优先级第 4-6 个目标的无回复跟进
+- `batch2-closers.md`: 总优先级第 4-6 个目标的回复承接和 closing
 
 ## 立即预览
 
