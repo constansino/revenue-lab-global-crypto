@@ -43,6 +43,7 @@
 - `docsafe-delivery-matrix.html`: 把 approver / signer / observer / signed-file delivery 规则转成交付矩阵的 DocSafe 交互式小工具页
 - `docsafe-batch-send-mapper.html`: 把 CSV 批量发送、收件人列顺序、merge field 和失败重试规则转成可执行 batch brief 的 DocSafe 交互式小工具页
 - `docsafe-reminder-ladder.html`: 把 resend / reminder / expiry / escalation / send-rate 规则转成可执行 follow-up ladder 的 DocSafe 交互式小工具页
+- `docsafe-field-schema-builder.html`: 把模板字段、标准字段名、预填来源和续签日期规则转成可执行 field schema 的 DocSafe 交互式小工具页
 - `docsafe-send-router.html`: DocSafe 的买家路由与发送顺序页
 - `docsafe-reply-board.html`: DocSafe 的回复分类与下一步发送页
 - `docsafe-close-board.html`: DocSafe 的成交锁 scope 与订金推进页
@@ -65,6 +66,7 @@
 - `docsafe-delivery-matrix.js`: DocSafe 交付矩阵小工具的交互逻辑
 - `docsafe-batch-send-mapper.js`: DocSafe 批量发送和 CSV schema 小工具的交互逻辑
 - `docsafe-reminder-ladder.js`: DocSafe 提醒、到期和升级规则小工具的交互逻辑
+- `docsafe-field-schema-builder.js`: DocSafe 模板字段和标准元数据 schema 小工具的交互逻辑
 - `docsafe-agency-client-ops.html`: 面向 agency account / client ops 的垂直版公开页
 - `docsafe-legal-signing-ops.html`: 面向 legal / signing ops 的垂直版公开页
 - `docsafe-recruiting-onboarding-ops.html`: 面向 recruiting / onboarding ops 的垂直版公开页

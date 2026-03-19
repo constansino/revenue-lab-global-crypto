@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Field Schema Builder</title>
+    <meta
+      name="description"
+      content="An interactive field schema builder for document workflows: choose template source, recipient model, field density, prefill source, metadata discipline, and renewal tracking to generate a standard field map, starter schema preview, and copyable implementation brief."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e1320'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='28' font-weight='700' fill='%23f3f5fb'%3EFS%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">FS</span>
+        <div>
+          <p>DocSafe Schema</p>
+          <small>Interactive Builder</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-batch-send-mapper.html">Batch Mapper</a>
+        <a class="ghost-button" href="./docsafe-reminder-ladder.html">Reminder Ladder</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing template utility</p>
+          <h1>Lock the field schema before batch sends, reminders, and renewals inherit the wrong data model.</h1>
+          <p class="lead">
+            This tool turns template-field ambiguity into a practical planning
+            aid. Choose template source, recipient model, field density,
+            prefill source, metadata discipline, and renewal tracking, then
+            generate a standard field map, a starter schema preview, and a
+            copyable implementation brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#field-schema-builder">Open Field Schema Builder</a>
+            <a class="secondary-button" href="./docsafe-batch-send-mapper.html">Open Batch Mapper</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>standard field map generated</span>
+            </li>
+            <li>
+              <strong>4</strong>
+              <span>template paths supported</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>need to rename placeholders live in production</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Schema Rule</p>
+            <h2>Document workflows break when field labels, merge keys, dates, and roles are invented separately by every operator.</h2>
+            <p>
+              Public repo signals keep pointing to the same pressure: teams want
+              richer custom fields, field inventory APIs, merge-field names that
+              line up with CSV columns, and template paths that can be prefilled
+              from apps or spreadsheets.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>template path, field depth, metadata, prefill, renewal</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>field map, preview, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>contracts, onboarding packs, renewals, API sync</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="field-schema-builder" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Field Schema Builder</p>
+          <h2>Design the field system before the template becomes hard to evolve.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="templateSource">Template source</label>
+            <select class="calc-input" id="templateSource">
+              <option value="pdf">PDF text-tag path</option>
+              <option value="docx" selected>DOCX variable path</option>
+              <option value="html">HTML field-tag path</option>
+              <option value="live">Existing live template</option>
+            </select>
+            <p class="calc-help">Choose the actual template source the team is willing to maintain, not the one that only works in demos.</p>
+
+            <label for="recipientSchema">Recipient model</label>
+            <select class="calc-input" id="recipientSchema">
+              <option value="single">Single signer</option>
+              <option value="dual" selected>Two-party signer</option>
+              <option value="sequential">Sequential signers</option>
+              <option value="approval">Approval plus signer</option>
+            </select>
+            <p class="calc-help">Recipient roles should be part of the field schema because they shape names, tags, and merge keys.</p>
+
+            <label for="fieldDensity">Field density</label>
+            <select class="calc-input" id="fieldDensity">
+              <option value="core">Core fields only</option>
+              <option value="extended" selected>Extended contract fields</option>
+              <option value="form">Form-heavy packet</option>
+            </select>
+            <p class="calc-help">Form-heavy means more than identity plus dates; it needs repeatable naming and grouping discipline.</p>
+
+            <label for="prefillSource">Prefill source</label>
+            <select class="calc-input" id="prefillSource">
+              <option value="none">Manual entry only</option>
+              <option value="csv" selected>CSV or CRM export</option>
+              <option value="api">App or API prefill</option>
+            </select>
+            <p class="calc-help">If the data already lives in another system, field keys must line up before the first send.</p>
+
+            <label for="metadataDiscipline">Metadata discipline</label>
+            <select class="calc-input" id="metadataDiscipline">
+              <option value="labels">Labels only</option>
+              <option value="standard" selected>Standard external keys</option>
+              <option value="lifecycle">Filterable lifecycle keys</option>
+            </select>
+            <p class="calc-help">Lifecycle keys are needed when the team wants to search, renew, or segment documents by dates or status.</p>
+
+            <label for="renewalTracking">Renewal tracking</label>
+            <select class="calc-input" id="renewalTracking">
+              <option value="none">No renewal dates</option>
+              <option value="end" selected>End date only</option>
+              <option value="full">Start, end, and renewal dates</option>
+            </select>
+            <p class="calc-help">If renewal matters commercially, the schema needs dedicated dates instead of burying them in free text.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended schema path</p>
+            <strong id="schemaPlanName">Standardized Contract Schema</strong>
+            <p id="schemaPlanSummary" class="stack-copy">Name fields once, align them with prefill inputs, and keep lifecycle dates queryable before the template spreads across ops.</p>
+
+            <p>Template methods</p>
+            <div id="schemaMethods" class="stack-chip-row"></div>
+
+            <p>Standard field map</p>
+            <div id="schemaFieldMap" class="matrix-grid"></div>
+
+            <p>Schema starter preview</p>
+            <div class="brief-box">
+              <p id="schemaPreview" class="csv-preview"></p>
+              <button class="table-link table-button" id="copySchemaPreview" type="button">Copy Preview</button>
+            </div>
+
+            <p>Schema rules</p>
+            <div id="schemaRules" class="list-output"></div>
+
+            <p>Copyable schema brief</p>
+            <div class="brief-box">
+              <p id="schemaBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copySchemaBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="schemaChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copySchemaChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="schemaOfferName">DocSafe Setup Sprint</strong>
+            <p id="schemaOfferNote" class="stack-copy">Best when the field model is already clear enough to implement into one live template lane.</p>
+            <a class="table-link" href="./docsafe-reminder-ladder.html">Need follow-up timing too? Open Reminder Ladder</a>
+            <a class="secondary-button" id="schemaOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where one template is already being reused across many sends or renewals.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Legal and contract ops</h3>
+            <p>
+              They need effective dates, end dates, signer roles, and
+              searchable contract data that stays consistent as templates evolve.
+            </p>
+          </article>
+          <article>
+            <h3>Onboarding and HR teams</h3>
+            <p>
+              They reuse the same packets repeatedly and need identity,
+              position, dates, and approver fields to stay stable across batches.
+            </p>
+          </article>
+          <article>
+            <h3>SaaS and platform teams</h3>
+            <p>
+              They want prefill from app data or CRM exports, which makes field
+              keys and API mapping part of the product, not an ops afterthought.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This builder is grounded in real field, metadata, and template-path demand.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Richer custom fields</h3>
+            <p>Documenso issue 662 asks for more field types plus standardized IDs like customer_name and end_date for filtering and reminders.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/662" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Field inventory API</h3>
+            <p>Documenso issue 1178 shows teams need to query existing document fields before updating or deleting them safely.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/1178" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Placeholder names as CSV keys</h3>
+            <p>Documenso issue 1695 shows bulk customization depends on placeholder names lining up with CSV column names.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/1695" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Prefill from existing data</h3>
+            <p>Docuseal issue 303 asks for PDF templates to be populated from database or spreadsheet data instead of manual typing.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/303" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>PDF and DOCX template paths</h3>
+            <p>Docuseal JS README documents PDF field tags, DOCX variables, and HTML field tags as working template creation paths.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal-js" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+          <article>
+            <h3>Template creation as a product signal</h3>
+            <p>Docuseal README treats HTML API and PDF or DOCX field-tag template creation as commercial-grade capabilities.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Name the fields once, keep lifecycle dates queryable, and align template labels with the data source before scale makes the mess permanent.</p>
+    </footer>
+
+    <script src="./docsafe-field-schema-builder.js"></script>
+  </body>
+</html>
