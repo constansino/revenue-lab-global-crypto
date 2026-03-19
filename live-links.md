@@ -5,6 +5,7 @@
 - DocSafe Flow: https://constansino.github.io/revenue-lab-global-crypto/docsafe-flow.html
 - DocSafe ROI Calculator: https://constansino.github.io/revenue-lab-global-crypto/docsafe-roi-calculator.html
 - DocSafe Stack Picker: https://constansino.github.io/revenue-lab-global-crypto/docsafe-stack-picker.html
+- DocSafe Scope Builder: https://constansino.github.io/revenue-lab-global-crypto/docsafe-scope-builder.html
 - DocSafe Send Router: https://constansino.github.io/revenue-lab-global-crypto/docsafe-send-router.html
 - DocSafe Reply Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-reply-board.html
 - DocSafe Close Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-close-board.html

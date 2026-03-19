@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Scope Builder</title>
+    <meta
+      name="description"
+      content="An interactive scope builder for document workflow buyers: turn approval, template, PDF, intake, automation, and security pain into a phase-1 implementation brief."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SB</span>
+        <div>
+          <p>DocSafe Scope</p>
+          <small>Interactive Builder</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-stack-picker.html">Stack Picker</a>
+        <a class="ghost-button" href="./docsafe-roi-calculator.html">ROI Calculator</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing implementation aid</p>
+          <h1>Turn document workflow pain into a phase-one build plan.</h1>
+          <p class="lead">
+            This builder converts real open GitHub pain signals into a narrow
+            implementation brief. Choose the actual workflow problems showing up
+            in your team, then generate a phase-one scope, acceptance criteria,
+            risk list, and the right DocSafe starting offer.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#scope-builder">Open Scope Builder</a>
+            <a class="secondary-button" href="./docsafe-stack-picker.html">Open Stack Picker</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>5</strong>
+              <span>implementation levers</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>copyable phase-one brief</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>need for custom scoping from scratch</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Scope Rule</p>
+            <h2>Sell the first working lane, not the whole platform dream.</h2>
+            <p>
+              Public repo issues keep showing the same production gaps:
+              approval gating, template reuse, PDF handling, fill-and-sign
+              handoff, and operational security. This page turns those gaps into
+              a scoping tool buyers can actually use.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Pain</dt>
+                <dd>approval, templates, OCR, intake, automation</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>brief, criteria, risks, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>internal alignment or pre-sale scoping</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="scope-builder" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Scope Builder</p>
+          <h2>Choose the operational failures that need to be fixed first.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="approvalGate">Approval gating need</label>
+            <select class="calc-input" id="approvalGate">
+              <option value="none">No blocking approvals</option>
+              <option value="basic" selected>One blocking approval step</option>
+              <option value="multi">Multiple staged approvals</option>
+            </select>
+            <p class="calc-help">Inspired by active approval-order requests in Documenso and approval UI issues in n8n.</p>
+
+            <label for="templateReuse">Template reuse pressure</label>
+            <select class="calc-input" id="templateReuse">
+              <option value="none">Low</option>
+              <option value="medium" selected>Medium</option>
+              <option value="high">High</option>
+            </select>
+            <p class="calc-help">Use high if teams keep rebuilding the same forms or document bundles repeatedly.</p>
+
+            <label for="pdfPain">PDF cleanup and OCR load</label>
+            <select class="calc-input" id="pdfPain">
+              <option value="low">Low</option>
+              <option value="medium" selected>Medium</option>
+              <option value="high">High</option>
+            </select>
+            <p class="calc-help">Use high if OCR, redaction, splitting, or scanned-file cleanup is still manual.</p>
+
+            <label for="intakeSource">Current intake source</label>
+            <select class="calc-input" id="intakeSource">
+              <option value="form">Structured form already exists</option>
+              <option value="mixed" selected>Mixed inbox + form</option>
+              <option value="email">Mostly email / chat</option>
+            </select>
+            <p class="calc-help">Email-heavy intake usually means the first implementation step should include structured submission fields.</p>
+
+            <label for="automationDepth">Workflow automation depth</label>
+            <select class="calc-input" id="automationDepth">
+              <option value="none">No automation yet</option>
+              <option value="basic" selected>Notifications and status routing</option>
+              <option value="advanced">Cross-system orchestration</option>
+            </select>
+            <p class="calc-help">Advanced means the workflow needs state changes across several tools or owners.</p>
+
+            <label for="securityNeed">Operational security need</label>
+            <select class="calc-input" id="securityNeed">
+              <option value="standard" selected>Standard</option>
+              <option value="restricted">Restricted self-hosted environment</option>
+            </select>
+            <p class="calc-help">Restricted usually means internal hosting rules, read-only requirements, or tighter environment controls.</p>
+          </div>
+
+          <div class="calc-output scope-output">
+            <p>Recommended phase-one scope</p>
+            <strong id="scopeName">Approval-Gated Signing Lane</strong>
+            <p id="scopeSummary" class="stack-copy">Start with one controlled intake-to-approval-to-signing path before broader workspace rollout.</p>
+
+            <p>Suggested tools</p>
+            <div id="scopeTools" class="stack-chip-row"></div>
+
+            <p>Implementation brief</p>
+            <div class="brief-box">
+              <p id="briefText" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyBriefButton" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance criteria</p>
+            <div class="brief-box">
+              <div id="acceptanceList" class="list-output"></div>
+              <button class="table-link table-button" id="copyCriteriaButton" type="button">Copy Criteria</button>
+            </div>
+
+            <p>Likely blockers</p>
+            <div id="riskList" class="list-output"></div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="scopeOfferName">DocSafe Setup Sprint</strong>
+            <p id="scopeOfferNote" class="stack-copy">Best when one lane is already clear enough to build now.</p>
+            <a class="secondary-button" id="scopeOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Pain Signals</p>
+          <h2>The scope rules here come from real public issue patterns.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Approval order</h3>
+            <p>Documenso issue 2526 shows a live need for approval-first workflows before signatures are sent.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/2526" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Template composition</h3>
+            <p>Docuseal issue 583 shows demand for reusing existing templates inside bundles instead of rebuilding fields.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/583" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Prefill and completion gaps</h3>
+            <p>Docuseal issue 614 points to missing fill/sign flow coverage for MCP and agent-driven execution.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/614" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>OCR operational friction</h3>
+            <p>Stirling-PDF issue 5389 shows OCR remains a real production failure point, not a solved checkbox.</p>
+            <a class="table-link" href="https://github.com/Stirling-Tools/Stirling-PDF/issues/5389" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Security restrictions</h3>
+            <p>Stirling-PDF issue 5509 highlights buyer concern around running PDF handlers in more restricted environments.</p>
+            <a class="table-link" href="https://github.com/Stirling-Tools/Stirling-PDF/issues/5509" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Approval UI reliability</h3>
+            <p>n8n issue 27187 shows approval interactions themselves can become implementation risk if not scoped carefully.</p>
+            <a class="table-link" href="https://github.com/n8n-io/n8n/issues/27187" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Use public pain signals to scope the first lane tightly enough that a buyer can actually approve and launch it.</p>
+    </footer>
+
+    <script src="./docsafe-scope-builder.js"></script>
+  </body>
+</html>

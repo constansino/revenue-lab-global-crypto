@@ -588,6 +588,36 @@ h2 {
   font-weight: 700;
 }
 
+.scope-output {
+  align-content: start;
+}
+
+.brief-box {
+  display: grid;
+  gap: 0.7rem;
+  padding: 0.9rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.brief-copy {
+  margin: 0;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.list-output {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.list-output p {
+  margin: 0;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.86);
+}
+
 input[type="range"] {
   width: 100%;
   accent-color: var(--accent);
