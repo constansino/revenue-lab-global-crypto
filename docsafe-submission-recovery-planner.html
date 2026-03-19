@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Submission Recovery Planner</title>
+    <meta
+      name="description"
+      content="An interactive submission recovery planner for document workflows: choose recovery trigger, owner, recovery mode, data carry policy, link policy, and notification policy to generate a buyer-facing recovery route, starter recovery preview, and exception-handling brief."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e1320'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='26' font-weight='700' fill='%23f3f5fb'%3ESR%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SR</span>
+        <div>
+          <p>DocSafe Recovery</p>
+          <small>Interactive Planner</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-reminder-ladder.html">Reminder Ladder</a>
+        <a class="ghost-button" href="./docsafe-completion-package-planner.html">Completion Package</a>
+        <a class="ghost-button" href="./docsafe-webhook-router.html">Webhook Router</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing recovery utility</p>
+          <h1>Recover rejected, reassigned, or mistaken submissions without leaving stale links, losing entered data, or confusing prior signers.</h1>
+          <p class="lead">
+            This tool turns exception handling into a practical planning aid.
+            Choose recovery trigger, owner, recovery mode, data carry policy,
+            link policy, and notification policy, then generate a recovery
+            route, a starter recovery preview, and a copyable exception brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#submission-recovery-planner">Open Submission Recovery Planner</a>
+            <a class="secondary-button" href="./docsafe-reminder-ladder.html">Open Reminder Ladder</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>owned recovery path before escalation</span>
+            </li>
+            <li>
+              <strong>4</strong>
+              <span>exception traps surfaced before they hit ops</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>need to improvise reject or reassign handling live</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Recovery Rule</p>
+            <h2>Submission recovery only stays trustworthy when reject handling, reassignment, resubmission, link invalidation, and notifications are designed as one system.</h2>
+            <p>
+              Public repo issues keep pointing to the same exception pressure:
+              buyers want reject notifications to reach prior signers, wrong
+              recipients to lose access after reassignment, corrected
+              resubmissions to retain prior input safely, completed submissions
+              to be voided or reset deliberately, and invitation timing to stay
+              professional across time zones.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>trigger, owner, mode, carry, link, notifications</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>route map, preview, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>rejects, wrong recipients, corrections, scheduled resend</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="submission-recovery-planner" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Submission Recovery Planner</p>
+          <h2>Design the recovery route before one mistake turns into a legal, delivery, or support mess.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="recoveryTrigger">Recovery trigger</label>
+            <select class="calc-input" id="recoveryTrigger">
+              <option value="reject" selected>Signer rejects after review</option>
+              <option value="wrong_data">Wrong data entered</option>
+              <option value="wrong_recipient">Wrong recipient assigned</option>
+              <option value="timing">Invite timing needs adjustment</option>
+            </select>
+            <p class="calc-help">Choose the actual exception the team repeatedly hits, not the one that is easiest to explain after the fact.</p>
+
+            <label for="recoveryOwner">Recovery owner</label>
+            <select class="calc-input" id="recoveryOwner">
+              <option value="ops" selected>Ops owner</option>
+              <option value="sender">Original sender</option>
+              <option value="legal">Legal or compliance</option>
+              <option value="account">Account or client owner</option>
+            </select>
+            <p class="calc-help">The recovery owner should be whoever can actually fix the next step, not just whoever happened to send the first invite.</p>
+
+            <label for="recoveryMode">Recovery mode</label>
+            <select class="calc-input" id="recoveryMode">
+              <option value="resubmit" selected>Resubmit with correction</option>
+              <option value="void">Void and reissue</option>
+              <option value="reassign">Reassign recipient</option>
+              <option value="schedule">Schedule invite for later send</option>
+            </select>
+            <p class="calc-help">Pick the smallest intervention that still removes the risk, because overusing resets and reissues destroys operator trust.</p>
+
+            <label for="dataCarry">Data carry policy</label>
+            <select class="calc-input" id="dataCarry">
+              <option value="prefill" selected>Prefill previous answers safely</option>
+              <option value="clean">Fresh restart</option>
+              <option value="archive">Archive original then reissue</option>
+              <option value="diff">Keep correction notes only</option>
+            </select>
+            <p class="calc-help">The buyer needs to know whether corrected submissions should keep prior values, restart cleanly, or preserve the original as evidence.</p>
+
+            <label for="linkPolicy">Signing link policy</label>
+            <select class="calc-input" id="linkPolicy">
+              <option value="rotate" selected>Rotate access link on change</option>
+              <option value="new_submission">New submission and new link</option>
+              <option value="forward">Forward to replacement signer</option>
+              <option value="hold">Hold current link until review</option>
+            </select>
+            <p class="calc-help">Access links are part of recovery design because wrong-recipient access can stay live even after an operator thinks the case is fixed.</p>
+
+            <label for="notifyPolicy">Notification policy</label>
+            <select class="calc-input" id="notifyPolicy">
+              <option value="affected" selected>Notify affected signers only</option>
+              <option value="all">Notify all involved parties</option>
+              <option value="signed">Notify already-signed parties too</option>
+              <option value="scheduled">Queue and schedule recovery notices</option>
+            </select>
+            <p class="calc-help">Exception handling breaks trust fastest when the wrong people stay uninformed or get the wrong recovery message.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended recovery path</p>
+            <strong id="recoveryPlanName">Correction-Safe Resubmission</strong>
+            <p id="recoveryPlanSummary" class="stack-copy">Keep one owned recovery owner, prefill safe corrections where possible, and make notification and link invalidation explicit before the next resend.</p>
+
+            <p>Recovery methods</p>
+            <div id="recoveryMethods" class="stack-chip-row"></div>
+
+            <p>Recovery route map</p>
+            <div id="recoveryMap" class="matrix-grid"></div>
+
+            <p>Starter recovery preview</p>
+            <div class="brief-box">
+              <p id="recoveryPreview" class="csv-preview"></p>
+              <button class="table-link table-button" id="copyRecoveryPreview" type="button">Copy Preview</button>
+            </div>
+
+            <p>Recovery rules</p>
+            <div id="recoveryRules" class="list-output"></div>
+
+            <p>Copyable recovery brief</p>
+            <div class="brief-box">
+              <p id="recoveryBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyRecoveryBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="recoveryChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyRecoveryChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="recoveryOfferName">DocSafe Setup Sprint</strong>
+            <p id="recoveryOfferNote" class="stack-copy">Best when the buyer already knows the main exception path and needs the recovery policy implemented cleanly.</p>
+            <a class="table-link" href="./docsafe-reminder-ladder.html">Need reminder, resend, and expiry timing too? Open Reminder Ladder</a>
+            <a class="table-link" href="./docsafe-completion-package-planner.html">Need voided artifact packaging and archive rules too? Open Completion Package</a>
+            <a class="table-link" href="./docsafe-webhook-router.html">Need downstream status sync and reassignment events too? Open Webhook Router</a>
+            <a class="secondary-button" id="recoveryOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where document workflows are already live and exceptions now create manual ops debt.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Legal and contract ops</h3>
+            <p>
+              They need reject handling, void or reset rules, and wrong-recipient
+              cleanup that will stand up when contracts are sensitive.
+            </p>
+          </article>
+          <article>
+            <h3>HR and onboarding teams</h3>
+            <p>
+              They need easy correction flows where a signer can fix one wrong
+              field without refilling the entire packet.
+            </p>
+          </article>
+          <article>
+            <h3>Global ops and account teams</h3>
+            <p>
+              They need scheduled invite timing, reassignment, and clear
+              notifications when recipients or timing change across time zones.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This planner is grounded in real reject, reset, reassignment, and resend demand.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Rejects should notify already-signed parties</h3>
+            <p>Docuseal issue 568 shows rejected documents can leave prior signers uninformed unless the recovery notification path is designed deliberately.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/568" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Completed submissions sometimes need void or reset rules</h3>
+            <p>Docuseal issue 335 asks for a way to void, cancel, or reset a completed submission when wrong data or wrong signing details slipped through.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/335" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Resubmissions should reuse safe prior input</h3>
+            <p>Docuseal issue 334 asks to keep old input on resubmit so a signer can fix one small mistake instead of refilling the entire form.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/334" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Signing requests sometimes need reassignment</h3>
+            <p>Docuseal issue 322 asks for the ability to forward a signing request to another person when the original recipient is not the right signer.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/322" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Reassigning a recipient should invalidate stale links</h3>
+            <p>Docuseal issue 605 shows changing a recipient email or phone can leave the old signing URL active unless the submitter slug is regenerated.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/605" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Invite timing matters across time zones</h3>
+            <p>Docuseal issue 408 asks for scheduling invitation send time, which turns recovery and resend timing into a product issue instead of a manual workaround.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/408" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Submitter APIs already support updates and re-send behavior</h3>
+            <p>The Docuseal JS README documents updateSubmitter for changing submitter details, pre-filling or updating field values, and re-sending emails, so the buyer problem is safe recovery policy rather than lack of primitives.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal-js" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Design the recovery route once before rejects, reassignment, and resends become support debt.</p>
+    </footer>
+
+    <script src="./docsafe-submission-recovery-planner.js"></script>
+  </body>
+</html>
