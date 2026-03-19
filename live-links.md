@@ -112,6 +112,7 @@
 - Partner Intro Referral Anonymous Proof: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-anonymous-proof-board.html
 - Partner Intro Referral Brandless Proof: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-brandless-proof-board.html
 - Partner Intro Referral Proof Safety: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-proof-safety-board.html
+- Partner Intro Referral Quote: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-quote-board.html
 - Partner Intro Referral Approval Follow-Up: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-approval-followup-board.html
 - Partner Intro Referral Approval To Payment: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-approval-to-payment-board.html
 - Partner Intro Referral Payment Guide: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-payment-guide-board.html
