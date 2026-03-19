@@ -3,6 +3,7 @@
 - Home: https://constansino.github.io/revenue-lab-global-crypto/
 - GitHub Demand Research: https://constansino.github.io/revenue-lab-global-crypto/github-demand-research-20260319.html
 - DocSafe Flow: https://constansino.github.io/revenue-lab-global-crypto/docsafe-flow.html
+- DocSafe ROI Calculator: https://constansino.github.io/revenue-lab-global-crypto/docsafe-roi-calculator.html
 - DocSafe Send Router: https://constansino.github.io/revenue-lab-global-crypto/docsafe-send-router.html
 - DocSafe Reply Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-reply-board.html
 - DocSafe Close Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-close-board.html
@@ -110,6 +111,7 @@
 - Partner Intro Referral Approval-Only Proof: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-approval-only-proof-board.html
 - Partner Intro Referral Anonymous Proof: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-anonymous-proof-board.html
 - Partner Intro Referral Brandless Proof: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-brandless-proof-board.html
+- Partner Intro Referral Proof Safety: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-proof-safety-board.html
 - Partner Intro Referral Approval Follow-Up: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-approval-followup-board.html
 - Partner Intro Referral Approval To Payment: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-approval-to-payment-board.html
 - Partner Intro Referral Payment Guide: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-payment-guide-board.html
