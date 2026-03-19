@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Signer Experience Planner</title>
+    <meta
+      name="description"
+      content="An interactive signer experience planner for document workflows: choose signing surface, review mode, guidance layer, signature policy, date policy, and completion fallback to generate a buyer-facing signer path, starter preview, and QA brief."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e1320'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='24' font-weight='700' fill='%23f3f5fb'%3ESX%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SX</span>
+        <div>
+          <p>DocSafe Signer</p>
+          <small>Completion Planner</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-embed-launchpad.html">Embed Launchpad</a>
+        <a class="ghost-button" href="./docsafe-conditional-logic-planner.html">Conditional Logic</a>
+        <a class="ghost-button" href="./docsafe-field-schema-builder.html">Field Schema</a>
+        <a class="ghost-button" href="./docsafe-identity-gate-planner.html">Identity Gate</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing signer utility</p>
+          <h1>Fix signer completion before read-only reviews, optional steps, signature mode drift, and date rules turn into drop-off.</h1>
+          <p class="lead">
+            This tool turns signer-side friction into a practical planning aid.
+            Choose signing surface, review mode, guidance layer, signature
+            policy, date policy, and completion fallback, then generate a
+            signer path, a starter preview JSON, and a copyable QA brief that a
+            real buyer can approve.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#signer-experience-planner">Open Signer Experience Planner</a>
+            <a class="secondary-button" href="./docsafe-embed-launchpad.html">Open Embed Launchpad</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>clear finish lane for the signer</span>
+            </li>
+            <li>
+              <strong>4</strong>
+              <span>completion traps surfaced before launch</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>reason to guess whether a prepared signer can still finish</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Finish Rule</p>
+            <h2>Signer flows are only sellable when prepared review, step guidance, signature policy, date controls, and completion proof all agree.</h2>
+            <p>
+              Public repo issues keep pointing to the same signer pressure:
+              fully prepared review sessions can lose the action to finish,
+              optional fields can trap recipients inside guided steppers,
+              read-only checkbox or radio states need deliberate handling,
+              signature mode locks can drift, and date or timestamp evidence can
+              disagree with what operations expects.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>surface, review, guidance, signature, date, completion</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>signer map, preview JSON, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>contracts, onboarding, portal signing, compliance review</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="signer-experience-planner" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Signer Experience Planner</p>
+          <h2>Design the signer completion path before the buyer inherits dead-end sessions and support escalations.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="signingSurface">Signing surface</label>
+            <select class="calc-input" id="signingSurface">
+              <option value="hosted" selected>Hosted signing link</option>
+              <option value="embedded">Embedded signer inside product</option>
+              <option value="portal">Review portal or workspace</option>
+              <option value="mobile">Mobile-first signing path</option>
+            </select>
+            <p class="calc-help">Pick the exact signer surface the buyer already plans to own, not the one that only feels easy in a standalone demo.</p>
+
+            <label for="reviewMode">Review mode</label>
+            <select class="calc-input" id="reviewMode">
+              <option value="editable">Editable signer fields</option>
+              <option value="readonly_text" selected>Read-only prepared text review</option>
+              <option value="readonly_mixed">Read-only mixed fields and choices</option>
+              <option value="full_prefilled">Fully prefilled review-only session</option>
+            </select>
+            <p class="calc-help">Prepared review is commercially attractive, but it is exactly where completion controls and read-only edge cases show up.</p>
+
+            <label for="guidanceMode">Guidance layer</label>
+            <select class="calc-input" id="guidanceMode">
+              <option value="guided">Guided required stepper</option>
+              <option value="optional_hidden">Optional fields removed from stepper</option>
+              <option value="titles" selected>Field titles and descriptions</option>
+              <option value="minimal">Minimal navigation only</option>
+            </select>
+            <p class="calc-help">Signer guidance should reduce hesitation without forcing users through steps that no longer matter.</p>
+
+            <label for="signaturePolicy">Signature policy</label>
+            <select class="calc-input" id="signaturePolicy">
+              <option value="drawn" selected>Drawn signature default</option>
+              <option value="typed">Typed signature allowed</option>
+              <option value="locked_drawn">Drawn signature locked</option>
+              <option value="mixed_initials">Mixed signature and initials modes</option>
+            </select>
+            <p class="calc-help">Signature mode should behave exactly the same way the buyer describes it in product copy, compliance notes, and training.</p>
+
+            <label for="datePolicy">Date policy</label>
+            <select class="calc-input" id="datePolicy">
+              <option value="free">Free date entry</option>
+              <option value="bounded" selected>Bounded min and max dates</option>
+              <option value="reviewed">Reviewed date confirmation</option>
+              <option value="timezone_safe">Timezone-safe completion proof</option>
+            </select>
+            <p class="calc-help">Date handling is part of signer trust because bad constraints or timestamp drift can invalidate the buyer's downstream workflow.</p>
+
+            <label for="completionFallback">Completion fallback</label>
+            <select class="calc-input" id="completionFallback">
+              <option value="confirm">Explicit confirm step</option>
+              <option value="review_submit" selected>Review then submit</option>
+              <option value="host_callback">Host callback verification</option>
+              <option value="ops_recovery">Ops recovery lane</option>
+            </select>
+            <p class="calc-help">The buyer needs a deliberate finish state or a prepared signer flow will still land on support when something gets stuck.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended signer path</p>
+            <strong id="signerPlanName">Guided Review Finish Lane</strong>
+            <p id="signerPlanSummary" class="stack-copy">Give signers a prepared review path with visible instructions, bounded dates, and one clear submit action.</p>
+
+            <p>Signer methods</p>
+            <div id="signerMethods" class="stack-chip-row"></div>
+
+            <p>Signer stage map</p>
+            <div id="signerMap" class="matrix-grid"></div>
+
+            <p>Starter signer preview</p>
+            <div class="brief-box">
+              <p id="signerPreview" class="csv-preview"></p>
+              <button class="table-link table-button" id="copySignerPreview" type="button">Copy Preview</button>
+            </div>
+
+            <p>Signer rules</p>
+            <div id="signerRules" class="list-output"></div>
+
+            <p>Copyable signer brief</p>
+            <div class="brief-box">
+              <p id="signerBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copySignerBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="signerChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copySignerChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="signerOfferName">DocSafe Setup Sprint</strong>
+            <p id="signerOfferNote" class="stack-copy">Best when the buyer already knows the signer path that needs to feel safe and finish cleanly.</p>
+            <a class="table-link" href="./docsafe-embed-launchpad.html">Need host shell, prefill, and return behavior too? Open Embed Launchpad</a>
+            <a class="table-link" href="./docsafe-conditional-logic-planner.html">Need optional-step logic and hidden branch QA too? Open Conditional Logic</a>
+            <a class="table-link" href="./docsafe-field-schema-builder.html">Need field titles, date keys, and prefill discipline too? Open Field Schema</a>
+            <a class="table-link" href="./docsafe-identity-gate-planner.html">Need signer OTP, secure sessions, and recovery rules too? Open Identity Gate</a>
+            <a class="table-link" href="./docsafe-completion-package-planner.html">Need completed files and audit artifacts too? Open Completion Package</a>
+            <a class="table-link" href="./docsafe-submission-recovery-planner.html">Need reject, resubmit, and rescue paths too? Open Recovery Planner</a>
+            <a class="secondary-button" id="signerOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where prepared signer review is already part of the promise, but completion still breaks in edge cases.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>SaaS and product teams</h3>
+            <p>
+              They want signing to feel controlled inside hosted or embedded
+              flows, not like a generic document viewer with a hidden finish
+              state.
+            </p>
+          </article>
+          <article>
+            <h3>HR and onboarding operators</h3>
+            <p>
+              They prefill identity, start dates, and approvals, which makes
+              read-only review, guidance, and rescue behavior part of the buyer
+              experience.
+            </p>
+          </article>
+          <article>
+            <h3>Legal, compliance, and finance teams</h3>
+            <p>
+              They care about signature mode consistency, bounded dates, and
+              timestamps that stand up when the signed record is reviewed later.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This planner is grounded in real signer-side completion, stepper, signature-mode, and timestamp demand.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Fully prepared review can still lose the action to finish</h3>
+            <p>Docuseal issue 573 shows an embedded DocusealForm can become impossible to complete when all fields are prefilled and read-only.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/573" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Optional fields should not trap signers in a guided stepper</h3>
+            <p>Docuseal issue 581 asks to remove optional fields from the stepper because signers should not click through unnecessary stages just to finish.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/581" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Read-only choice review needs its own treatment</h3>
+            <p>Docuseal issue 559 asks for read-only checkbox and radio items, which shows prepared review is not solved by locking text fields alone.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/559" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Signer instructions still need visible titles and descriptions</h3>
+            <p>Docuseal pull request 556 adds field titles and descriptions on the invite submission form, which signals that signer guidance is part of completion quality.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/pull/556" target="_blank" rel="noreferrer">Open PR</a>
+          </article>
+          <article>
+            <h3>Initials mode should be controlled instead of guessed</h3>
+            <p>Docuseal issue 569 asks for the initial field default mode to be toggleable, such as drawn initials instead of an unwanted default.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/569" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Typed signatures can reappear when they were meant to be disabled</h3>
+            <p>Docuseal issue 543 shows typed signature can still appear on the hosted signing link even when the buyer expected it to be disabled.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/543" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Date fields need min and max validation, not loose entry only</h3>
+            <p>Docuseal issue 506 asks for min and max date validation because many buyer workflows depend on bounded signer dates.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/506" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Signature mode can drift across different field types</h3>
+            <p>Docuseal issue 577 shows text signature behavior can transfer incorrectly to non-text signatures, which turns signature policy into a QA concern.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/577" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Completion evidence has to agree with the recorded date</h3>
+            <p>Docuseal issue 575 shows a mismatch between signature timestamp date and submission completed timestamp, which makes timezone and completion proof commercially relevant.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/575" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>The product category already supports signer-facing delivery</h3>
+            <p>The Docuseal README already positions the product as a secure digital document signing platform with mobile-optimized signing, embedded signing forms, PDF signature verification, and multi-language signing, so the buyer problem is signer UX execution rather than category fit.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Plan the signer experience before support inherits every dead-end session.</p>
+    </footer>
+
+    <script src="./docsafe-signer-experience-planner.js"></script>
+  </body>
+</html>

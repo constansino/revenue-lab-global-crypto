@@ -21,6 +21,7 @@
 - DocSafe Identity Gate Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-identity-gate-planner.html
 - DocSafe Invite Delivery Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-invite-delivery-planner.html
 - DocSafe Template Library Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-template-library-planner.html
+- DocSafe Signer Experience Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-signer-experience-planner.html
 - DocSafe Send Router: https://constansino.github.io/revenue-lab-global-crypto/docsafe-send-router.html
 - DocSafe Reply Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-reply-board.html
 - DocSafe Close Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-close-board.html
