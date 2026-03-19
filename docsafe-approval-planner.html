@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Approval Planner</title>
+    <meta
+      name="description"
+      content="An interactive approval planner for document workflows: map approvers, signers, CC viewers, delivery, reminders, and the right DocSafe implementation entry."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">AP</span>
+        <div>
+          <p>DocSafe Approval</p>
+          <small>Interactive Planner</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-scope-builder.html">Scope Builder</a>
+        <a class="ghost-button" href="./docsafe-stack-picker.html">Stack Picker</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing routing aid</p>
+          <h1>Plan the approval path before signers and observers get the wrong message.</h1>
+          <p class="lead">
+            This planner turns approval-order and CC pain into a buyer-facing
+            workflow map. Choose how many approvals, signers, observers,
+            delivery paths, and reminder rules the lane needs, then generate a
+            phase map, notification rules, and a copyable approval brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#approval-planner">Open Approval Planner</a>
+            <a class="secondary-button" href="./docsafe-scope-builder.html">Open Scope Builder</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>5</strong>
+              <span>routing decisions surfaced</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>copyable approval brief</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>need to explain the sequence from scratch</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Planner Rule</p>
+            <h2>Approvers, signers, and CC viewers should not discover the workflow in production.</h2>
+            <p>
+              Public repo issues keep showing the same problems: approvals do
+              not block signatures, CC recipients do not see the right state,
+              and signers do not receive the expected completion flow. This page
+              turns that into a practical planning tool.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>approvers, signers, viewers, reminders, delivery</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>phase order, notification rules, brief</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>pre-sale planning or internal workflow alignment</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="approval-planner" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Approval Planner</p>
+          <h2>Define who acts, who waits, and who only watches.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="approvalDepth">Approval depth</label>
+            <select class="calc-input" id="approvalDepth">
+              <option value="none">No approvers</option>
+              <option value="single" selected>One blocking approver</option>
+              <option value="staged">Multiple approval stages</option>
+            </select>
+            <p class="calc-help">Use staged if signers must wait for more than one internal gate.</p>
+
+            <label for="signingMode">Signing order</label>
+            <select class="calc-input" id="signingMode">
+              <option value="single">One signer</option>
+              <option value="sequential" selected>Sequential signers</option>
+              <option value="parallel">Parallel signers</option>
+            </select>
+            <p class="calc-help">Sequential is safer when each signer depends on the prior state being complete.</p>
+
+            <label for="viewerMode">Viewer / CC behavior</label>
+            <select class="calc-input" id="viewerMode">
+              <option value="none">No observers</option>
+              <option value="complete" selected>Completion-only observers</option>
+              <option value="request">Request-time CC viewers</option>
+            </select>
+            <p class="calc-help">Request-time CC is useful when legal or internal observers must see the unsigned document too.</p>
+
+            <label for="deliveryPath">Primary delivery path</label>
+            <select class="calc-input" id="deliveryPath">
+              <option value="email" selected>Email request</option>
+              <option value="portal">Portal / signing link</option>
+              <option value="mixed">Mixed link + email</option>
+            </select>
+            <p class="calc-help">Portal links require clearer post-sign completion handling than pure email routes.</p>
+
+            <label for="reminderMode">Reminder / escalation rule</label>
+            <select class="calc-input" id="reminderMode">
+              <option value="none">No reminders</option>
+              <option value="basic" selected>Reminder only</option>
+              <option value="escalate">Reminder plus fallback escalation</option>
+            </select>
+            <p class="calc-help">Escalation matters when internal approvers can silently stall the lane.</p>
+
+            <label for="automationSupport">Automation support</label>
+            <select class="calc-input" id="automationSupport">
+              <option value="manual">Mostly manual ops</option>
+              <option value="light" selected>Light workflow routing</option>
+              <option value="heavy">Heavy orchestration</option>
+            </select>
+            <p class="calc-help">Heavy orchestration means multiple apps or state changes must stay in sync.</p>
+          </div>
+
+          <div class="calc-output approval-output">
+            <p>Recommended approval path</p>
+            <strong id="approvalPlanName">Sequential Approval Chain</strong>
+            <p id="approvalPlanSummary" class="stack-copy">Keep the first approver blocking, then move signers in order, and only send completion observers after the lane finishes.</p>
+
+            <p>Phase map</p>
+            <div id="approvalPhases" class="phase-map"></div>
+
+            <p>Suggested tools</p>
+            <div id="approvalTools" class="stack-chip-row"></div>
+
+            <p>Notification rules</p>
+            <div id="notificationRules" class="list-output"></div>
+
+            <p>Copyable approval brief</p>
+            <div class="brief-box">
+              <p id="approvalBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyApprovalBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="approvalChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyApprovalChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="approvalOfferName">DocSafe Setup Sprint</strong>
+            <p id="approvalOfferNote" class="stack-copy">Best when one approval lane is already clear enough to implement and test.</p>
+            <a class="secondary-button" id="approvalOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This planner is based on real approval and CC workflow gaps.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Approval-first blocking</h3>
+            <p>Documenso issue 2526 shows active demand for blocking approvals before signatures are sent.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/2526" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>CC inbox visibility</h3>
+            <p>Documenso issue 2312 shows viewers and CC roles still need clearer inbox and state access.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/2312" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>CC on unsigned request</h3>
+            <p>Documenso issue 1799 highlights demand for CC recipients on unsigned signing requests, not only after completion.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/1799" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Docuseal CC request gap</h3>
+            <p>Docuseal issue 547 shows the same need for request-time CC viewers in legal and represented-party workflows.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/547" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Completion delivery mismatch</h3>
+            <p>Documenso issue 1675 shows signers and issuers can still get confused about who receives the signed document and when.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/1675" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Approval UI reliability</h3>
+            <p>n8n issue 27187 shows approval interactions themselves can break if editor and public execution paths are inconsistent.</p>
+            <a class="table-link" href="https://github.com/n8n-io/n8n/issues/27187" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Lock the approval order, observer path, and delivery rules before anyone gets the wrong document at the wrong time.</p>
+    </footer>
+
+    <script src="./docsafe-approval-planner.js"></script>
+  </body>
+</html>

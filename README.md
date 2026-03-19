@@ -39,6 +39,7 @@
 - `docsafe-roi-calculator.html`: DocSafe 的交互式 ROI 估算小工具页
 - `docsafe-stack-picker.html`: 基于 GitHub 活跃项目做的 DocSafe 文档工作流选型小工具页
 - `docsafe-scope-builder.html`: 把真实工作流痛点转成 phase-one 实施 brief 的 DocSafe 交互式 scope 小工具页
+- `docsafe-approval-planner.html`: 把 approver / signer / CC / 提醒顺序转成审批路径 brief 的 DocSafe 交互式小工具页
 - `docsafe-send-router.html`: DocSafe 的买家路由与发送顺序页
 - `docsafe-reply-board.html`: DocSafe 的回复分类与下一步发送页
 - `docsafe-close-board.html`: DocSafe 的成交锁 scope 与订金推进页
@@ -57,6 +58,7 @@
 - `docsafe-roi.js`: DocSafe ROI 小工具的交互逻辑
 - `docsafe-stack-picker.js`: DocSafe 选型小工具的交互逻辑
 - `docsafe-scope-builder.js`: DocSafe scope 小工具的交互逻辑
+- `docsafe-approval-planner.js`: DocSafe 审批路径小工具的交互逻辑
 - `docsafe-agency-client-ops.html`: 面向 agency account / client ops 的垂直版公开页
 - `docsafe-legal-signing-ops.html`: 面向 legal / signing ops 的垂直版公开页
 - `docsafe-recruiting-onboarding-ops.html`: 面向 recruiting / onboarding ops 的垂直版公开页

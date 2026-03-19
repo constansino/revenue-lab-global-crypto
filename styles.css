@@ -618,6 +618,29 @@ h2 {
   color: rgba(255, 255, 255, 0.86);
 }
 
+.approval-output {
+  align-content: start;
+}
+
+.phase-map {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.phase-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(228, 108, 47, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: white;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
 input[type="range"] {
   width: 100%;
   accent-color: var(--accent);
