@@ -17,6 +17,7 @@
 - DocSafe Conditional Logic Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-conditional-logic-planner.html
 - DocSafe Completion Package Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-completion-package-planner.html
 - DocSafe Submission Recovery Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-submission-recovery-planner.html
+- DocSafe Access Governance Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-access-governance-planner.html
 - DocSafe Send Router: https://constansino.github.io/revenue-lab-global-crypto/docsafe-send-router.html
 - DocSafe Reply Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-reply-board.html
 - DocSafe Close Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-close-board.html
@@ -150,6 +151,7 @@
 - Partner Intro Referral Public Proof Page: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-public-proof-page-board.html
 - Partner Intro Referral Public Proof Router: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-public-proof-router-board.html
 - Partner Intro Referral Public Case Study Page: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-public-case-study-page-board.html
+- Partner Intro Referral Public Case Study Router: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-public-case-study-router-board.html
 - Partner Intro Referral Case Study Converter: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-case-study-converter-board.html
 - Partner Intro Referral Expansion: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-expansion-board.html
 - Partner Intro Referral Repeat: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-repeat-board.html
