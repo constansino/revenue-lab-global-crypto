@@ -24,6 +24,7 @@
 - DocSafe Signer Experience Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-signer-experience-planner.html
 - DocSafe Brand Locale Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-brand-locale-planner.html
 - DocSafe Signature Evidence Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-signature-evidence-planner.html
+- DocSafe Field Validation Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-field-validation-planner.html
 - DocSafe Send Router: https://constansino.github.io/revenue-lab-global-crypto/docsafe-send-router.html
 - DocSafe Reply Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-reply-board.html
 - DocSafe Close Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-close-board.html

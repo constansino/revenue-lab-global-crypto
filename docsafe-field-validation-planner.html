@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Field Validation Planner</title>
+    <meta
+      name="description"
+      content="An interactive field validation planner for document workflows: choose validation scope, rule style, feedback timing, exception handling, recipient assist, and review gate to generate a buyer-facing validation architecture, starter preview, and implementation brief."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e1320'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='24' font-weight='700' fill='%23f3f5fb'%3EFV%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">FV</span>
+        <div>
+          <p>DocSafe Validation</p>
+          <small>Field Planner</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-field-schema-builder.html">Field Schema</a>
+        <a class="ghost-button" href="./docsafe-signer-experience-planner.html">Signer Experience</a>
+        <a class="ghost-button" href="./docsafe-signature-evidence-planner.html">Signature Evidence</a>
+        <a class="ghost-button" href="./docsafe-identity-gate-planner.html">Identity Gate</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing validation utility</p>
+          <h1>Plan field validation before recipients see false errors, bad dates, or broken input rules that kill completion.</h1>
+          <p class="lead">
+            This tool turns field-validation ambiguity into a practical
+            planning aid. Choose validation scope, rule style, feedback timing,
+            exception handling, recipient assist, and review gate, then
+            generate a validation architecture, a starter preview JSON, and a
+            copyable implementation brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#field-validation-planner">Open Field Validation Planner</a>
+            <a class="secondary-button" href="./docsafe-field-schema-builder.html">Open Field Schema</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>owned input quality policy before launch</span>
+            </li>
+            <li>
+              <strong>4</strong>
+              <span>validation traps surfaced before recipients hit them</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>reason to guess whether bad input is blocked, guided, or silently accepted</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Validation Rule</p>
+            <h2>High-trust intake only works when field rules, feedback timing, recipient guidance, and review exceptions are designed as one system.</h2>
+            <p>
+              Public repo signals keep pointing to the same input-quality
+              pressure: teams want regex and format validation that actually
+              works, date fields constrained by real business windows, inline
+              errors that disappear as soon as the input is corrected, and
+              recipient suggestions or prefill that do not leave users staring
+              at false invalid states.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>scope, rules, feedback, exceptions, assist, review</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>validation map, preview JSON, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>KYC, HR onboarding, vendor intake, legal forms</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="field-validation-planner" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Field Validation Planner</p>
+          <h2>Design the input rules before schema discipline and signer UX are undermined by bad data quality.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="validationScope">Validation scope</label>
+            <select class="calc-input" id="validationScope">
+              <option value="identity" selected>Identity and contact fields</option>
+              <option value="dates">Date and lifecycle fields</option>
+              <option value="packet">Multi-field packet validation</option>
+              <option value="regulated">Regulated intake and KYC rules</option>
+            </select>
+            <p class="calc-help">Choose the real validation burden the buyer is carrying, not the easiest form slice to demo.</p>
+
+            <label for="ruleStyle">Rule style</label>
+            <select class="calc-input" id="ruleStyle">
+              <option value="required">Required fields only</option>
+              <option value="pattern" selected>Pattern and regex rules</option>
+              <option value="bounded">Bounded dates and ranges</option>
+              <option value="composite">Composite validation bundle</option>
+            </select>
+            <p class="calc-help">Validation should reflect the real business rule, not a loose required-field fallback that still lets bad inputs through.</p>
+
+            <label for="feedbackTiming">Feedback timing</label>
+            <select class="calc-input" id="feedbackTiming">
+              <option value="submit">Submit-time only</option>
+              <option value="blur">Blur-time feedback</option>
+              <option value="change" selected>Real-time on-change feedback</option>
+              <option value="review_gate">Pre-submit review gate</option>
+            </select>
+            <p class="calc-help">Timing matters because stale errors and late feedback make recipients think the form is broken even when rules are correct.</p>
+
+            <label for="exceptionHandling">Exception handling</label>
+            <select class="calc-input" id="exceptionHandling">
+              <option value="hard_stop">Hard stop on invalid input</option>
+              <option value="fallback" selected>Fallback guidance and retry</option>
+              <option value="ops_review">Ops review override lane</option>
+              <option value="escalation">Escalation to manual intake</option>
+            </select>
+            <p class="calc-help">The buyer still needs a rule for edge cases when a legitimate recipient cannot satisfy the default validation path.</p>
+
+            <label for="recipientAssist">Recipient assist</label>
+            <select class="calc-input" id="recipientAssist">
+              <option value="none">No assist copy</option>
+              <option value="inline_help">Inline hints and examples</option>
+              <option value="prefill" selected>Prefill and suggestions</option>
+              <option value="mask">Input masks and guided format</option>
+            </select>
+            <p class="calc-help">Assist should reduce invalid input without creating a false sense that the form has accepted something it still considers wrong.</p>
+
+            <label for="reviewGate">Review gate</label>
+            <select class="calc-input" id="reviewGate">
+              <option value="none">No extra review gate</option>
+              <option value="recipient">Recipient confirms corrected data</option>
+              <option value="operator" selected>Operator checks flagged records</option>
+              <option value="audit">Audit-ready rejection log</option>
+            </select>
+            <p class="calc-help">Review gates matter when the buyer wants to stop bad records without forcing every outlier into a silent dead end.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended validation path</p>
+            <strong id="validationPlanName">Realtime Pattern Validation Lane</strong>
+            <p id="validationPlanSummary" class="stack-copy">Use real-time feedback, pattern rules that actually clear once input is fixed, and an operator review lane for the few records that still need help.</p>
+
+            <p>Validation methods</p>
+            <div id="validationMethods" class="stack-chip-row"></div>
+
+            <p>Validation system map</p>
+            <div id="validationMap" class="matrix-grid"></div>
+
+            <p>Starter validation preview</p>
+            <div class="brief-box">
+              <p id="validationPreview" class="csv-preview"></p>
+              <button class="table-link table-button" id="copyValidationPreview" type="button">Copy Preview</button>
+            </div>
+
+            <p>Validation rules</p>
+            <div id="validationRules" class="list-output"></div>
+
+            <p>Copyable validation brief</p>
+            <div class="brief-box">
+              <p id="validationBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyValidationBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="validationChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyValidationChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="validationOfferName">DocSafe Setup Sprint</strong>
+            <p id="validationOfferNote" class="stack-copy">Best when the buyer already knows which form lane needs stronger input quality and clearer error recovery first.</p>
+            <a class="table-link" href="./docsafe-field-schema-builder.html">Need stable field keys and prefill mapping too? Open Field Schema</a>
+            <a class="table-link" href="./docsafe-signer-experience-planner.html">Need signer-side guidance, optional steps, and finish QA too? Open Signer Experience</a>
+            <a class="table-link" href="./docsafe-signature-evidence-planner.html">Need signed-date and proof consistency after validation too? Open Signature Evidence</a>
+            <a class="table-link" href="./docsafe-identity-gate-planner.html">Need identity verification and secure fallback lanes too? Open Identity Gate</a>
+            <a class="secondary-button" id="validationOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where bad input quality creates either support tickets or downstream compliance work.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>HR and onboarding teams</h3>
+            <p>
+              They need identity, email, and date fields to validate cleanly
+              without creating a confusing experience for new hires.
+            </p>
+          </article>
+          <article>
+            <h3>KYC and regulated intake teams</h3>
+            <p>
+              They need patterns, ranges, and review exceptions that stop bad
+              submissions before those errors reach compliance review.
+            </p>
+          </article>
+          <article>
+            <h3>Vendor and client ops teams</h3>
+            <p>
+              They need recipient suggestions and prefill to accelerate data
+              entry without leaving stale invalid warnings after a selection.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This planner is grounded in real regex, date, and live-feedback validation demand.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Regex validation can still fail in production</h3>
+            <p>Docuseal issue 546 shows regexp validation does not work as expected, which turns format rules into a real buyer-facing reliability problem.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/546" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Date fields need actual business boundaries</h3>
+            <p>Docuseal issue 506 asks for min and max date validation because loose date input is not enough when approvals or contracts depend on valid ranges.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/506" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Recipient suggestions should not leave false invalid-email states</h3>
+            <p>Documenso pull request 2198 fixes an invalid-email display bug after selecting recipient suggestions autocomplete, showing that assistive entry can still break trust if validation state lags behind the chosen value.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/pull/2198" target="_blank" rel="noreferrer">Open PR</a>
+          </article>
+          <article>
+            <h3>Real-time feedback reduces confusion when users correct input</h3>
+            <p>Documenso pull request 2204 switches validation from blur-time to on-change feedback so email and password errors disappear immediately after correction instead of lingering incorrectly.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/pull/2204" target="_blank" rel="noreferrer">Open PR</a>
+          </article>
+          <article>
+            <h3>Field types already imply richer validation needs</h3>
+            <p>The Docuseal README already advertises date, file, checkbox, and other field types, which means buyers expect more than just required-text validation once those inputs go live.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+          <article>
+            <h3>Modern document products keep tightening validation UX</h3>
+            <p>Recent Documenso pull requests around live validation and input-state fixes show that input quality and error timing remain active areas of product demand, not solved problems.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/pulls" target="_blank" rel="noreferrer">Open Pull Requests</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Fix input quality before bad data becomes downstream work.</p>
+    </footer>
+
+    <script src="./docsafe-field-validation-planner.js"></script>
+  </body>
+</html>
