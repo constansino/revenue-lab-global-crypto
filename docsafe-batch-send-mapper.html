@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Batch Send Mapper</title>
+    <meta
+      name="description"
+      content="An interactive batch-send mapper for document workflows: choose recipient order, CSV merge depth, row variance, QA gates, and failure handling to generate a batch-send schema, rules, and a copyable workflow brief."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">BM</span>
+        <div>
+          <p>DocSafe Batch</p>
+          <small>Interactive Mapper</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-approval-planner.html">Approval Planner</a>
+        <a class="ghost-button" href="./docsafe-delivery-matrix.html">Delivery Matrix</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing batch utility</p>
+          <h1>Map the CSV and recipient flow before you bulk-send the wrong document at scale.</h1>
+          <p class="lead">
+            This tool turns bulk-send demand into a practical planning aid.
+            Choose batch size, recipient pattern, merge-field depth, row
+            variance, QA gates, and failure handling, then generate a starter
+            CSV schema, delivery rules, and a copyable batch-send brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#batch-mapper">Open Batch Mapper</a>
+            <a class="secondary-button" href="./docsafe-delivery-matrix.html">Open Delivery Matrix</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>CSV starter generated</span>
+            </li>
+            <li>
+              <strong>4</strong>
+              <span>recipient patterns covered</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>need to guess column order in production</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Mapper Rule</p>
+            <h2>High-volume document sending fails on column order, field mapping, and row-level recovery long before it fails on design.</h2>
+            <p>
+              Public repo signals keep pointing to the same pain: teams want CSV
+              bulk send, merge fields, spreadsheet prefill, and clean retry
+              logic without guessing how template recipients and row data line
+              up.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>batch size, recipients, merge depth, QA, failure rules</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>CSV schema, rules, starter row, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>pre-sale scoping or internal batch-send design</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="batch-mapper" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Batch Mapper</p>
+          <h2>Generate the send structure before you hand 100 rows to ops.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="batchVolume">Batch volume</label>
+            <select class="calc-input" id="batchVolume">
+              <option value="small">1 to 25 rows</option>
+              <option value="medium" selected>26 to 100 rows</option>
+              <option value="large">100+ rows</option>
+            </select>
+            <p class="calc-help">Higher volume needs stronger row tracking and clearer retry handling.</p>
+
+            <label for="recipientPattern">Recipient pattern</label>
+            <select class="calc-input" id="recipientPattern">
+              <option value="single">Single signer</option>
+              <option value="sequential" selected>Sequential signers</option>
+              <option value="approval">Approver then signer</option>
+              <option value="oversight">Signer plus observer</option>
+            </select>
+            <p class="calc-help">Match the real template order, not the simplified order buyers say out loud.</p>
+
+            <label for="mergeFieldDepth">Merge-field depth</label>
+            <select class="calc-input" id="mergeFieldDepth">
+              <option value="none">Recipient data only</option>
+              <option value="basic" selected>Basic placeholders</option>
+              <option value="advanced">Advanced per-row merge data</option>
+            </select>
+            <p class="calc-help">Advanced means several document values change per row, not just signer identity.</p>
+
+            <label for="rowVariance">Row variance</label>
+            <select class="calc-input" id="rowVariance">
+              <option value="fixed">Mostly template defaults</option>
+              <option value="mixed" selected>Mixed defaults and row overrides</option>
+              <option value="dynamic">Mostly row-driven values</option>
+            </select>
+            <p class="calc-help">Dynamic rows need stronger validation because the template stops carrying the lane.</p>
+
+            <label for="qaGate">QA gate</label>
+            <select class="calc-input" id="qaGate">
+              <option value="none">No explicit QA gate</option>
+              <option value="sample" selected>Sample-row QA</option>
+              <option value="staged">Staged batch approval</option>
+            </select>
+            <p class="calc-help">Use staged when legal or ops owners must approve the batch before the main send wave.</p>
+
+            <label for="failureMode">Failure handling</label>
+            <select class="calc-input" id="failureMode">
+              <option value="skip">Skip failed rows and continue</option>
+              <option value="stop">Stop on first critical error</option>
+              <option value="retry" selected>Isolate failures and retry</option>
+            </select>
+            <p class="calc-help">Retry isolation is safest when row-level data quality varies across the file.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended batch path</p>
+            <strong id="batchPlanName">Controlled Batch Send</strong>
+            <p id="batchPlanSummary" class="stack-copy">Map recipient order, send a pilot slice first, and isolate failed rows instead of hiding errors inside one giant CSV.</p>
+
+            <p>Starter schema</p>
+            <div id="batchSchema" class="matrix-grid"></div>
+
+            <p>Batch rules</p>
+            <div id="batchRules" class="list-output"></div>
+
+            <p>CSV starter preview</p>
+            <div class="brief-box">
+              <p id="batchCsvPreview" class="csv-preview"></p>
+              <button class="table-link table-button" id="copyCsvStarter" type="button">Copy CSV Starter</button>
+            </div>
+
+            <p>Copyable batch brief</p>
+            <div class="brief-box">
+              <p id="batchBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyBatchBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="batchChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyBatchChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="batchOfferName">DocSafe Setup Sprint</strong>
+            <p id="batchOfferNote" class="stack-copy">Best when the batch lane is already defined clearly enough to implement.</p>
+            <a class="table-link" href="./docsafe-delivery-matrix.html">Need recipient timing too? Open Delivery Matrix</a>
+            <a class="secondary-button" id="batchOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where the team already sends the same document shape repeatedly.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Onboarding and HR ops</h3>
+            <p>
+              Candidate packets, contractor agreements, and hiring forms often
+              repeat the same template with only row-level identity and date
+              changes.
+            </p>
+          </article>
+          <article>
+            <h3>Agency and vendor ops</h3>
+            <p>
+              Repeated service agreements, onboarding packets, and supplier
+              docs create a strong need for controlled batch send with sample-row QA.
+            </p>
+          </article>
+          <article>
+            <h3>Finance and renewals</h3>
+            <p>
+              Renewal waves, approvals, and recurring contract updates benefit
+              from recipient-order control and row-level retry rules.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This mapper is grounded in real bulk-send and template-data demand.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>CSV batch send demand</h3>
+            <p>Documenso issue 1550 specifies bulk send via CSV, sample templates, row limits, and background processing expectations.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/1550" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Merge fields per row</h3>
+            <p>Documenso issue 1695 shows teams want CSV-driven merge fields, not only recipient columns.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/1695" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Spreadsheet prefill</h3>
+            <p>Docuseal issue 303 shows demand for template population directly from database or spreadsheet data.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/303" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Mass generation path</h3>
+            <p>Docuseal issue 531 proposes parameterized templates plus mass generation from CSV files.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/531" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Repo-level product signal</h3>
+            <p>Docuseal README already lists bulk send with CSV and XLSX spreadsheet import as a product capability signal.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Map the columns, review the pilot rows, and keep failures isolated before the batch goes live.</p>
+    </footer>
+
+    <script src="./docsafe-batch-send-mapper.js"></script>
+  </body>
+</html>

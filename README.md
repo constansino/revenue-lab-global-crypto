@@ -41,6 +41,7 @@
 - `docsafe-scope-builder.html`: 把真实工作流痛点转成 phase-one 实施 brief 的 DocSafe 交互式 scope 小工具页
 - `docsafe-approval-planner.html`: 把 approver / signer / CC / 提醒顺序转成审批路径 brief 的 DocSafe 交互式小工具页
 - `docsafe-delivery-matrix.html`: 把 approver / signer / observer / signed-file delivery 规则转成交付矩阵的 DocSafe 交互式小工具页
+- `docsafe-batch-send-mapper.html`: 把 CSV 批量发送、收件人列顺序、merge field 和失败重试规则转成可执行 batch brief 的 DocSafe 交互式小工具页
 - `docsafe-send-router.html`: DocSafe 的买家路由与发送顺序页
 - `docsafe-reply-board.html`: DocSafe 的回复分类与下一步发送页
 - `docsafe-close-board.html`: DocSafe 的成交锁 scope 与订金推进页
@@ -61,6 +62,7 @@
 - `docsafe-scope-builder.js`: DocSafe scope 小工具的交互逻辑
 - `docsafe-approval-planner.js`: DocSafe 审批路径小工具的交互逻辑
 - `docsafe-delivery-matrix.js`: DocSafe 交付矩阵小工具的交互逻辑
+- `docsafe-batch-send-mapper.js`: DocSafe 批量发送和 CSV schema 小工具的交互逻辑
 - `docsafe-agency-client-ops.html`: 面向 agency account / client ops 的垂直版公开页
 - `docsafe-legal-signing-ops.html`: 面向 legal / signing ops 的垂直版公开页
 - `docsafe-recruiting-onboarding-ops.html`: 面向 recruiting / onboarding ops 的垂直版公开页
