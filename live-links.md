@@ -14,6 +14,7 @@
 - DocSafe Workspace Start: https://constansino.github.io/revenue-lab-global-crypto/docsafe-workspace-start.html
 - DocSafe Workspace Intake: https://constansino.github.io/revenue-lab-global-crypto/docsafe-workspace-intake.html
 - DocSafe Workspace Delivery: https://constansino.github.io/revenue-lab-global-crypto/docsafe-workspace-delivery.html
+- DocSafe Ops Monthly Report: https://constansino.github.io/revenue-lab-global-crypto/docsafe-ops-monthly-report.html
 - DocSafe Agency Client Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-agency-client-ops.html
 - DocSafe Legal Signing Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-legal-signing-ops.html
 - DocSafe Recruiting Onboarding Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-recruiting-onboarding-ops.html

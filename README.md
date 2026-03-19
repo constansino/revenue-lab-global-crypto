@@ -49,6 +49,7 @@
 - `docsafe-workspace-delivery.html`: DocSafe 的 $2,000 workspace 交付与续接页
 - `docsafe-ops-retainer-start.html`: DocSafe 的月度运营 retainer 起始页
 - `docsafe-ops-retainer-intake.html`: DocSafe 的月度 retainer 收款后启动页
+- `docsafe-ops-monthly-report.html`: DocSafe 的月度 retainer 月报与续费支撑页
 - `docsafe-ops-renewal.html`: DocSafe 的月度 retainer 续费页
 - `docsafe-agency-client-ops.html`: 面向 agency account / client ops 的垂直版公开页
 - `docsafe-legal-signing-ops.html`: 面向 legal / signing ops 的垂直版公开页
