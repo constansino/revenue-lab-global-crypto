@@ -48,6 +48,7 @@
 - `docsafe-embed-launchpad.html`: 把嵌入签署的 auth handoff、prefill、只读字段、completion return 和 mobile QA 转成可执行 launch plan 的 DocSafe 交互式小工具页
 - `docsafe-packet-bundle-builder.html`: 把多文档 packet 的模板复用、字段继承、可选参与方和变更控制转成可执行 bundle architecture 的 DocSafe 交互式小工具页
 - `docsafe-conditional-logic-planner.html`: 把条件字段、隐藏问题、条件文档分支和完成态清理规则转成可执行 branch logic 的 DocSafe 交互式小工具页
+- `docsafe-completion-package-planner.html`: 把 completed docs 的交付边界、命名策略、导出打包、审计证据和 archive access 转成可执行 output package 的 DocSafe 交互式小工具页
 - `docsafe-send-router.html`: DocSafe 的买家路由与发送顺序页
 - `docsafe-reply-board.html`: DocSafe 的回复分类与下一步发送页
 - `docsafe-close-board.html`: DocSafe 的成交锁 scope 与订金推进页
@@ -75,6 +76,7 @@
 - `docsafe-embed-launchpad.js`: DocSafe 嵌入签署 launch path、session preview 和 QA checklist 小工具的交互逻辑
 - `docsafe-packet-bundle-builder.js`: DocSafe 多文档 packet 结构、starter preview 和 bundle checklist 小工具的交互逻辑
 - `docsafe-conditional-logic-planner.js`: DocSafe 条件字段、隐藏分支和 completed-output QA 小工具的交互逻辑
+- `docsafe-completion-package-planner.js`: DocSafe 完成态交付包、文件命名、批量导出和 archive policy 小工具的交互逻辑
 - `docsafe-agency-client-ops.html`: 面向 agency account / client ops 的垂直版公开页
 - `docsafe-legal-signing-ops.html`: 面向 legal / signing ops 的垂直版公开页
 - `docsafe-recruiting-onboarding-ops.html`: 面向 recruiting / onboarding ops 的垂直版公开页

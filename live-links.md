@@ -15,6 +15,7 @@
 - DocSafe Embed Launchpad: https://constansino.github.io/revenue-lab-global-crypto/docsafe-embed-launchpad.html
 - DocSafe Packet Bundle Builder: https://constansino.github.io/revenue-lab-global-crypto/docsafe-packet-bundle-builder.html
 - DocSafe Conditional Logic Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-conditional-logic-planner.html
+- DocSafe Completion Package Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-completion-package-planner.html
 - DocSafe Send Router: https://constansino.github.io/revenue-lab-global-crypto/docsafe-send-router.html
 - DocSafe Reply Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-reply-board.html
 - DocSafe Close Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-close-board.html
