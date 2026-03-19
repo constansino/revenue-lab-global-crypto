@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://constansino.github.io/revenue-lab-global-crypto/sitemap.xml
