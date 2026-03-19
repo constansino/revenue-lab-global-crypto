@@ -12,6 +12,7 @@
 - DocSafe Setup Sprint Start: https://constansino.github.io/revenue-lab-global-crypto/docsafe-setup-sprint-start.html
 - DocSafe Setup Sprint Intake: https://constansino.github.io/revenue-lab-global-crypto/docsafe-setup-sprint-intake.html
 - DocSafe Workspace Start: https://constansino.github.io/revenue-lab-global-crypto/docsafe-workspace-start.html
+- DocSafe Workspace Intake: https://constansino.github.io/revenue-lab-global-crypto/docsafe-workspace-intake.html
 - DocSafe Agency Client Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-agency-client-ops.html
 - DocSafe Legal Signing Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-legal-signing-ops.html
 - DocSafe Recruiting Onboarding Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-recruiting-onboarding-ops.html
