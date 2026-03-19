@@ -135,6 +135,7 @@
 - Partner Intro Conversion: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-conversion-board.html
 - Partner Intro Owner: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-owner-board.html
 - Partner Intro Model: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-model-board.html
+- Partner Intro Referral Model: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-model-board.html
 - Partner Intro White Label: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-white-label-board.html
 - Partner Intro Visibility: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-visibility-board.html
 - Partner Intro Scope: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-scope-board.html
