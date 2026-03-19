@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Delivery Matrix</title>
+    <meta
+      name="description"
+      content="An interactive delivery matrix for document workflows: map approvals, signer messages, CC timing, signed-file delivery, reply ownership, and the right DocSafe starting offer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">DM</span>
+        <div>
+          <p>DocSafe Delivery</p>
+          <small>Interactive Matrix</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-approval-planner.html">Approval Planner</a>
+        <a class="ghost-button" href="./docsafe-scope-builder.html">Scope Builder</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing notification aid</p>
+          <h1>Decide exactly who receives what before the lane goes live.</h1>
+          <p class="lead">
+            This matrix turns delivery confusion into a public planning tool.
+            Choose approval blocking, CC timing, signed-document delivery,
+            reply ownership, response path, and reminder logic, then generate a
+            role-by-role delivery matrix and a copyable workflow brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#delivery-matrix">Open Delivery Matrix</a>
+            <a class="secondary-button" href="./docsafe-approval-planner.html">Open Approval Planner</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>4</strong>
+              <span>recipient roles mapped</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>copyable delivery brief</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>need to guess notification timing in production</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Matrix Rule</p>
+            <h2>Approvers, signers, viewers, and operators should never infer their role from the wrong email.</h2>
+            <p>
+              Public repo issues keep showing delivery mismatches: signers get
+              requests too early, CC viewers cannot see the right state, signed
+              files reach the wrong people, and reply ownership stays attached
+              to the wrong sender. This matrix turns that into a buyer-facing
+              planning tool.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>approval, CC, delivery, reply owner, reminders</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>role matrix, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>pre-sale planning or internal workflow lock</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="delivery-matrix" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Delivery Matrix</p>
+          <h2>Map the message flow before you automate it.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="deliveryApprovalMode">Approval blocking</label>
+            <select class="calc-input" id="deliveryApprovalMode">
+              <option value="none">No approval gate</option>
+              <option value="single" selected>One approval gate before signing</option>
+              <option value="staged">Multiple approval stages</option>
+            </select>
+            <p class="calc-help">Use staged when more than one internal owner must clear the document before signatures begin.</p>
+
+            <label for="ccTiming">CC / observer timing</label>
+            <select class="calc-input" id="ccTiming">
+              <option value="none">No observers</option>
+              <option value="complete" selected>Completion-only observers</option>
+              <option value="request">Request-time observers</option>
+            </select>
+            <p class="calc-help">Request-time observers are useful when legal or internal oversight needs the unsigned file too.</p>
+
+            <label for="signedFileDelivery">Signed file delivery</label>
+            <select class="calc-input" id="signedFileDelivery">
+              <option value="issuer" selected>Issuer only</option>
+              <option value="signer">Issuer and signer</option>
+              <option value="all">Issuer, signer, and observers</option>
+            </select>
+            <p class="calc-help">Choose the actual final distribution, not the one buyers assume will happen.</p>
+
+            <label for="replyOwner">Reply-to owner</label>
+            <select class="calc-input" id="replyOwner">
+              <option value="sender">Original sender</option>
+              <option value="workspace" selected>Workspace or ops owner</option>
+              <option value="tenant">Tenant-specific owner</option>
+            </select>
+            <p class="calc-help">Tenant-specific ownership matters in multi-tenant or delegated delivery environments.</p>
+
+            <label for="responsePath">Response path</label>
+            <select class="calc-input" id="responsePath">
+              <option value="email" selected>Email request</option>
+              <option value="portal">Portal or signing link</option>
+              <option value="wait">Email send-and-wait flow</option>
+            </select>
+            <p class="calc-help">Send-and-wait style flows need clearer response handling than simple notification emails.</p>
+
+            <label for="deliveryReminderMode">Reminder handling</label>
+            <select class="calc-input" id="deliveryReminderMode">
+              <option value="none">No reminders</option>
+              <option value="basic" selected>Standard reminders</option>
+              <option value="escalate">Reminder plus escalation</option>
+            </select>
+            <p class="calc-help">Escalation matters when approvals or signatures can stall without visible ownership.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended delivery path</p>
+            <strong id="deliveryPlanName">Controlled Approval Delivery</strong>
+            <p id="deliveryPlanSummary" class="stack-copy">Block signers until approval clears, keep observers out of the action path, and only release the signed file to the intended recipients.</p>
+
+            <p>Recipient matrix</p>
+            <div id="recipientMatrix" class="matrix-grid"></div>
+
+            <p>Delivery rules</p>
+            <div id="deliveryRules" class="list-output"></div>
+
+            <p>Copyable delivery brief</p>
+            <div class="brief-box">
+              <p id="deliveryBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyDeliveryBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="deliveryChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyDeliveryChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="deliveryOfferName">DocSafe Setup Sprint</strong>
+            <p id="deliveryOfferNote" class="stack-copy">Best when the lane already has a clear recipient map and just needs implementation.</p>
+            <a class="secondary-button" id="deliveryOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This matrix is grounded in real notification and delivery mismatches.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Approval-first notification</h3>
+            <p>Documenso issue 2526 shows signers still need to be blocked until approvals finish.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/2526" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>CC inbox visibility</h3>
+            <p>Documenso issue 2312 shows CC recipients still need clearer inbox and document visibility.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/2312" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>CC on unsigned request</h3>
+            <p>Documenso issue 1799 shows demand for unsigned-request CC recipients, not just final-document CC.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/1799" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Signed document delivery mismatch</h3>
+            <p>Documenso issue 1675 shows confusion around whether signers actually receive the signed file.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/1675" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Reply owner mismatch</h3>
+            <p>Docuseal issue 597 shows reply-to ownership can stay attached to the wrong author in tenant workflows.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/597" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Email response confusion</h3>
+            <p>n8n issue 14103 shows send-and-wait response handling can still fail if the delivery path is not clearly planned.</p>
+            <a class="table-link" href="https://github.com/n8n-io/n8n/issues/14103" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Lock the recipient map before the workflow starts sending the wrong message to the wrong person.</p>
+    </footer>
+
+    <script src="./docsafe-delivery-matrix.js"></script>
+  </body>
+</html>

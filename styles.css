@@ -641,6 +641,40 @@ h2 {
   font-weight: 800;
 }
 
+.delivery-output {
+  align-content: start;
+}
+
+.matrix-grid {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.matrix-card {
+  padding: 0.95rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.matrix-card p,
+.matrix-card strong {
+  margin: 0;
+}
+
+.matrix-card strong {
+  display: block;
+  margin: 0.2rem 0 0.4rem;
+}
+
+.matrix-role {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+}
+
 input[type="range"] {
   width: 100%;
   accent-color: var(--accent);
