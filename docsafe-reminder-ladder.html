@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Reminder Ladder</title>
+    <meta
+      name="description"
+      content="An interactive reminder ladder for document workflows: choose reminder start, cadence, expiry, escalation owner, response path, and send-rate limits to generate a follow-up ladder, rule pack, and copyable workflow brief."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">RL</span>
+        <div>
+          <p>DocSafe Reminder</p>
+          <small>Interactive Ladder</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-delivery-matrix.html">Delivery Matrix</a>
+        <a class="ghost-button" href="./docsafe-batch-send-mapper.html">Batch Mapper</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing follow-up utility</p>
+          <h1>Define the reminder ladder before unsigned documents turn into silent revenue leaks.</h1>
+          <p class="lead">
+            This tool turns follow-up ambiguity into a practical planning aid.
+            Choose when reminders start, how they repeat, when the document
+            expires, who owns escalation, which response path stays active, and
+            how fast messages can be sent, then generate a reminder ladder, a
+            rule pack, and a copyable follow-up brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#reminder-ladder">Open Reminder Ladder</a>
+            <a class="secondary-button" href="./docsafe-batch-send-mapper.html">Open Batch Mapper</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>follow-up ladder generated</span>
+            </li>
+            <li>
+              <strong>5</strong>
+              <span>ops states surfaced</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>need to improvise resend timing live</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Ladder Rule</p>
+            <h2>Most document workflows do not die on send. They die in the gap between invite, reminder, expiry, and escalation.</h2>
+            <p>
+              Public repo issues keep showing the same post-send pressure:
+              operators want automatic reminders, reminder-safe copy, expiry
+              dates, rate-limited mail delivery, and a response path that does
+              not break under escalation.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>start, cadence, expiry, escalation, response, rate</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>ladder, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>renewals, approvals, follow-up and signature recovery</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="reminder-ladder" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Reminder Ladder</p>
+          <h2>Map the chase path before ops starts guessing who to nudge next.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="reminderStart">Reminder start</label>
+            <select class="calc-input" id="reminderStart">
+              <option value="manual">Manual only</option>
+              <option value="day3" selected>Start after 3 days</option>
+              <option value="day7">Start after 7 days</option>
+              <option value="expiry">Only at expiry boundary</option>
+            </select>
+            <p class="calc-help">Choose the first follow-up moment the team can actually sustain, not the idealized one.</p>
+
+            <label for="reminderCadence">Reminder cadence</label>
+            <select class="calc-input" id="reminderCadence">
+              <option value="manual">On-demand resend only</option>
+              <option value="weekly" selected>Weekly reminders</option>
+              <option value="escalating">Escalating ladder</option>
+            </select>
+            <p class="calc-help">Escalating works better when later touches need different owners or stronger language.</p>
+
+            <label for="expiryMode">Expiry policy</label>
+            <select class="calc-input" id="expiryMode">
+              <option value="none">No expiry</option>
+              <option value="signby" selected>Sign-by date</option>
+              <option value="fixed">Fixed validity and renewal trigger</option>
+            </select>
+            <p class="calc-help">Use fixed validity when an expired document should open a renewal or re-sign task.</p>
+
+            <label for="escalationOwner">Escalation owner</label>
+            <select class="calc-input" id="escalationOwner">
+              <option value="sender">Original sender</option>
+              <option value="ops" selected>Ops desk</option>
+              <option value="legal">Legal or compliance</option>
+              <option value="account">Account owner</option>
+            </select>
+            <p class="calc-help">Escalation should go to whoever can unblock the next action, not whoever sent the first email.</p>
+
+            <label for="ladderResponsePath">Response path</label>
+            <select class="calc-input" id="ladderResponsePath">
+              <option value="email" selected>Email reply</option>
+              <option value="portal">Portal or signing link</option>
+              <option value="wait">Send-and-wait button path</option>
+            </select>
+            <p class="calc-help">If the response action itself is fragile, the reminder ladder has to compensate for it.</p>
+
+            <label for="sendRateMode">Send-rate handling</label>
+            <select class="calc-input" id="sendRateMode">
+              <option value="normal">Normal small-volume send</option>
+              <option value="limited" selected>Provider-limited rate</option>
+              <option value="batched">Wave-based throttled send</option>
+            </select>
+            <p class="calc-help">Wave-based sending matters when reminders or resends would exceed provider thresholds.</p>
+          </div>
+
+          <div class="calc-output approval-output">
+            <p>Recommended ladder</p>
+            <strong id="ladderPlanName">Controlled Reminder Ladder</strong>
+            <p id="ladderPlanSummary" class="stack-copy">Start early enough to recover unsigned documents, keep reminders distinguishable from the first send, and hand stalled cases to the right owner before expiry.</p>
+
+            <p>Ladder phases</p>
+            <div id="ladderPhases" class="phase-map"></div>
+
+            <p>Reminder cards</p>
+            <div id="ladderCards" class="matrix-grid"></div>
+
+            <p>Reminder rules</p>
+            <div id="ladderRules" class="list-output"></div>
+
+            <p>Copyable follow-up brief</p>
+            <div class="brief-box">
+              <p id="ladderBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyLadderBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="ladderChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyLadderChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="ladderOfferName">DocSafe Setup Sprint</strong>
+            <p id="ladderOfferNote" class="stack-copy">Best when the reminder and expiry path is already defined clearly enough to implement.</p>
+            <a class="table-link" href="./docsafe-batch-send-mapper.html">Need batch-send structure too? Open Batch Mapper</a>
+            <a class="secondary-button" id="ladderOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where unsigned documents already create real follow-up cost.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Renewal and revops teams</h3>
+            <p>
+              They need sign-by dates, reminder ladders, and expiry-triggered
+              follow-up instead of one-off chasing in inboxes.
+            </p>
+          </article>
+          <article>
+            <h3>Legal and compliance ops</h3>
+            <p>
+              They care about reminder timing, ownership, and expiry boundaries
+              because the wrong chase path creates governance risk.
+            </p>
+          </article>
+          <article>
+            <h3>Agency and onboarding operators</h3>
+            <p>
+              They need fast resends and clear escalation so signed work does
+              not stall on one forgotten recipient.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This ladder is grounded in real resend, reminder, and expiry pressure.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Automatic reminders</h3>
+            <p>Documenso issue 2147 asks for recurring reminder emails to unsigned recipients instead of manual checking.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/2147" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Expiry plus follow-up</h3>
+            <p>Documenso issue 2392 ties expiration dates to notifications and optional renewal or review workflows.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/2392" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Resend only to unsigned parties</h3>
+            <p>Documenso issue 473 shows demand for targeted resends and reminders only to recipients who still have pending action.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/473" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Mail provider rate limits</h3>
+            <p>Documenso issue 1951 shows reminder and resend flows can break if the system cannot respect provider send limits.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/1951" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Reminder clarity in inbox</h3>
+            <p>Docuseal issue 526 shows recipients get confused when reminder emails look too similar to the original request.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/526" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Expiry and reminder parity</h3>
+            <p>Docuseal issue 33 lists reminders and expiry dates as required parity features for serious business adoption.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/33" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Response path fragility</h3>
+            <p>n8n issue 14103 shows send-and-wait response buttons can end in a no-action state if the path is not tested carefully.</p>
+            <a class="table-link" href="https://github.com/n8n-io/n8n/issues/14103" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Repo-level product signal</h3>
+            <p>Docuseal README already treats automated reminders as a commercial feature, which is a strong monetization signal.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Start the follow-up on time, make reminders clearly distinct, and escalate before the document dies in silence.</p>
+    </footer>
+
+    <script src="./docsafe-reminder-ladder.js"></script>
+  </body>
+</html>
