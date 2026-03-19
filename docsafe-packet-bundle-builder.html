@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Packet Bundle Builder</title>
+    <meta
+      name="description"
+      content="An interactive packet bundle builder for document workflows: choose packet scope, source model, field reuse strategy, party model, prefill model, and change mode to generate a buyer-facing packet architecture, starter bundle map, and implementation brief."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e1320'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='26' font-weight='700' fill='%23f3f5fb'%3EPB%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">PB</span>
+        <div>
+          <p>DocSafe Packet</p>
+          <small>Interactive Bundle Builder</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-field-schema-builder.html">Field Schema</a>
+        <a class="ghost-button" href="./docsafe-embed-launchpad.html">Embed Launchpad</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing packet utility</p>
+          <h1>Bundle recurring contract and onboarding documents without redrawing the same fields and roles across every packet.</h1>
+          <p class="lead">
+            This tool turns packet sprawl into a practical planning aid.
+            Choose packet scope, source model, field reuse strategy, party
+            model, prefill model, and change mode, then generate a packet
+            architecture, a starter bundle map, and a copyable implementation
+            brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#packet-bundle-builder">Open Packet Bundle Builder</a>
+            <a class="secondary-button" href="./docsafe-field-schema-builder.html">Open Field Schema</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>modular packet path before scale</span>
+            </li>
+            <li>
+              <strong>3</strong>
+              <span>reuse traps buyers usually hit too late</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>need to redraw the same core fields in every annex</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Packet Rule</p>
+            <h2>Multi-document workflows break when reusable templates, shared fields, signer roles, and change control are managed as separate afterthoughts.</h2>
+            <p>
+              Public repo issues keep pointing to the same packet pressure:
+              teams want bundles that can include existing templates, shared
+              roles and validation rules, fields copied between parties or
+              templates, optional parties in parent-sign flows, and prepared
+              data blocks reused across long form packets.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>packet scope, sources, reuse, parties, prefill, changes</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>bundle map, starter preview, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>onboarding, vendor packets, legal annexes, consent packs</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="packet-bundle-builder" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Packet Bundle Builder</p>
+          <h2>Design the reusable packet before one-off fixes become the real workflow.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="packetScope">Packet scope</label>
+            <select class="calc-input" id="packetScope">
+              <option value="contract" selected>Contract plus annex packet</option>
+              <option value="onboarding">Employee or contractor onboarding packet</option>
+              <option value="compliance">Consent and compliance packet</option>
+              <option value="client">Client intake packet</option>
+            </select>
+            <p class="calc-help">Choose the real recurring packet the team sends repeatedly, not the one-off packet nobody maintains after launch.</p>
+
+            <label for="sourceModel">Source model</label>
+            <select class="calc-input" id="sourceModel">
+              <option value="existing" selected>Existing reusable templates</option>
+              <option value="mixed">Mixed templates and uploaded documents</option>
+              <option value="master">One master template</option>
+              <option value="scratch">Bundle from scratch</option>
+            </select>
+            <p class="calc-help">Existing templates are the valuable asset. The packet model should preserve them where possible instead of flattening them away.</p>
+
+            <label for="fieldReuse">Field reuse strategy</label>
+            <select class="calc-input" id="fieldReuse">
+              <option value="shared" selected>Shared profile fields across docs</option>
+              <option value="copy">Copy exact fields between templates</option>
+              <option value="inherit">Template-linked inheritance</option>
+              <option value="party">Copy or move fields between parties</option>
+            </select>
+            <p class="calc-help">Field reuse is where most packet maintenance cost appears after the first successful send.</p>
+
+            <label for="partyModel">Party model</label>
+            <select class="calc-input" id="partyModel">
+              <option value="fixed" selected>Fixed signer roles</option>
+              <option value="optional">Optional second party</option>
+              <option value="review">Signer plus reviewer mix</option>
+              <option value="parallel">Several similar parties</option>
+            </select>
+            <p class="calc-help">Packet roles should match real signing and review behavior or the reusable bundle becomes impossible to trust.</p>
+
+            <label for="prefillModel">Prefill model</label>
+            <select class="calc-input" id="prefillModel">
+              <option value="manual">Manual packet prep</option>
+              <option value="template" selected>Shared packet data blocks</option>
+              <option value="db">DB or spreadsheet population</option>
+              <option value="review">Prepared values with review correction</option>
+            </select>
+            <p class="calc-help">Long packets are only tolerable when the repeated identity and profile fields arrive prefilled before the signer starts reviewing.</p>
+
+            <label for="changeMode">Change mode</label>
+            <select class="calc-input" id="changeMode">
+              <option value="snapshot" selected>Snapshot bundle version</option>
+              <option value="linked">Linked template updates</option>
+              <option value="clone">Clone then customize</option>
+              <option value="refresh">Minor-design refresh reuse</option>
+            </select>
+            <p class="calc-help">Change control matters because packet reuse breaks down when minor template edits force teams to redraw everything.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended packet path</p>
+            <strong id="packetPlanName">Modular Contract Packet</strong>
+            <p id="packetPlanSummary" class="stack-copy">Keep each recurring document as a reusable unit, then define one packet layer that decides how shared roles and fields flow across the whole send.</p>
+
+            <p>Composition methods</p>
+            <div id="packetMethods" class="stack-chip-row"></div>
+
+            <p>Packet bundle map</p>
+            <div id="packetBundleMap" class="matrix-grid"></div>
+
+            <p>Starter packet preview</p>
+            <div class="brief-box">
+              <p id="packetPreview" class="csv-preview"></p>
+              <button class="table-link table-button" id="copyPacketPreview" type="button">Copy Preview</button>
+            </div>
+
+            <p>Packet rules</p>
+            <div id="packetRules" class="list-output"></div>
+
+            <p>Copyable packet brief</p>
+            <div class="brief-box">
+              <p id="packetBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyPacketBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="packetChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyPacketChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="packetOfferName">DocSafe Setup Sprint</strong>
+            <p id="packetOfferNote" class="stack-copy">Best when the buyer already knows the first packet lane and just needs a reusable structure instead of repeated one-off edits.</p>
+            <a class="table-link" href="./docsafe-field-schema-builder.html">Need shared field keys too? Open Field Schema</a>
+            <a class="table-link" href="./docsafe-embed-launchpad.html">Need in-app review and signing too? Open Embed Launchpad</a>
+            <a class="secondary-button" id="packetOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where several documents recur together and nobody wants to maintain them as one giant master file.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Legal and vendor ops</h3>
+            <p>
+              They keep sending the main agreement, DPA, annexes, and consents
+              together and need a modular packet instead of one bloated
+              template.
+            </p>
+          </article>
+          <article>
+            <h3>HR and onboarding teams</h3>
+            <p>
+              They need identity and profile data to carry across several forms
+              without rebuilding every field for every packet revision.
+            </p>
+          </article>
+          <article>
+            <h3>Compliance and consent programs</h3>
+            <p>
+              They reuse the same signer roles and prepared data across long
+              packets where optional parties and shared field blocks matter.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This builder is grounded in real bundle, reuse, and packet-maintenance demand.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Bundles should reuse existing templates</h3>
+            <p>Docuseal issue 583 asks for bundles that can include existing templates and inherit fields, roles, signing order, and validation rules.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/583" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Move or copy fields between parties</h3>
+            <p>Docuseal issue 428 shows recurring packets still need bulk field copying or moves when similar fields belong to several parties.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/428" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Copy exact fields into refreshed templates</h3>
+            <p>Docuseal issue 520 shows minor design changes can force teams to redraw the same core fields unless template reuse is planned deliberately.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/520" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Prefill matters more on long forms</h3>
+            <p>Docuseal issue 303 shows long forms become far more usable when DB or spreadsheet data can pre-populate the packet before review.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/303" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Optional parties are a real packet edge case</h3>
+            <p>Docuseal issue 346 shows some family or consent packets need a second party to exist in some cases but remain optional in others.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/346" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Template merging already exists at the API layer</h3>
+            <p>Docuseal JS documents cloneTemplate, mergeTemplates, and updateTemplateDocuments, which means the buyer problem is packet architecture, not whether APIs exist at all.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal-js" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Design the reusable packet once before every annex, consent, and onboarding revision becomes a manual rebuild.</p>
+    </footer>
+
+    <script src="./docsafe-packet-bundle-builder.js"></script>
+  </body>
+</html>

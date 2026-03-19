@@ -1,50 +1,50 @@
 # Revenue Lab Update
 
 New live URL:
-https://constansino.github.io/revenue-lab-global-crypto/docsafe-embed-launchpad.html
+https://constansino.github.io/revenue-lab-global-crypto/docsafe-packet-bundle-builder.html
 
 What this update is:
-- Added an interactive GitHub-backed embed launch planner for DocSafe.
-- This new page is a DocSafe embed launchpad:
-  buyers choose embed surface, auth handoff, prefill mode, field lock mode, completion return, and mobile policy, then get a launch stage map, an embed session preview, a copyable QA brief, and the right DocSafe starting offer.
-- It turns public embedded-signing, prefill, and mobile pain into a buyer-facing planning tool instead of another static board.
+- Added an interactive GitHub-backed packet bundle builder for DocSafe.
+- This new page is a DocSafe packet bundle builder:
+  buyers choose packet scope, source model, field reuse strategy, party model, prefill model, and change mode, then get a packet architecture, a starter bundle map, a copyable implementation brief, and the right DocSafe starting offer.
+- It turns public bundle-composition, field-reuse, and packet-maintenance pain into a buyer-facing planning tool instead of another static board.
 
 Decision:
-- Keep the same document workflow wedge, but move one level deeper into in-app signing launch instead of stopping at field and webhook design.
-- The next bottleneck is not just the payload. It is whether the embedded session can survive auth handoff, show the prepared data, still expose completion, behave on mobile, and return control to the host app cleanly.
+- Keep the same document workflow wedge, but move one level deeper into recurring multi-document packet architecture instead of only focusing on single-document launch or routing.
+- The next bottleneck is not just signing one file. It is how reusable templates, shared field blocks, signer roles, optional parties, and packet revisions stay governable across several related documents.
 
 Why this wedge:
-- Public repo issues now point at the embed launch layer: authoring auth tokens not reaching requests, prefill disappearing in the embedded session, all-read-only forms losing completion controls, locked choice fields lacking a review path, mobile signature views breaking on rotate, and prefilled proofs not surviving download.
-- Documenso issue 2001 explicitly shows embedded authoring can fail with a 401 because the expected auth header is not populated during the create call.
-- Documenso issue 1716 shows using `/api/v1/documents/{id}/generate-document` is not enough if the prefilled values still arrive blank inside the embed.
-- Docuseal issue 573 shows an all-read-only embedded form can leave the user with no visible way to complete the session.
-- A buyer-facing embed launchpad is directly useful because it answers the question “which embed session can we ship safely inside our app” before product teams promise in-app signing to customers.
+- Public repo issues now point at the packet-composition layer: buyers want bundles that can reuse existing templates, inherit roles and validation rules, copy or move field groups between parties, preserve exact field layouts through design refreshes, handle optional parties, and pre-populate long packets from system data.
+- Docuseal issue 583 explicitly asks for bundles that can include existing templates and inherit fields, roles, signing order, and validation rules instead of flattening them into uploaded PDFs.
+- Docuseal issue 428 shows similar field groups still need to be copied or moved between parties when large packet flows involve repeated signer blocks.
+- Docuseal issue 520 shows even minor design refreshes can force a full field redraw without a reusable packet strategy.
+- A buyer-facing packet bundle builder is directly useful because it answers the question “how do we modularize this recurring packet without duplicating maintenance across every document” before ops teams lock themselves into one giant template or several drifting copies.
 
 What the page now sells:
-- one interactive embed launch map
-- one host-session starter preview
-- one auth, prefill, and mobile QA rule pack
+- one interactive packet architecture
+- one starter bundle preview
+- one packet-governance and reuse rule pack
 - one copyable implementation brief
-- one more buyer-facing utility page that helps lock real embedded signing before payment
+- one more buyer-facing utility page that helps lock real multi-document packet reuse before payment
 
 Target buyers:
-- SaaS or platform team embedding contracts inside the product
-- HR or onboarding portal owner embedding prepared documents for review and signature
-- partner or customer portal team trying to keep signatures inside the host app
-- anyone trying to launch embedded signing without shipping auth, prefill, or mobile failures
+- legal or vendor ops team sending agreement plus annex packets
+- HR or onboarding team sending several identity, policy, and consent forms together
+- compliance program owner managing long consent or family-sign flows
+- anyone trying to reuse recurring document packets without giant master templates or repeated field redraws
 
 Wallet kept visible for future payment flows:
 - 0xB3e9568A9cbB624403743340358c85CCce130893
 
 GitHub issues used in this tool:
-- https://github.com/documenso/documenso/issues/2001
-- https://github.com/documenso/documenso/issues/1716
-- https://github.com/docusealco/docuseal/issues/573
-- https://github.com/docusealco/docuseal/issues/559
-- https://github.com/docusealco/docuseal/issues/383
-- https://github.com/docusealco/docuseal/issues/609
+- https://github.com/docusealco/docuseal/issues/583
+- https://github.com/docusealco/docuseal/issues/428
+- https://github.com/docusealco/docuseal/issues/520
+- https://github.com/docusealco/docuseal/issues/303
+- https://github.com/docusealco/docuseal/issues/346
+- https://github.com/docusealco/docuseal-js
 
 Verification:
-- Added the new embed launchpad and linked it from the main DocSafe flow, field schema builder, and webhook router.
-- The launchpad will be checked locally in Chrome with both the default state and a high-complexity read-only plus host-verified scenario.
+- Added the new packet bundle builder and linked it from the main DocSafe flow, field schema builder, and embed launchpad.
+- The builder will be checked locally in Chrome with both the default state and a high-complexity linked-template plus optional-party scenario.
 - Page will be checked on GitHub Pages before or after posting.
