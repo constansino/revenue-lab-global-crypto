@@ -107,6 +107,7 @@
 - Partner Intro Referral Approval-Only Proof: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-approval-only-proof-board.html
 - Partner Intro Referral Approval Follow-Up: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-approval-followup-board.html
 - Partner Intro Referral Approval To Payment: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-approval-to-payment-board.html
+- Partner Intro Referral Deposit Lock: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-deposit-lock-board.html
 - Partner Intro Referral Payment Follow-Up: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-payment-followup-board.html
 - Partner Intro Referral Payment Proof: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-payment-proof-board.html
 - Partner Intro Referral Activation: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-activation-board.html
