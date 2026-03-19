@@ -112,6 +112,7 @@
 - Partner Intro Public Story Boundary: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-public-story-boundary-board.html
 - Partner Intro Public Trust Page: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-public-trust-page-board.html
 - Partner Intro Public Proof Page: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-public-proof-page-board.html
+- Partner Intro Public Case Study Router: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-public-case-study-router-board.html
 - Partner Intro Public Case Study Page: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-public-case-study-page-board.html
 - Partner Intro Case Study Converter: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-case-study-converter-board.html
 - Partner Intro Referral: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-board.html
