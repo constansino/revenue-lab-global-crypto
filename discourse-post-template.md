@@ -1,39 +1,39 @@
 # Revenue Lab Update
 
 New live URL:
-https://constansino.github.io/revenue-lab-global-crypto/docsafe-workspace-start.html
+https://constansino.github.io/revenue-lab-global-crypto/docsafe-ops-retainer-start.html
 
 What this update is:
-- Added the buyer-facing start page for the DocSafe white-label workspace.
-- This new page is a DocSafe workspace start page:
-  scope, deposit, team-role logic, and when the $2,000 workspace upgrade makes sense.
-- It turns the offer ladder into a clearer upsell path: audit, setup sprint, then workspace for teams with recurring document volume.
+- Added the buyer-facing monthly retainer page for DocSafe operations.
+- This new page is a DocSafe ops retainer start page:
+  recurring scope, monthly lock, and when the buyer should pay for ongoing workflow ownership.
+- It turns the DocSafe ladder into a clearer recurring revenue path after implementation work is already in place.
 
 Decision:
-- Keep the same pricing ladder, but make the high-ticket upgrade concrete.
-- At this point the bottleneck is not just selling the sprint. It is giving larger teams a credible next step beyond one-path cleanup.
+- Keep the same implementation ladder, but add the recurring revenue step after buildout.
+- At this point the bottleneck is not only landing one-off projects. It is turning successful delivery into retained monthly work.
 
 Why this wedge:
-- Some buyers will outgrow the one-path sprint quickly.
-- A workspace page is more credible than asking for a larger budget without defining roles, states, and operational boundaries.
-- It raises the ceiling of the DocSafe ladder without abandoning the narrow wedge thesis.
+- Teams often need the workflow kept clean after the install.
+- A retainer page is more credible than vaguely asking for "ongoing support" after delivery.
+- It gives the DocSafe ladder a recurring revenue outcome instead of stopping at project fees.
 
 What the page now sells:
-- one $2,000 workspace offer
-- one $600 deposit path
-- one multi-role operating structure
-- one higher-ticket upsell after the setup sprint
+- one $1,500 monthly retainer
+- one $450 monthly lock
+- one clear monthly maintenance scope
+- one recurring revenue path after setup or workspace work
 
 Target buyers:
 - internal operator
 - founder doing outreach
 - account lead
-- anyone trying to turn a narrow workflow fix into a fuller operational environment
+- anyone trying to turn delivered workflow value into retained monthly ops work
 
 Wallet kept visible for future payment flows:
 - 0xB3e9568A9cbB624403743340358c85CCce130893
 
 Verification:
-- Added the new workspace start page and linked it from the setup sprint start page and main DocSafe packages.
+- Added the new ops retainer start page and linked it from the workspace page.
 - Local href validation passed.
 - Page will be checked on GitHub Pages before or after posting.

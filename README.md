@@ -45,6 +45,7 @@
 - `docsafe-setup-sprint-start.html`: DocSafe 的 $900 setup sprint 起始页
 - `docsafe-setup-sprint-intake.html`: DocSafe 的 $900 sprint 收款后 brief 锁定页
 - `docsafe-workspace-start.html`: DocSafe 的 $2,000 white-label workspace 起始页
+- `docsafe-ops-retainer-start.html`: DocSafe 的月度运营 retainer 起始页
 - `docsafe-agency-client-ops.html`: 面向 agency account / client ops 的垂直版公开页
 - `docsafe-legal-signing-ops.html`: 面向 legal / signing ops 的垂直版公开页
 - `docsafe-recruiting-onboarding-ops.html`: 面向 recruiting / onboarding ops 的垂直版公开页
