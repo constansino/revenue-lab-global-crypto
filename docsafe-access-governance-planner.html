@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Access Governance Planner</title>
+    <meta
+      name="description"
+      content="An interactive access governance planner for document workflows: choose workspace scope, role model, visibility model, folder strategy, exposure policy, and archive access to generate a buyer-facing governance map, starter policy preview, and implementation brief."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e1320'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='26' font-weight='700' fill='%23f3f5fb'%3EAG%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">AG</span>
+        <div>
+          <p>DocSafe Access</p>
+          <small>Interactive Planner</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-embed-launchpad.html">Embed Launchpad</a>
+        <a class="ghost-button" href="./docsafe-webhook-router.html">Webhook Router</a>
+        <a class="ghost-button" href="./docsafe-completion-package-planner.html">Completion Package</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing governance utility</p>
+          <h1>Lock down who can see what before self-hosted workspaces leak files, expose sensitive stats, or collapse into all-admin chaos.</h1>
+          <p class="lead">
+            This tool turns workspace governance into a practical planning aid.
+            Choose workspace scope, role model, visibility model, folder
+            strategy, exposure policy, and archive access, then generate an
+            access architecture, a starter policy preview, and a copyable
+            governance brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#access-governance-planner">Open Access Governance Planner</a>
+            <a class="secondary-button" href="./docsafe-embed-launchpad.html">Open Embed Launchpad</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>owned workspace visibility model</span>
+            </li>
+            <li>
+              <strong>4</strong>
+              <span>governance traps surfaced before rollout</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>need to grant everyone admin just to make the system usable</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Governance Rule</p>
+            <h2>Self-hosted document workflows only stay trustworthy when roles, visibility, folder structure, external storage, and public exposure are designed together.</h2>
+            <p>
+              Public repo issues keep pointing to the same governance pressure:
+              buyers want editor and viewer roles without making everyone admin,
+              predictable file visibility, usable folder hierarchy, safer
+              archive retrieval than public download links, and the ability to
+              suppress sensitive system exposure on public-facing screens.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>scope, roles, visibility, folders, exposure, archive</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>governance map, preview, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>self-hosted teams, public sector, client portals, archives</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="access-governance-planner" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Access Governance Planner</p>
+          <h2>Design the visibility model before folders, roles, and archive access turn into support risk.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="workspaceScope">Workspace scope</label>
+            <select class="calc-input" id="workspaceScope">
+              <option value="single" selected>Single internal team</option>
+              <option value="multi">Several internal teams</option>
+              <option value="client">Client-isolated workspace</option>
+              <option value="archive">Archive-heavy or regulated workspace</option>
+            </select>
+            <p class="calc-help">Choose the real operational boundary the buyer already has, not the one they hope to retrofit later.</p>
+
+            <label for="roleModel">Role model</label>
+            <select class="calc-input" id="roleModel">
+              <option value="admin">Admins only</option>
+              <option value="split" selected>Editors and viewers split</option>
+              <option value="owner">Tenant or workspace owners</option>
+              <option value="external">External viewer lane</option>
+            </select>
+            <p class="calc-help">If everyone is admin, the governance problem is not solved, it is hidden.</p>
+
+            <label for="visibilityModel">Visibility model</label>
+            <select class="calc-input" id="visibilityModel">
+              <option value="shared">Shared workspace visibility</option>
+              <option value="private" selected>Owner-private by default</option>
+              <option value="team">Team-scoped visibility</option>
+              <option value="client">Client-isolated visibility</option>
+            </select>
+            <p class="calc-help">Visibility policy must be explicit or users will infer sharing rules from inconsistent behavior.</p>
+
+            <label for="folderStrategy">Folder strategy</label>
+            <select class="calc-input" id="folderStrategy">
+              <option value="top">Top-level folders only</option>
+              <option value="tree" selected>Tree-like hierarchy</option>
+              <option value="mirror">Mirror external archive paths</option>
+              <option value="sync">Storage sync workspace</option>
+            </select>
+            <p class="calc-help">Folder structure matters because real teams already have hierarchy and naming they do not want to flatten away.</p>
+
+            <label for="exposurePolicy">Exposure policy</label>
+            <select class="calc-input" id="exposurePolicy">
+              <option value="minimal" selected>Hide sensitive homepage details</option>
+              <option value="brand">Branded private portal</option>
+              <option value="internal">Internal-only operator surface</option>
+              <option value="public">Public invite landing minimized</option>
+            </select>
+            <p class="calc-help">Public-facing metadata and branding choices affect trust, security posture, and whether the tool feels safe to buyers.</p>
+
+            <label for="archiveAccess">Archive access</label>
+            <select class="calc-input" id="archiveAccess">
+              <option value="app">App download only</option>
+              <option value="mirror" selected>Internal archive mirror</option>
+              <option value="nextcloud">Nextcloud or external storage sync</option>
+              <option value="db">Database-side retrieval</option>
+            </select>
+            <p class="calc-help">Archive access is not just a storage concern. It decides whether operators can retrieve documents safely without abusing public download paths.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended governance path</p>
+            <strong id="governancePlanName">Role-Split Private Workspace</strong>
+            <p id="governancePlanSummary" class="stack-copy">Split editors from viewers, keep visibility private by default, and mirror final artifacts into a controlled internal archive path.</p>
+
+            <p>Governance methods</p>
+            <div id="governanceMethods" class="stack-chip-row"></div>
+
+            <p>Access governance map</p>
+            <div id="governanceMap" class="matrix-grid"></div>
+
+            <p>Starter governance preview</p>
+            <div class="brief-box">
+              <p id="governancePreview" class="csv-preview"></p>
+              <button class="table-link table-button" id="copyGovernancePreview" type="button">Copy Preview</button>
+            </div>
+
+            <p>Governance rules</p>
+            <div id="governanceRules" class="list-output"></div>
+
+            <p>Copyable governance brief</p>
+            <div class="brief-box">
+              <p id="governanceBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyGovernanceBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="governanceChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyGovernanceChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="governanceOfferName">DocSafe Setup Sprint</strong>
+            <p id="governanceOfferNote" class="stack-copy">Best when the buyer already knows the main role and visibility boundary and needs it implemented cleanly.</p>
+            <a class="table-link" href="./docsafe-embed-launchpad.html">Need branded host-session behavior and access handoff too? Open Embed Launchpad</a>
+            <a class="table-link" href="./docsafe-completion-package-planner.html">Need archive retrieval and completed artifact rules too? Open Completion Package</a>
+            <a class="table-link" href="./docsafe-webhook-router.html">Need external storage sync and downstream routing too? Open Webhook Router</a>
+            <a class="secondary-button" id="governanceOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where self-hosted document systems are already useful but still too loose on visibility and roles.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Public sector and compliance teams</h3>
+            <p>
+              They need safer archive retrieval, minimal public exposure, and
+              roles tighter than all-admin access.
+            </p>
+          </article>
+          <article>
+            <h3>Small organizations with several operators</h3>
+            <p>
+              They need editors and viewers split cleanly before one shared
+              workspace turns into accidental overexposure.
+            </p>
+          </article>
+          <article>
+            <h3>Client-facing self-hosted portals</h3>
+            <p>
+              They need branded surfaces, isolated visibility, and external
+              storage mirrors that still keep governance legible.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This planner is grounded in real role, visibility, and archive-governance demand.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Homepage details can expose sensitive signals</h3>
+            <p>Docuseal issue 446 asks to hide the version number and document count because public exposure of that data can create unnecessary security risk.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/446" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Role split matters when on-prem teams cannot make everyone admin</h3>
+            <p>Docuseal issue 413 asks for editor and viewer roles on on-prem installs because all-admin access is not acceptable for real organizations.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/413" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Visibility inconsistencies break trust fast</h3>
+            <p>Docuseal issue 392 shows users seeing each other’s files unpredictably, which means workspace visibility rules need to be explicit rather than inferred.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/392" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Real teams need folder hierarchy, not only flat roots</h3>
+            <p>Docuseal issue 564 asks for subfolders and tree-like selection because top-level-only folder models do not fit existing operational structure.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/564" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Archive retrieval should not depend on risky public download paths</h3>
+            <p>Docuseal issue 458 asks how to get documents safely when archived access via documented API paths feels convoluted and security-sensitive.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/458" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>External storage and group integration are real buyer asks</h3>
+            <p>Docuseal issue 519 asks for Nextcloud integration covering storage backend, user groups, templates, signed-file sync, and audit trail preservation.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/519" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Self-hosted buyers still expect branded private surfaces</h3>
+            <p>Docuseal issue 451 shows self-hosted teams want to change branding without being pushed into a SaaS plan just to make the portal feel private and professional.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/451" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>User roles and white-label already exist as platform signals</h3>
+            <p>The Docuseal README explicitly lists company logo and white-label plus user roles, which means the buyer problem is governance design and rollout rather than lack of product direction.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Design the visibility model once before self-hosted workspaces turn into security and support debt.</p>
+    </footer>
+
+    <script src="./docsafe-access-governance-planner.js"></script>
+  </body>
+</html>

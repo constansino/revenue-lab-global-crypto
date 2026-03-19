@@ -1,53 +1,55 @@
 # Revenue Lab Update
 
 New live URL:
-https://constansino.github.io/revenue-lab-global-crypto/docsafe-submission-recovery-planner.html
+https://constansino.github.io/revenue-lab-global-crypto/docsafe-access-governance-planner.html
 
 What this update is:
-- Added an interactive GitHub-backed submission recovery planner for DocSafe.
-- This new page is a DocSafe submission recovery planner:
-  buyers choose recovery trigger, owner, recovery mode, data carry policy, link policy, and notification policy, then get a recovery route map, a starter recovery preview, a copyable exception brief, and the right DocSafe starting offer.
-- It turns public reject, resubmit, reassignment, and stale-link pain into a buyer-facing planning tool instead of another static board.
+- Added an interactive GitHub-backed access governance planner for DocSafe.
+- This new page is a DocSafe access governance planner:
+  buyers choose workspace scope, role model, visibility model, folder strategy, exposure policy, and archive access, then get a governance map, a starter policy preview, a copyable implementation brief, and the right DocSafe starting offer.
+- It turns public self-hosted role, visibility, and archive-governance pain into a buyer-facing planning tool instead of another static board.
 
 Decision:
-- Keep the same document workflow wedge, but move one level deeper into exception handling instead of only focusing on reminder timing, final packaging, or downstream sync.
-- The next bottleneck is not just sending a request. It is whether rejects, wrong recipients, correction flows, and recovery notices can be handled without leaving stale links, silent signers, or messy audit state behind.
+- Keep the same document workflow wedge, but move one level deeper into self-hosted governance instead of only focusing on signing flow, recovery, or packaging.
+- The next bottleneck is not just getting the workflow working. It is whether roles, file visibility, folder structure, public exposure, and archive retrieval are governed well enough that teams can trust the system at all.
 
 Why this wedge:
-- Public repo issues now point at the recovery layer: buyers want reject notifications to reach already-signed parties, wrong recipients to lose access after reassignment, corrected resubmissions to retain prior answers safely, completed submissions to be voided or reset deliberately, and invitation timing to be schedulable instead of awkward.
-- Docuseal issue 568 shows a reject can leave prior signers uninformed unless a specific recovery notice path exists.
-- Docuseal issue 335 asks for a way to void, cancel, or reset a completed submission when the workflow should not remain active as-is.
-- Docuseal issue 334 asks to keep old input on resubmit so a signer can fix one wrong field instead of refilling everything.
-- Docuseal issue 322 asks for forwarding or assigning the signing request to another person when the original recipient is wrong.
-- Docuseal issue 605 shows changing recipient email or phone can leave the old signing slug active, which makes stale-link invalidation a real security requirement.
-- Docuseal issue 408 shows recovery and resend timing need scheduling support for global teams and different time zones.
+- Public repo issues now point at the governance layer: buyers want role split without making everyone admin, consistent file visibility, real folder hierarchy, safer archive access than public download paths, and less unnecessary information exposed on public-facing surfaces.
+- Docuseal issue 413 asks for editor and viewer roles on on-prem installs because admin-only is not acceptable for real organizations.
+- Docuseal issue 392 shows users seeing each other’s files unpredictably, which makes visibility policy and workspace boundaries a buyer problem, not just a bug.
+- Docuseal issue 564 shows top-level-only folder selection does not fit real operational hierarchy and existing storage structure.
+- Docuseal issue 458 shows archive retrieval becomes risky and awkward when operators must rely on public download paths instead of an internal retrieval model.
+- Docuseal issue 446 shows teams want to hide version number and document-count exposure because those public details can create unnecessary security and trust concerns.
+- Docuseal issue 519 shows storage sync, user groups, templates, and audit trail alignment with Nextcloud is a real self-hosted buyer ask.
+- Docuseal issue 451 shows self-hosted teams still expect branded private surfaces without being pushed to a SaaS plan just to change the logo.
 
 What the page now sells:
-- one interactive submission recovery architecture
-- one starter recovery preview
-- one reassignment, resubmit, and notification rule pack
+- one interactive access governance architecture
+- one starter governance preview
+- one role, visibility, and archive rule pack
 - one copyable implementation brief
-- one more buyer-facing utility page that helps lock real exception behavior before payment
+- one more buyer-facing utility page that helps lock real self-hosted governance before payment
 
 Target buyers:
-- legal or contract ops team that must control rejects, resets, and reassignment risk
-- HR or onboarding team fixing wrong fields or wrong recipients without starting from zero
-- global ops or account team that needs scheduled resend and timezone-safe recovery timing
-- anyone trying to standardize correction, reassignment, and recovery notices before exceptions scale
+- public sector or compliance team that needs tighter self-hosted visibility and archive retrieval
+- small organization that cannot make every operator admin just to let them work
+- client-facing self-hosted portal owner that needs isolated visibility and branding
+- anyone trying to standardize self-hosted roles, folder hierarchy, and external storage sync before the instance scales
 
 Wallet kept visible for future payment flows:
 - 0xB3e9568A9cbB624403743340358c85CCce130893
 
 GitHub issues used in this tool:
-- https://github.com/docusealco/docuseal/issues/568
-- https://github.com/docusealco/docuseal/issues/335
-- https://github.com/docusealco/docuseal/issues/334
-- https://github.com/docusealco/docuseal/issues/322
-- https://github.com/docusealco/docuseal/issues/605
-- https://github.com/docusealco/docuseal/issues/408
-- https://github.com/docusealco/docuseal-js
+- https://github.com/docusealco/docuseal/issues/446
+- https://github.com/docusealco/docuseal/issues/413
+- https://github.com/docusealco/docuseal/issues/392
+- https://github.com/docusealco/docuseal/issues/564
+- https://github.com/docusealco/docuseal/issues/458
+- https://github.com/docusealco/docuseal/issues/519
+- https://github.com/docusealco/docuseal/issues/451
+- https://github.com/docusealco/docuseal
 
 Verification:
-- Added the new submission recovery planner and linked it from the main DocSafe flow, reminder ladder, completion package planner, and webhook router.
-- The planner will be checked locally in Chrome with both the default correction-safe resubmission state and a high-complexity wrong-recipient plus rotated-link scenario.
+- Added the new access governance planner and linked it from the main DocSafe flow, embed launchpad, webhook router, and completion package planner.
+- The planner will be checked locally in Chrome with both the default role-split private workspace state and a high-complexity branded client-isolated plus external-storage scenario.
 - Page will be checked on GitHub Pages before or after posting.
