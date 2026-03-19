@@ -12,6 +12,7 @@
 - DocSafe Reminder Ladder: https://constansino.github.io/revenue-lab-global-crypto/docsafe-reminder-ladder.html
 - DocSafe Field Schema Builder: https://constansino.github.io/revenue-lab-global-crypto/docsafe-field-schema-builder.html
 - DocSafe Webhook Router: https://constansino.github.io/revenue-lab-global-crypto/docsafe-webhook-router.html
+- DocSafe Embed Launchpad: https://constansino.github.io/revenue-lab-global-crypto/docsafe-embed-launchpad.html
 - DocSafe Send Router: https://constansino.github.io/revenue-lab-global-crypto/docsafe-send-router.html
 - DocSafe Reply Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-reply-board.html
 - DocSafe Close Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-close-board.html

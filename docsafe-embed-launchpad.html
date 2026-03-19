@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Embed Launchpad</title>
+    <meta
+      name="description"
+      content="An interactive embed launch planner for document workflows: choose embed surface, auth handoff, prefill mode, field lock mode, completion return, and mobile policy to generate a buyer-facing launch path, session preview, and QA brief."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e1320'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='26' font-weight='700' fill='%23f3f5fb'%3EEL%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">EL</span>
+        <div>
+          <p>DocSafe Embed</p>
+          <small>Interactive Launchpad</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-field-schema-builder.html">Field Schema</a>
+        <a class="ghost-button" href="./docsafe-webhook-router.html">Webhook Router</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing embed utility</p>
+          <h1>Launch embedded signing without shipping a session that breaks auth, hides completion, or loses prefilled data.</h1>
+          <p class="lead">
+            This tool turns embed ambiguity into a practical launch aid.
+            Choose embed surface, auth handoff, prefill mode, field lock mode,
+            completion return, and mobile policy, then generate a launch stage
+            map, an embed session preview, and a copyable QA brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#embed-launchpad">Open Embed Launchpad</a>
+            <a class="secondary-button" href="./docsafe-webhook-router.html">Open Webhook Router</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>host-controlled embed path</span>
+            </li>
+            <li>
+              <strong>3</strong>
+              <span>session QA traps buyers usually miss</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>reason to guess whether completion actually works</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Launch Rule</p>
+            <h2>Embedded signing is only sellable when auth, prefill, completion, and mobile behavior all survive the real host environment.</h2>
+            <p>
+              Public repo issues keep pointing to the same launch pressure:
+              presign auth not reaching the request, prefilled fields missing in
+              the embedded session, all-read-only forms losing completion
+              controls, locked choices not behaving as review fields, and mobile
+              signature views breaking on rotate.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>surface, auth, prefill, field lock, completion, mobile</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>launch map, preview, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>in-app contracts, onboarding portals, partner flows</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="embed-launchpad" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Embed Launchpad</p>
+          <h2>Design the embed lane before the host app inherits a brittle signing session.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="embedSurface">Embed surface</label>
+            <select class="calc-input" id="embedSurface">
+              <option value="signer" selected>Embedded signing view</option>
+              <option value="authoring">Embedded authoring</option>
+              <option value="review">Review-and-sign portal</option>
+              <option value="partner">Partner or customer portal</option>
+            </select>
+            <p class="calc-help">Pick the exact host surface the buyer already owns, not the one that only works in a standalone demo.</p>
+
+            <label for="embedAuthMode">Auth handoff</label>
+            <select class="calc-input" id="embedAuthMode">
+              <option value="direct" selected>Direct signer token</option>
+              <option value="presign">Presign token handoff</option>
+              <option value="session">Server session relay</option>
+              <option value="email">Email fallback link</option>
+            </select>
+            <p class="calc-help">The host app needs a deliberate session boundary or the embed will fail before the user even reaches the document.</p>
+
+            <label for="embedPrefillMode">Prefill mode</label>
+            <select class="calc-input" id="embedPrefillMode">
+              <option value="none">Manual entry inside embed</option>
+              <option value="template" selected>Template field ID prefill</option>
+              <option value="api">API prefill before open</option>
+            </select>
+            <p class="calc-help">Prefill only counts if the values are visible in the embedded session and remain intact in the delivered document.</p>
+
+            <label for="fieldLockMode">Field lock mode</label>
+            <select class="calc-input" id="fieldLockMode">
+              <option value="editable" selected>Signer edits fields</option>
+              <option value="text">Read-only text review</option>
+              <option value="mixed">Read-only text plus locked choices</option>
+              <option value="full">Fully read-only session</option>
+            </select>
+            <p class="calc-help">All-review sessions are attractive to buyers, but they are exactly where completion and choice-field edge cases appear.</p>
+
+            <label for="completionMode">Completion return</label>
+            <select class="calc-input" id="completionMode">
+              <option value="confirm">Explicit confirm CTA</option>
+              <option value="callback" selected>Host callback return</option>
+              <option value="redirect">Redirect back to app</option>
+              <option value="verified">Callback plus webhook verification</option>
+            </select>
+            <p class="calc-help">The host app needs a clear completion path or buyers will not trust that signature and delivery actually finished.</p>
+
+            <label for="mobileMode">Mobile policy</label>
+            <select class="calc-input" id="mobileMode">
+              <option value="desktop">Desktop-first only</option>
+              <option value="responsive" selected>Responsive signer QA</option>
+              <option value="rotate">Orientation-sensitive signature QA</option>
+              <option value="external">Open hosted page on risky mobile</option>
+            </select>
+            <p class="calc-help">If the buyer allows mobile signing, treat orientation, viewport, and escape-hatch behavior as part of launch scope.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended embed path</p>
+            <strong id="embedPlanName">Verified Signer Embed</strong>
+            <p id="embedPlanSummary" class="stack-copy">Carry one signer into an embedded session, prefill the right fields, and return completion cleanly to the host app.</p>
+
+            <p>Launch methods</p>
+            <div id="embedMethods" class="stack-chip-row"></div>
+
+            <p>Launch stage map</p>
+            <div id="embedStageMap" class="matrix-grid"></div>
+
+            <p>Embed session preview</p>
+            <div class="brief-box">
+              <p id="embedPreview" class="csv-preview"></p>
+              <button class="table-link table-button" id="copyEmbedPreview" type="button">Copy Preview</button>
+            </div>
+
+            <p>Launch rules</p>
+            <div id="embedRules" class="list-output"></div>
+
+            <p>Copyable launch brief</p>
+            <div class="brief-box">
+              <p id="embedBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyEmbedBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="embedChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyEmbedChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="embedOfferName">DocSafe Setup Sprint</strong>
+            <p id="embedOfferNote" class="stack-copy">Best when the buyer already knows the host app, signing lane, and first embed session to launch.</p>
+            <a class="table-link" href="./docsafe-field-schema-builder.html">Need stable field IDs and prefill keys too? Open Field Schema</a>
+            <a class="table-link" href="./docsafe-webhook-router.html">Need post-completion events and callback routing too? Open Webhook Router</a>
+            <a class="secondary-button" id="embedOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where a product team wants signatures to happen inside its own app or portal.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>SaaS contracts inside product</h3>
+            <p>
+              They want authoring, signing, and completion handoff to stay
+              inside the application instead of bouncing users across email and
+              separate tabs.
+            </p>
+          </article>
+          <article>
+            <h3>HR and onboarding portals</h3>
+            <p>
+              They need prefilled fields, review-only data, and a reliable
+              completion state before new hires move to the next step.
+            </p>
+          </article>
+          <article>
+            <h3>Partner and customer portals</h3>
+            <p>
+              They need the embed to look controlled on mobile and desktop while
+              still returning the user cleanly to the host workflow.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This launchpad is grounded in real embed, prefill, and mobile failures.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Presign auth can fail at authoring time</h3>
+            <p>Documenso issue 2001 shows embedded authoring can fail with 401 when the auth token is not sent in the expected header.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/2001" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Prefill can disappear inside the embed</h3>
+            <p>Documenso issue 1716 shows template fields can still arrive blank in the embedded signer session even after using the generate-document endpoint.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/1716" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>All-read-only sessions can lose completion</h3>
+            <p>Docuseal issue 573 shows an embedded form with all fields prefilled and read-only can leave the signer with no completion controls.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/573" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Locked choices still need a strategy</h3>
+            <p>Docuseal issue 559 shows read-only checkbox and radio review paths are still a real need when the document is prepared before signing.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/559" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Mobile signing can break on rotate</h3>
+            <p>Docuseal issue 383 shows the signature field can shift or displace signatures when mobile users rotate the device.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/383" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Prefilled proof can still be wrong on download</h3>
+            <p>Docuseal issue 609 shows prefilled field values may not survive into the downloaded document proof without explicit QA.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/609" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Design one safe embed session before auth, prefill, completion, and mobile behavior drift apart in production.</p>
+    </footer>
+
+    <script src="./docsafe-embed-launchpad.js"></script>
+  </body>
+</html>

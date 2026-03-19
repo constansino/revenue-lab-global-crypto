@@ -45,6 +45,7 @@
 - `docsafe-reminder-ladder.html`: 把 resend / reminder / expiry / escalation / send-rate 规则转成可执行 follow-up ladder 的 DocSafe 交互式小工具页
 - `docsafe-field-schema-builder.html`: 把模板字段、标准字段名、预填来源和续签日期规则转成可执行 field schema 的 DocSafe 交互式小工具页
 - `docsafe-webhook-router.html`: 把 webhook 事件范围、路由主键、下游系统、重试策略和签名校验转成可执行 event route 的 DocSafe 交互式小工具页
+- `docsafe-embed-launchpad.html`: 把嵌入签署的 auth handoff、prefill、只读字段、completion return 和 mobile QA 转成可执行 launch plan 的 DocSafe 交互式小工具页
 - `docsafe-send-router.html`: DocSafe 的买家路由与发送顺序页
 - `docsafe-reply-board.html`: DocSafe 的回复分类与下一步发送页
 - `docsafe-close-board.html`: DocSafe 的成交锁 scope 与订金推进页
@@ -69,6 +70,7 @@
 - `docsafe-reminder-ladder.js`: DocSafe 提醒、到期和升级规则小工具的交互逻辑
 - `docsafe-field-schema-builder.js`: DocSafe 模板字段和标准元数据 schema 小工具的交互逻辑
 - `docsafe-webhook-router.js`: DocSafe webhook 路由、事件验证和下游 fan-out 小工具的交互逻辑
+- `docsafe-embed-launchpad.js`: DocSafe 嵌入签署 launch path、session preview 和 QA checklist 小工具的交互逻辑
 - `docsafe-agency-client-ops.html`: 面向 agency account / client ops 的垂直版公开页
 - `docsafe-legal-signing-ops.html`: 面向 legal / signing ops 的垂直版公开页
 - `docsafe-recruiting-onboarding-ops.html`: 面向 recruiting / onboarding ops 的垂直版公开页

@@ -1,50 +1,50 @@
 # Revenue Lab Update
 
 New live URL:
-https://constansino.github.io/revenue-lab-global-crypto/docsafe-webhook-router.html
+https://constansino.github.io/revenue-lab-global-crypto/docsafe-embed-launchpad.html
 
 What this update is:
-- Added an interactive GitHub-backed webhook router for DocSafe.
-- This new page is a DocSafe webhook router:
-  buyers choose event scope, identity model, downstream destinations, security mode, retry handling, and artifact sync, then get an event route map, a payload starter preview, a copyable implementation brief, and the right DocSafe starting offer.
-- It turns public webhook, routing-key, and retry-control pain into a buyer-facing planning tool instead of another static board.
+- Added an interactive GitHub-backed embed launch planner for DocSafe.
+- This new page is a DocSafe embed launchpad:
+  buyers choose embed surface, auth handoff, prefill mode, field lock mode, completion return, and mobile policy, then get a launch stage map, an embed session preview, a copyable QA brief, and the right DocSafe starting offer.
+- It turns public embedded-signing, prefill, and mobile pain into a buyer-facing planning tool instead of another static board.
 
 Decision:
-- Keep the same document workflow wedge, but move one level deeper into downstream integration instead of stopping at fields and delivery rules.
-- The next bottleneck is not just template clarity. It is which event should write to which system, which stable key should resolve the record, how decline and signed-file events are handled, and what happens when the receiver fails.
+- Keep the same document workflow wedge, but move one level deeper into in-app signing launch instead of stopping at field and webhook design.
+- The next bottleneck is not just the payload. It is whether the embedded session can survive auth handoff, show the prepared data, still expose completion, behave on mobile, and return control to the host app cleanly.
 
 Why this wedge:
-- Public repo issues now point at the integration layer: hidden fields for webhook post-processing, invisible field identifiers, multiple webhook destinations, signed webhook verification, decline reasons, and retry loops that can damage infrastructure.
-- Documenso issue 2513 explicitly asks for hidden fields prefilled by API so webhook processing can update the correct student record in an SIS.
-- Documenso issue 2313 shows retry handling is not a minor backend detail: a bad webhook path can generate millions of records, fill disks, and bring the service down.
-- Docuseal issue 366 asks for multiple webhooks, which is really a buyer need for one normalized event to fan out into CRM, archive, and ops systems.
-- A webhook router is directly useful in pre-sale and implementation design because it answers the question “which event mutates which downstream system under which safety controls” before production traffic arrives.
+- Public repo issues now point at the embed launch layer: authoring auth tokens not reaching requests, prefill disappearing in the embedded session, all-read-only forms losing completion controls, locked choice fields lacking a review path, mobile signature views breaking on rotate, and prefilled proofs not surviving download.
+- Documenso issue 2001 explicitly shows embedded authoring can fail with a 401 because the expected auth header is not populated during the create call.
+- Documenso issue 1716 shows using `/api/v1/documents/{id}/generate-document` is not enough if the prefilled values still arrive blank inside the embed.
+- Docuseal issue 573 shows an all-read-only embedded form can leave the user with no visible way to complete the session.
+- A buyer-facing embed launchpad is directly useful because it answers the question “which embed session can we ship safely inside our app” before product teams promise in-app signing to customers.
 
 What the page now sells:
-- one interactive event route map
-- one payload starter preview
-- one retry and security rule pack
-- one copyable integration brief
-- one more buyer-facing utility page that helps lock real downstream automation before payment
+- one interactive embed launch map
+- one host-session starter preview
+- one auth, prefill, and mobile QA rule pack
+- one copyable implementation brief
+- one more buyer-facing utility page that helps lock real embedded signing before payment
 
 Target buyers:
-- school or district admin operations with record updates after signature
-- SaaS or platform team syncing signatures into CRM or app state
-- legal, HR, or compliance team that needs signed files and decline events routed cleanly
-- anyone trying to lock one safe webhook route before connecting several downstream systems
+- SaaS or platform team embedding contracts inside the product
+- HR or onboarding portal owner embedding prepared documents for review and signature
+- partner or customer portal team trying to keep signatures inside the host app
+- anyone trying to launch embedded signing without shipping auth, prefill, or mobile failures
 
 Wallet kept visible for future payment flows:
 - 0xB3e9568A9cbB624403743340358c85CCce130893
 
 GitHub issues used in this tool:
-- https://github.com/documenso/documenso/issues/2513
-- https://github.com/documenso/documenso/issues/2329
-- https://github.com/documenso/documenso/issues/2313
-- https://github.com/docusealco/docuseal/issues/366
-- https://github.com/docusealco/docuseal/issues/124
-- https://github.com/docusealco/docuseal/issues/355
+- https://github.com/documenso/documenso/issues/2001
+- https://github.com/documenso/documenso/issues/1716
+- https://github.com/docusealco/docuseal/issues/573
+- https://github.com/docusealco/docuseal/issues/559
+- https://github.com/docusealco/docuseal/issues/383
+- https://github.com/docusealco/docuseal/issues/609
 
 Verification:
-- Added the new webhook router and linked it from the main DocSafe flow, field schema builder, and delivery matrix.
-- The router will be checked locally in Chrome with both the default state and a high-complexity hidden-ID plus fan-out scenario.
+- Added the new embed launchpad and linked it from the main DocSafe flow, field schema builder, and webhook router.
+- The launchpad will be checked locally in Chrome with both the default state and a high-complexity read-only plus host-verified scenario.
 - Page will be checked on GitHub Pages before or after posting.
