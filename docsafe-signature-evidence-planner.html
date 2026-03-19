@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Signature Evidence Planner</title>
+    <meta
+      name="description"
+      content="An interactive signature evidence planner for document workflows: choose visible proof mode, timestamp source, signer metadata, signature standard, verification output, and archive evidence to generate a buyer-facing signature-proof architecture, starter preview, and implementation brief."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e1320'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='24' font-weight='700' fill='%23f3f5fb'%3ESE%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SE</span>
+        <div>
+          <p>DocSafe Evidence</p>
+          <small>Signature Planner</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-signer-experience-planner.html">Signer Experience</a>
+        <a class="ghost-button" href="./docsafe-completion-package-planner.html">Completion Package</a>
+        <a class="ghost-button" href="./docsafe-brand-locale-planner.html">Brand Locale</a>
+        <a class="ghost-button" href="./docsafe-identity-gate-planner.html">Identity Gate</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing proof utility</p>
+          <h1>Plan signature evidence before completed PDFs look unsigned, timestamps drift, or legal teams reject the proof pack.</h1>
+          <p class="lead">
+            This tool turns signature-proof ambiguity into a practical planning
+            aid. Choose visible proof mode, timestamp source, signer metadata,
+            signature standard, verification output, and archive evidence, then
+            generate a signature-proof architecture, a starter preview JSON, and
+            a copyable implementation brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#signature-evidence-planner">Open Signature Evidence Planner</a>
+            <a class="secondary-button" href="./docsafe-completion-package-planner.html">Open Completion Package</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>owned signature-proof policy before delivery</span>
+            </li>
+            <li>
+              <strong>4</strong>
+              <span>legal and audit proof traps surfaced before launch</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>reason to guess what a completed PDF actually proves</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Evidence Rule</p>
+            <h2>Signed documents only stay credible when visible marks, timestamps, signer metadata, cryptographic standard, verification output, and archive proof all agree.</h2>
+            <p>
+              Public repo signals keep pointing to the same proof pressure:
+              buyers want visible signatures to actually render on final PDFs,
+              timestamps that survive validation, signer IP and date metadata in
+              the evidence layer, stronger signature standards like PAdES or
+              eIDAS-aware proof, and a verifiable artifact that legal or
+              compliance teams can review later.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>visible proof, timestamp, metadata, standard, verify, archive</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>evidence map, preview JSON, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>legal ops, finance approvals, compliance archives, regulated onboarding</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="signature-evidence-planner" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Signature Evidence Planner</p>
+          <h2>Design the proof layer before the completed artifact reaches legal review, client delivery, or archive replication.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="visibleProofMode">Visible proof mode</label>
+            <select class="calc-input" id="visibleProofMode">
+              <option value="signature_mark" selected>Visible signature mark on PDF</option>
+              <option value="signature_plus_date">Signature plus signed date</option>
+              <option value="full_visual_block">Full signer evidence block</option>
+              <option value="hidden_crypto">Cryptographic proof only</option>
+            </select>
+            <p class="calc-help">Pick the actual visual proof a reviewer expects to see when they open the finished PDF, not just the cryptographic story behind it.</p>
+
+            <label for="timestampSource">Timestamp source</label>
+            <select class="calc-input" id="timestampSource">
+              <option value="app_time">Application completion time</option>
+              <option value="signing_time" selected>Embedded signing time</option>
+              <option value="tsa">Trusted timestamp server</option>
+              <option value="dual_time">Display and audit timestamp pair</option>
+            </select>
+            <p class="calc-help">Timestamp source matters because the date the signer sees and the date audit sees should not drift without explanation.</p>
+
+            <label for="signerMetadataMode">Signer metadata</label>
+            <select class="calc-input" id="signerMetadataMode">
+              <option value="basic">Name only</option>
+              <option value="ip_date" selected>IP plus date</option>
+              <option value="compliance">IP, email, and signer method</option>
+              <option value="regulated">eIDAS or regulated signer markers</option>
+            </select>
+            <p class="calc-help">Metadata becomes part of the product promise once legal, finance, or compliance asks what exactly the signed record proves.</p>
+
+            <label for="signatureStandard">Signature standard</label>
+            <select class="calc-input" id="signatureStandard">
+              <option value="platform">Platform e-signature default</option>
+              <option value="pades" selected>PAdES-aware PDF signing</option>
+              <option value="ltv">LTV-enabled PDF proof</option>
+              <option value="eidas">eIDAS-oriented signature posture</option>
+            </select>
+            <p class="calc-help">Choose the proof standard the buyer needs to defend, not the one that only sounds stronger in a sales call.</p>
+
+            <label for="verificationOutput">Verification output</label>
+            <select class="calc-input" id="verificationOutput">
+              <option value="viewer">Viewer-visible signature validation</option>
+              <option value="pdf_verify" selected>PDF verification-ready artifact</option>
+              <option value="manifest">Verification manifest and hash record</option>
+              <option value="ops_check">Ops verification checklist</option>
+            </select>
+            <p class="calc-help">Verification output matters because the buyer still needs a human or system to confirm what the artifact means after it is delivered.</p>
+
+            <label for="archiveEvidence">Archive evidence</label>
+            <select class="calc-input" id="archiveEvidence">
+              <option value="pdf_only">Signed PDF only</option>
+              <option value="pdf_plus_log">Signed PDF plus audit log</option>
+              <option value="proof_pack" selected>Proof pack with metadata</option>
+              <option value="regulated_bundle">Regulated archive bundle</option>
+            </select>
+            <p class="calc-help">Archive evidence should match the retrieval and compliance load the buyer actually carries after the document is completed.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended evidence path</p>
+            <strong id="evidencePlanName">Verified Signature Proof Pack</strong>
+            <p id="evidencePlanSummary" class="stack-copy">Keep a visible signature mark on the final PDF, pair it with stable signing time and signer metadata, and archive a proof pack that can be verified later.</p>
+
+            <p>Evidence methods</p>
+            <div id="evidenceMethods" class="stack-chip-row"></div>
+
+            <p>Evidence system map</p>
+            <div id="evidenceMap" class="matrix-grid"></div>
+
+            <p>Starter evidence preview</p>
+            <div class="brief-box">
+              <p id="evidencePreview" class="csv-preview"></p>
+              <button class="table-link table-button" id="copyEvidencePreview" type="button">Copy Preview</button>
+            </div>
+
+            <p>Evidence rules</p>
+            <div id="evidenceRules" class="list-output"></div>
+
+            <p>Copyable evidence brief</p>
+            <div class="brief-box">
+              <p id="evidenceBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyEvidenceBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="evidenceChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyEvidenceChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="evidenceOfferName">DocSafe Setup Sprint</strong>
+            <p id="evidenceOfferNote" class="stack-copy">Best when the buyer already knows which signed record needs stronger proof and how that artifact should be reviewed later.</p>
+            <a class="table-link" href="./docsafe-signer-experience-planner.html">Need signer-side signature mode, dates, and completion QA too? Open Signer Experience</a>
+            <a class="table-link" href="./docsafe-completion-package-planner.html">Need final delivery, naming, and archive release boundaries too? Open Completion Package</a>
+            <a class="table-link" href="./docsafe-brand-locale-planner.html">Need branded signing pages and localized trust copy too? Open Brand Locale</a>
+            <a class="table-link" href="./docsafe-identity-gate-planner.html">Need stronger signer verification and identity policy too? Open Identity Gate</a>
+            <a class="secondary-button" id="evidenceOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where a signed PDF is reviewed by people who care what it really proves.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Legal and contract operators</h3>
+            <p>
+              They need the final PDF to show visible signature proof plus a
+              verification story they can defend during review or dispute.
+            </p>
+          </article>
+          <article>
+            <h3>Compliance and audit teams</h3>
+            <p>
+              They need timestamps, signer metadata, and archive proof to stay
+              coherent after delivery and retrieval.
+            </p>
+          </article>
+          <article>
+            <h3>Finance and regulated onboarding teams</h3>
+            <p>
+              They need stronger proof language than a generic signed PDF, but
+              still need the artifact to be understandable by operators.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This planner is grounded in real visual-signature, timestamp, PAdES, and verification demand.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Completed PDFs can still appear unsigned</h3>
+            <p>Documenso issue 1912 shows visual signatures can fail to render on completed PDFs even when the background signing job reports success.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/1912" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Buyers want richer visible signature metadata</h3>
+            <p>Documenso discussion 143 asks for signature field auto-date, signer IP, eIDAS level, and explicit electronic-signature markers in the proof layer.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/discussions/143" target="_blank" rel="noreferrer">Open Discussion</a>
+          </article>
+          <article>
+            <h3>Long-term validation matters after the signature is done</h3>
+            <p>Documenso discussion 114 asks for LTV-enabled PDF signing, which turns long-term verification into a buyer-facing archive requirement rather than a low-level technical detail.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/discussions/114" target="_blank" rel="noreferrer">Open Discussion</a>
+          </article>
+          <article>
+            <h3>Timestamp and TSA choices affect the signed artifact</h3>
+            <p>The @documenso/pdf-sign package exposes signing time and timestamp server options, which shows proof configuration is part of the signing product surface.</p>
+            <a class="table-link" href="https://github.com/documenso/pdf-sign" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+          <article>
+            <h3>Signature level expectations already vary by buyer and regulator</h3>
+            <p>Documenso discussion 1 shows buyers talking directly about what signature level they need and when stronger regulatory acceptance changes product requirements.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/discussions/1" target="_blank" rel="noreferrer">Open Discussion</a>
+          </article>
+          <article>
+            <h3>PAdES support is a real request in the open-source signing market</h3>
+            <p>Docuseal discussion 89 asks for PAdES electronic signature support, which shows cryptographic proof level is a real buying criterion for some teams.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/discussions/89" target="_blank" rel="noreferrer">Open Discussion</a>
+          </article>
+          <article>
+            <h3>Timestamp mismatches undermine proof credibility</h3>
+            <p>Docuseal issue 575 shows a mismatch between signature timestamp date and submission completed timestamp, which makes evidence reconciliation commercially relevant.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/575" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>The category already expects verifiable PDF signatures</h3>
+            <p>The Docuseal README explicitly calls out PDF signature verification, which means buyers already expect signed artifacts to be checked, not just downloaded.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Make the signed artifact prove something real before legal review exposes the gaps.</p>
+    </footer>
+
+    <script src="./docsafe-signature-evidence-planner.js"></script>
+  </body>
+</html>
