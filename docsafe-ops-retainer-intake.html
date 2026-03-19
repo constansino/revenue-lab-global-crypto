@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Ops Retainer Intake</title>
+    <meta
+      name="description"
+      content="A post-payment intake page for the DocSafe ops retainer: current volume, stuck states, monthly priorities, and what must be confirmed before the next support cycle starts."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">RI</span>
+        <div>
+          <p>DocSafe Retainer Intake</p>
+          <small>Monthly Ops Kickoff</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-ops-retainer-start.html">Retainer Start</a>
+        <a class="ghost-button" href="./docsafe-workspace-start.html">Workspace</a>
+        <a class="ghost-button" href="./pay.html">Wallet Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">After the monthly lock</p>
+          <h1>The retainer month starts only after the active workflow priorities are named clearly.</h1>
+          <p class="lead">
+            The monthly retainer works when the buyer sends the current document
+            volume, the stalled states, the top cleanup priorities, and any
+            rule changes from the last cycle. This keeps the month focused on
+            real operational pressure instead of vague support requests.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#retainer-intake-table">Open Intake Table</a>
+            <a class="secondary-button" href="./docsafe-ops-retainer-start.html">Back to Retainer Start</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>4</strong>
+              <span>required monthly inputs</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>priority ops focus per cycle</span>
+            </li>
+            <li>
+              <strong>Monthly</strong>
+              <span>repeatable kickoff rhythm</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Retainer Intake Rule</p>
+            <h2>Do not start the month from generic “please improve the workflow” requests.</h2>
+            <p>
+              The retainer should begin from current operating facts, not from a
+              broad hope that everything gets better automatically.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Volume</dt>
+                <dd>what is active now</dd>
+              </div>
+              <div>
+                <dt>Friction</dt>
+                <dd>where the workflow is sticking</dd>
+              </div>
+              <div>
+                <dt>Priority</dt>
+                <dd>what to clean up first</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="retainer-intake-table" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Monthly Intake Table</p>
+          <h2>What the buyer must confirm before the next retainer cycle begins.</h2>
+        </div>
+        <div class="dashboard-shell">
+          <div class="dashboard-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>What To Send</th>
+                  <th>Why It Matters</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Current document volume</td>
+                  <td>Approximate active document load for the current cycle.</td>
+                  <td>Shows whether the month is a light tuning cycle or a heavier maintenance month.</td>
+                </tr>
+                <tr>
+                  <td>Stuck states</td>
+                  <td>The stages where documents are currently stalling, looping, or confusing the team.</td>
+                  <td>Focuses the retainer on real workflow pressure instead of general feedback.</td>
+                </tr>
+                <tr>
+                  <td>Top cleanup priorities</td>
+                  <td>The two or three adjustments that matter most this month.</td>
+                  <td>Prevents the support month from becoming a grab bag of minor requests.</td>
+                </tr>
+                <tr>
+                  <td>Rule or owner changes</td>
+                  <td>Any new approvers, changed handoff rules, or updated delivery requirements.</td>
+                  <td>Keeps the retainer aligned with the actual operating environment.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Bad Inputs</p>
+          <h2>These make the monthly cycle weaker, not stronger.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>No named priorities</h3>
+            <p>
+              If everything is urgent, the month will drift instead of producing
+              a visible ops improvement.
+            </p>
+          </article>
+          <article>
+            <h3>New build requests hidden as support</h3>
+            <p>
+              Large new implementation asks should be scoped separately, not
+              smuggled into a maintenance cycle.
+            </p>
+          </article>
+          <article>
+            <h3>No current-state snapshot</h3>
+            <p>
+              Without a simple volume and friction picture, the retainer starts
+              from guesswork.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Kickoff Message</p>
+          <h2>Short text to send after the monthly lock lands.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Monthly kickoff</h3>
+            <p>
+              Monthly lock received. To begin the DocSafe retainer cycle, send
+              the current document volume, the stages where the workflow is
+              sticking, the top cleanup priorities for this month, and any rule
+              or owner changes since the last cycle.
+            </p>
+          </article>
+          <article>
+            <h3>Scope control</h3>
+            <p>
+              This keeps the month tied to real workflow maintenance instead of
+              letting support drift into a hidden rebuild.
+            </p>
+            <a class="table-link" href="./docsafe-ops-retainer-start.html">Back to Retainer Start</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Lock the monthly focus. Clean the workflow. Renew from visible value.</p>
+    </footer>
+  </body>
+</html>

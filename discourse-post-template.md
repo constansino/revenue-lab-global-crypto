@@ -1,39 +1,39 @@
 # Revenue Lab Update
 
 New live URL:
-https://constansino.github.io/revenue-lab-global-crypto/docsafe-ops-retainer-start.html
+https://constansino.github.io/revenue-lab-global-crypto/docsafe-ops-retainer-intake.html
 
 What this update is:
-- Added the buyer-facing monthly retainer page for DocSafe operations.
-- This new page is a DocSafe ops retainer start page:
-  recurring scope, monthly lock, and when the buyer should pay for ongoing workflow ownership.
-- It turns the DocSafe ladder into a clearer recurring revenue path after implementation work is already in place.
+- Added the post-payment kickoff page for the DocSafe monthly retainer.
+- This new page is a DocSafe ops retainer intake page:
+  current volume, stuck states, monthly priorities, and rule changes that must be confirmed before the support cycle starts.
+- It turns the retainer from a vague support promise into a repeatable monthly operating cadence.
 
 Decision:
-- Keep the same implementation ladder, but add the recurring revenue step after buildout.
-- At this point the bottleneck is not only landing one-off projects. It is turning successful delivery into retained monthly work.
+- Keep the same retainer offer, but define the operating kickoff after payment.
+- At this point the bottleneck is not selling the monthly lock. It is making each support cycle start from a clear ops picture.
 
 Why this wedge:
-- Teams often need the workflow kept clean after the install.
-- A retainer page is more credible than vaguely asking for "ongoing support" after delivery.
-- It gives the DocSafe ladder a recurring revenue outcome instead of stopping at project fees.
+- A recurring retainer still fails if the month starts from vague requests.
+- A monthly intake page makes the retainer feel like real operational ownership rather than generic availability.
+- It protects margin by keeping support tied to current workflow pressure and named priorities.
 
 What the page now sells:
-- one $1,500 monthly retainer
-- one $450 monthly lock
-- one clear monthly maintenance scope
-- one recurring revenue path after setup or workspace work
+- one monthly kickoff structure
+- one current-state ops snapshot
+- one priority-based maintenance cycle
+- one clearer boundary between retainer work and new implementation scope
 
 Target buyers:
 - internal operator
 - founder doing outreach
 - account lead
-- anyone trying to turn delivered workflow value into retained monthly ops work
+- anyone trying to make the monthly retainer repeatable and defensible
 
 Wallet kept visible for future payment flows:
 - 0xB3e9568A9cbB624403743340358c85CCce130893
 
 Verification:
-- Added the new ops retainer start page and linked it from the workspace page.
+- Added the new ops retainer intake page and linked it from the retainer start page.
 - Local href validation passed.
 - Page will be checked on GitHub Pages before or after posting.
