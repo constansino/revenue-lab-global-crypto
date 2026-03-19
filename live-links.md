@@ -7,6 +7,7 @@
 - DocSafe Reply Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-reply-board.html
 - DocSafe Close Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-close-board.html
 - DocSafe Audit Start: https://constansino.github.io/revenue-lab-global-crypto/docsafe-audit-start.html
+- DocSafe Audit Intake: https://constansino.github.io/revenue-lab-global-crypto/docsafe-audit-intake.html
 - DocSafe Agency Client Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-agency-client-ops.html
 - DocSafe Legal Signing Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-legal-signing-ops.html
 - DocSafe Recruiting Onboarding Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-recruiting-onboarding-ops.html

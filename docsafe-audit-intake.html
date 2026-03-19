@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Audit Intake</title>
+    <meta
+      name="description"
+      content="A post-payment intake page for the DocSafe audit: what the buyer must send, how to format it, and when the audit clock starts."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">AI</span>
+        <div>
+          <p>DocSafe Intake</p>
+          <small>Audit Kickoff Requirements</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-audit-start.html">Audit Start</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+        <a class="ghost-button" href="./pay.html">Wallet Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">After deposit</p>
+          <h1>The audit clock starts only after these intake items arrive clearly.</h1>
+          <p class="lead">
+            This page removes ambiguity after payment. The buyer sends one short
+            summary, two real workflow examples, and the main risk points. That
+            gives enough signal to produce a useful DocSafe audit instead of a
+            vague opinion document.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#intake-table">Open Intake Table</a>
+            <a class="secondary-button" href="./docsafe-audit-start.html">Back to Audit Start</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>3</strong>
+              <span>required intake items</span>
+            </li>
+            <li>
+              <strong>72h</strong>
+              <span>starts after complete intake</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>kickoff path for the audit</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Intake Rule</p>
+            <h2>Do not start from random files and chat fragments.</h2>
+            <p>
+              The audit works only when the buyer sends the workflow in a clean,
+              minimal structure. This page gives that structure.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Summary</dt>
+                <dd>what the team does now</dd>
+              </div>
+              <div>
+                <dt>Examples</dt>
+                <dd>real document paths</dd>
+              </div>
+              <div>
+                <dt>Risks</dt>
+                <dd>where the process breaks</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="intake-table" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Intake Table</p>
+          <h2>What the buyer must send for the audit to begin.</h2>
+        </div>
+        <div class="dashboard-shell">
+          <div class="dashboard-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>What To Send</th>
+                  <th>Format</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Workflow summary</td>
+                  <td>How documents currently arrive, get reviewed, and get delivered.</td>
+                  <td>5 to 10 sentences max.</td>
+                </tr>
+                <tr>
+                  <td>Two real examples</td>
+                  <td>Two recent document flows that show the current process.</td>
+                  <td>List steps, tools used, and where confusion happened.</td>
+                </tr>
+                <tr>
+                  <td>Main pain points</td>
+                  <td>Top three issues causing delay, risk, or rework.</td>
+                  <td>Simple bullet list.</td>
+                </tr>
+                <tr>
+                  <td>Transaction hash</td>
+                  <td>The deposit confirmation for the audit start.</td>
+                  <td>Paste hash plus network used.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Bad Inputs</p>
+          <h2>These slow down delivery and should be avoided.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Huge file dumps</h3>
+            <p>
+              Sending an entire drive without context turns the audit into
+              document archaeology.
+            </p>
+          </article>
+          <article>
+            <h3>Only complaints, no examples</h3>
+            <p>
+              Pain descriptions help, but the audit needs at least two real
+              workflow paths to diagnose the process.
+            </p>
+          </article>
+          <article>
+            <h3>No payment confirmation</h3>
+            <p>
+              The turnaround window starts after the deposit and intake are both
+              confirmed.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Copy Pack</p>
+          <h2>Short message to send right after the deposit lands.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Post-payment message</h3>
+            <p>
+              Deposit received. To start the DocSafe audit, send one short
+              workflow summary, two real document-flow examples, your top three
+              pain points, and the transaction hash with the network used. The
+              72-hour audit window starts once that intake is complete.
+            </p>
+          </article>
+          <article>
+            <h3>Next page</h3>
+            <p>
+              Once intake is complete, the audit can be executed against the
+              agreed scope without another round of clarification.
+            </p>
+            <a class="table-link" href="./docsafe-audit-start.html">Back to Audit Start</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Complete intake. Start clock. Deliver a useful audit.</p>
+    </footer>
+  </body>
+</html>

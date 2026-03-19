@@ -40,6 +40,7 @@
 - `docsafe-reply-board.html`: DocSafe 的回复分类与下一步发送页
 - `docsafe-close-board.html`: DocSafe 的成交锁 scope 与订金推进页
 - `docsafe-audit-start.html`: DocSafe 的买家可直接付款启动的 audit 起始页
+- `docsafe-audit-intake.html`: DocSafe 的收款后材料提交与启动页
 - `docsafe-agency-client-ops.html`: 面向 agency account / client ops 的垂直版公开页
 - `docsafe-legal-signing-ops.html`: 面向 legal / signing ops 的垂直版公开页
 - `docsafe-recruiting-onboarding-ops.html`: 面向 recruiting / onboarding ops 的垂直版公开页
