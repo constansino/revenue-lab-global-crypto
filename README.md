@@ -51,6 +51,7 @@
 - `docsafe-completion-package-planner.html`: 把 completed docs 的交付边界、命名策略、导出打包、审计证据和 archive access 转成可执行 output package 的 DocSafe 交互式小工具页
 - `docsafe-submission-recovery-planner.html`: 把 reject、resubmit、wrong recipient reassignment、stale link invalidation 和 recovery notice policy 转成可执行 exception recovery 的 DocSafe 交互式小工具页
 - `docsafe-access-governance-planner.html`: 把 self-hosted 角色拆分、文件可见性、folder hierarchy、敏感信息暴露和 archive retrieval 策略转成可执行 access governance 的 DocSafe 交互式小工具页
+- `docsafe-identity-gate-planner.html`: 把 self-hosted SSO、OAuth、signer OTP、SMS verification、secure cookie 和 2FA recovery runbook 转成可执行 identity gate 的 DocSafe 交互式小工具页
 - `docsafe-send-router.html`: DocSafe 的买家路由与发送顺序页
 - `docsafe-reply-board.html`: DocSafe 的回复分类与下一步发送页
 - `docsafe-close-board.html`: DocSafe 的成交锁 scope 与订金推进页
@@ -81,6 +82,7 @@
 - `docsafe-completion-package-planner.js`: DocSafe 完成态交付包、文件命名、批量导出和 archive policy 小工具的交互逻辑
 - `docsafe-submission-recovery-planner.js`: DocSafe reject、resubmit、reassign 和 stale-link recovery 小工具的交互逻辑
 - `docsafe-access-governance-planner.js`: DocSafe self-hosted 角色、可见性、folder strategy 和 archive access 小工具的交互逻辑
+- `docsafe-identity-gate-planner.js`: DocSafe self-hosted login、signer verification、session security 和 recovery lane 小工具的交互逻辑
 - `docsafe-agency-client-ops.html`: 面向 agency account / client ops 的垂直版公开页
 - `docsafe-legal-signing-ops.html`: 面向 legal / signing ops 的垂直版公开页
 - `docsafe-recruiting-onboarding-ops.html`: 面向 recruiting / onboarding ops 的垂直版公开页

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Identity Gate Planner</title>
+    <meta
+      name="description"
+      content="An interactive identity gate planner for document workflows: choose deployment surface, workforce login, signer verification, invite channel, session policy, and recovery lane to generate a buyer-facing trust architecture, starter policy preview, and implementation brief."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e1320'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='26' font-weight='700' fill='%23f3f5fb'%3EIG%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">IG</span>
+        <div>
+          <p>DocSafe Identity</p>
+          <small>Interactive Planner</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-access-governance-planner.html">Access Governance</a>
+        <a class="ghost-button" href="./docsafe-embed-launchpad.html">Embed Launchpad</a>
+        <a class="ghost-button" href="./docsafe-submission-recovery-planner.html">Recovery Planner</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing identity utility</p>
+          <h1>Decide who can enter, how they verify, and how they recover before self-hosted signing turns into a trust problem.</h1>
+          <p class="lead">
+            This tool turns identity uncertainty into a practical planning aid.
+            Choose deployment surface, workforce login boundary, signer
+            verification, invite channel, session policy, and recovery lane,
+            then generate an identity architecture, a starter policy preview,
+            and a copyable implementation brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#identity-gate-planner">Open Identity Gate Planner</a>
+            <a class="secondary-button" href="./docsafe-access-governance-planner.html">Open Access Governance</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>owned identity boundary before rollout</span>
+            </li>
+            <li>
+              <strong>3</strong>
+              <span>trust failures surfaced before launch</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>reason to improvise SSO, OTP, or 2FA recovery live</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Identity Rule</p>
+            <h2>Document workflows only feel safe when workforce login, signer verification, invite channel, session security, and recovery are designed as one gate.</h2>
+            <p>
+              Public repo issues keep pointing to the same identity pressure:
+              self-hosted teams want SSO or OAuth instead of scattered local
+              logins, signers need stronger verification than a bare document
+              link, SMS verification should not loop or feel generic, secure
+              session cookies should be enforced on authenticated traffic, and
+              operators need a clean 2FA recovery path when migrations or
+              device changes happen.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>surface, login, signer proof, invite, session, recovery</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>trust map, preview, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>self-hosted teams, embedded apps, client portals, regulated signing</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="identity-gate-planner" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Identity Gate Planner</p>
+          <h2>Design the trust gate before SSO gaps, weak signer links, or broken 2FA recovery create support debt.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="deploymentSurface">Deployment surface</label>
+            <select class="calc-input" id="deploymentSurface">
+              <option value="internal" selected>Internal self-hosted workspace</option>
+              <option value="client">Branded client portal</option>
+              <option value="embedded">Embedded product signing</option>
+              <option value="regulated">Regulated or high-assurance signing</option>
+            </select>
+            <p class="calc-help">Choose the real surface the buyer already has to defend, not the safest case from a demo video.</p>
+
+            <label for="workforceLogin">Workforce login</label>
+            <select class="calc-input" id="workforceLogin">
+              <option value="password">Local operator accounts</option>
+              <option value="sso" selected>SAML or SSO IdP</option>
+              <option value="oauth">OAuth or modern auth</option>
+              <option value="hybrid">Hybrid IdP plus break-glass local admin</option>
+            </select>
+            <p class="calc-help">Operator login is an architecture choice because the wrong boundary makes user provisioning, mapping, and recovery brittle.</p>
+
+            <label for="signerVerification">Signer verification</label>
+            <select class="calc-input" id="signerVerification">
+              <option value="link">Link-only signer access</option>
+              <option value="email" selected>Email OTP gate</option>
+              <option value="sms">SMS OTP gate</option>
+              <option value="stepup">Risk-based step-up verification</option>
+            </select>
+            <p class="calc-help">Treat the document link as a transport, not as identity proof, when the buyer cares who actually opened the document.</p>
+
+            <label for="inviteChannel">Invite channel</label>
+            <select class="calc-input" id="inviteChannel">
+              <option value="email" selected>Default email invite</option>
+              <option value="brand">Branded private invite</option>
+              <option value="smsassist">SMS-assisted reminder path</option>
+              <option value="portal">Portal-first login handoff</option>
+            </select>
+            <p class="calc-help">Invite wording and entry path affect trust because users judge the security model before they ever see a signature field.</p>
+
+            <label for="sessionPolicy">Session policy</label>
+            <select class="calc-input" id="sessionPolicy">
+              <option value="standard">Standard authenticated session</option>
+              <option value="secure" selected>Secure-cookie HTTPS-only session</option>
+              <option value="short">Short-lived signer session</option>
+              <option value="strict">Strict secure-cookie plus short TTL</option>
+            </select>
+            <p class="calc-help">Authenticated traffic needs a deliberate session envelope or the trust boundary becomes weaker than the document itself.</p>
+
+            <label for="recoveryLane">Recovery lane</label>
+            <select class="calc-input" id="recoveryLane">
+              <option value="manual">Manual helpdesk recovery</option>
+              <option value="backup" selected>TOTP backup seed runbook</option>
+              <option value="admin">Admin-reviewed 2FA reset</option>
+              <option value="migration">Migration recovery drill</option>
+            </select>
+            <p class="calc-help">Identity systems fail in boring ways, so the buyer needs a recovery lane before a Docker move or device loss locks everyone out.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended identity path</p>
+            <strong id="identityPlanName">SSO-Controlled Email OTP Workspace</strong>
+            <p id="identityPlanSummary" class="stack-copy">Use one IdP for workforce access, add email OTP before signing, secure authenticated sessions over HTTPS, and keep a vault-backed TOTP recovery runbook.</p>
+
+            <p>Identity methods</p>
+            <div id="identityMethods" class="stack-chip-row"></div>
+
+            <p>Identity trust map</p>
+            <div id="identityMap" class="matrix-grid"></div>
+
+            <p>Starter identity preview</p>
+            <div class="brief-box">
+              <p id="identityPreview" class="csv-preview"></p>
+              <button class="table-link table-button" id="copyIdentityPreview" type="button">Copy Preview</button>
+            </div>
+
+            <p>Identity rules</p>
+            <div id="identityRules" class="list-output"></div>
+
+            <p>Copyable identity brief</p>
+            <div class="brief-box">
+              <p id="identityBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyIdentityBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="identityChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyIdentityChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="identityOfferName">DocSafe Setup Sprint</strong>
+            <p id="identityOfferNote" class="stack-copy">Best when the buyer already knows the main auth and signer-proof boundary and just needs the trust gate implemented cleanly.</p>
+            <a class="table-link" href="./docsafe-access-governance-planner.html">Need role, visibility, and archive boundaries too? Open Access Governance</a>
+            <a class="table-link" href="./docsafe-embed-launchpad.html">Need embedded host-session behavior and app handoff too? Open Embed Launchpad</a>
+            <a class="table-link" href="./docsafe-submission-recovery-planner.html">Need stale-link, reassignment, and resend recovery too? Open Recovery Planner</a>
+            <a class="secondary-button" id="identityOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where identity, signer trust, and recovery are already blocking adoption.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Client-facing private portals</h3>
+            <p>
+              They need branded invites, predictable signer verification, and a
+              session policy that looks credible to external users.
+            </p>
+          </article>
+          <article>
+            <h3>Embedded SaaS and product teams</h3>
+            <p>
+              They need operator auth and signer proof to fit one product
+              journey instead of pushing users through fragile email-only links.
+            </p>
+          </article>
+          <article>
+            <h3>Regulated internal teams</h3>
+            <p>
+              They need SSO, stronger session controls, and a recovery runbook
+              that survives migration or device loss without panic.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This planner is grounded in real login, signer-verification, session, and recovery demand.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Self-hosted teams want SSO without paying for a hosted plan</h3>
+            <p>Docuseal issue 436 asks for self-hosted SSO or SAML because operators want one auth provider instead of another isolated local login surface.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/436" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>IdP mapping and provisioning break real rollouts</h3>
+            <p>Docuseal issue 351 shows Entra ID SSO can fail on user mapping even after the IdP login succeeds, which makes attribute planning part of the delivery scope.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/351" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Modern OAuth is a live buyer ask</h3>
+            <p>Docuseal issue 497 requests OAuth login because Microsoft 365 clients want modern authentication instead of legacy login handling.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/497" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Signer links need stronger proof than bare access URLs</h3>
+            <p>Docuseal issue 279 asks for email OTP or a temporary mail link because a raw document link does not prove the intended signer actually opened it.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/279" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>SMS verification UX can damage completion trust</h3>
+            <p>Docuseal issue 251 shows SMS verification can be requested multiple times in one signing flow, which means placement and retry behavior belong in the design brief.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/251" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Invite and verification copy affect trust</h3>
+            <p>Docuseal issue 253 asks to customize SMS text, which signals that sender identity and message wording are part of the buyer-facing security posture.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/253" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Authenticated sessions should enforce secure transport</h3>
+            <p>Docuseal issue 591 asks for secure cookies on authenticated traffic because session handling is part of the trust boundary, not an implementation afterthought.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/591" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>2FA recovery has to survive device loss and migration</h3>
+            <p>Docuseal issues 204 and 442 show operators still need a clean 2FA reset and migration recovery path when access breaks after environment changes.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/204" target="_blank" rel="noreferrer">Open Issue 204</a>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/442" target="_blank" rel="noreferrer">Open Issue 442</a>
+          </article>
+          <article>
+            <h3>TOTP backup handling is an operational requirement</h3>
+            <p>Docuseal issue 586 asks for a plaintext TOTP key in addition to the QR code because password-manager and vault workflows need a recoverable seed, not only a camera scan.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/586" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>The platform already signals identity as a first-class feature</h3>
+            <p>The Docuseal README explicitly lists secure document signing, user roles, company logo and white-label, API and webhooks, embedded signing, and SSO or SAML, which means the buyer problem is identity design and rollout rather than category fit.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Design the trust gate once before self-hosted identity becomes support debt.</p>
+    </footer>
+
+    <script src="./docsafe-identity-gate-planner.js"></script>
+  </body>
+</html>
