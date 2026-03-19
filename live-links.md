@@ -151,6 +151,7 @@
 - Partner Intro Referral Proof Capture: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-proof-capture-board.html
 - Partner Intro Referral Reuse Boundary: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-reuse-boundary-board.html
 - Partner Intro Referral Public Trust Page: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-public-trust-page-board.html
+- Partner Intro Referral Public Trust Router: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-public-trust-router-board.html
 - Partner Intro Referral Public Proof Page: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-public-proof-page-board.html
 - Partner Intro Referral Public Proof Router: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-public-proof-router-board.html
 - Partner Intro Referral Public Case Study Page: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-public-case-study-page-board.html
