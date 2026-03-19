@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Stack Picker</title>
+    <meta
+      name="description"
+      content="A GitHub-backed stack picker for document workflow buyers: choose signing, PDF, intake, automation, and hosting needs, then get the right open-source stack and DocSafe entry offer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SP</span>
+        <div>
+          <p>DocSafe Stack</p>
+          <small>Interactive Picker</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-roi-calculator.html">ROI Calculator</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+        <a class="ghost-button" href="./docsafe-setup-sprint-start.html">Setup Sprint</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">GitHub-backed buying aid</p>
+          <h1>Pick a document ops stack before you pay for the wrong build.</h1>
+          <p class="lead">
+            This tool turns GitHub demand research into a buyer-facing stack
+            decision. Choose your signing, PDF, intake, automation, ownership,
+            and hosting needs, then get a practical open-source starting stack
+            and the narrowest DocSafe offer that should implement it first.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#stack-picker">Open Stack Picker</a>
+            <a class="secondary-button" href="./docsafe-roi-calculator.html">Open ROI Calculator</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>6</strong>
+              <span>active GitHub tools tracked</span>
+            </li>
+            <li>
+              <strong>3</strong>
+              <span>DocSafe implementation entry points</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>recommended starting stack</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Picker Rule</p>
+            <h2>Buy one clean lane, not a random pile of tools.</h2>
+            <p>
+              Buyers often know they need signatures, intake, PDF cleanup, or
+              automation, but not which combination should be implemented
+              first. The real sale is the operating lane, not the software list.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>signing, PDF, intake, automation, hosting</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>recommended stack and first DocSafe offer</dd>
+              </div>
+              <div>
+                <dt>Goal</dt>
+                <dd>avoid overspending on the wrong workflow build</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="stack-picker" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Stack Picker</p>
+          <h2>Match the stack to the workflow pressure you already have.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="signingNeed">Signature workflow need</label>
+            <select class="calc-input" id="signingNeed">
+              <option value="none">No signature step yet</option>
+              <option value="simple" selected>Simple fill-and-sign</option>
+              <option value="advanced">Multi-party / audit-heavy signing</option>
+            </select>
+            <p class="calc-help">Use advanced if several owners, sequence control, or stronger audit trail matters.</p>
+
+            <label for="pdfLoad">PDF operations load</label>
+            <select class="calc-input" id="pdfLoad">
+              <option value="low">Low</option>
+              <option value="medium" selected>Medium</option>
+              <option value="high">High</option>
+            </select>
+            <p class="calc-help">Use high if teams constantly merge, split, redact, OCR, or repackage files.</p>
+
+            <label for="intakeNeed">Structured intake needed</label>
+            <select class="calc-input" id="intakeNeed">
+              <option value="yes" selected>Yes</option>
+              <option value="no">No</option>
+            </select>
+            <p class="calc-help">Choose yes if requests still arrive via loose email threads, chats, or attachments.</p>
+
+            <label for="automationNeed">Automation depth</label>
+            <select class="calc-input" id="automationNeed">
+              <option value="none">No automation yet</option>
+              <option value="light" selected>Light routing and notifications</option>
+              <option value="heavy">Heavy cross-system orchestration</option>
+            </select>
+            <p class="calc-help">Heavy means multiple apps, multi-step state changes, or follow-up rules.</p>
+
+            <label for="coordinationNeed">Coordination complexity</label>
+            <select class="calc-input" id="coordinationNeed">
+              <option value="solo">Solo owner</option>
+              <option value="small" selected>Small team</option>
+              <option value="multi">Multi-owner approvals</option>
+            </select>
+            <p class="calc-help">Use multi when the workflow crosses departments or approval owners.</p>
+
+            <label for="hostingPreference">Hosting preference</label>
+            <select class="calc-input" id="hostingPreference">
+              <option value="flexible" selected>Flexible</option>
+              <option value="self">Prefer self-hosted control</option>
+              <option value="managed">Prefer easiest managed setup</option>
+            </select>
+            <p class="calc-help">This affects whether the signing and automation choice should bias toward control or speed.</p>
+          </div>
+
+          <div class="calc-output stack-output">
+            <p>Recommended stack</p>
+            <strong id="stackName">Intake + Signing Lane</strong>
+            <p id="stackSummary">Start with structured intake, one signing tool, and one PDF relief layer.</p>
+
+            <p>Core components</p>
+            <div id="stackComponents" class="stack-chip-row"></div>
+
+            <p>Why this should be first</p>
+            <p id="stackReason" class="stack-copy">Your first bottleneck is getting intake and signing into one visible lane before adding more orchestration.</p>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="offerName">DocSafe Setup Sprint</strong>
+            <p id="offerNote">Best when one production lane is already clear enough to implement now.</p>
+
+            <p>Deployment shape</p>
+            <p id="deployNote" class="stack-copy">Implement one live lane first: intake, review, sign, and delivery with clear states.</p>
+
+            <div id="stackLinks" class="stack-link-grid"></div>
+            <a class="secondary-button" id="offerLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">GitHub Signals</p>
+          <h2>These are the tools this picker is built around right now.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Documenso</h3>
+            <p>Open-source e-signature stack for stronger team signing control and audit-heavy flows.</p>
+            <p class="repo-meta">GitHub: 12.5k stars, pushed 2026-03-19</p>
+            <a class="table-link" href="https://github.com/documenso/documenso" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+          <article>
+            <h3>Docuseal</h3>
+            <p>Lean open-source DocuSign alternative for faster fill-and-sign style document workflows.</p>
+            <p class="repo-meta">GitHub: 11.6k stars, pushed 2026-03-16</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+          <article>
+            <h3>Stirling-PDF</h3>
+            <p>High-demand PDF operations layer for merge, split, OCR, redaction, and file cleanup pressure.</p>
+            <p class="repo-meta">GitHub: 75.5k stars, pushed 2026-03-18</p>
+            <a class="table-link" href="https://github.com/Stirling-Tools/Stirling-PDF" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+          <article>
+            <h3>Formbricks</h3>
+            <p>Structured intake layer when requests still start in email chains and untracked forms.</p>
+            <p class="repo-meta">GitHub: 12.0k stars, pushed 2026-03-18</p>
+            <a class="table-link" href="https://github.com/formbricks/formbricks" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+          <article>
+            <h3>Activepieces</h3>
+            <p>Fast automation layer for routing, alerts, and lower-friction workflow glue.</p>
+            <p class="repo-meta">GitHub: 21.3k stars, pushed 2026-03-19</p>
+            <a class="table-link" href="https://github.com/activepieces/activepieces" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+          <article>
+            <h3>n8n</h3>
+            <p>Heavy workflow orchestration layer when document states cross many apps and owners.</p>
+            <p class="repo-meta">GitHub: 179.9k stars, pushed 2026-03-18</p>
+            <a class="table-link" href="https://github.com/n8n-io/n8n" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">How To Buy Narrow</p>
+          <h2>Match the first paid step to how clear the lane already is.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Audit when fit is still fuzzy</h3>
+            <p>
+              Use the audit when the buyer knows the workflow is messy but has
+              not yet agreed on one exact production lane to fix first.
+            </p>
+            <a class="table-link" href="./docsafe-audit-start.html">Open Audit Start</a>
+          </article>
+          <article>
+            <h3>Setup sprint for one clear lane</h3>
+            <p>
+              Use the sprint when intake, signing, or PDF handling already maps
+              cleanly to one narrow path that should go live next.
+            </p>
+            <a class="table-link" href="./docsafe-setup-sprint-start.html">Open Setup Sprint</a>
+          </article>
+          <article>
+            <h3>Workspace for multi-owner control</h3>
+            <p>
+              Use the workspace when many owners, repeated state changes, and
+              branded operating control now matter as much as the tooling itself.
+            </p>
+            <a class="table-link" href="./docsafe-workspace-start.html">Open Workspace Start</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Use GitHub demand as signal, but sell the narrow operating lane that makes the stack worth paying for.</p>
+    </footer>
+
+    <script src="./docsafe-stack-picker.js"></script>
+  </body>
+</html>

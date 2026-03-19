@@ -4,6 +4,7 @@
 - GitHub Demand Research: https://constansino.github.io/revenue-lab-global-crypto/github-demand-research-20260319.html
 - DocSafe Flow: https://constansino.github.io/revenue-lab-global-crypto/docsafe-flow.html
 - DocSafe ROI Calculator: https://constansino.github.io/revenue-lab-global-crypto/docsafe-roi-calculator.html
+- DocSafe Stack Picker: https://constansino.github.io/revenue-lab-global-crypto/docsafe-stack-picker.html
 - DocSafe Send Router: https://constansino.github.io/revenue-lab-global-crypto/docsafe-send-router.html
 - DocSafe Reply Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-reply-board.html
 - DocSafe Close Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-close-board.html
