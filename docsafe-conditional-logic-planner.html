@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Conditional Logic Planner</title>
+    <meta
+      name="description"
+      content="An interactive conditional logic planner for document workflows: choose conditional scope, trigger model, rule depth, hidden-data policy, implementation path, and QA surface to generate a buyer-facing branch map, starter logic preview, and QA brief."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e1320'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='26' font-weight='700' fill='%23f3f5fb'%3ECL%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">CL</span>
+        <div>
+          <p>DocSafe Logic</p>
+          <small>Interactive Planner</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-field-schema-builder.html">Field Schema</a>
+        <a class="ghost-button" href="./docsafe-embed-launchpad.html">Embed Launchpad</a>
+        <a class="ghost-button" href="./docsafe-packet-bundle-builder.html">Packet Builder</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing conditional utility</p>
+          <h1>Ship conditional forms without leaking hidden answers, breaking document branches, or guessing what survives after a toggle.</h1>
+          <p class="lead">
+            This tool turns branch logic into a practical planning aid. Choose
+            conditional scope, trigger model, rule depth, hidden-data policy,
+            implementation path, and QA surface, then generate a logic
+            architecture, a starter branch preview, and a copyable QA brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#conditional-logic-planner">Open Conditional Logic Planner</a>
+            <a class="secondary-button" href="./docsafe-field-schema-builder.html">Open Field Schema</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>explicit trigger-to-branch map</span>
+            </li>
+            <li>
+              <strong>4</strong>
+              <span>logic traps called out before launch</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>inactive-branch surprises in the final PDF</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Logic Rule</p>
+            <h2>Conditional forms only stay trustworthy when trigger fields, hidden questions, branch rules, and final-output cleanup are designed together.</h2>
+            <p>
+              Public repo issues keep pointing to the same pressure: buyers want
+              hidden routing questions that stay off the PDF, REST-defined
+              conditions with explicit equals logic, radio groups that branch
+              whole documents correctly, and completed outputs that do not keep
+              stale text from an inactive branch.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>scope, trigger, rules, hidden data, implementation, QA</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>branch map, preview, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>tax forms, onboarding, claims packets, embedded review</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="conditional-logic-planner" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Conditional Logic Planner</p>
+          <h2>Model the branch logic before hidden fields and conditional documents become production bugs.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="logicScope">Conditional scope</label>
+            <select class="calc-input" id="logicScope">
+              <option value="field" selected>Reveal one extra field</option>
+              <option value="section">Branch a section inside one document</option>
+              <option value="document">Branch whole documents</option>
+              <option value="hidden">Hidden question plus visible branches</option>
+            </select>
+            <p class="calc-help">Choose the real branch unit the buyer cares about, not the one that looks simpler in a demo.</p>
+
+            <label for="triggerModel">Trigger model</label>
+            <select class="calc-input" id="triggerModel">
+              <option value="checkbox">Checkbox toggle</option>
+              <option value="radio" selected>Radio choice</option>
+              <option value="dropdown">Dropdown path</option>
+              <option value="hidden">Hidden reviewer or admin field</option>
+            </select>
+            <p class="calc-help">The trigger must stay obvious enough that operators can explain why a branch appeared or disappeared.</p>
+
+            <label for="ruleDepth">Rule depth</label>
+            <select class="calc-input" id="ruleDepth">
+              <option value="presence">Presence only</option>
+              <option value="equals" selected>Explicit equals branch</option>
+              <option value="grouped">Grouped AND or OR branches</option>
+              <option value="formula">Conditional formulas</option>
+            </select>
+            <p class="calc-help">Many logic failures come from treating exact branch values as if simple not-empty checks were enough.</p>
+
+            <label for="dataPolicy">Hidden-data policy</label>
+            <select class="calc-input" id="dataPolicy">
+              <option value="clear" selected>Clear stale values on switch</option>
+              <option value="audit">Keep history for audit only</option>
+              <option value="offpdf">Keep routing answers off final PDF</option>
+              <option value="review">Reviewer confirms active branch</option>
+            </select>
+            <p class="calc-help">Branch data policy matters because hidden values can still leak into outputs even after the UI hides them.</p>
+
+            <label for="implementationPath">Implementation path</label>
+            <select class="calc-input" id="implementationPath">
+              <option value="builder">Builder-only setup</option>
+              <option value="tags">PDF or DOCX field tags</option>
+              <option value="api" selected>Template API or REST</option>
+              <option value="embed">Embedded app session</option>
+            </select>
+            <p class="calc-help">Pick the path the team will actually maintain, because branch semantics drift quickly between builder, tags, API, and embed.</p>
+
+            <label for="qaSurface">QA surface</label>
+            <select class="calc-input" id="qaSurface">
+              <option value="preview">Preview only</option>
+              <option value="toggle">Toggle back and forth</option>
+              <option value="completed" selected>Completed document regression</option>
+              <option value="embedded">Embedded read-only regression</option>
+            </select>
+            <p class="calc-help">Branch logic is only sellable when buyers know the active path, the inactive path, and the final output have all been tested.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended logic path</p>
+            <strong id="logicPlanName">API-Defined Conditional Template</strong>
+            <p id="logicPlanSummary" class="stack-copy">Define conditional branches deliberately in the template payload so field visibility and final output do not drift apart.</p>
+
+            <p>Logic methods</p>
+            <div id="logicMethods" class="stack-chip-row"></div>
+
+            <p>Conditional map</p>
+            <div id="logicMap" class="matrix-grid"></div>
+
+            <p>Starter logic preview</p>
+            <div class="brief-box">
+              <p id="logicPreview" class="csv-preview"></p>
+              <button class="table-link table-button" id="copyLogicPreview" type="button">Copy Preview</button>
+            </div>
+
+            <p>Logic rules</p>
+            <div id="logicRules" class="list-output"></div>
+
+            <p>Copyable logic brief</p>
+            <div class="brief-box">
+              <p id="logicBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyLogicBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="logicChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyLogicChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="logicOfferName">DocSafe Setup Sprint</strong>
+            <p id="logicOfferNote" class="stack-copy">Best when the buyer already knows the first branch lane and needs the logic implemented and QA'd correctly.</p>
+            <a class="table-link" href="./docsafe-field-schema-builder.html">Need stable field names and branch keys too? Open Field Schema</a>
+            <a class="table-link" href="./docsafe-embed-launchpad.html">Need host-session behavior and completion QA too? Open Embed Launchpad</a>
+            <a class="table-link" href="./docsafe-packet-bundle-builder.html">Need multi-document packet architecture too? Open Packet Builder</a>
+            <a class="secondary-button" id="logicOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where one answer controls which fields or documents should exist at all.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Tax and contractor ops</h3>
+            <p>
+              They need hidden routing questions that decide whether W-9 or
+              W-8 style sections should appear without printing the routing
+              question on the final document.
+            </p>
+          </article>
+          <article>
+            <h3>Claims and compliance packets</h3>
+            <p>
+              They need one choice to activate the correct disclosure or
+              release document without both document branches appearing.
+            </p>
+          </article>
+          <article>
+            <h3>Embedded product teams</h3>
+            <p>
+              They need branch visibility, locked fields, and completion
+              behavior to survive the real host session instead of only the
+              standalone preview.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This planner is grounded in real hidden-field, branch, and completed-output demand.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Hidden routing questions need to stay off-document</h3>
+            <p>Docuseal issue 168 describes hidden questions that decide whether W-9 or W-8 style fields should appear, without printing the question on the PDF itself.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/168" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>REST-defined conditions need explicit mapping</h3>
+            <p>Docuseal issue 513 shows buyers trying to create conditional fields through REST and discovering that simple condition attributes do not behave like the GUI expects.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/513" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Radio branches need equals logic, not only not-empty</h3>
+            <p>Docuseal issue 515 shows a yes or no radio choice that should reveal different initial fields, but API payloads default toward presence logic instead of explicit branch values.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/515" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Conditional documents need grouped branch semantics</h3>
+            <p>Docuseal issue 523 shows one radio group trying to control two different documents and exposing why grouped AND or OR logic must be designed deliberately.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/523" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Toggle QA matters when fields can disappear</h3>
+            <p>Docuseal issue 254 shows a checkbox-based conditional field flow where unchecking the trigger makes both the trigger and the dependent field disappear.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/254" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Inactive-branch text should not survive completion</h3>
+            <p>Docuseal issue 291 shows hidden branch content still showing in the completed document after the signer switches to a different radio choice.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/291" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Conditional fields and formulas already exist as a platform capability</h3>
+            <p>The Docuseal README lists conditional fields and formulas directly, which means the buyer problem is safe branch design and QA rather than whether the capability exists at all.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Design the branch once before hidden fields and conditional documents turn into support debt.</p>
+    </footer>
+
+    <script src="./docsafe-conditional-logic-planner.js"></script>
+  </body>
+</html>
