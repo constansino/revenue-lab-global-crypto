@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Webhook Router</title>
+    <meta
+      name="description"
+      content="An interactive webhook router for document workflows: choose event scope, identity model, downstream destinations, security mode, retry handling, and artifact sync to generate a buyer-facing event route, payload starter, and implementation brief."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e1320'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='26' font-weight='700' fill='%23f3f5fb'%3EWR%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">WR</span>
+        <div>
+          <p>DocSafe Webhook</p>
+          <small>Interactive Router</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-field-schema-builder.html">Field Schema</a>
+        <a class="ghost-button" href="./docsafe-delivery-matrix.html">Delivery Matrix</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing integration utility</p>
+          <h1>Route completion, decline, and signed-file events before the webhook starts updating the wrong system.</h1>
+          <p class="lead">
+            This tool turns webhook ambiguity into a practical planning aid.
+            Choose event scope, identity model, downstream destinations,
+            security mode, retry handling, and artifact sync, then generate an
+            event route map, a payload starter preview, and a copyable
+            implementation brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#webhook-router">Open Webhook Router</a>
+            <a class="secondary-button" href="./docsafe-field-schema-builder.html">Open Field Schema</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>canonical receiver before fan-out</span>
+            </li>
+            <li>
+              <strong>3</strong>
+              <span>failure controls buyers usually forget</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>blind retries into production databases</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Route Rule</p>
+            <h2>Webhook value is not just receiving the event. It is proving which record should change, where the artifact should land, and how failure is contained.</h2>
+            <p>
+              Public repo issues keep pointing at the same integration pressure:
+              teams need hidden routing keys, unique field identifiers,
+              multi-destination delivery, signed request verification, decline
+              reasons, and retry controls that do not melt the server.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>events, identity, destinations, security, retries</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>route map, payload, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>CRM sync, archive handoff, ops alerts, renewals</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="webhook-router" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Webhook Router</p>
+          <h2>Design the event path before downstream systems inherit a fragile payload.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="eventScope">Event scope</label>
+            <select class="calc-input" id="eventScope">
+              <option value="complete" selected>Completion only</option>
+              <option value="lifecycle">Status transitions</option>
+              <option value="decline">Decline-aware route</option>
+              <option value="full">Full lifecycle plus decline</option>
+            </select>
+            <p class="calc-help">Pick the smallest set of events that still supports the buyer outcome. More events mean more failure states.</p>
+
+            <label for="identityMode">Identity model</label>
+            <select class="calc-input" id="identityMode">
+              <option value="email">Signer email only</option>
+              <option value="external" selected>External record ID</option>
+              <option value="hidden">Hidden routing field</option>
+              <option value="fieldmap">Field identifier map</option>
+            </select>
+            <p class="calc-help">The webhook only becomes useful when the receiving system can resolve the exact record without guessing.</p>
+
+            <label for="destinationMode">Downstream destinations</label>
+            <select class="calc-input" id="destinationMode">
+              <option value="crm" selected>CRM update only</option>
+              <option value="archive">CRM plus archive</option>
+              <option value="ops">CRM plus ops alert</option>
+              <option value="fanout">Multi-system fan-out</option>
+            </select>
+            <p class="calc-help">Fan-out is where teams usually need a real router instead of pushing raw vendor webhooks into several systems.</p>
+
+            <label for="securityMode">Security mode</label>
+            <select class="calc-input" id="securityMode">
+              <option value="secret">Secret URL only</option>
+              <option value="signed">Signed request check</option>
+              <option value="verify" selected>Verify current state with API</option>
+            </select>
+            <p class="calc-help">Verification can matter even when the vendor signs requests, because buyers still need state confidence before mutation.</p>
+
+            <label for="retryMode">Retry handling</label>
+            <select class="calc-input" id="retryMode">
+              <option value="basic">Vendor default retries</option>
+              <option value="capped" selected>Capped retries with backoff</option>
+              <option value="queue">Queue plus dead-letter lane</option>
+            </select>
+            <p class="calc-help">If the receiver can fail, the retry design is part of the product, not just a backend detail.</p>
+
+            <label for="artifactMode">Artifact sync</label>
+            <select class="calc-input" id="artifactMode">
+              <option value="metadata">Metadata only</option>
+              <option value="pdf" selected>Signed PDF handoff</option>
+              <option value="packet">Signed packet plus audit trail</option>
+            </select>
+            <p class="calc-help">Only sync the signed file package if the buyer truly needs it in the downstream system or archive.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended route path</p>
+            <strong id="routePlanName">Verified Completion Route</strong>
+            <p id="routePlanSummary" class="stack-copy">Resolve one external record, verify vendor state once, and write only completion-safe actions into the source system.</p>
+
+            <p>Transport methods</p>
+            <div id="routeMethods" class="stack-chip-row"></div>
+
+            <p>Event route map</p>
+            <div id="routeStageMap" class="matrix-grid"></div>
+
+            <p>Required routing keys</p>
+            <div id="routeKeyMap" class="matrix-grid"></div>
+
+            <p>Payload starter preview</p>
+            <div class="brief-box">
+              <p id="routePreview" class="csv-preview"></p>
+              <button class="table-link table-button" id="copyRoutePreview" type="button">Copy Preview</button>
+            </div>
+
+            <p>Webhook rules</p>
+            <div id="routeRules" class="list-output"></div>
+
+            <p>Copyable integration brief</p>
+            <div class="brief-box">
+              <p id="routeBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyRouteBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="routeChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyRouteChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="routeOfferName">DocSafe Setup Sprint</strong>
+            <p id="routeOfferNote" class="stack-copy">Best when the buyer already knows the source system, downstream target, and basic event path.</p>
+            <a class="table-link" href="./docsafe-field-schema-builder.html">Need stable field and ID keys too? Open Field Schema</a>
+            <a class="table-link" href="./docsafe-delivery-matrix.html">Need recipient and file delivery timing too? Open Delivery Matrix</a>
+            <a class="secondary-button" id="routeOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where document completion must update another system immediately.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Schools and admin-heavy teams</h3>
+            <p>
+              They need a signed form to update a student or family record
+              without forcing staff to reconcile the webhook by hand.
+            </p>
+          </article>
+          <article>
+            <h3>SaaS and platform teams</h3>
+            <p>
+              They already have external IDs, app prefill, and downstream
+              automations, so event routing becomes a paid implementation need.
+            </p>
+          </article>
+          <article>
+            <h3>Legal, HR, and compliance ops</h3>
+            <p>
+              They need signed PDFs, audit trails, and decline reasons to land
+              in the right archive or queue without corrupting the record system.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This router is grounded in real webhook, identity, and reliability demand.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Hidden post-processing IDs</h3>
+            <p>Documenso issue 2513 asks for hidden fields prefilled by API so webhook processing can update the correct downstream record.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/2513" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Unique checkbox and radio identifiers</h3>
+            <p>Documenso issue 2329 shows complicated forms still need invisible identifiers so API and webhook consumers can distinguish repeated yes or no fields.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/2329" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Retry loops can become infrastructure risk</h3>
+            <p>Documenso issue 2313 shows webhook retries without caps or stop conditions can fill disks, bloat databases, and cause downtime.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/issues/2313" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>One webhook is rarely enough</h3>
+            <p>Docuseal issue 366 asks for multiple webhooks, which is exactly the fan-out problem buyers run into when CRM, storage, and alerts all need the same event.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/366" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Webhook authenticity still matters</h3>
+            <p>Docuseal issue 124 asks for signed webhook requests so receivers can prove the request source instead of trusting a guessed secret URL.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/124" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Decline reasons must reach downstream systems</h3>
+            <p>Docuseal issue 355 asks for documented decline events and decline reasons in the webhook payload, which matters when ops must act on the failure.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/355" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Design one canonical event route before completion, decline, and file-sync logic starts mutating the wrong system.</p>
+    </footer>
+
+    <script src="./docsafe-webhook-router.js"></script>
+  </body>
+</html>
