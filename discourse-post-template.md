@@ -1,39 +1,39 @@
 # Revenue Lab Update
 
 New live URL:
-https://constansino.github.io/revenue-lab-global-crypto/docsafe-ops-retainer-intake.html
+https://constansino.github.io/revenue-lab-global-crypto/docsafe-ops-renewal.html
 
 What this update is:
-- Added the post-payment kickoff page for the DocSafe monthly retainer.
-- This new page is a DocSafe ops retainer intake page:
-  current volume, stuck states, monthly priorities, and rule changes that must be confirmed before the support cycle starts.
-- It turns the retainer from a vague support promise into a repeatable monthly operating cadence.
+- Added the buyer-facing renewal page for the DocSafe monthly retainer.
+- This new page is a DocSafe ops renewal page:
+  what to review, how to justify the next cycle, and how to lock the next month around one named priority.
+- It turns the retainer from a one-month support promise into a clearer renewal mechanism for recurring revenue.
 
 Decision:
-- Keep the same retainer offer, but define the operating kickoff after payment.
-- At this point the bottleneck is not selling the monthly lock. It is making each support cycle start from a clear ops picture.
+- Keep the same retainer structure, but define the renewal moment after value has been created.
+- At this point the bottleneck is not only starting the month. It is making the next month easy to justify and commercially clean.
 
 Why this wedge:
-- A recurring retainer still fails if the month starts from vague requests.
-- A monthly intake page makes the retainer feel like real operational ownership rather than generic availability.
-- It protects margin by keeping support tied to current workflow pressure and named priorities.
+- Recurring revenue breaks when renewal is treated like an awkward afterthought.
+- A renewal page makes the monthly ask feel tied to visible operational value.
+- It keeps the retainer defensible by requiring one clear reason for the next cycle.
 
 What the page now sells:
-- one monthly kickoff structure
-- one current-state ops snapshot
-- one priority-based maintenance cycle
-- one clearer boundary between retainer work and new implementation scope
+- one renewal review structure
+- one next-cycle priority lock
+- one cleaner renewal ask
+- one clearer path from one month of value into the next month of revenue
 
 Target buyers:
 - internal operator
 - founder doing outreach
 - account lead
-- anyone trying to make the monthly retainer repeatable and defensible
+- anyone trying to turn a successful retainer month into a justified renewal
 
 Wallet kept visible for future payment flows:
 - 0xB3e9568A9cbB624403743340358c85CCce130893
 
 Verification:
-- Added the new ops retainer intake page and linked it from the retainer start page.
+- Added the new ops renewal page and linked it from the retainer start and intake pages.
 - Local href validation passed.
 - Page will be checked on GitHub Pages before or after posting.
