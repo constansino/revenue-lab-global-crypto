@@ -532,6 +532,23 @@ h2 {
   font-weight: 700;
 }
 
+.calc-input {
+  width: 100%;
+  padding: 0.85rem 0.95rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(17, 32, 24, 0.12);
+  background: rgba(255, 255, 255, 0.78);
+  font: inherit;
+  color: var(--ink);
+}
+
+.calc-help {
+  margin: -0.2rem 0 0.3rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
 input[type="range"] {
   width: 100%;
   accent-color: var(--accent);

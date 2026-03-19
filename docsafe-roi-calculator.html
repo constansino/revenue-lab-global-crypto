@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe ROI Calculator</title>
+    <meta
+      name="description"
+      content="An interactive ROI calculator for document workflow chaos: estimate monthly waste, annual cost, payback period, and the right DocSafe offer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">RC</span>
+        <div>
+          <p>DocSafe ROI</p>
+          <small>Interactive Calculator</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+        <a class="ghost-button" href="./docsafe-audit-start.html">Audit Start</a>
+        <a class="ghost-button" href="./docsafe-setup-sprint-start.html">Setup Sprint</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Small tool, real buyer use</p>
+          <h1>Estimate what document chaos is already costing each month.</h1>
+          <p class="lead">
+            This calculator turns vague workflow pain into money. Buyers can
+            estimate how much manual time, rework, and approval confusion are
+            burning every month, then compare that against the right DocSafe
+            starting package.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#roi-tool">Open Calculator</a>
+            <a class="secondary-button" href="./docsafe-close-board.html">Use In Close Stage</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>4</strong>
+              <span>simple buyer inputs</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>recommended DocSafe first step</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>need for custom ROI math in chat</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Calculator Rule</p>
+            <h2>Sell the cost of sloppy process before selling the fix.</h2>
+            <p>
+              Buyers rarely feel document chaos as a software problem first.
+              They feel it as wasted hours, repeated approvals, and messy
+              handoffs. This tool frames the pain the way finance actually sees it.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Input</dt>
+                <dd>volume, time, labor, rework</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>waste, annual cost, payback</dd>
+              </div>
+              <div>
+                <dt>Next</dt>
+                <dd>send the right offer page</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="roi-tool" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">ROI Tool</p>
+          <h2>Use current volume and friction, not guesswork.</h2>
+        </div>
+        <div class="calc-shell">
+          <div class="calc-panel">
+            <label for="docsPerMonth">Documents handled per month</label>
+            <input class="calc-input" id="docsPerMonth" type="number" min="10" step="10" value="180" />
+            <p class="calc-help">Include documents that require collection, review, approval, or handoff.</p>
+
+            <label for="minutesLost">Minutes lost per document</label>
+            <input class="calc-input" id="minutesLost" type="number" min="1" step="1" value="12" />
+            <p class="calc-help">Use the average extra time caused by chasing status, renaming files, or fixing handoffs.</p>
+
+            <label for="hourlyCost">Team hourly cost in USD</label>
+            <input class="calc-input" id="hourlyCost" type="number" min="10" step="1" value="28" />
+            <p class="calc-help">Use the real blended operator cost, not just contractor pay.</p>
+
+            <label for="reworkRate">Rework rate (%)</label>
+            <input class="calc-input" id="reworkRate" type="number" min="0" max="100" step="1" value="15" />
+            <p class="calc-help">Estimate what share of documents need extra touch because states, approvals, or delivery were unclear.</p>
+          </div>
+
+          <div class="calc-output">
+            <p>Estimated monthly waste</p>
+            <strong id="monthlyWaste">$0</strong>
+            <p>Estimated annual cost</p>
+            <strong id="annualWaste">$0</strong>
+            <p>Suggested first step</p>
+            <strong id="suggestedOffer">DocSafe Audit</strong>
+            <p id="suggestedOfferNote">Best when the buyer first needs visibility into intake gaps, risks, and state confusion.</p>
+            <p>Estimated payback</p>
+            <strong id="paybackEstimate">0.0 months</strong>
+            <a class="secondary-button" id="suggestedOfferLink" href="./docsafe-audit-start.html">Open DocSafe Audit</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">How To Use</p>
+          <h2>Use the result to pick the narrowest offer that still pays back fast.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Audit first</h3>
+            <p>
+              If waste is real but still moderate, use the audit to map the
+              process before trying to implement a larger change.
+            </p>
+            <a class="table-link" href="./docsafe-audit-start.html">Open Audit Start</a>
+          </article>
+          <article>
+            <h3>Setup sprint next</h3>
+            <p>
+              If one document lane is already expensive enough each month, move
+              straight into the setup sprint and tighten that path first.
+            </p>
+            <a class="table-link" href="./docsafe-setup-sprint-start.html">Open Setup Sprint</a>
+          </article>
+          <article>
+            <h3>Workspace when volume is high</h3>
+            <p>
+              If multiple owners and repeated approvals are driving the cost,
+              the workspace step is easier to justify.
+            </p>
+            <a class="table-link" href="./docsafe-workspace-start.html">Open Workspace Start</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Quantify the waste. Match the offer. Stop selling process cleanup as a vague idea.</p>
+    </footer>
+
+    <script src="./docsafe-roi.js"></script>
+  </body>
+</html>

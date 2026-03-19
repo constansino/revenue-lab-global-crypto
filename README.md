@@ -36,6 +36,7 @@
 - `github-demand-research-20260319.md`: 本轮 GitHub 需求调研结论
 - `github-demand-research-20260319.html`: 公开访问版调研页
 - `docsafe-flow.html`: 基于调研结果收敛出的文档工作流 MVP 公共页
+- `docsafe-roi-calculator.html`: DocSafe 的交互式 ROI 估算小工具页
 - `docsafe-send-router.html`: DocSafe 的买家路由与发送顺序页
 - `docsafe-reply-board.html`: DocSafe 的回复分类与下一步发送页
 - `docsafe-close-board.html`: DocSafe 的成交锁 scope 与订金推进页
@@ -51,6 +52,7 @@
 - `docsafe-ops-retainer-intake.html`: DocSafe 的月度 retainer 收款后启动页
 - `docsafe-ops-monthly-report.html`: DocSafe 的月度 retainer 月报与续费支撑页
 - `docsafe-ops-renewal.html`: DocSafe 的月度 retainer 续费页
+- `docsafe-roi.js`: DocSafe ROI 小工具的交互逻辑
 - `docsafe-agency-client-ops.html`: 面向 agency account / client ops 的垂直版公开页
 - `docsafe-legal-signing-ops.html`: 面向 legal / signing ops 的垂直版公开页
 - `docsafe-recruiting-onboarding-ops.html`: 面向 recruiting / onboarding ops 的垂直版公开页
