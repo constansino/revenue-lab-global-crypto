@@ -8,6 +8,7 @@
 - DocSafe Close Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-close-board.html
 - DocSafe Audit Start: https://constansino.github.io/revenue-lab-global-crypto/docsafe-audit-start.html
 - DocSafe Audit Intake: https://constansino.github.io/revenue-lab-global-crypto/docsafe-audit-intake.html
+- DocSafe Audit Delivery: https://constansino.github.io/revenue-lab-global-crypto/docsafe-audit-delivery.html
 - DocSafe Agency Client Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-agency-client-ops.html
 - DocSafe Legal Signing Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-legal-signing-ops.html
 - DocSafe Recruiting Onboarding Ops: https://constansino.github.io/revenue-lab-global-crypto/docsafe-recruiting-onboarding-ops.html
@@ -97,6 +98,7 @@
 - Partner Intro Referral Messages: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-message-board.html
 - Partner Intro Referral Follow-Up: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-followup-board.html
 - Partner Intro Referral Conversion: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-conversion-board.html
+- Partner Intro Referral Owner: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-owner-board.html
 - Partner Intro Referral Close Pack: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-close-pack-board.html
 - Partner Intro Referral Approval Pack: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-approval-pack-board.html
 - Partner Intro Referral Approval Follow-Up: https://constansino.github.io/revenue-lab-global-crypto/partner-intro-referral-approval-followup-board.html

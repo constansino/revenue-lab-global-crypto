@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Audit Delivery</title>
+    <meta
+      name="description"
+      content="A delivery page for the DocSafe audit: what the buyer receives, how findings are framed, and how the audit rolls into setup work."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">AD</span>
+        <div>
+          <p>DocSafe Delivery</p>
+          <small>Audit Output And Next Step</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-audit-intake.html">Audit Intake</a>
+        <a class="ghost-button" href="./docsafe-audit-start.html">Audit Start</a>
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./pay.html">Wallet Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Audit output</p>
+          <h1>The buyer should receive a decision-ready audit, not a vague teardown.</h1>
+          <p class="lead">
+            This page shows what the paid DocSafe audit actually returns: the
+            current-state breakdown, the main risk points, the recommended
+            state model, and the narrow setup option if the buyer wants the
+            process rebuilt after review.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#delivery-table">Open Delivery Table</a>
+            <a class="secondary-button" href="./docsafe-flow.html#packages">Open Setup Sprint</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>3</strong>
+              <span>core audit outputs</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>recommended next implementation path</span>
+            </li>
+            <li>
+              <strong>$900</strong>
+              <span>logical next step if buyer wants setup</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Delivery Rule</p>
+            <h2>Show the buyer where the workflow breaks and what to fix first.</h2>
+            <p>
+              The audit is useful only if it makes operational decisions easier.
+              The output should identify the mess, define the states, and make
+              the next scope obvious.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Current</dt>
+                <dd>where the process leaks</dd>
+              </div>
+              <div>
+                <dt>Future</dt>
+                <dd>clean approval path</dd>
+              </div>
+              <div>
+                <dt>Next</dt>
+                <dd>setup or hold</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="delivery-table" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Delivery Table</p>
+          <h2>What the audit returns to the buyer.</h2>
+        </div>
+        <div class="dashboard-shell">
+          <div class="dashboard-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Output</th>
+                  <th>What It Covers</th>
+                  <th>Why It Matters</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Current-state breakdown</td>
+                  <td>The exact points where documents enter, stall, or get misrouted.</td>
+                  <td>Shows where time and trust are being lost today.</td>
+                </tr>
+                <tr>
+                  <td>Risk map</td>
+                  <td>Approval blind spots, raw-file exposure, and status uncertainty.</td>
+                  <td>Makes the operational risk visible enough to justify change.</td>
+                </tr>
+                <tr>
+                  <td>Recommended state model</td>
+                  <td>The proposed collect, review, approve, sign, and deliver sequence.</td>
+                  <td>Gives the buyer a clean target operating model.</td>
+                </tr>
+                <tr>
+                  <td>Implementation option</td>
+                  <td>The narrowest next setup scope if the buyer wants execution.</td>
+                  <td>Turns the audit into a credible path to the $900 setup sprint.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Buyer Value</p>
+          <h2>What this audit should help the buyer decide.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Fix now or later</h3>
+            <p>
+              The buyer can see whether the workflow pain is minor or worth
+              immediate setup work.
+            </p>
+          </article>
+          <article>
+            <h3>What to fix first</h3>
+            <p>
+              The audit should identify the first practical change, not ten
+              equally weighted ideas.
+            </p>
+          </article>
+          <article>
+            <h3>Whether to expand</h3>
+            <p>
+              If the buyer wants implementation, the audit naturally points to
+              the DocSafe setup sprint instead of a vague custom quote.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Upgrade Path</p>
+          <h2>Use the audit to create the next paid decision.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Stay at audit</h3>
+            <p>
+              If the buyer only wants clarity, the audit still stands on its own
+              as a paid operational review.
+            </p>
+          </article>
+          <article>
+            <h3>Move to setup sprint</h3>
+            <p>
+              If the buyer wants the workflow implemented, route them into the
+              core DocSafe setup sprint as the next commercial step.
+            </p>
+            <a class="table-link" href="./docsafe-flow.html#packages">Open Setup Sprint</a>
+          </article>
+          <article>
+            <h3>Use the same payment route</h3>
+            <p>
+              The commercial progression can change, but the wallet route stays
+              stable for the next step.
+            </p>
+            <a class="table-link" href="./pay.html">Open Payment Page</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Deliver clarity. Define the fix. Earn the next scope.</p>
+    </footer>
+  </body>
+</html>
