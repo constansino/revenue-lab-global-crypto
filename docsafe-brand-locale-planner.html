@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Brand Locale Planner</title>
+    <meta
+      name="description"
+      content="An interactive brand and locale planner for document workflows: choose brand surface, domain mode, locale coverage, email rendering, organization sync, and trust proof to generate a buyer-facing signing brand system, starter preview, and implementation brief."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e1320'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='24' font-weight='700' fill='%23f3f5fb'%3EBL%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">BL</span>
+        <div>
+          <p>DocSafe Brand</p>
+          <small>Locale Planner</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-invite-delivery-planner.html">Invite Delivery</a>
+        <a class="ghost-button" href="./docsafe-signer-experience-planner.html">Signer Experience</a>
+        <a class="ghost-button" href="./docsafe-template-library-planner.html">Template Library</a>
+        <a class="ghost-button" href="./docsafe-identity-gate-planner.html">Identity Gate</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing brand utility</p>
+          <h1>Plan brand and locale before signing links, emails, and tenant workspaces feel generic, inconsistent, or unsafe.</h1>
+          <p class="lead">
+            This tool turns white-label and localization ambiguity into a
+            practical planning aid. Choose brand surface, domain mode, locale
+            coverage, email rendering, organization sync, and trust proof, then
+            generate a signing brand system, a starter preview JSON, and a
+            copyable implementation brief that a buyer can actually review.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#brand-locale-planner">Open Brand Locale Planner</a>
+            <a class="secondary-button" href="./docsafe-invite-delivery-planner.html">Open Invite Delivery</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>owned brand system across mail and signer surfaces</span>
+            </li>
+            <li>
+              <strong>4</strong>
+              <span>trust breaks surfaced before rollout</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>reason to guess which logo, locale, or domain the signer will see</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Brand Rule</p>
+            <h2>White-label signing only feels trustworthy when page branding, email chrome, domain ownership, locale coverage, and organization settings move together.</h2>
+            <p>
+              Public repo signals keep pointing to the same buyer pressure:
+              teams want logos visible on the signing page, stronger invite
+              email presentation, organization email settings that stay in sync,
+              HTML-capable email templates, multilingual signer support, and
+              custom domains that make the whole signing lane feel owned rather
+              than rented.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>surface, domain, locale, email, org sync, trust</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>brand map, preview JSON, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>white-label SaaS, cross-border legal ops, multilingual onboarding</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="brand-locale-planner" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Brand Locale Planner</p>
+          <h2>Design the branded signer lane before invites, signing pages, and locale handling drift across tenants or regions.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="brandSurface">Brand surface</label>
+            <select class="calc-input" id="brandSurface">
+              <option value="signing_page" selected>Signing page first</option>
+              <option value="invite_email">Invite email first</option>
+              <option value="portal_shell">Portal and mail together</option>
+              <option value="full_white_label">Full white-label tenant lane</option>
+            </select>
+            <p class="calc-help">Choose the exact place where recipients judge trust first, not the place operators happen to edit first.</p>
+
+            <label for="domainMode">Domain mode</label>
+            <select class="calc-input" id="domainMode">
+              <option value="provider">Provider domain only</option>
+              <option value="sending_domain">Custom sending domain</option>
+              <option value="app_domain" selected>Custom app or signing domain</option>
+              <option value="regional_stack">Regional brand stack</option>
+            </select>
+            <p class="calc-help">Domain ownership changes how the signing flow feels because branded mail with a generic link still looks rented.</p>
+
+            <label for="localeCoverage">Locale coverage</label>
+            <select class="calc-input" id="localeCoverage">
+              <option value="english">English only</option>
+              <option value="dual">English plus one regional language</option>
+              <option value="multilingual" selected>Multilingual signer support</option>
+              <option value="auto">Auto-routed locale by recipient</option>
+            </select>
+            <p class="calc-help">Locale is part of the product promise when signers or clients do not all share the same language baseline.</p>
+
+            <label for="emailRendering">Email rendering</label>
+            <select class="calc-input" id="emailRendering">
+              <option value="plain">Plain text only</option>
+              <option value="styled" selected>Styled invite blocks</option>
+              <option value="html">HTML email sections</option>
+              <option value="variant">Role-based branded variants</option>
+            </select>
+            <p class="calc-help">Email rendering matters because the invite is often the first visible proof of brand ownership and trust.</p>
+
+            <label for="orgSync">Organization sync</label>
+            <select class="calc-input" id="orgSync">
+              <option value="shared">Shared ops identity</option>
+              <option value="per_org" selected>Per-organization sender settings</option>
+              <option value="tenant_owned">Tenant-owned sender and reply</option>
+              <option value="delegated">Delegated brand owner controls</option>
+            </select>
+            <p class="calc-help">Organization settings need a clear owner or sender identity, logos, and locale defaults drift when more than one team or tenant exists.</p>
+
+            <label for="trustProof">Trust proof</label>
+            <select class="calc-input" id="trustProof">
+              <option value="logo_footer">Logo plus legal footer</option>
+              <option value="help_contact">Branded help and escalation contact</option>
+              <option value="localized_completion" selected>Localized completion copy</option>
+              <option value="audit_followup">Branded audit follow-up pack</option>
+            </select>
+            <p class="calc-help">Pick the proof layer the buyer needs so the signer can see the same brand story before, during, and after signing.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended brand path</p>
+            <strong id="brandPlanName">Branded Multilingual Signing Lane</strong>
+            <p id="brandPlanSummary" class="stack-copy">Use a custom signing domain, visible page branding, multilingual signer coverage, and localized completion copy so recipients trust the whole lane instead of only the mail envelope.</p>
+
+            <p>Brand methods</p>
+            <div id="brandMethods" class="stack-chip-row"></div>
+
+            <p>Brand system map</p>
+            <div id="brandMap" class="matrix-grid"></div>
+
+            <p>Starter brand preview</p>
+            <div class="brief-box">
+              <p id="brandPreview" class="csv-preview"></p>
+              <button class="table-link table-button" id="copyBrandPreview" type="button">Copy Preview</button>
+            </div>
+
+            <p>Brand rules</p>
+            <div id="brandRules" class="list-output"></div>
+
+            <p>Copyable brand brief</p>
+            <div class="brief-box">
+              <p id="brandBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyBrandBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="brandChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyBrandChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="brandOfferName">DocSafe Setup Sprint</strong>
+            <p id="brandOfferNote" class="stack-copy">Best when the buyer already knows which signer lane needs branding and localization discipline first.</p>
+            <a class="table-link" href="./docsafe-invite-delivery-planner.html">Need sender transport, CC policy, and delivery evidence too? Open Invite Delivery</a>
+            <a class="table-link" href="./docsafe-signer-experience-planner.html">Need signer-side review and completion QA too? Open Signer Experience</a>
+            <a class="table-link" href="./docsafe-template-library-planner.html">Need tenant-safe template clones and naming too? Open Template Library</a>
+            <a class="table-link" href="./docsafe-identity-gate-planner.html">Need secure tenant sessions and signer verification too? Open Identity Gate</a>
+            <a class="secondary-button" id="brandOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where brand trust and language coverage already affect close rate or signer completion.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>White-label SaaS teams</h3>
+            <p>
+              They need the signing page, emails, and tenant settings to feel
+              owned by the product rather than by the underlying provider.
+            </p>
+          </article>
+          <article>
+            <h3>Cross-border legal and compliance ops</h3>
+            <p>
+              They need localized signer lanes, clear domains, and brand-safe
+              proof so international recipients trust the request.
+            </p>
+          </article>
+          <article>
+            <h3>Multilingual onboarding teams</h3>
+            <p>
+              They need the first invite, the signing UI, and completion copy
+              to match the recipient's language and the right organization
+              owner.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This planner is grounded in real branding, mail presentation, organization-settings, and locale demand.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Signing pages need visible brand identity</h3>
+            <p>Documenso pull request 2031 adds branding logo on the signing page, which shows that signer trust is shaped inside the signing UI, not only in the invite email.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/pull/2031" target="_blank" rel="noreferrer">Open PR</a>
+          </article>
+          <article>
+            <h3>Invite email presentation still needs improvement</h3>
+            <p>Documenso pull request 2030 improves the invite email, which signals that mail chrome and readability are active buyer-facing concerns.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/pull/2030" target="_blank" rel="noreferrer">Open PR</a>
+          </article>
+          <article>
+            <h3>Organization email settings have to stay in sync</h3>
+            <p>Documenso pull request 2048 fixes updating personal organization email settings, which shows brand ownership can drift if organization-level settings are not handled carefully.</p>
+            <a class="table-link" href="https://github.com/documenso/documenso/pull/2048" target="_blank" rel="noreferrer">Open PR</a>
+          </article>
+          <article>
+            <h3>Self-hosted teams want more SMTP controls outside the UI</h3>
+            <p>Docuseal issue 545 asks for more SMTP configuration through environment variables because mail ownership and deployment need reproducible infrastructure, not only one admin form.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/545" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Teams want richer branded email templates</h3>
+            <p>Docuseal discussion 183 asks for HTML in email templates, which shows plain default messages are not enough for brand-sensitive or white-label workflows.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/discussions/183" target="_blank" rel="noreferrer">Open Discussion</a>
+          </article>
+          <article>
+            <h3>Regional language support is a real delivery requirement</h3>
+            <p>Docuseal issue 535 asks for Simplified Chinese support, which makes locale routing and signer-language coverage a practical buyer need instead of a nice-to-have.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/535" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>The product category already supports white-label and multilingual rollout</h3>
+            <p>The Docuseal README already calls out company logo, white-label options, custom HTTPS domain, seven UI languages, and signing in fourteen languages, which means the buyer problem is rollout discipline rather than missing category fit.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Own the brand and locale system before the signer notices the seams.</p>
+    </footer>
+
+    <script src="./docsafe-brand-locale-planner.js"></script>
+  </body>
+</html>

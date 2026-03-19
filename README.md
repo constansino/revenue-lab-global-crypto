@@ -55,6 +55,7 @@
 - `docsafe-invite-delivery-planner.html`: 把 SMTP transport、发件人身份、reply-to 归属、request-time CC 和 delivery evidence 转成可执行 invite delivery 的 DocSafe 交互式小工具页
 - `docsafe-template-library-planner.html`: 把 template composition、field portability、submission naming、tenant clone behavior 和 rollout QA 转成可执行 template library 的 DocSafe 交互式小工具页
 - `docsafe-signer-experience-planner.html`: 把 signer-side review、optional step、signature mode、date control 和 completion proof 转成可执行 signer completion brief 的 DocSafe 交互式小工具页
+- `docsafe-brand-locale-planner.html`: 把 signing page branding、custom domain、locale coverage、email chrome 和 org-level sender settings 转成可执行 brand rollout brief 的 DocSafe 交互式小工具页
 - `docsafe-send-router.html`: DocSafe 的买家路由与发送顺序页
 - `docsafe-reply-board.html`: DocSafe 的回复分类与下一步发送页
 - `docsafe-close-board.html`: DocSafe 的成交锁 scope 与订金推进页
@@ -89,6 +90,7 @@
 - `docsafe-invite-delivery-planner.js`: DocSafe sender identity、SMTP transport、observer copy 和 delivery evidence 小工具的交互逻辑
 - `docsafe-template-library-planner.js`: DocSafe reusable template library、field carry-forward、naming 和 QA 小工具的交互逻辑
 - `docsafe-signer-experience-planner.js`: DocSafe signer-side completion、signature policy、date QA 和 recovery 小工具的交互逻辑
+- `docsafe-brand-locale-planner.js`: DocSafe white-label branding、locale routing、mail chrome 和 org ownership 小工具的交互逻辑
 - `docsafe-agency-client-ops.html`: 面向 agency account / client ops 的垂直版公开页
 - `docsafe-legal-signing-ops.html`: 面向 legal / signing ops 的垂直版公开页
 - `docsafe-recruiting-onboarding-ops.html`: 面向 recruiting / onboarding ops 的垂直版公开页
