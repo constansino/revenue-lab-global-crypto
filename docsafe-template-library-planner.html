@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Template Library Planner</title>
+    <meta
+      name="description"
+      content="An interactive template library planner for document workflows: choose library scope, reuse model, field transfer mode, naming system, personalization mode, and rollout QA to generate a buyer-facing template architecture, starter preview, and implementation brief."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e1320'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='24' font-weight='700' fill='%23f3f5fb'%3ETL%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">TL</span>
+        <div>
+          <p>DocSafe Templates</p>
+          <small>Interactive Planner</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-field-schema-builder.html">Field Schema</a>
+        <a class="ghost-button" href="./docsafe-packet-bundle-builder.html">Packet Builder</a>
+        <a class="ghost-button" href="./docsafe-invite-delivery-planner.html">Invite Delivery</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing template utility</p>
+          <h1>Design the template library before every variant, tenant clone, and packet revision turns into manual rework.</h1>
+          <p class="lead">
+            This tool turns template sprawl into a practical planning aid.
+            Choose library scope, reuse model, field transfer mode, naming
+            system, personalization mode, and rollout QA, then generate a
+            template architecture, a starter library preview, and a copyable
+            implementation brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#template-library-planner">Open Template Library Planner</a>
+            <a class="secondary-button" href="./docsafe-field-schema-builder.html">Open Field Schema</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>owned template library model before scale</span>
+            </li>
+            <li>
+              <strong>4</strong>
+              <span>reuse traps surfaced before template sprawl lands on ops</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>need to redraw fields or rename submissions by hand every time a template changes</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Library Rule</p>
+            <h2>Reusable document systems only scale when template composition, field portability, version naming, tenant handoff, and rollout QA are designed as one library.</h2>
+            <p>
+              Public repo issues keep pointing to the same library pressure:
+              teams want bundles built from existing templates, exact field
+              reuse across revised documents, visible submission naming for
+              version control, prefilled download QA that actually reflects sent
+              data, tenant-safe reply ownership, and template-level
+              personalization that carries real client context into the invite.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>scope, reuse, fields, naming, personalization, QA</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>library map, preview, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>template libraries, tenant workspaces, packet stacks, B2B contract ops</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="template-library-planner" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Template Library Planner</p>
+          <h2>Design the reusable library before packet growth and tenant clones make every change expensive.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="libraryScope">Library scope</label>
+            <select class="calc-input" id="libraryScope">
+              <option value="master" selected>One reusable master library</option>
+              <option value="tenant">Tenant-distributed template library</option>
+              <option value="packet">Packet-ready modular library</option>
+              <option value="volume">High-volume submission library</option>
+            </select>
+            <p class="calc-help">Choose the real template estate the buyer must maintain, not the single-document case they already know how to survive.</p>
+
+            <label for="reuseModel">Reuse model</label>
+            <select class="calc-input" id="reuseModel">
+              <option value="linked" selected>Linked reusable building blocks</option>
+              <option value="snapshot">Snapshot copies per release</option>
+              <option value="fieldcopy">Field-only carry forward</option>
+              <option value="variant">Master template variants</option>
+            </select>
+            <p class="calc-help">The reuse boundary decides whether operators update one source of truth or quietly fork the same template five times.</p>
+
+            <label for="fieldTransfer">Field transfer mode</label>
+            <select class="calc-input" id="fieldTransfer">
+              <option value="exact" selected>Exact field positions between revisions</option>
+              <option value="style">Style inheritance for new fields</option>
+              <option value="schema">Schema remap and standard keys</option>
+              <option value="tags">Tagged generation from HTML or DOCX</option>
+            </select>
+            <p class="calc-help">Field transfer is where template maintenance cost usually appears first after the initial successful rollout.</p>
+
+            <label for="namingSystem">Naming system</label>
+            <select class="calc-input" id="namingSystem">
+              <option value="clientversion" selected>Client plus version naming</option>
+              <option value="submission">Submission-name tracking</option>
+              <option value="annex">Annex and packet component naming</option>
+              <option value="tenantlabel">Tenant-owned labels</option>
+            </select>
+            <p class="calc-help">If many similar templates or submissions exist, names become an operational control, not a cosmetic label.</p>
+
+            <label for="personalizationMode">Personalization mode</label>
+            <select class="calc-input" id="personalizationMode">
+              <option value="prefilled" selected>Prefilled-field email personalization</option>
+              <option value="tenantreply">Tenant-specific sender and reply lane</option>
+              <option value="neutral">Neutral ops messaging</option>
+              <option value="portal">Portal-led handoff language</option>
+            </select>
+            <p class="calc-help">Template-level personalization matters because the invite is often the first visible output of the library, not the document preview.</p>
+
+            <label for="rolloutQa">Rollout QA</label>
+            <select class="calc-input" id="rolloutQa">
+              <option value="internal">Internal template review only</option>
+              <option value="download" selected>Prefilled download QA</option>
+              <option value="tenantclone">Tenant clone validation</option>
+              <option value="bundle">Bundle composition regression check</option>
+            </select>
+            <p class="calc-help">Choose how the team will prove that template reuse still works after cloning, bundling, or prefill changes.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended template path</p>
+            <strong id="templatePlanName">Reusable Master Template Library</strong>
+            <p id="templatePlanSummary" class="stack-copy">Keep one reusable source for core documents, carry fields forward exactly across small revisions, name submissions clearly, and run prefilled QA before the library spreads.</p>
+
+            <p>Library methods</p>
+            <div id="templateMethods" class="stack-chip-row"></div>
+
+            <p>Template library map</p>
+            <div id="templateMap" class="matrix-grid"></div>
+
+            <p>Starter library preview</p>
+            <div class="brief-box">
+              <p id="templatePreview" class="csv-preview"></p>
+              <button class="table-link table-button" id="copyTemplatePreview" type="button">Copy Preview</button>
+            </div>
+
+            <p>Template rules</p>
+            <div id="templateRules" class="list-output"></div>
+
+            <p>Copyable library brief</p>
+            <div class="brief-box">
+              <p id="templateBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyTemplateBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="templateChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyTemplateChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="templateOfferName">DocSafe Setup Sprint</strong>
+            <p id="templateOfferNote" class="stack-copy">Best when the buyer already knows the first reusable template lane and needs the library model implemented cleanly.</p>
+            <a class="table-link" href="./docsafe-field-schema-builder.html">Need standard field keys and metadata too? Open Field Schema</a>
+            <a class="table-link" href="./docsafe-packet-bundle-builder.html">Need packet composition and annex reuse too? Open Packet Builder</a>
+            <a class="table-link" href="./docsafe-invite-delivery-planner.html">Need sender identity and template-driven email behavior too? Open Invite Delivery</a>
+            <a class="secondary-button" id="templateOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where several similar templates already exist and maintenance is starting to sprawl.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Legal and contract ops</h3>
+            <p>
+              They need reusable agreements, annexes, and client variants
+              without redrawing fields or losing version clarity.
+            </p>
+          </article>
+          <article>
+            <h3>White-label and tenant platforms</h3>
+            <p>
+              They need cloned templates, tenant replies, and branded library
+              behavior that stay attached to the right workspace.
+            </p>
+          </article>
+          <article>
+            <h3>High-volume B2B workflows</h3>
+            <p>
+              They need visible submission names, reliable prefill QA, and a
+              template system that can survive many similar sends for the same client.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This planner is grounded in real template reuse, naming, cloning, and rollout demand.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Bundles need to include existing templates, not only fresh uploads</h3>
+            <p>Docuseal issue 583 asks for bundles built from existing templates with inherited fields, roles, signing order, and validation rules, because duplicate maintenance does not scale.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/583" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Template revisions still need exact field carry-forward</h3>
+            <p>Docuseal issue 520 asks to copy exact fields from one template into another so small design revisions do not force operators to redraw the whole document.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/520" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Submission names are an operational control for version tracking</h3>
+            <p>Docuseal issue 508 asks to display and edit the submission name in the UI because B2B teams need version management and tracking when many similar documents exist for one client.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/508" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Prefilled QA has to match what the recipient will really receive</h3>
+            <p>Docuseal issue 609 shows downloaded prefilled templates can still look empty, which makes rollout QA a library concern, not just a send-time afterthought.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/609" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Template data should be able to personalize outgoing mail</h3>
+            <p>Docuseal issue 566 asks to use prefilled form fields as placeholders in outgoing emails, which means template-level personalization is part of the system value.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/566" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Invite forms still need field titles and descriptions to survive reuse</h3>
+            <p>Docuseal pull request 556 adds field titles and descriptions to the invite submission screen, showing that template clarity matters once one library is reused by many recipients.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/pull/556" target="_blank" rel="noreferrer">Open PR</a>
+          </article>
+          <article>
+            <h3>Field styling consistency is part of reusable template maintenance</h3>
+            <p>Docuseal pull request 555 carries forward font size, style, and alignment for new fields, which shows repetitive manual field styling is a real maintenance burden.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/pull/555" target="_blank" rel="noreferrer">Open PR</a>
+          </article>
+          <article>
+            <h3>Tenant-cloned templates still need tenant-owned replies</h3>
+            <p>Docuseal issue 597 shows cloned templates can keep reply-to attached to the original author instead of the tenant, making library distribution part of response ownership.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/597" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>The platform already signals template creation as a first-class workflow</h3>
+            <p>The Docuseal README explicitly lists template creation with HTML API, template creation with PDF or DOCX field tags, an embedded document form builder, and multiple UI and signing languages, which means the buyer problem is library design and rollout rather than missing category fit.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Design the reusable template library once before every clone and revision becomes support debt.</p>
+    </footer>
+
+    <script src="./docsafe-template-library-planner.js"></script>
+  </body>
+</html>
