@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Setup Sprint Intake</title>
+    <meta
+      name="description"
+      content="A post-deposit intake page for the DocSafe setup sprint: sprint brief, priority document path, key states, and what must be locked before implementation starts."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SI</span>
+        <div>
+          <p>DocSafe Sprint Intake</p>
+          <small>Implementation Brief Lock</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-setup-sprint-start.html">Sprint Start</a>
+        <a class="ghost-button" href="./docsafe-audit-delivery.html">Audit Delivery</a>
+        <a class="ghost-button" href="./pay.html">Wallet Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">After sprint deposit</p>
+          <h1>Implementation starts only after one workflow path is locked clearly.</h1>
+          <p class="lead">
+            This intake page keeps the setup sprint narrow. The buyer confirms
+            the priority document flow, the required approval states, the final
+            delivery handoff, and the specific tools already in use. That is
+            enough to start implementation without reopening scope.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#intake-table">Open Intake Table</a>
+            <a class="secondary-button" href="./docsafe-setup-sprint-start.html">Back to Sprint Start</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>4</strong>
+              <span>required brief items</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>priority workflow path</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>reason to restart scope in chat</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Sprint Intake Rule</p>
+            <h2>One path. One state model. One final handoff target.</h2>
+            <p>
+              The sprint loses its margin when the buyer tries to add every
+              related workflow at kickoff. This page prevents that.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Choose</dt>
+                <dd>the first path to fix</dd>
+              </div>
+              <div>
+                <dt>Define</dt>
+                <dd>states and owners</dd>
+              </div>
+              <div>
+                <dt>Confirm</dt>
+                <dd>tools already in use</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="intake-table" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Brief Table</p>
+          <h2>What the buyer must confirm before the sprint starts.</h2>
+        </div>
+        <div class="dashboard-shell">
+          <div class="dashboard-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>What To Send</th>
+                  <th>Why It Must Be Locked</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Priority workflow path</td>
+                  <td>The first document flow to clean up, for example client intake or signer-ready package review.</td>
+                  <td>Prevents the sprint from spreading into every team workflow.</td>
+                </tr>
+                <tr>
+                  <td>Approval states</td>
+                  <td>The exact statuses needed, such as waiting, review, revision, approved, and ready to send.</td>
+                  <td>Stops approval logic from changing mid-build.</td>
+                </tr>
+                <tr>
+                  <td>Final delivery target</td>
+                  <td>What the finished handoff should produce for the client or internal operator.</td>
+                  <td>Keeps the build pointed at one usable output.</td>
+                </tr>
+                <tr>
+                  <td>Current tools and owners</td>
+                  <td>Which storage, chat, signing, or ops tools are already in use and who touches the workflow.</td>
+                  <td>Lets the sprint fit the real environment instead of an abstract stack.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Scope Guards</p>
+          <h2>These requests should be held for later, not added to kickoff.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Extra workflow lanes</h3>
+            <p>
+              If it is not the priority path chosen for this sprint, it belongs
+              in a later phase.
+            </p>
+          </article>
+          <article>
+            <h3>Full tool migration</h3>
+            <p>
+              Replacing the entire stack is not the point of the first setup sprint.
+            </p>
+          </article>
+          <article>
+            <h3>Undefined approvals</h3>
+            <p>
+              If nobody can name the required states, the brief is not ready yet.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Post-Deposit Message</p>
+          <h2>Short text to send after the sprint deposit lands.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Kickoff message</h3>
+            <p>
+              Deposit received. To start the DocSafe setup sprint, send the
+              priority workflow path, required approval states, final delivery
+              target, and the tools and owners already involved. Build starts
+              after that sprint brief is locked.
+            </p>
+          </article>
+          <article>
+            <h3>Commercial continuity</h3>
+            <p>
+              This keeps the implementation tied to the audit findings instead
+              of reopening the entire project scope.
+            </p>
+            <a class="table-link" href="./docsafe-setup-sprint-start.html">Back to Sprint Start</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Lock the brief. Guard the scope. Build one path well.</p>
+    </footer>
+  </body>
+</html>
