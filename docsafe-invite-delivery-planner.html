@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSafe Invite Delivery Planner</title>
+    <meta
+      name="description"
+      content="An interactive invite delivery planner for document workflows: choose invite surface, sender identity, transport mode, observer policy, response owner, and delivery evidence to generate a buyer-facing mail architecture, starter preview, and implementation brief."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e1320'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='26' font-weight='700' fill='%23f3f5fb'%3EIV%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">IV</span>
+        <div>
+          <p>DocSafe Invite</p>
+          <small>Interactive Planner</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./docsafe-flow.html">DocSafe Flow</a>
+        <a class="ghost-button" href="./docsafe-delivery-matrix.html">Delivery Matrix</a>
+        <a class="ghost-button" href="./docsafe-reminder-ladder.html">Reminder Ladder</a>
+        <a class="ghost-button" href="./docsafe-identity-gate-planner.html">Identity Gate</a>
+        <a class="ghost-button" href="./docsafe-close-board.html">Close Board</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Buyer-facing invite utility</p>
+          <h1>Decide who sends, who gets copied, and where replies land before self-hosted signature invites become a trust problem.</h1>
+          <p class="lead">
+            This tool turns outbound email ambiguity into a practical planning
+            aid. Choose invite surface, sender identity, transport mode,
+            observer policy, response owner, and delivery evidence, then
+            generate an invite architecture, a starter mail preview, and a
+            copyable implementation brief.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#invite-delivery-planner">Open Invite Delivery Planner</a>
+            <a class="secondary-button" href="./docsafe-delivery-matrix.html">Open Delivery Matrix</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>owned sender and reply boundary</span>
+            </li>
+            <li>
+              <strong>4</strong>
+              <span>delivery trust failures surfaced before launch</span>
+            </li>
+            <li>
+              <strong>0</strong>
+              <span>reason to guess whether invites were branded, copied, or delivered correctly</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="signal-card">
+            <p class="card-label">Invite Rule</p>
+            <h2>Signature invites only feel trustworthy when sender identity, SMTP transport, observer policy, reply ownership, and delivery evidence are designed as one mail lane.</h2>
+            <p>
+              Public repo issues keep pointing to the same outbound pressure:
+              buyers want reproducible SMTP config outside the UI, a visible
+              From address that is not silently replaced by the login username,
+              tenant-safe reply ownership, request-time CC observers for legal
+              or client workflows, and some way to see whether mail actually
+              left the system and reached the provider.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Inputs</dt>
+                <dd>surface, sender, SMTP, observers, replies, evidence</dd>
+              </div>
+              <div>
+                <dt>Output</dt>
+                <dd>mail map, preview, rules, brief, offer</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>self-hosted teams, tenant portals, legal ops, white-label delivery</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="invite-delivery-planner" class="section calculator">
+        <div class="section-heading">
+          <p class="eyebrow">Invite Delivery Planner</p>
+          <h2>Design the mail lane before sender drift, SMTP mismatches, and invisible failures undermine the signing flow.</h2>
+        </div>
+        <div class="calc-shell picker-shell">
+          <div class="calc-panel">
+            <label for="inviteSurface">Invite surface</label>
+            <select class="calc-input" id="inviteSurface">
+              <option value="client" selected>Client-facing invite lane</option>
+              <option value="internal">Internal ops invite lane</option>
+              <option value="tenant">Tenant-distributed template lane</option>
+              <option value="regulated">Regulated or legal notice lane</option>
+            </select>
+            <p class="calc-help">Pick the exact surface that will send the email, not the one that only looks clean in staging.</p>
+
+            <label for="senderIdentity">Sender identity</label>
+            <select class="calc-input" id="senderIdentity">
+              <option value="workspace">Workspace default sender</option>
+              <option value="customfrom" selected>Custom FROM address</option>
+              <option value="tenantreply">Tenant-owned reply-to</option>
+              <option value="branded">Branded sender profile</option>
+            </select>
+            <p class="calc-help">Sender identity matters because users judge legitimacy before they ever open the signing link.</p>
+
+            <label for="transportMode">Transport mode</label>
+            <select class="calc-input" id="transportMode">
+              <option value="ui">UI-managed SMTP settings</option>
+              <option value="env" selected>Environment-driven SMTP config</option>
+              <option value="tls465">Explicit 465 or implicit TLS route</option>
+              <option value="limitedrelay">Provider-limited relay</option>
+            </select>
+            <p class="calc-help">SMTP transport is part of the delivery design because UI-only settings, TLS mismatches, and provider limits all change reliability.</p>
+
+            <label for="observerMode">Observer policy</label>
+            <select class="calc-input" id="observerMode">
+              <option value="none">No observer copy</option>
+              <option value="completion" selected>Completion-only observer copy</option>
+              <option value="request">Request-time observer copy</option>
+              <option value="linkedcc">Signer-coupled CC or counsel copy</option>
+            </select>
+            <p class="calc-help">Observers need an explicit policy or the wrong person gets the wrong stage of the document.</p>
+
+            <label for="responseOwner">Response owner</label>
+            <select class="calc-input" id="responseOwner">
+              <option value="sender">Original sender inbox</option>
+              <option value="shared" selected>Shared ops inbox</option>
+              <option value="tenant">Tenant-specific inbox</option>
+              <option value="portal">No-reply plus portal handoff</option>
+            </select>
+            <p class="calc-help">Reply ownership is a workflow decision because the wrong mailbox can trap signers, clients, or counsel in the wrong queue.</p>
+
+            <label for="deliveryEvidence">Delivery evidence</label>
+            <select class="calc-input" id="deliveryEvidence">
+              <option value="manual">Manual spot-check only</option>
+              <option value="smtp">SMTP log review</option>
+              <option value="webhook" selected>Webhook plus delivery audit</option>
+              <option value="bounce">Bounce and failure desk</option>
+            </select>
+            <p class="calc-help">Choose how the team will know invites actually left the system and what happens when they do not.</p>
+          </div>
+
+          <div class="calc-output delivery-output">
+            <p>Recommended invite path</p>
+            <strong id="invitePlanName">Branded Shared Inbox Sender</strong>
+            <p id="invitePlanSummary" class="stack-copy">Use a visible branded sender, keep SMTP config reproducible outside the UI, route replies to a monitored shared inbox, and record outbound delivery in one audit path.</p>
+
+            <p>Invite methods</p>
+            <div id="inviteMethods" class="stack-chip-row"></div>
+
+            <p>Invite route map</p>
+            <div id="inviteMap" class="matrix-grid"></div>
+
+            <p>Starter invite preview</p>
+            <div class="brief-box">
+              <p id="invitePreview" class="csv-preview"></p>
+              <button class="table-link table-button" id="copyInvitePreview" type="button">Copy Preview</button>
+            </div>
+
+            <p>Invite rules</p>
+            <div id="inviteRules" class="list-output"></div>
+
+            <p>Copyable invite brief</p>
+            <div class="brief-box">
+              <p id="inviteBrief" class="brief-copy"></p>
+              <button class="table-link table-button" id="copyInviteBrief" type="button">Copy Brief</button>
+            </div>
+
+            <p>Acceptance checklist</p>
+            <div class="brief-box">
+              <div id="inviteChecklist" class="list-output"></div>
+              <button class="table-link table-button" id="copyInviteChecklist" type="button">Copy Checklist</button>
+            </div>
+
+            <p>Recommended DocSafe entry</p>
+            <strong id="inviteOfferName">DocSafe Setup Sprint</strong>
+            <p id="inviteOfferNote" class="stack-copy">Best when the buyer already knows the main sender, reply, and observer path and needs the outbound mail lane implemented cleanly.</p>
+            <a class="table-link" href="./docsafe-delivery-matrix.html">Need recipient timing and role-by-role visibility too? Open Delivery Matrix</a>
+            <a class="table-link" href="./docsafe-reminder-ladder.html">Need reminder cadence and resend timing too? Open Reminder Ladder</a>
+            <a class="table-link" href="./docsafe-identity-gate-planner.html">Need signer OTP and secure session policy too? Open Identity Gate</a>
+            <a class="secondary-button" id="inviteOfferLink" href="./docsafe-setup-sprint-start.html">Open DocSafe Setup Sprint</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">First Buyers</p>
+          <h2>This is easiest to sell where invite trust and delivery visibility already block rollout.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Legal and contract ops</h3>
+            <p>
+              They need request-time observers or counsel copies plus clean
+              reply ownership when ethics or notice rules matter.
+            </p>
+          </article>
+          <article>
+            <h3>White-label and tenant workspaces</h3>
+            <p>
+              They need reply-to, sender name, and cloned template ownership to
+              stay attached to the right tenant instead of the original author.
+            </p>
+          </article>
+          <article>
+            <h3>Self-hosted ops teams</h3>
+            <p>
+              They need reproducible SMTP settings, failure visibility, and a
+              reliable path through provider limits before volume scales.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="section-heading">
+          <p class="eyebrow">Issue Signals</p>
+          <h2>This planner is grounded in real sender, SMTP, CC, and delivery-observability demand.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>Self-hosted teams want reproducible SMTP config outside the UI</h3>
+            <p>Docuseal issue 545 asks for more SMTP parameters through environment variables because mail setup should be reproducible, not trapped in one web form.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/545" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Some workflows require CC at request time, not only after completion</h3>
+            <p>Docuseal issue 547 asks for CCing someone on the signature request itself so counsel or observers can track the live request without becoming a signer.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/547" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Displayed sender identity can drift away from the intended From address</h3>
+            <p>Docuseal issue 598 shows the configured Send from Email can be ignored in favor of the SMTP username, which breaks sender trust and branded mailbox ownership.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/598" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Multi-tenant reply ownership can stay attached to the wrong author</h3>
+            <p>Docuseal issue 597 shows cloned templates can keep reply-to bound to the original author instead of the tenant, making reply ownership part of the delivery architecture.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/597" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Operators still want delivery status after SMTP submission</h3>
+            <p>Docuseal issue 579 asks where delivery status or reporting can be checked after self-hosted transactional emails are submitted to the SMTP provider.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/579" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>SMTP credential handling can fail on common password patterns</h3>
+            <p>Docuseal issue 460 shows SMTP delivery can fail when passwords contain special characters, which means real-provider testing belongs in the rollout brief.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/460" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>Port and security-mode mismatches still block self-hosted mail setup</h3>
+            <p>Docuseal issue 455 shows timeouts on common SMTP setups like port 465, while issue 372 shows implicit TLS and auto-StartTLS can conflict on real servers.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/455" target="_blank" rel="noreferrer">Open Issue 455</a>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/372" target="_blank" rel="noreferrer">Open Issue 372</a>
+          </article>
+          <article>
+            <h3>ENV-based SMTP setup can behave differently from UI setup</h3>
+            <p>Docuseal issue 394 shows the same SMTP config can work in the UI but fail when pushed through environment variables, which makes reproducibility itself a buyer pain.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/394" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>SMTP verification mode is part of the trust boundary</h3>
+            <p>Docuseal issue 371 calls out a man-in-the-middle risk when SMTP transport disables certificate verification, which means mail security settings are part of product trust, not only ops config.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal/issues/371" target="_blank" rel="noreferrer">Open Issue</a>
+          </article>
+          <article>
+            <h3>The platform already treats outbound mail as a product feature</h3>
+            <p>The Docuseal README explicitly lists automated emails via SMTP, secure document signing, API and webhooks, company logo and white-label, and multiple UI languages, which means the buyer problem is reliable invite design and rollout rather than category fit.</p>
+            <a class="table-link" href="https://github.com/docusealco/docuseal" target="_blank" rel="noreferrer">Open Repo</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Design the sender and reply lane once before invite delivery becomes support debt.</p>
+    </footer>
+
+    <script src="./docsafe-invite-delivery-planner.js"></script>
+  </body>
+</html>

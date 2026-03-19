@@ -19,6 +19,7 @@
 - DocSafe Submission Recovery Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-submission-recovery-planner.html
 - DocSafe Access Governance Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-access-governance-planner.html
 - DocSafe Identity Gate Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-identity-gate-planner.html
+- DocSafe Invite Delivery Planner: https://constansino.github.io/revenue-lab-global-crypto/docsafe-invite-delivery-planner.html
 - DocSafe Send Router: https://constansino.github.io/revenue-lab-global-crypto/docsafe-send-router.html
 - DocSafe Reply Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-reply-board.html
 - DocSafe Close Board: https://constansino.github.io/revenue-lab-global-crypto/docsafe-close-board.html
