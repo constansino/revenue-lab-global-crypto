@@ -6,7 +6,7 @@
     <title>Public Pricing | Signal Foundry</title>
     <meta
       name="description"
-      content="Shareable public pricing page with three AI automation packages, deposit amounts, wallet instructions, and direct crypto payment routing."
+      content="Shareable public pricing page with sprint and retainer packages, deposit amounts, wallet instructions, and direct crypto payment routing."
     />
     <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/public-pricing.html" />
     <meta name="theme-color" content="#244534" />
@@ -15,7 +15,7 @@
     <meta property="og:title" content="Public Pricing | Signal Foundry" />
     <meta
       property="og:description"
-      content="Send one public pricing page with three packages, deposit amounts, wallet instructions, and a clean next step into payment."
+      content="Send one public pricing page with sprint and retainer packages, deposit amounts, wallet instructions, and a clean next step into payment."
     />
     <meta
       property="og:url"
@@ -25,7 +25,7 @@
     <meta name="twitter:title" content="Public Pricing | Signal Foundry" />
     <meta
       name="twitter:description"
-      content="Public pricing page with three packages, deposit amounts, wallet instructions, and direct crypto payment routing."
+      content="Public pricing page with sprint and retainer packages, deposit amounts, wallet instructions, and direct crypto payment routing."
     />
     <script type="application/ld+json">
       {
@@ -34,7 +34,7 @@
         "@id": "https://constansino.github.io/revenue-lab-global-crypto/public-pricing.html#page",
         "url": "https://constansino.github.io/revenue-lab-global-crypto/public-pricing.html",
         "name": "Public Pricing | Signal Foundry",
-        "description": "Shareable public pricing page with three AI automation packages, deposit amounts, wallet instructions, and direct crypto payment routing.",
+        "description": "Shareable public pricing page with sprint and retainer packages, deposit amounts, wallet instructions, and direct crypto payment routing.",
         "isPartOf": {
           "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
         },
@@ -61,6 +61,13 @@
               "name": "Automation Setup",
               "description": "$450 deposit. Full sprint setup, handoff docs, and post-delivery optimization.",
               "price": "1500",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "name": "Retainer Support",
+              "description": "$300 first month payment. Ongoing optimization, async support, and monthly iteration after launch.",
+              "price": "600",
               "priceCurrency": "USD"
             }
           ]
@@ -103,6 +110,7 @@
         <a class="ghost-button" href="./public-kickoff.html">Public Kickoff</a>
         <a class="ghost-button" href="./public-faq.html">Public FAQ</a>
         <a class="ghost-button" href="./public-teardown.html">Public Teardown</a>
+        <a class="ghost-button" href="./public-retainer.html">Public Retainer</a>
         <a class="ghost-button" href="./pay.html">Payment</a>
       </div>
     </header>
@@ -117,17 +125,20 @@
             standard deposits, the same wallet, and the same next step into
             payment confirmation. The entry package can also travel as a
             smaller paid first step for buyers who want to start with a teardown.
+            If the buyer is already thinking about monthly upkeep after launch,
+            this same route can branch into the public retainer lane.
           </p>
           <div class="hero-actions">
             <a class="primary-button" href="#packages">See Packages</a>
             <button id="copyWalletTop" class="secondary-button" type="button">
               Copy Wallet
             </button>
+            <a class="secondary-button" href="./public-retainer.html">Open Public Retainer</a>
             <a class="secondary-button" href="./pay.html">Open Payment Page</a>
           </div>
           <ul class="stat-grid">
             <li>
-              <strong>3</strong>
+              <strong>4</strong>
               <span>fixed package choices</span>
             </li>
             <li>
@@ -253,6 +264,26 @@
             </button>
             <a class="table-link" href="./pay.html">Open Payment Page</a>
           </article>
+          <article class="package-card">
+            <p class="package-tag">Recurring</p>
+            <h3>$600 / month</h3>
+            <p class="package-title">$300 first month</p>
+            <ul>
+              <li>monthly optimization</li>
+              <li>async support</li>
+              <li>iteration queue</li>
+            </ul>
+            <button
+              class="secondary-button copy-snippet"
+              type="button"
+              data-copied-label="Copied"
+              data-copy="Package: Retainer Support%0ATotal: $600 for month one%0AFirst month payment: $300%0APreferred asset: USDC%0APreferred network: Base%0AWallet: 0xB3e9568A9cbB624403743340358c85CCce130893%0ARoute: recurring optimization, async support, and monthly iteration."
+            >
+              Copy Retainer Offer
+            </button>
+            <a class="table-link" href="./public-retainer.html">Open Public Retainer</a>
+            <a class="table-link" href="./pay.html">Open Payment Page</a>
+          </article>
         </div>
       </section>
 
@@ -357,6 +388,16 @@
             </p>
             <a class="table-link" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
           </article>
+          <article>
+            <h3>Use Retainer When The Build Already Exists</h3>
+            <p>
+              If the buyer is not deciding on first delivery anymore and
+              actually needs monthly optimization, maintenance, or ongoing
+              support, route to the retainer page instead of reopening sprint scope.
+            </p>
+            <a class="table-link" href="./public-retainer.html">Open Public Retainer</a>
+            <a class="table-link" href="./public-renewal.html">Open Public Renewal</a>
+          </article>
         </div>
       </section>
 
@@ -393,6 +434,7 @@
             <a class="secondary-button" href="./public-approval.html">Open Public Approval</a>
             <a class="secondary-button" href="./public-async-close.html">Open Public Async Close</a>
             <a class="secondary-button" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
+            <a class="secondary-button" href="./public-retainer.html">Open Public Retainer</a>
             <a class="secondary-button" href="./public-kickoff.html">Open Public Kickoff</a>
             <a class="secondary-button" href="./pay.html">Open Payment Page</a>
             <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
