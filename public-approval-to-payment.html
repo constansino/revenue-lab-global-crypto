@@ -6,7 +6,7 @@
     <title>Public Approval To Payment | Signal Foundry</title>
     <meta
       name="description"
-      content="Public approval-to-payment page for the gap after sign-off and before transfer: confirm the approved scope, compress the deposit step, remove wallet friction, collect the tx hash, and move into kickoff."
+      content="Public approval-to-payment page for the gap after sign-off and before transfer: confirm the approved scope, compress the deposit step, use teardown if a smaller paid start is needed, remove wallet friction, collect the tx hash, and move into kickoff."
     />
     <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/public-approval-to-payment.html" />
     <meta name="theme-color" content="#244534" />
@@ -15,14 +15,14 @@
     <meta property="og:title" content="Public Approval To Payment | Signal Foundry" />
     <meta
       property="og:description"
-      content="Use one public page when approval is done but funds have not landed: confirm the approved scope, route the payer, remove wallet friction, and turn the next move into payment."
+      content="Use one public page when approval is done but funds have not landed: confirm the approved scope, route the payer, use teardown if the full deposit stalls, remove wallet friction, and turn the next move into payment."
     />
     <meta property="og:url" content="https://constansino.github.io/revenue-lab-global-crypto/public-approval-to-payment.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Public Approval To Payment | Signal Foundry" />
     <meta
       name="twitter:description"
-      content="Public approval-to-payment page for turning post-signoff drift into one clean transfer, tx hash, and kickoff path."
+      content="Public approval-to-payment page for turning post-signoff drift into one clean transfer, teardown fallback, tx hash, and kickoff path."
     />
     <script type="application/ld+json">
       {
@@ -31,7 +31,7 @@
         "@id": "https://constansino.github.io/revenue-lab-global-crypto/public-approval-to-payment.html#page",
         "url": "https://constansino.github.io/revenue-lab-global-crypto/public-approval-to-payment.html",
         "name": "Public Approval To Payment | Signal Foundry",
-        "description": "Public approval-to-payment page for the gap after sign-off and before transfer: confirm the approved scope, compress the deposit step, remove wallet friction, collect the tx hash, and move into kickoff.",
+        "description": "Public approval-to-payment page for the gap after sign-off and before transfer: confirm the approved scope, compress the deposit step, use teardown if a smaller paid start is needed, remove wallet friction, collect the tx hash, and move into kickoff.",
         "isPartOf": {
           "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
         },
@@ -88,6 +88,7 @@
         <a class="ghost-button" href="./public-links-hub.html">Public Links Hub</a>
         <a class="ghost-button" href="./public-command-center.html">Public Command Center</a>
         <a class="ghost-button" href="./public-approval.html">Public Approval</a>
+        <a class="ghost-button" href="./public-teardown.html">Public Teardown</a>
         <a class="ghost-button" href="./public-deposit-lock.html">Public Deposit Lock</a>
         <a class="ghost-button" href="./public-payment-guide.html">Public Payment Guide</a>
         <a class="ghost-button" href="./public-payment-followup.html">Public Payment Follow-Up</a>
@@ -107,7 +108,10 @@
             but the transfer still has not landed. The job is not to reopen the
             whole sale. The job is to restate the approved scope, confirm the
             payer and deposit step, remove wallet friction, collect the tx
-            hash, and move directly into kickoff.
+            hash, and move directly into kickoff. If approval is real but the
+            full sprint deposit still feels too heavy, route the thread into
+            the teardown as the smaller paid first step instead of letting the
+            deal decay.
           </p>
           <div class="hero-actions">
             <a class="primary-button" href="#approval-payment-map">Open Approval To Payment Map</a>
@@ -119,6 +123,7 @@
             >
               Copy Conversion Line
             </button>
+            <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
             <a class="secondary-button" href="./pay.html">Open Payment Page</a>
           </div>
           <ul class="stat-grid">
@@ -147,7 +152,7 @@
             </div>
             <div class="funnel-card">
               <strong>2. Compress The Payment Step</strong>
-              <span>Confirm the deposit, payer, and wallet route without widening the thread.</span>
+              <span>Confirm the deposit, payer, and wallet route without widening the thread, or shift into teardown if the full amount is the blocker.</span>
               <a class="table-link" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
             </div>
             <div class="funnel-card">
@@ -211,6 +216,16 @@
             </p>
             <a class="table-link" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
             <a class="table-link" href="./public-payment-followup.html">Open Public Payment Follow-Up</a>
+          </article>
+          <article>
+            <h3>2B. Use Teardown If Approval Is Real But The Full Deposit Still Stalls</h3>
+            <p>
+              If the decision-maker is aligned but the full sprint commitment
+              still is not moving, keep momentum with the teardown: $299 total,
+              $90 deposit, one workflow, same wallet route.
+            </p>
+            <a class="table-link" href="./public-teardown.html">Open Public Teardown</a>
+            <a class="table-link" href="./public-terms.html">Open Public Terms</a>
           </article>
           <article>
             <h3>3. Remove Wallet Confusion Without Reopening The Sale</h3>
@@ -280,6 +295,13 @@
             </p>
           </article>
           <article>
+            <h3>Approved But The Full Deposit Feels Too Heavy</h3>
+            <p>
+              The yes can be real while the bigger first payment still feels
+              too large. A smaller paid teardown keeps the thread moving.
+            </p>
+          </article>
+          <article>
             <h3>Approved But The Sale Gets Reopened</h3>
             <p>
               Too many teams lose momentum by re-explaining the whole offer
@@ -312,6 +334,15 @@
               current sprint window instead of leaving the reason vague.
             </p>
             <a class="table-link" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
+          </article>
+          <article>
+            <h3>Needs A Smaller First Commitment</h3>
+            <p>
+              If the approver wants to move but still hesitates on the full
+              deposit, route into teardown instead of waiting for the thread to
+              cool.
+            </p>
+            <a class="table-link" href="./public-teardown.html">Open Public Teardown</a>
           </article>
           <article>
             <h3>Needs Wallet Confidence</h3>
@@ -348,7 +379,8 @@
             <p class="wallet-note">
               Preferred asset is USDC. Preferred network is Base. Once the
               transfer lands, keep the same visible route into kickoff instead
-              of reopening the close.
+              of reopening the close. The same wallet can also take the $90
+              teardown deposit if the smaller paid start closes faster.
             </p>
           </div>
           <div class="wallet-box">
@@ -364,6 +396,7 @@
             >
               Copy Approval-To-Payment Template
             </button>
+            <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
             <a class="secondary-button" href="./public-approval.html">Open Public Approval</a>
             <a class="secondary-button" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
             <a class="secondary-button" href="./public-payment-guide.html">Open Public Payment Guide</a>
