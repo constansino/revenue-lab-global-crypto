@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pay Deposit | Signal Foundry</title>
+    <title>Pay Deposit Or Balance | Signal Foundry</title>
     <meta
       name="description"
-      content="Pay a crypto deposit for AI automation sprints. Direct wallet payment instructions and package tiers."
+      content="Pay a crypto deposit or remaining balance for AI automation sprints. Direct wallet payment instructions, preferred network, and deposit tiers."
     />
     <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/pay.html" />
     <meta name="theme-color" content="#244534" />
     <meta property="og:site_name" content="Signal Foundry" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Pay Deposit | Signal Foundry" />
+    <meta property="og:title" content="Pay Deposit Or Balance | Signal Foundry" />
     <meta
       property="og:description"
-      content="Direct crypto deposit page with wallet instructions, preferred network, and package deposit tiers."
+      content="Direct crypto payment page with wallet instructions, preferred network, deposit tiers, and the same route for remaining balance."
     />
     <meta property="og:url" content="https://constansino.github.io/revenue-lab-global-crypto/pay.html" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Pay Deposit | Signal Foundry" />
+    <meta name="twitter:title" content="Pay Deposit Or Balance | Signal Foundry" />
     <meta
       name="twitter:description"
-      content="Direct crypto deposit page with wallet instructions, preferred network, and package deposit tiers."
+      content="Direct crypto payment page with wallet instructions, preferred network, deposit tiers, and the same route for remaining balance."
     />
     <script type="application/ld+json">
       {
@@ -30,8 +30,8 @@
         "@type": "WebPage",
         "@id": "https://constansino.github.io/revenue-lab-global-crypto/pay.html#page",
         "url": "https://constansino.github.io/revenue-lab-global-crypto/pay.html",
-        "name": "Pay Deposit | Signal Foundry",
-        "description": "Direct crypto deposit page with preferred network, wallet address, and deposit tiers for AI automation sprints.",
+        "name": "Pay Deposit Or Balance | Signal Foundry",
+        "description": "Direct crypto payment page with preferred network, wallet address, and deposit tiers for AI automation sprints, plus the same route for remaining balance.",
         "isPartOf": {
           "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
         },
@@ -78,7 +78,7 @@
         <span class="brand-mark">SF</span>
         <div>
           <p>Signal Foundry</p>
-          <small>Crypto Deposit Page</small>
+          <small>Crypto Payment Page</small>
         </div>
       </div>
       <div class="toolbar">
@@ -91,6 +91,7 @@
         <a class="ghost-button" href="./public-payment-guide.html">Public Payment Guide</a>
         <a class="ghost-button" href="./public-payment-followup.html">Public Payment Follow-Up</a>
         <a class="ghost-button" href="./public-kickoff.html">Public Kickoff</a>
+        <a class="ghost-button" href="./public-balance-collection.html">Public Balance Collection</a>
         <a class="ghost-button" href="./public-pricing.html">Public Pricing</a>
         <a class="ghost-button" href="./public-faq.html">Public FAQ</a>
         <a class="ghost-button" href="./public-terms.html">Public Terms</a>
@@ -102,16 +103,18 @@
       <section class="hero section">
         <div class="hero-copy reveal">
           <p class="eyebrow">Direct crypto settlement</p>
-          <h1>Pay the deposit. Work starts after confirmation.</h1>
+          <h1>Pay the agreed amount. Work or close-out continues after confirmation.</h1>
           <p class="lead">
-            This page is for direct clients. Send the agreed deposit to the
+            This page is for direct clients paying a new sprint deposit or the
+            remaining balance after delivery. Send the agreed amount to the
             wallet below, then send the transaction hash with your project name.
           </p>
           <div class="hero-actions">
             <button id="copyWalletTop" class="primary-button" type="button">
               Copy Wallet
             </button>
-            <a class="secondary-button" href="#tiers">See Deposit Tiers</a>
+            <a class="secondary-button" href="#payment-routes">See Payment Routes</a>
+            <a class="secondary-button" href="./public-balance-collection.html">Open Public Balance Collection</a>
           </div>
           <ul class="stat-grid">
             <li>
@@ -126,6 +129,10 @@
               <strong>Hash</strong>
               <span>required to confirm payment</span>
             </li>
+            <li>
+              <strong>Same</strong>
+              <span>wallet for deposit and balance</span>
+            </li>
           </ul>
           <div class="funnel-bar">
             <div class="funnel-card">
@@ -133,12 +140,12 @@
               <span>Copy the exact address before switching apps or wallets.</span>
             </div>
             <div class="funnel-card">
-              <strong>2. Send Deposit</strong>
-              <span>Use the agreed asset and network, ideally USDC on Base.</span>
+              <strong>2. Send The Agreed Amount</strong>
+              <span>Use the agreed asset and network, ideally USDC on Base, for deposit or remaining balance.</span>
             </div>
             <div class="funnel-card">
               <strong>3. Return Hash</strong>
-              <span>Send the tx hash and project brief in the same thread.</span>
+              <span>Send the tx hash and payment type in the same thread.</span>
             </div>
           </div>
         </div>
@@ -148,8 +155,9 @@
             <p class="card-label">Wallet</p>
             <h2>0xB3e9568A9cbB624403743340358c85CCce130893</h2>
             <p>
-              Preferred network for simple client payments: Base or Ethereum.
-              Preferred asset: USDC.
+              Preferred network for direct client payments: Base or Ethereum.
+              Preferred asset: USDC. The same visible wallet route handles new
+              sprint deposits and remaining balance close-out.
             </p>
             <dl class="mini-list">
               <div>
@@ -169,14 +177,15 @@
         </aside>
       </section>
 
-      <section class="section wallet reveal">
+      <section id="payment-routes" class="section wallet reveal">
         <div class="wallet-shell">
           <div>
             <p class="eyebrow">Payment instructions</p>
-            <h2>Send deposit, then share the transaction hash.</h2>
+            <h2>Send deposit or remaining balance, then share the transaction hash.</h2>
             <p class="wallet-note">
               Use stablecoins unless you explicitly agreed on another asset.
-              Keep the same network on both sides to avoid support friction.
+              Keep the same network on both sides to avoid support friction and
+              keep the same wallet route visible from first deposit to final balance.
             </p>
           </div>
           <div class="wallet-box">
@@ -188,9 +197,9 @@
               class="secondary-button copy-snippet"
               type="button"
               data-copied-label="Copied"
-              data-copy="Paid deposit for Signal Foundry AI Revenue Sprint%0AProject name:%0ATier:%0ANetwork: Base%0AAsset: USDC%0ATx hash:%0ABrief link:%0ANotes:"
+              data-copy="Payment for Signal Foundry AI Revenue Sprint%0AType: deposit or final balance%0AProject name:%0ATier:%0ANetwork: Base%0AAsset: USDC%0AAmount:%0ATx hash:%0ABrief link:%0ANotes:"
             >
-              Copy Post-Payment Template
+              Copy Payment Template
             </button>
             <a class="secondary-button" href="./public-trust.html">Public Trust</a>
             <a class="secondary-button" href="./public-proof.html">Public Proof</a>
@@ -199,6 +208,7 @@
             <a class="secondary-button" href="./public-payment-guide.html">Public Payment Guide</a>
             <a class="secondary-button" href="./public-payment-followup.html">Public Payment Follow-Up</a>
             <a class="secondary-button" href="./public-kickoff.html">Public Kickoff</a>
+            <a class="secondary-button" href="./public-balance-collection.html">Public Balance Collection</a>
             <a class="secondary-button" href="./public-pricing.html">Public Pricing</a>
             <a class="secondary-button" href="./public-faq.html">Public FAQ</a>
             <a class="secondary-button" href="./public-terms.html">Public Terms</a>
@@ -252,6 +262,14 @@
             <a class="table-link" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
           </article>
           <article>
+            <h3>Closing delivered work</h3>
+            <p>
+              If the sprint is already delivered and the remaining balance is
+              next, use the balance collection page instead of sending a fresh deposit ask.
+            </p>
+            <a class="table-link" href="./public-balance-collection.html">Open Public Balance Collection</a>
+          </article>
+          <article>
             <h3>Send the hash</h3>
             <p>
               After payment, send the transaction hash and the project summary
@@ -267,6 +285,10 @@
         <div class="section-heading">
           <p class="eyebrow">Deposit tiers</p>
           <h2>Quote clearly. Collect deposit before implementation.</h2>
+          <p>
+            If this payment is the remaining balance after delivery, use the
+            same wallet above and label the transfer as final balance in the same thread.
+          </p>
         </div>
         <div class="packages-grid">
           <article class="package-card">
