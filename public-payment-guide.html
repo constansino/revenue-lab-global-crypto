@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Public Payment Guide | Signal Foundry</title>
+    <meta
+      name="description"
+      content="Public payment guide for first-time crypto buyers: confirm the deposit, use the correct network, copy the exact wallet, send the transfer safely, and share the tx hash for kickoff."
+    />
+    <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/public-payment-guide.html" />
+    <meta name="theme-color" content="#244534" />
+    <meta property="og:site_name" content="Signal Foundry" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Public Payment Guide | Signal Foundry" />
+    <meta
+      property="og:description"
+      content="Share one public payment guide when a buyer is ready but needs a simple wallet route: correct asset, correct network, correct address, then tx hash."
+    />
+    <meta property="og:url" content="https://constansino.github.io/revenue-lab-global-crypto/public-payment-guide.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Public Payment Guide | Signal Foundry" />
+    <meta
+      name="twitter:description"
+      content="Public payment guide for first-time crypto buyers: confirm the deposit, use the correct network, copy the exact wallet, and share the tx hash."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://constansino.github.io/revenue-lab-global-crypto/public-payment-guide.html#page",
+        "url": "https://constansino.github.io/revenue-lab-global-crypto/public-payment-guide.html",
+        "name": "Public Payment Guide | Signal Foundry",
+        "description": "Public payment guide for first-time crypto buyers: confirm the deposit, use the correct network, copy the exact wallet, send the transfer safely, and share the tx hash for kickoff.",
+        "isPartOf": {
+          "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "name": "Signal Foundry Payment Guide Steps",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Confirm the deposit amount and network"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Copy the exact wallet address"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Send the transfer and share the tx hash"
+            }
+          ]
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Public Payment Guide</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./index.html">Offer Page</a>
+        <a class="ghost-button" href="./public-links-hub.html">Public Links Hub</a>
+        <a class="ghost-button" href="./public-command-center.html">Public Command Center</a>
+        <a class="ghost-button" href="./public-deposit-lock.html">Public Deposit Lock</a>
+        <a class="ghost-button" href="./public-payment-followup.html">Public Payment Follow-Up</a>
+        <a class="ghost-button" href="./public-kickoff.html">Public Kickoff</a>
+        <a class="ghost-button" href="./public-faq.html">Public FAQ</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">First-time wallet guide</p>
+          <h1>If the buyer is ready but new to crypto payment, keep the instructions brutally simple.</h1>
+          <p class="lead">
+            This page is for first-time or low-confidence crypto payers. They
+            do not need a full wallet lecture. They need the minimum safe route:
+            correct amount, correct asset, correct network, correct address,
+            then the tx hash back in the same thread.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#payment-map">Open Payment Map</a>
+            <button id="copyWalletTop" class="secondary-button" type="button">
+              Copy Wallet
+            </button>
+            <button
+              class="secondary-button copy-snippet"
+              type="button"
+              data-copied-label="Copied"
+              data-copy="Preferred route: USDC on Base.%0AFallback route: USDC or ETH on Ethereum.%0AWallet: 0xB3e9568A9cbB624403743340358c85CCce130893%0AAfter sending, reply with the tx hash and project name in this thread."
+            >
+              Copy Payment Note
+            </button>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>USDC</strong>
+              <span>preferred asset</span>
+            </li>
+            <li>
+              <strong>Base</strong>
+              <span>preferred network</span>
+            </li>
+            <li>
+              <strong>Hash</strong>
+              <span>required after transfer</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>shared wallet route</span>
+            </li>
+          </ul>
+          <div class="funnel-bar">
+            <div class="funnel-card">
+              <strong>1. Confirm The Amount</strong>
+              <span>Know the agreed deposit before opening the wallet.</span>
+              <a class="table-link" href="./pay.html">Open Payment Page</a>
+            </div>
+            <div class="funnel-card">
+              <strong>2. Confirm The Network</strong>
+              <span>Preferred route is USDC on Base. Match the network on both sides.</span>
+            </div>
+            <div class="funnel-card">
+              <strong>3. Send And Return The Hash</strong>
+              <span>After the transfer, send the tx hash so kickoff can start.</span>
+              <a class="table-link" href="./public-kickoff.html">Open Public Kickoff</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Wallet</p>
+            <h2>0xB3e9568A9cbB624403743340358c85CCce130893</h2>
+            <p>
+              Fewer instructions close better than a full crypto lecture. Keep
+              it to the minimum safe route: amount, network, wallet, and tx hash.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Preferred</dt>
+                <dd>USDC on Base</dd>
+              </div>
+              <div>
+                <dt>Fallback</dt>
+                <dd>USDC or ETH on Ethereum</dd>
+              </div>
+              <div>
+                <dt>After transfer</dt>
+                <dd>tx hash + project brief</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="payment-map" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Payment Map</p>
+            <h2>Use the same simple sequence every time.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>1. Confirm The Deposit Amount</h3>
+            <p>
+              Make sure the payer knows the exact deposit amount before they
+              open the wallet. Do not leave the number vague.
+            </p>
+            <a class="table-link" href="./pay.html">Open Payment Page</a>
+          </article>
+          <article>
+            <h3>2. Confirm The Network</h3>
+            <p>
+              Preferred route is USDC on Base. Fallback route is USDC or ETH on
+              Ethereum. The network needs to match on both sides.
+            </p>
+          </article>
+          <article>
+            <h3>3. Copy The Exact Wallet</h3>
+            <p>
+              Copy the address directly and compare the first and last
+              characters before sending.
+            </p>
+            <button
+              class="secondary-button copy-snippet"
+              type="button"
+              data-copied-label="Copied"
+              data-copy="Wallet check%0AFirst 6: 0xB3e9%0ALast 6: e130893%0APreferred route: USDC on Base"
+            >
+              Copy Wallet Check
+            </button>
+          </article>
+          <article>
+            <h3>4. Send The Transfer</h3>
+            <p>
+              If the payer is unfamiliar, they can send a very small test
+              first, then the main deposit. After the transfer, send the tx hash.
+            </p>
+            <a class="table-link" href="./public-payment-followup.html">Open Public Payment Follow-Up</a>
+          </article>
+          <article>
+            <h3>5. Return The Tx Hash</h3>
+            <p>
+              Payment is not operationally complete until the tx hash is shared
+              and kickoff can begin.
+            </p>
+            <a class="table-link" href="./public-kickoff.html">Open Public Kickoff</a>
+          </article>
+          <article>
+            <h3>6. Keep Scope Out Of Wallet Ops</h3>
+            <p>
+              If package choice or timing still needs discussion, return to the
+              right page first instead of mixing it into the wallet thread.
+            </p>
+            <a class="table-link" href="./public-pricing.html">Open Public Pricing</a>
+            <a class="table-link" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Common Mistakes</p>
+            <h2>Most payment friction comes from a few repeated errors.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>Wrong Network</h3>
+            <p>
+              Sending on the wrong network creates avoidable recovery risk.
+              Confirm Base or Ethereum before funds move.
+            </p>
+            <button
+              class="secondary-button copy-snippet"
+              type="button"
+              data-copied-label="Copied"
+              data-copy="Please confirm the network before sending. Preferred route is USDC on Base. If you want Ethereum instead, reply first so both sides match."
+            >
+              Copy Network Line
+            </button>
+          </article>
+          <article>
+            <h3>Wrong Asset</h3>
+            <p>
+              Use the agreed asset only. Preferred is USDC for stable pricing,
+              not a random token already sitting in the wallet.
+            </p>
+            <button
+              class="secondary-button copy-snippet"
+              type="button"
+              data-copied-label="Copied"
+              data-copy="Use the agreed asset only. Preferred is USDC because it keeps the pricing stable and avoids unnecessary conversion noise."
+            >
+              Copy Asset Line
+            </button>
+          </article>
+          <article>
+            <h3>No Tx Hash Sent</h3>
+            <p>
+              Payment is not operationally complete until the tx hash is shared
+              and kickoff can begin.
+            </p>
+            <button
+              class="secondary-button copy-snippet"
+              type="button"
+              data-copied-label="Copied"
+              data-copy="After the payment lands, send the tx hash and project name in this thread so I can confirm it and move straight into kickoff."
+            >
+              Copy Hash Line
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wallet reveal">
+        <div class="wallet-shell">
+          <div>
+            <p class="eyebrow">Wallet</p>
+            <h2>Preferred route: USDC on Base, then tx hash back into kickoff.</h2>
+            <p class="wallet-note">
+              Use the same network on both sides. If the payer wants a fallback
+              route on Ethereum, confirm it first before funds move.
+            </p>
+          </div>
+          <div class="wallet-box">
+            <code id="walletAddress">0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            <button id="copyWalletMain" class="primary-button" type="button">
+              Copy Address
+            </button>
+            <button
+              class="secondary-button copy-snippet"
+              type="button"
+              data-copied-label="Copied"
+              data-copy="Payment sent for Signal Foundry%0AProject name:%0ATier:%0ANetwork:%0AAsset:%0ATx hash:%0ABrief link:%0ANotes:"
+            >
+              Copy Post-Transfer Template
+            </button>
+            <a class="secondary-button" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
+            <a class="secondary-button" href="./public-payment-followup.html">Open Public Payment Follow-Up</a>
+            <a class="secondary-button" href="./public-kickoff.html">Open Public Kickoff</a>
+            <a class="secondary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Correct amount. Correct network. Correct wallet. Then tx hash.</p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
