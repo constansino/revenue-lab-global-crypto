@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Public Payment Follow-Up | Signal Foundry</title>
+    <meta
+      name="description"
+      content="Public payment follow-up page for the stage after agreement and before transfer: confirm the payer, remove the last blocker, resend one clean wallet route, and collect the tx hash."
+    />
+    <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/public-payment-followup.html" />
+    <meta name="theme-color" content="#244534" />
+    <meta property="og:site_name" content="Signal Foundry" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Public Payment Follow-Up | Signal Foundry" />
+    <meta
+      property="og:description"
+      content="Use one public follow-up page when the deal is agreed but the transfer has not landed: confirm the payer, remove friction, resend the route, and ask for the tx hash."
+    />
+    <meta property="og:url" content="https://constansino.github.io/revenue-lab-global-crypto/public-payment-followup.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Public Payment Follow-Up | Signal Foundry" />
+    <meta
+      name="twitter:description"
+      content="Public payment follow-up page for pending transfers: confirm the payer, remove wallet friction, and collect the tx hash."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://constansino.github.io/revenue-lab-global-crypto/public-payment-followup.html#page",
+        "url": "https://constansino.github.io/revenue-lab-global-crypto/public-payment-followup.html",
+        "name": "Public Payment Follow-Up | Signal Foundry",
+        "description": "Public payment follow-up page for the stage after agreement and before transfer: confirm the payer, remove the last blocker, resend one clean wallet route, and collect the tx hash.",
+        "isPartOf": {
+          "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "name": "Signal Foundry Payment Follow-Up Sequence",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Confirm who is sending"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Remove the last payment blocker"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Resend the route and collect the tx hash"
+            }
+          ]
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <div>
+          <p>Signal Foundry</p>
+          <small>Public Payment Follow-Up</small>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="ghost-button" href="./index.html">Offer Page</a>
+        <a class="ghost-button" href="./public-links-hub.html">Public Links Hub</a>
+        <a class="ghost-button" href="./public-command-center.html">Public Command Center</a>
+        <a class="ghost-button" href="./public-approval.html">Public Approval</a>
+        <a class="ghost-button" href="./public-deposit-lock.html">Public Deposit Lock</a>
+        <a class="ghost-button" href="./public-kickoff.html">Public Kickoff</a>
+        <a class="ghost-button" href="./public-faq.html">Public FAQ</a>
+        <a class="ghost-button" href="./pay.html">Payment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Pending-transfer follow-up page</p>
+          <h1>When the buyer said yes but the transfer still has not happened, keep the follow-up narrow and direct.</h1>
+          <p class="lead">
+            This page is for the gap after agreement and before funds arrive.
+            The job is not to restart the sale. The job is to confirm the
+            payer, isolate the last blocker, resend one clean payment route,
+            and collect the tx hash before the thread loses heat.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#followup-map">Open Follow-Up Map</a>
+            <button
+              class="secondary-button copy-snippet"
+              type="button"
+              data-copied-label="Copied"
+              data-copy="Since the scope is already agreed, the only thing I want to confirm is who is sending the deposit and whether there is any wallet friction. If the route is clear, please send the transfer to 0xB3e9568A9cbB624403743340358c85CCce130893 and drop the tx hash in this thread."
+            >
+              Copy Follow-Up Line
+            </button>
+            <a class="secondary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+          <ul class="stat-grid">
+            <li>
+              <strong>1</strong>
+              <span>payer owner confirmed</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>last blocker isolated</span>
+            </li>
+            <li>
+              <strong>Hash</strong>
+              <span>requested in the same thread</span>
+            </li>
+            <li>
+              <strong>USDC</strong>
+              <span>preferred settlement asset</span>
+            </li>
+          </ul>
+          <div class="funnel-bar">
+            <div class="funnel-card">
+              <strong>1. Confirm The Payer</strong>
+              <span>Name the person or wallet owner who is actually sending.</span>
+            </div>
+            <div class="funnel-card">
+              <strong>2. Remove The Last Blocker</strong>
+              <span>Clarify amount, asset, network, or wallet instructions once.</span>
+              <a class="table-link" href="./pay.html">Open Payment Page</a>
+            </div>
+            <div class="funnel-card">
+              <strong>3. Ask For The Hash</strong>
+              <span>Keep the ask to one action: send the transfer, then return the tx hash.</span>
+              <a class="table-link" href="./public-kickoff.html">Open Public Kickoff</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal-delay">
+          <div class="signal-card">
+            <p class="card-label">Wallet</p>
+            <h2>0xB3e9568A9cbB624403743340358c85CCce130893</h2>
+            <p>
+              Good follow-up removes friction. It does not reopen the entire
+              close. Keep the route concrete: payer, amount, network, wallet,
+              timing, and what starts after the transfer lands.
+            </p>
+            <dl class="mini-list">
+              <div>
+                <dt>Preferred</dt>
+                <dd>USDC on Base</dd>
+              </div>
+              <div>
+                <dt>Fallback</dt>
+                <dd>USDC or ETH on Ethereum</dd>
+              </div>
+              <div>
+                <dt>After payment</dt>
+                <dd>tx hash + brief</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </section>
+
+      <section id="followup-map" class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Follow-Up Map</p>
+            <h2>Use the shortest sequence that turns agreement into transfer.</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>1. Confirm Who Is Actually Sending</h3>
+            <p>
+              If one person approved but someone else handles the wallet, name
+              the exact payer so the next message reaches the right person.
+            </p>
+            <a class="table-link" href="./public-approval.html">Open Public Approval</a>
+          </article>
+          <article>
+            <h3>2. Restate The Exact Deposit And Current Window</h3>
+            <p>
+              Keep the follow-up concrete: amount, asset, network, wallet, and
+              what the deposit secures right now.
+            </p>
+            <a class="table-link" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
+          </article>
+          <article>
+            <h3>3. Remove Wallet Friction</h3>
+            <p>
+              If the hesitation is operational, resend one clean wallet route
+              instead of writing a custom explanation loop.
+            </p>
+            <a class="table-link" href="./pay.html">Open Payment Page</a>
+          </article>
+          <article>
+            <h3>4. Keep The Ask Limited To One Action</h3>
+            <p>
+              Ask only for the transfer and the tx hash in the same thread.
+              Do not widen the message into a fresh negotiation.
+            </p>
+          </article>
+          <article>
+            <h3>5. Turn The Hash Into Kickoff Fast</h3>
+            <p>
+              Once the hash lands, move directly into the startup packet so the
+              deal does not fall into another silent gap.
+            </p>
+            <a class="table-link" href="./public-kickoff.html">Open Public Kickoff</a>
+          </article>
+          <article>
+            <h3>6. Use This Only When Agreement Already Exists</h3>
+            <p>
+              If the buyer still needs trust, proof, or package choice, solve
+              that blocker first instead of pushing follow-up too early.
+            </p>
+            <a class="table-link" href="./public-proof.html">Open Public Proof</a>
+            <a class="table-link" href="./public-pricing.html">Open Public Pricing</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Common Leaks</p>
+            <h2>Most pending payments stall for one of these reasons.</h2>
+          </div>
+        </div>
+        <div class="outreach-grid">
+          <article>
+            <h3>No Named Payer</h3>
+            <p>
+              A deal can be approved but still stall if nobody is clearly
+              responsible for sending the transfer.
+            </p>
+            <button
+              class="secondary-button copy-snippet"
+              type="button"
+              data-copied-label="Copied"
+              data-copy="The scope is already agreed. I just want to confirm who is sending the deposit so I can keep the payment route in one thread."
+            >
+              Copy Payer Line
+            </button>
+          </article>
+          <article>
+            <h3>Wallet Friction</h3>
+            <p>
+              Some payers are ready in principle but pause when they have to
+              choose a network or confirm the address.
+            </p>
+            <button
+              class="secondary-button copy-snippet"
+              type="button"
+              data-copied-label="Copied"
+              data-copy="To keep this simple: preferred route is USDC on Base to 0xB3e9568A9cbB624403743340358c85CCce130893. If another asset or network is easier, reply with it first and I will confirm."
+            >
+              Copy Wallet Line
+            </button>
+          </article>
+          <article>
+            <h3>Timing Drift</h3>
+            <p>
+              Others simply let payment slip because the follow-up never
+              reconnects the transfer to the current sprint window.
+            </p>
+            <button
+              class="secondary-button copy-snippet"
+              type="button"
+              data-copied-label="Copied"
+              data-copy="If you still want the current sprint window, the useful next move is the transfer. Once it lands, send the tx hash here and I move straight into kickoff."
+            >
+              Copy Timing Line
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wallet reveal">
+        <div class="wallet-shell">
+          <div>
+            <p class="eyebrow">Payment Route</p>
+            <h2>Keep the follow-up route concrete, then move straight into kickoff.</h2>
+            <p class="wallet-note">
+              Confirm the payer, copy the wallet, send the transfer, and drop
+              the tx hash back into the same thread so the work can move from
+              pending to active.
+            </p>
+          </div>
+          <div class="wallet-box">
+            <code id="walletAddress">0xB3e9568A9cbB624403743340358c85CCce130893</code>
+            <button id="copyWalletMain" class="primary-button" type="button">
+              Copy Address
+            </button>
+            <button
+              class="secondary-button copy-snippet"
+              type="button"
+              data-copied-label="Copied"
+              data-copy="Payment follow-up for Signal Foundry%0AProject name:%0AChosen tier:%0ADeposit amount:%0ANetwork:%0AAsset:%0AWallet: 0xB3e9568A9cbB624403743340358c85CCce130893%0ATx hash:%0ABrief link:%0ANotes:"
+            >
+              Copy Follow-Up Template
+            </button>
+            <a class="secondary-button" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
+            <a class="secondary-button" href="./public-kickoff.html">Open Public Kickoff</a>
+            <a class="secondary-button" href="./public-faq.html">Open Public FAQ</a>
+            <a class="secondary-button" href="./pay.html">Open Payment Page</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Do not reopen the sale. Remove the blocker, resend the route, collect the hash.</p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
