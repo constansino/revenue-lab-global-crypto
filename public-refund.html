@@ -6,7 +6,7 @@
     <title>Public Refund And Reschedule | Signal Foundry</title>
     <meta
       name="description"
-      content="Public refund and reschedule page for AI automation sprints: show the default rules for cancellation before kickoff, rescheduling, started work, scope changes, payment issues, and post-delivery close-out."
+      content="Public refund and reschedule page for AI automation sprints and smaller teardown starts: show the default rules for cancellation before kickoff, rescheduling, started work, scope changes, payment issues, and post-delivery close-out."
     />
     <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/public-refund.html" />
     <meta name="theme-color" content="#244534" />
@@ -15,14 +15,14 @@
     <meta property="og:title" content="Public Refund And Reschedule | Signal Foundry" />
     <meta
       property="og:description"
-      content="Use one public page to show how cancellation, rescheduling, started work, scope changes, and payment issues are handled before a buyer sends funds."
+      content="Use one public page to show how cancellation, rescheduling, started work, scope changes, payment issues, and lower-risk teardown starts are handled before a buyer sends funds."
     />
     <meta property="og:url" content="https://constansino.github.io/revenue-lab-global-crypto/public-refund.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Public Refund And Reschedule | Signal Foundry" />
     <meta
       name="twitter:description"
-      content="Public refund and reschedule page for clear pre-kickoff cancellation rules, started-work boundaries, payment issues, and clean close-out."
+      content="Public refund and reschedule page for clear pre-kickoff cancellation rules, started-work boundaries, payment issues, lower-risk teardown starts, and clean close-out."
     />
     <script type="application/ld+json">
       {
@@ -31,7 +31,7 @@
         "@id": "https://constansino.github.io/revenue-lab-global-crypto/public-refund.html#page",
         "url": "https://constansino.github.io/revenue-lab-global-crypto/public-refund.html",
         "name": "Public Refund And Reschedule | Signal Foundry",
-        "description": "Public refund and reschedule page for AI automation sprints: show the default rules for cancellation before kickoff, rescheduling, started work, scope changes, payment issues, and post-delivery close-out.",
+        "description": "Public refund and reschedule page for AI automation sprints and smaller teardown starts: show the default rules for cancellation before kickoff, rescheduling, started work, scope changes, payment issues, and post-delivery close-out.",
         "isPartOf": {
           "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
         },
@@ -67,7 +67,7 @@
             {
               "@type": "ListItem",
               "position": 6,
-              "name": "Delivered work closes through approval and remaining balance"
+              "name": "Delivered work closes through approval, teardown, or remaining balance"
             }
           ]
         }
@@ -98,6 +98,7 @@
         <a class="ghost-button" href="./public-links-hub.html">Public Links Hub</a>
         <a class="ghost-button" href="./public-command-center.html">Public Command Center</a>
         <a class="ghost-button" href="./public-terms.html">Public Terms</a>
+        <a class="ghost-button" href="./public-teardown.html">Public Teardown</a>
         <a class="ghost-button" href="./public-deposit-lock.html">Public Deposit Lock</a>
         <a class="ghost-button" href="./public-payment-guide.html">Public Payment Guide</a>
         <a class="ghost-button" href="./public-payment-followup.html">Public Payment Follow-Up</a>
@@ -119,7 +120,10 @@
             work begins, how rescheduling should be written, how scope changes
             are separated from refunds, and how payment issues stay in one
             written thread. If a specific deal uses different rules, write them
-            before payment instead of assuming them later.
+            before payment instead of assuming them later. If the buyer wants a
+            lower-risk paid first step before a bigger sprint, the teardown is
+            often the cleaner route than arguing about refund edge cases on the
+            full package.
           </p>
           <div class="hero-actions">
             <a class="primary-button" href="#policy-map">Open Policy Map</a>
@@ -134,6 +138,7 @@
             >
               Copy Policy Line
             </button>
+            <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
           </div>
           <ul class="stat-grid">
             <li>
@@ -166,7 +171,7 @@
             </div>
             <div class="funnel-card">
               <strong>3. Route The Next Move Clearly</strong>
-              <span>Either keep payment active, move to balance close-out, or rewrite the next sprint explicitly.</span>
+              <span>Either keep payment active, move to teardown, move to balance close-out, or rewrite the next sprint explicitly.</span>
               <a class="table-link" href="./pay.html">Open Payment Page</a>
             </div>
           </div>
@@ -240,6 +245,16 @@
             <a class="table-link" href="./public-terms.html">Open Public Terms</a>
           </article>
           <article>
+            <h3>3B. Use Teardown If The Buyer Wants A Lower-Risk Paid Start</h3>
+            <p>
+              If the buyer wants to reduce upfront risk before the fuller
+              sprint, move into the teardown: one workflow, $299 total, $90
+              deposit, same wallet route, and a smaller commercial commitment.
+            </p>
+            <a class="table-link" href="./public-teardown.html">Open Public Teardown</a>
+            <a class="table-link" href="./public-terms.html">Open Public Terms</a>
+          </article>
+          <article>
             <h3>4. Revisions Stay Inside Boundary While New Scope Becomes New Work</h3>
             <p>
               One light tightening can stay inside the original sprint. A new
@@ -310,6 +325,14 @@
               the tx hash, network, and amount instead of guessing.
             </p>
           </article>
+          <article>
+            <h3>Lower-Risk Start Line</h3>
+            <p>
+              If the full sprint still feels like too much commitment, I can
+              start with one paid teardown first instead of forcing the bigger
+              package and then arguing about refund edge cases.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -321,7 +344,9 @@
             <p class="wallet-note">
               Refund and reschedule clarity works best when the payment route
               is explicit too. If the commercial path changes, write it before
-              another transfer instead of improvising after funds move.
+              another transfer instead of improvising after funds move. The
+              same wallet can also take the $90 teardown deposit when a smaller
+              paid start is the safer move.
             </p>
           </div>
           <div class="wallet-box">
@@ -329,6 +354,7 @@
             <button id="copyWalletMain" class="primary-button" type="button">
               Copy Address
             </button>
+            <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
             <a class="secondary-button" href="./public-terms.html">Open Public Terms</a>
             <a class="secondary-button" href="./public-scope-boundary.html">Open Public Scope Boundary</a>
             <a class="secondary-button" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
