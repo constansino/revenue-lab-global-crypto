@@ -6,7 +6,7 @@
     <title>Public Approval | Signal Foundry</title>
     <meta
       name="description"
-      content="Shareable public approval page for AI automation sprints with approval framing, ROI support, payment gate, wallet route, and clear next step into deposit."
+      content="Shareable public approval page for AI automation sprints with approval framing, ROI support, payment gate, wallet route, and a smaller paid-start option when the approver wants less upfront commitment."
     />
     <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/public-approval.html" />
     <meta name="theme-color" content="#244534" />
@@ -15,14 +15,14 @@
     <meta property="og:title" content="Public Approval | Signal Foundry" />
     <meta
       property="og:description"
-      content="Send one public approval page when the buyer is nearly ready: clear approval scope, ROI support, deposit gate, wallet route, and kickoff conditions."
+      content="Send one public approval page when the buyer is nearly ready: clear approval scope, ROI support, deposit gate, wallet route, kickoff conditions, and a smaller paid-start option when needed."
     />
     <meta property="og:url" content="https://constansino.github.io/revenue-lab-global-crypto/public-approval.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Public Approval | Signal Foundry" />
     <meta
       name="twitter:description"
-      content="Shareable public approval page with approval framing, ROI support, payment gate, wallet route, and clear next step into deposit."
+      content="Shareable public approval page with approval framing, ROI support, payment gate, wallet route, clear next step into deposit, and teardown as the smaller paid-start option."
     />
     <script type="application/ld+json">
       {
@@ -31,7 +31,7 @@
         "@id": "https://constansino.github.io/revenue-lab-global-crypto/public-approval.html#page",
         "url": "https://constansino.github.io/revenue-lab-global-crypto/public-approval.html",
         "name": "Public Approval | Signal Foundry",
-        "description": "Shareable public approval page for AI automation sprints with approval framing, ROI support, payment gate, wallet route, and clear next step into deposit.",
+        "description": "Shareable public approval page for AI automation sprints with approval framing, ROI support, payment gate, wallet route, and a smaller paid-start option when the approver wants less upfront commitment.",
         "isPartOf": {
           "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
         },
@@ -85,6 +85,7 @@
         <a class="ghost-button" href="./public-proof.html">Public Proof</a>
         <a class="ghost-button" href="./public-roi.html">Public ROI</a>
         <a class="ghost-button" href="./public-pricing.html">Public Pricing</a>
+        <a class="ghost-button" href="./public-teardown.html">Public Teardown</a>
         <a class="ghost-button" href="./public-async-close.html">Public Async Close</a>
         <a class="ghost-button" href="./public-deposit-lock.html">Public Deposit Lock</a>
         <a class="ghost-button" href="./public-approval-to-payment.html">Public Approval To Payment</a>
@@ -105,13 +106,16 @@
             then return the tx hash and brief so work can start immediately. If
             another approver still asks whether it is worth it, pair this page
             with the public ROI page. If the buyer wants everything to stay in
-            writing, pair it with the public async-close page.
+            writing, pair it with the public async-close page. If the approver
+            wants a smaller paid first move before the fuller sprint, pair it
+            with the public teardown page.
           </p>
           <div class="hero-actions">
             <a class="primary-button" href="#approval-steps">Open Approval Steps</a>
             <button id="copyWalletTop" class="secondary-button" type="button">
               Copy Wallet
             </button>
+            <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
             <a class="secondary-button" href="./pay.html">Open Payment Page</a>
           </div>
           <ul class="stat-grid">
@@ -194,6 +198,16 @@
             </p>
           </article>
           <article>
+            <h3>Use Teardown If Approval Exists But The Buyer Wants A Smaller First Step</h3>
+            <p>
+              If the decision-maker is aligned on the problem but wants less
+              upfront commitment, route the thread into the teardown instead of
+              forcing full-sprint approval too early.
+            </p>
+            <a class="table-link" href="./public-teardown.html">Open Public Teardown</a>
+            <a class="table-link" href="./public-pricing.html">Open Public Pricing</a>
+          </article>
+          <article>
             <h3>Use The Standard Deposit</h3>
             <p>
               Standard route is a 30 percent deposit, ideally in USDC on Base,
@@ -274,6 +288,7 @@
             >
               Copy Approval Line
             </button>
+            <a class="table-link" href="./public-teardown.html">Open Public Teardown</a>
           </article>
           <article class="package-card">
             <p class="package-tag">Conversion</p>
@@ -319,6 +334,7 @@
             </button>
             <a class="secondary-button" href="./public-roi.html">Open Public ROI</a>
             <a class="secondary-button" href="./public-pricing.html">Open Public Pricing</a>
+            <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
             <a class="secondary-button" href="./public-async-close.html">Open Public Async Close</a>
             <a class="secondary-button" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
             <a class="secondary-button" href="./public-approval-to-payment.html">Open Public Approval To Payment</a>

@@ -6,7 +6,7 @@
     <title>Public Deposit Lock | Signal Foundry</title>
     <meta
       name="description"
-      content="Public deposit lock page for reserving the current sprint window with a clear deposit, wallet route, and immediate next step into kickoff."
+      content="Public deposit lock page for reserving the current sprint window with a clear deposit, wallet route, and immediate next step into kickoff, including teardown when the buyer wants a smaller reserved start."
     />
     <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/public-deposit-lock.html" />
     <meta name="theme-color" content="#244534" />
@@ -15,14 +15,14 @@
     <meta property="og:title" content="Public Deposit Lock | Signal Foundry" />
     <meta
       property="og:description"
-      content="Share one public deposit lock page when timing matters: confirm the package, reserve the sprint window, and move straight into payment and kickoff."
+      content="Share one public deposit lock page when timing matters: confirm the package, reserve the sprint window, and move straight into payment and kickoff, including teardown when the buyer wants a smaller reserved start."
     />
     <meta property="og:url" content="https://constansino.github.io/revenue-lab-global-crypto/public-deposit-lock.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Public Deposit Lock | Signal Foundry" />
     <meta
       name="twitter:description"
-      content="Public deposit lock page for reserving the current sprint window with a clear deposit path and immediate kickoff conditions."
+      content="Public deposit lock page for reserving the current sprint window with a clear deposit path, teardown option, and immediate kickoff conditions."
     />
     <script type="application/ld+json">
       {
@@ -31,7 +31,7 @@
         "@id": "https://constansino.github.io/revenue-lab-global-crypto/public-deposit-lock.html#page",
         "url": "https://constansino.github.io/revenue-lab-global-crypto/public-deposit-lock.html",
         "name": "Public Deposit Lock | Signal Foundry",
-        "description": "Public deposit lock page for reserving the current sprint window with a clear deposit, wallet route, and immediate next step into kickoff.",
+        "description": "Public deposit lock page for reserving the current sprint window with a clear deposit, wallet route, and immediate next step into kickoff, including teardown when the buyer wants a smaller reserved start.",
         "isPartOf": {
           "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
         },
@@ -85,6 +85,7 @@
         <a class="ghost-button" href="./public-approval.html">Public Approval</a>
         <a class="ghost-button" href="./public-approval-to-payment.html">Public Approval To Payment</a>
         <a class="ghost-button" href="./public-pricing.html">Public Pricing</a>
+        <a class="ghost-button" href="./public-teardown.html">Public Teardown</a>
         <a class="ghost-button" href="./public-payment-guide.html">Public Payment Guide</a>
         <a class="ghost-button" href="./public-payment-followup.html">Public Payment Follow-Up</a>
         <a class="ghost-button" href="./public-kickoff.html">Public Kickoff</a>
@@ -102,7 +103,9 @@
             This page is for the buyer who is already close and mainly needs a
             clean commitment step. The deposit is what reserves the current
             build window, confirms the agreed scope, and moves the thread into
-            kickoff instead of another loop.
+            kickoff instead of another loop. If the buyer wants a smaller paid
+            first move, the teardown deposit can reserve that narrower lane
+            without stalling the thread.
           </p>
           <div class="hero-actions">
             <a class="primary-button" href="#lock-map">Open Deposit Lock Map</a>
@@ -114,6 +117,7 @@
             >
               Copy Lock Line
             </button>
+            <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
             <a class="secondary-button" href="./pay.html">Open Payment Page</a>
           </div>
           <ul class="stat-grid">
@@ -198,7 +202,16 @@
             <a class="table-link" href="./public-approval.html">Open Public Approval</a>
           </article>
           <article>
-            <h3>2. Use The Deposit To Reserve The Window</h3>
+            <h3>2. Use A Teardown Deposit When The Buyer Wants A Smaller Reserved Start</h3>
+            <p>
+              If the buyer wants to move now but not commit to the fuller sprint
+              yet, use the teardown deposit to reserve one narrower workflow lane.
+            </p>
+            <a class="table-link" href="./public-teardown.html">Open Public Teardown</a>
+            <a class="table-link" href="./public-pricing.html">Open Public Pricing</a>
+          </article>
+          <article>
+            <h3>3. Use The Deposit To Reserve The Window</h3>
             <p>
               If timing matters, the deposit is the cleanest way to reserve the
               current sprint slot rather than leaving start timing vague.
@@ -206,14 +219,14 @@
             <a class="table-link" href="./pay.html">Open Payment Page</a>
           </article>
           <article>
-            <h3>3. Keep The Wallet Route Identical</h3>
+            <h3>4. Keep The Wallet Route Identical</h3>
             <p>
               Use the same public wallet, network preference, and wording
               across approval, pricing, deposit lock, and payment.
             </p>
           </article>
           <article>
-            <h3>4. Turn The Reserved Slot Into Kickoff Fast</h3>
+            <h3>5. Turn The Reserved Slot Into Kickoff Fast</h3>
             <p>
               Once payment lands, collect the tx hash and minimum brief so the
               reserved build window becomes an active kickoff instead of idle time.
@@ -221,7 +234,7 @@
             <a class="table-link" href="./public-kickoff.html">Open Public Kickoff</a>
           </article>
           <article>
-            <h3>5. Use This Only When The Buyer Is Actually Close</h3>
+            <h3>6. Use This Only When The Buyer Is Actually Close</h3>
             <p>
               Deposit lock language works when proof and scope are already
               accepted. If trust or package choice is still the blocker, solve
@@ -231,7 +244,7 @@
             <a class="table-link" href="./public-trust.html">Open Public Trust</a>
           </article>
           <article>
-            <h3>6. Keep The Message Operational</h3>
+            <h3>7. Keep The Message Operational</h3>
             <p>
               The point is not pressure. The point is clarity: what the deposit
               covers, what it reserves, where it goes, and what starts after it arrives.
@@ -240,7 +253,7 @@
             <a class="table-link" href="./public-payment-followup.html">Open Public Payment Follow-Up</a>
           </article>
           <article>
-            <h3>7. Use Approval To Payment If Sign-Off Exists But The Payer Is Still Unclear</h3>
+            <h3>8. Use Approval To Payment If Sign-Off Exists But The Payer Is Still Unclear</h3>
             <p>
               If the scope is approved but the deposit owner or route still
               feels loose, compress the thread before you push the payment ask.
@@ -304,6 +317,21 @@
               Copy Deposit Signal
             </button>
           </article>
+          <article>
+            <h3>They Want To Start Smaller But Still Start Now</h3>
+            <p>
+              If the buyer wants a live slot but not the fuller sprint yet, the
+              teardown deposit is the cleanest narrow commitment.
+            </p>
+            <button
+              class="secondary-button copy-snippet"
+              type="button"
+              data-copied-label="Copied"
+              data-copy="If you want to start now but keep the first commitment smaller, the teardown deposit locks one narrow workflow and lets us move without waiting on a bigger scope decision."
+            >
+              Copy Smaller-Start Line
+            </button>
+          </article>
         </div>
       </section>
 
@@ -333,6 +361,7 @@
             <a class="secondary-button" href="./public-approval.html">Open Public Approval</a>
             <a class="secondary-button" href="./public-approval-to-payment.html">Open Public Approval To Payment</a>
             <a class="secondary-button" href="./public-pricing.html">Open Public Pricing</a>
+            <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
             <a class="secondary-button" href="./public-payment-followup.html">Open Public Payment Follow-Up</a>
             <a class="secondary-button" href="./public-kickoff.html">Open Public Kickoff</a>
             <a class="secondary-button" href="./public-faq.html">Open Public FAQ</a>
