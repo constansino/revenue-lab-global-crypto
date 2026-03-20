@@ -6,7 +6,7 @@
     <title>Public Approval | Signal Foundry</title>
     <meta
       name="description"
-      content="Shareable public approval page for AI automation sprints with approval framing, ROI support, payment gate, wallet route, and a smaller paid-start option when the approver wants less upfront commitment."
+      content="Shareable public approval page for AI automation sprints or bounded retainers with approval framing, ROI support, payment gate, wallet route, and smaller-start options when the approver wants less upfront commitment."
     />
     <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/public-approval.html" />
     <meta name="theme-color" content="#244534" />
@@ -15,14 +15,14 @@
     <meta property="og:title" content="Public Approval | Signal Foundry" />
     <meta
       property="og:description"
-      content="Send one public approval page when the buyer is nearly ready: clear approval scope, ROI support, deposit gate, wallet route, kickoff conditions, and a smaller paid-start option when needed."
+      content="Send one public approval page when the buyer is nearly ready: clear approval scope, ROI support, deposit or retainer payment gate, wallet route, kickoff conditions, and a smaller paid-start option when needed."
     />
     <meta property="og:url" content="https://constansino.github.io/revenue-lab-global-crypto/public-approval.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Public Approval | Signal Foundry" />
     <meta
       name="twitter:description"
-      content="Shareable public approval page with approval framing, ROI support, payment gate, wallet route, clear next step into deposit, and teardown as the smaller paid-start option."
+      content="Shareable public approval page with approval framing, ROI support, payment gate, wallet route, clear next step into deposit or retainer payment, and teardown as the smaller paid-start option."
     />
     <script type="application/ld+json">
       {
@@ -31,7 +31,7 @@
         "@id": "https://constansino.github.io/revenue-lab-global-crypto/public-approval.html#page",
         "url": "https://constansino.github.io/revenue-lab-global-crypto/public-approval.html",
         "name": "Public Approval | Signal Foundry",
-        "description": "Shareable public approval page for AI automation sprints with approval framing, ROI support, payment gate, wallet route, and a smaller paid-start option when the approver wants less upfront commitment.",
+        "description": "Shareable public approval page for AI automation sprints or bounded retainers with approval framing, ROI support, payment gate, wallet route, and a smaller paid-start option when the approver wants less upfront commitment.",
         "isPartOf": {
           "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
         },
@@ -90,6 +90,7 @@
         <a class="ghost-button" href="./public-deposit-lock.html">Public Deposit Lock</a>
         <a class="ghost-button" href="./public-approval-to-payment.html">Public Approval To Payment</a>
         <a class="ghost-button" href="./public-kickoff.html">Public Kickoff</a>
+        <a class="ghost-button" href="./public-retainer.html">Public Retainer</a>
         <a class="ghost-button" href="./public-faq.html">Public FAQ</a>
         <a class="ghost-button" href="./pay.html">Payment</a>
       </div>
@@ -108,7 +109,9 @@
             with the public ROI page. If the buyer wants everything to stay in
             writing, pair it with the public async-close page. If the approver
             wants a smaller paid first move before the fuller sprint, pair it
-            with the public teardown page.
+            with the public teardown page. If the approval is for ongoing
+            monthly optimization rather than a fresh sprint, pair it with the
+            public retainer page.
           </p>
           <div class="hero-actions">
             <a class="primary-button" href="#approval-steps">Open Approval Steps</a>
@@ -116,6 +119,7 @@
               Copy Wallet
             </button>
             <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
+            <a class="secondary-button" href="./public-retainer.html">Open Public Retainer</a>
             <a class="secondary-button" href="./pay.html">Open Payment Page</a>
           </div>
           <ul class="stat-grid">
@@ -223,6 +227,16 @@
             <a class="table-link" href="./public-roi.html">Open Public ROI</a>
           </article>
           <article>
+            <h3>Use Retainer If Approval Is For Ongoing Support</h3>
+            <p>
+              If the approver is not authorizing a new sprint but a bounded
+              monthly lane for upkeep, route the decision into the retainer page
+              instead of pretending it is the same one-time package.
+            </p>
+            <a class="table-link" href="./public-retainer.html">Open Public Retainer</a>
+            <a class="table-link" href="./public-renewal.html">Open Public Renewal</a>
+          </article>
+          <article>
             <h3>Keep It Written If A Call Adds No Value</h3>
             <p>
               If the buyer is already aligned and a call would only repeat the
@@ -302,6 +316,17 @@
             <a class="secondary-button" href="./public-approval-to-payment.html">Open Public Approval To Payment</a>
           </article>
           <article class="package-card">
+            <p class="package-tag">Retainer</p>
+            <h3>Monthly Approval</h3>
+            <p class="package-title">Approve bounded ongoing support</p>
+            <ul>
+              <li>confirm recurring lane</li>
+              <li>send first month payment</li>
+              <li>return tx hash + work queue</li>
+            </ul>
+            <a class="secondary-button" href="./public-retainer.html">Open Public Retainer</a>
+          </article>
+          <article class="package-card">
             <p class="package-tag">Payment</p>
             <h3>Then Transfer</h3>
             <p class="package-title">Keep payment explicit</p>
@@ -335,6 +360,7 @@
             <a class="secondary-button" href="./public-roi.html">Open Public ROI</a>
             <a class="secondary-button" href="./public-pricing.html">Open Public Pricing</a>
             <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
+            <a class="secondary-button" href="./public-retainer.html">Open Public Retainer</a>
             <a class="secondary-button" href="./public-async-close.html">Open Public Async Close</a>
             <a class="secondary-button" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
             <a class="secondary-button" href="./public-approval-to-payment.html">Open Public Approval To Payment</a>
@@ -347,7 +373,7 @@
     </main>
 
     <footer class="footer">
-      <p>Proof first. Approval next. Deposit after that. Kickoff once the hash is back.</p>
+      <p>Proof first. Approval next. Deposit or retainer payment after that. Kickoff once the hash is back.</p>
     </footer>
 
     <script src="./app.js"></script>

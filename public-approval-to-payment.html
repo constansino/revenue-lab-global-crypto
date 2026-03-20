@@ -6,7 +6,7 @@
     <title>Public Approval To Payment | Signal Foundry</title>
     <meta
       name="description"
-      content="Public approval-to-payment page for the gap after sign-off and before transfer: confirm the approved scope, compress the deposit step, use teardown if a smaller paid start is needed, remove wallet friction, collect the tx hash, and move into kickoff."
+      content="Public approval-to-payment page for the gap after sign-off and before transfer: confirm the approved scope, compress the deposit or retainer payment step, use teardown if a smaller paid start is needed, remove wallet friction, collect the tx hash, and move into kickoff."
     />
     <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/public-approval-to-payment.html" />
     <meta name="theme-color" content="#244534" />
@@ -15,14 +15,14 @@
     <meta property="og:title" content="Public Approval To Payment | Signal Foundry" />
     <meta
       property="og:description"
-      content="Use one public page when approval is done but funds have not landed: confirm the approved scope, route the payer, use teardown if the full deposit stalls, remove wallet friction, and turn the next move into payment."
+      content="Use one public page when approval is done but funds have not landed: confirm the approved scope, route the payer, use teardown if the full deposit stalls, use retainer when the approved lane is recurring, remove wallet friction, and turn the next move into payment."
     />
     <meta property="og:url" content="https://constansino.github.io/revenue-lab-global-crypto/public-approval-to-payment.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Public Approval To Payment | Signal Foundry" />
     <meta
       name="twitter:description"
-      content="Public approval-to-payment page for turning post-signoff drift into one clean transfer, teardown fallback, tx hash, and kickoff path."
+      content="Public approval-to-payment page for turning post-signoff drift into one clean transfer, teardown fallback, retainer fallback, tx hash, and kickoff path."
     />
     <script type="application/ld+json">
       {
@@ -31,7 +31,7 @@
         "@id": "https://constansino.github.io/revenue-lab-global-crypto/public-approval-to-payment.html#page",
         "url": "https://constansino.github.io/revenue-lab-global-crypto/public-approval-to-payment.html",
         "name": "Public Approval To Payment | Signal Foundry",
-        "description": "Public approval-to-payment page for the gap after sign-off and before transfer: confirm the approved scope, compress the deposit step, use teardown if a smaller paid start is needed, remove wallet friction, collect the tx hash, and move into kickoff.",
+        "description": "Public approval-to-payment page for the gap after sign-off and before transfer: confirm the approved scope, compress the deposit or retainer payment step, use teardown if a smaller paid start is needed, remove wallet friction, collect the tx hash, and move into kickoff.",
         "isPartOf": {
           "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
         },
@@ -93,6 +93,7 @@
         <a class="ghost-button" href="./public-payment-guide.html">Public Payment Guide</a>
         <a class="ghost-button" href="./public-payment-followup.html">Public Payment Follow-Up</a>
         <a class="ghost-button" href="./public-kickoff.html">Public Kickoff</a>
+        <a class="ghost-button" href="./public-retainer.html">Public Retainer</a>
         <a class="ghost-button" href="./public-faq.html">Public FAQ</a>
         <a class="ghost-button" href="./pay.html">Payment</a>
       </div>
@@ -111,7 +112,9 @@
             hash, and move directly into kickoff. If approval is real but the
             full sprint deposit still feels too heavy, route the thread into
             the teardown as the smaller paid first step instead of letting the
-            deal decay.
+            deal decay. If the approved lane is recurring support after a live
+            build, route the thread into the retainer page instead of treating
+            it like another first sprint.
           </p>
           <div class="hero-actions">
             <a class="primary-button" href="#approval-payment-map">Open Approval To Payment Map</a>
@@ -124,6 +127,7 @@
               Copy Conversion Line
             </button>
             <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
+            <a class="secondary-button" href="./public-retainer.html">Open Public Retainer</a>
             <a class="secondary-button" href="./pay.html">Open Payment Page</a>
           </div>
           <ul class="stat-grid">
@@ -226,6 +230,16 @@
             </p>
             <a class="table-link" href="./public-teardown.html">Open Public Teardown</a>
             <a class="table-link" href="./public-terms.html">Open Public Terms</a>
+          </article>
+          <article>
+            <h3>2C. Use Retainer If The Approved Lane Is Ongoing Support</h3>
+            <p>
+              If the approved work is recurring maintenance or monthly
+              optimization, route into the retainer page so the payer sees the
+              correct commercial lane before sending the first month payment.
+            </p>
+            <a class="table-link" href="./public-retainer.html">Open Public Retainer</a>
+            <a class="table-link" href="./public-renewal.html">Open Public Renewal</a>
           </article>
           <article>
             <h3>3. Remove Wallet Confusion Without Reopening The Sale</h3>
@@ -345,6 +359,15 @@
             <a class="table-link" href="./public-teardown.html">Open Public Teardown</a>
           </article>
           <article>
+            <h3>Needs Recurring Support Framing</h3>
+            <p>
+              If the approver already said yes to monthly upkeep but the payer
+              still sees it like a vague extension, route through the retainer
+              page before you ask for funds again.
+            </p>
+            <a class="table-link" href="./public-retainer.html">Open Public Retainer</a>
+          </article>
+          <article>
             <h3>Needs Wallet Confidence</h3>
             <p>
               If approval is done but the wallet route still feels unfamiliar,
@@ -399,6 +422,7 @@
             <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
             <a class="secondary-button" href="./public-approval.html">Open Public Approval</a>
             <a class="secondary-button" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
+            <a class="secondary-button" href="./public-retainer.html">Open Public Retainer</a>
             <a class="secondary-button" href="./public-payment-guide.html">Open Public Payment Guide</a>
             <a class="secondary-button" href="./public-payment-followup.html">Open Public Payment Follow-Up</a>
             <a class="secondary-button" href="./public-kickoff.html">Open Public Kickoff</a>
