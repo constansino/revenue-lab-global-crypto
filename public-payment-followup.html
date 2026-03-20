@@ -6,7 +6,7 @@
     <title>Public Payment Follow-Up | Signal Foundry</title>
     <meta
       name="description"
-      content="Public payment follow-up page for the stage after agreement and before transfer: confirm the payer, remove the last blocker, resend one clean wallet route, and collect the tx hash."
+      content="Public payment follow-up page for the stage after agreement and before transfer: confirm the payer, remove the last blocker, resend one clean wallet route, and collect the tx hash for a deposit or first retainer month."
     />
     <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/public-payment-followup.html" />
     <meta name="theme-color" content="#244534" />
@@ -15,14 +15,14 @@
     <meta property="og:title" content="Public Payment Follow-Up | Signal Foundry" />
     <meta
       property="og:description"
-      content="Use one public follow-up page when the deal is agreed but the transfer has not landed: confirm the payer, remove friction, resend the route, and ask for the tx hash."
+      content="Use one public follow-up page when the deal is agreed but the transfer has not landed: confirm the payer, remove friction, resend the route, and ask for the tx hash for a deposit or first retainer month."
     />
     <meta property="og:url" content="https://constansino.github.io/revenue-lab-global-crypto/public-payment-followup.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Public Payment Follow-Up | Signal Foundry" />
     <meta
       name="twitter:description"
-      content="Public payment follow-up page for pending transfers: confirm the payer, remove wallet friction, and collect the tx hash."
+      content="Public payment follow-up page for pending transfers: confirm the payer, remove wallet friction, and collect the tx hash for a deposit or first retainer month."
     />
     <script type="application/ld+json">
       {
@@ -31,7 +31,7 @@
         "@id": "https://constansino.github.io/revenue-lab-global-crypto/public-payment-followup.html#page",
         "url": "https://constansino.github.io/revenue-lab-global-crypto/public-payment-followup.html",
         "name": "Public Payment Follow-Up | Signal Foundry",
-        "description": "Public payment follow-up page for the stage after agreement and before transfer: confirm the payer, remove the last blocker, resend one clean wallet route, and collect the tx hash.",
+        "description": "Public payment follow-up page for the stage after agreement and before transfer: confirm the payer, remove the last blocker, resend one clean wallet route, and collect the tx hash for a deposit or first retainer month.",
         "isPartOf": {
           "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
         },
@@ -88,6 +88,7 @@
         <a class="ghost-button" href="./public-payment-guide.html">Public Payment Guide</a>
         <a class="ghost-button" href="./public-kickoff.html">Public Kickoff</a>
         <a class="ghost-button" href="./public-balance-collection.html">Public Balance Collection</a>
+        <a class="ghost-button" href="./public-retainer.html">Public Retainer</a>
         <a class="ghost-button" href="./public-faq.html">Public FAQ</a>
         <a class="ghost-button" href="./pay.html">Payment</a>
       </div>
@@ -102,7 +103,8 @@
             This page is for the gap after agreement and before funds arrive.
             The job is not to restart the sale. The job is to confirm the
             payer, isolate the last blocker, resend one clean payment route,
-            and collect the tx hash before the thread loses heat.
+            and collect the tx hash before the thread loses heat, whether the
+            transfer is a sprint deposit or the first retainer month.
           </p>
           <div class="hero-actions">
             <a class="primary-button" href="#followup-map">Open Follow-Up Map</a>
@@ -110,7 +112,7 @@
               class="secondary-button copy-snippet"
               type="button"
               data-copied-label="Copied"
-              data-copy="Since the scope is already agreed, the only thing I want to confirm is who is sending the deposit and whether there is any wallet friction. If the route is clear, please send the transfer to 0xB3e9568A9cbB624403743340358c85CCce130893 and drop the tx hash in this thread."
+              data-copy="Since the scope is already agreed, the only thing I want to confirm is who is sending the deposit or first retainer month and whether there is any wallet friction. If the route is clear, please send the transfer to 0xB3e9568A9cbB624403743340358c85CCce130893 and drop the tx hash in this thread."
             >
               Copy Follow-Up Line
             </button>
@@ -197,12 +199,13 @@
             <a class="table-link" href="./public-approval.html">Open Public Approval</a>
           </article>
           <article>
-            <h3>2. Restate The Exact Deposit And Current Window</h3>
+            <h3>2. Restate The Exact Payment Event And Current Window</h3>
             <p>
               Keep the follow-up concrete: amount, asset, network, wallet, and
-              what the deposit secures right now.
+              whether this is a sprint deposit or the first retainer month.
             </p>
             <a class="table-link" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
+            <a class="table-link" href="./public-retainer.html">Open Public Retainer</a>
           </article>
           <article>
             <h3>3. Remove Wallet Friction</h3>
@@ -246,6 +249,16 @@
             <a class="table-link" href="./public-approval-to-payment.html">Open Public Approval To Payment</a>
             <a class="table-link" href="./public-approval.html">Open Public Approval</a>
           </article>
+          <article>
+            <h3>8. Use The Retainer Page When The Monthly Lane Is Already Defined</h3>
+            <p>
+              If the buyer already agreed to a recurring monthly lane, route
+              the thread through the retainer page instead of treating it like
+              a generic first sprint deposit.
+            </p>
+            <a class="table-link" href="./public-retainer.html">Open Public Retainer</a>
+            <a class="table-link" href="./pay.html">Open Payment Page</a>
+          </article>
         </div>
       </section>
 
@@ -267,7 +280,7 @@
               class="secondary-button copy-snippet"
               type="button"
               data-copied-label="Copied"
-              data-copy="The scope is already agreed. I just want to confirm who is sending the deposit so I can keep the payment route in one thread."
+              data-copy="The scope is already agreed. I just want to confirm who is sending the deposit or first retainer month so I can keep the payment route in one thread."
             >
               Copy Payer Line
             </button>
@@ -316,6 +329,8 @@
               pending to active. If the delivered sprint is already approved
               and the only remaining move is final payment, switch to the
               balance collection page instead of using a deposit-first route.
+              If the recurring lane is already agreed, the same route can also
+              collect the first retainer month.
             </p>
           </div>
           <div class="wallet-box">
@@ -327,7 +342,7 @@
               class="secondary-button copy-snippet"
               type="button"
               data-copied-label="Copied"
-              data-copy="Payment follow-up for Signal Foundry%0AProject name:%0AChosen tier:%0ADeposit amount:%0ANetwork:%0AAsset:%0AWallet: 0xB3e9568A9cbB624403743340358c85CCce130893%0ATx hash:%0ABrief link:%0ANotes:"
+              data-copy="Payment follow-up for Signal Foundry%0APayment type: deposit or retainer month%0AProject name:%0AChosen tier or lane:%0AAmount:%0ANetwork:%0AAsset:%0AWallet: 0xB3e9568A9cbB624403743340358c85CCce130893%0ATx hash:%0ABrief link:%0ANotes:"
             >
               Copy Follow-Up Template
             </button>
@@ -336,6 +351,7 @@
             <a class="secondary-button" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
             <a class="secondary-button" href="./public-kickoff.html">Open Public Kickoff</a>
             <a class="secondary-button" href="./public-balance-collection.html">Open Public Balance Collection</a>
+            <a class="secondary-button" href="./public-retainer.html">Open Public Retainer</a>
             <a class="secondary-button" href="./public-faq.html">Open Public FAQ</a>
             <a class="secondary-button" href="./pay.html">Open Payment Page</a>
           </div>
