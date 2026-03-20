@@ -6,7 +6,7 @@
     <title>Pay Deposit, Balance, Or Retainer | Signal Foundry</title>
     <meta
       name="description"
-      content="Pay a crypto deposit, remaining balance, or first retainer month for AI automation work. Direct wallet payment instructions, preferred network, deposit tiers, payment follow-up, tx-hash confirmation, and public routes for balance collection, renewal, next-cycle lock, refund, or recurring support clarity."
+      content="Pay a crypto deposit, remaining balance, or first retainer month for AI automation work. Direct wallet payment instructions, preferred network, deposit tiers, approval-to-payment compression, payment follow-up, tx-hash confirmation, and public routes for balance collection, renewal, next-cycle lock, refund, or recurring support clarity."
     />
     <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/pay.html" />
     <meta name="theme-color" content="#244534" />
@@ -15,14 +15,14 @@
     <meta property="og:title" content="Pay Deposit, Balance, Or Retainer | Signal Foundry" />
     <meta
       property="og:description"
-      content="Direct crypto payment page with wallet instructions, preferred network, deposit tiers, payment follow-up, tx-hash confirmation, a public balance-collection path, a renewal path, a next-cycle lock path, and the same route for remaining balance or first retainer month."
+      content="Direct crypto payment page with wallet instructions, preferred network, deposit tiers, approval-to-payment compression, payment follow-up, tx-hash confirmation, a public balance-collection path, a renewal path, a next-cycle lock path, and the same route for remaining balance or first retainer month."
     />
     <meta property="og:url" content="https://constansino.github.io/revenue-lab-global-crypto/pay.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Pay Deposit, Balance, Or Retainer | Signal Foundry" />
     <meta
       name="twitter:description"
-      content="Direct crypto payment page with wallet instructions, preferred network, deposit tiers, payment follow-up, tx-hash confirmation, a public balance-collection path, a renewal path, a next-cycle lock path, and the same route for remaining balance or first retainer month."
+      content="Direct crypto payment page with wallet instructions, preferred network, deposit tiers, approval-to-payment compression, payment follow-up, tx-hash confirmation, a public balance-collection path, a renewal path, a next-cycle lock path, and the same route for remaining balance or first retainer month."
     />
     <script type="application/ld+json">
       {
@@ -31,7 +31,7 @@
         "@id": "https://constansino.github.io/revenue-lab-global-crypto/pay.html#page",
         "url": "https://constansino.github.io/revenue-lab-global-crypto/pay.html",
         "name": "Pay Deposit, Balance, Or Retainer | Signal Foundry",
-        "description": "Direct crypto payment page with preferred network, wallet address, deposit tiers for AI automation work, and public routes for balance collection, renewal, next-cycle lock, or first retainer month.",
+        "description": "Direct crypto payment page with preferred network, wallet address, deposit tiers for AI automation work, and public routes for approval-to-payment, balance collection, renewal, next-cycle lock, or first retainer month.",
         "isPartOf": {
           "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
         },
@@ -90,6 +90,7 @@
         <a class="ghost-button" href="./public-trust.html">Public Trust</a>
         <a class="ghost-button" href="./public-proof.html">Public Proof</a>
         <a class="ghost-button" href="./public-approval.html">Public Approval</a>
+        <a class="ghost-button" href="./public-approval-to-payment.html">Public Approval To Payment</a>
         <a class="ghost-button" href="./public-deposit-lock.html">Public Deposit Lock</a>
         <a class="ghost-button" href="./public-payment-guide.html">Public Payment Guide</a>
         <a class="ghost-button" href="./public-network-check.html">Public Network Check</a>
@@ -127,6 +128,9 @@
             fresh sprint deposit and the first retainer month, use the sprint
             vs retainer page first. If the payment is locking the next cycle
             after a successful sprint, use the public next cycle lock page first.
+            If the scope is already approved but the transfer still has not
+            started, use the public approval to payment page before the thread
+            drifts into softer follow-up.
             If the current sprint is already delivered and the only money still
             open is the remaining balance, use the public balance collection page first.
             If the delivered sprint clearly exposed the next bottleneck, use the
@@ -142,6 +146,7 @@
             <a class="secondary-button" href="#payment-routes">See Payment Routes</a>
             <a class="secondary-button" href="./public-route-picker.html">Open Public Route Picker</a>
             <a class="secondary-button" href="./public-next-cycle-lock.html">Open Public Next Cycle Lock</a>
+            <a class="secondary-button" href="./public-approval-to-payment.html">Open Public Approval To Payment</a>
             <a class="secondary-button" href="./public-network-check.html">Open Public Network Check</a>
             <a class="secondary-button" href="./public-payment-followup.html">Open Public Payment Follow-Up</a>
             <a class="secondary-button" href="./public-tx-hash.html">Open Public Tx Hash</a>
@@ -177,6 +182,7 @@
             <div class="funnel-card">
               <strong>2. Send The Agreed Amount</strong>
               <span>Use the agreed asset and network, ideally USDC on Base, for deposit or remaining balance.</span>
+              <a class="table-link" href="./public-approval-to-payment.html">Open Public Approval To Payment</a>
             </div>
             <div class="funnel-card">
               <strong>3. Return Hash</strong>
@@ -241,6 +247,7 @@
             <a class="secondary-button" href="./public-trust.html">Public Trust</a>
             <a class="secondary-button" href="./public-proof.html">Public Proof</a>
             <a class="secondary-button" href="./public-approval.html">Public Approval</a>
+            <a class="secondary-button" href="./public-approval-to-payment.html">Public Approval To Payment</a>
             <a class="secondary-button" href="./public-deposit-lock.html">Public Deposit Lock</a>
             <a class="secondary-button" href="./public-payment-guide.html">Public Payment Guide</a>
             <a class="secondary-button" href="./public-network-check.html">Public Network Check</a>
@@ -268,10 +275,20 @@
         <div class="section-heading">
           <p class="eyebrow">Before you pay</p>
           <h2>Make the scope and start window explicit before funds move.</h2>
-        </div>
-        <div class="proof-grid">
-          <article>
-            <h3>Need route clarity first</h3>
+      </div>
+      <div class="proof-grid">
+        <article>
+          <h3>Approval Exists But Funds Still Need Compression</h3>
+          <p>
+            If the internal yes already happened but the payer still has not
+            turned that approval into an actual transfer, use the approval-to-payment
+            page before the thread cools.
+          </p>
+          <a class="table-link" href="./public-approval-to-payment.html">Open Public Approval To Payment</a>
+          <a class="table-link" href="./public-payment-followup.html">Open Public Payment Follow-Up</a>
+        </article>
+        <article>
+          <h3>Need route clarity first</h3>
             <p>
               If the payer still has not decided whether this transfer is for a
               teardown, a new sprint, or the first retainer month, use the

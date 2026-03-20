@@ -97,6 +97,7 @@
         <a class="ghost-button" href="./public-trust.html">Public Trust</a>
         <a class="ghost-button" href="./public-proof.html">Public Proof</a>
         <a class="ghost-button" href="./public-approval.html">Public Approval</a>
+        <a class="ghost-button" href="./public-approval-to-payment.html">Public Approval To Payment</a>
         <a class="ghost-button" href="./public-deposit-lock.html">Public Deposit Lock</a>
         <a class="ghost-button" href="./public-payment-type.html">Public Payment Type</a>
         <a class="ghost-button" href="./public-network-check.html">Public Network Check</a>
@@ -128,6 +129,7 @@
             如果买家已经把范围缩到“小额先走还是直接全 Sprint”，则直接走公开 teardown vs sprint 页面。
             如果买家已经走到“到底该续一个 fresh sprint，还是转月度 retainer”这一步，则直接走公开 sprint vs retainer 页面。
             如果第一轮已经跑通，客户也已经接受继续合作，但下一笔钱到底是在锁下一轮 sprint 还是首月 retainer 还要再确认，则直接走公开 next cycle lock 页面。
+            如果买家已经内部点头，但钱还没真正动起来，就直接走公开 approval to payment 页面，把批准压到打款。
             如果买家已经准备付款，但还没确认这笔钱到底是订金、尾款还是月付，先走公开 payment type。
             如果买家只剩下链上转账的资产、网络和钱包确认，先走公开 network check。
             如果买家已经同意付款但转账迟迟还没落地，就直接走公开 payment follow-up。
@@ -142,6 +144,7 @@
             <a class="secondary-button" href="./public-teardown-vs-sprint.html">比较 Teardown 和 Sprint</a>
             <a class="secondary-button" href="./public-sprint-vs-retainer.html">比较 Sprint 和 Retainer</a>
             <a class="secondary-button" href="./public-next-cycle-lock.html">锁定下一周期</a>
+            <a class="secondary-button" href="./public-approval-to-payment.html">内部 yes 转付款</a>
             <a class="secondary-button" href="./public-payment-type.html">确认付款类型</a>
             <a class="secondary-button" href="./public-payment-followup.html">付款卡住就跟进</a>
             <a class="secondary-button" href="./public-tx-hash.html">付款后回传 Tx Hash</a>
@@ -187,8 +190,9 @@
               <a class="table-link" href="./public-payment-type.html">Open Public Payment Type</a>
             </div>
             <div class="funnel-card">
-              <strong>5. 最后完成链上收款</strong>
-              <span>付款前只确认资产、网络和钱包，再进入公开付款页。</span>
+              <strong>5. 内部 yes 先压到付款</strong>
+              <span>内部已经批准但钱还没动时，先发公开 approval to payment，再确认网络和钱包。</span>
+              <a class="table-link" href="./public-approval-to-payment.html">Open Public Approval To Payment</a>
               <a class="table-link" href="./public-network-check.html">Open Public Network Check</a>
               <a class="table-link" href="./pay.html">Open Payment Page</a>
             </div>
@@ -398,6 +402,7 @@
             <a class="secondary-button" href="./public-route-picker.html">先判断购买路径</a>
             <a class="secondary-button" href="./public-teardown-vs-sprint.html">比较小额入口和 Sprint</a>
             <a class="secondary-button" href="./public-sprint-vs-retainer.html">比较 Sprint 和 Retainer</a>
+            <a class="secondary-button" href="./public-approval-to-payment.html">内部 yes 转付款</a>
             <a class="secondary-button" href="./public-payment-type.html">确认付款类型</a>
             <a class="secondary-button" href="./public-network-check.html">确认网络和钱包</a>
             <a class="secondary-button" href="./public-payment-followup.html">付款卡住就跟进</a>

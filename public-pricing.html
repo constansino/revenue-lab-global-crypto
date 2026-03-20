@@ -6,7 +6,7 @@
     <title>Public Pricing | Signal Foundry</title>
     <meta
       name="description"
-      content="Shareable public pricing page with sprint and retainer packages, deposit amounts, wallet instructions, direct crypto payment routing, payment follow-up, tx-hash confirmation, and public balance-collection, renewal, and next-cycle lock paths after a successful sprint."
+      content="Shareable public pricing page with sprint and retainer packages, deposit amounts, wallet instructions, direct crypto payment routing, approval-to-payment compression, payment follow-up, tx-hash confirmation, and public balance-collection, renewal, and next-cycle lock paths after a successful sprint."
     />
     <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/public-pricing.html" />
     <meta name="theme-color" content="#244534" />
@@ -15,7 +15,7 @@
     <meta property="og:title" content="Public Pricing | Signal Foundry" />
     <meta
       property="og:description"
-      content="Send one public pricing page with sprint and retainer packages, deposit amounts, wallet instructions, payment follow-up, tx-hash confirmation, and public balance-collection, renewal, and next-cycle lock paths after a successful sprint."
+      content="Send one public pricing page with sprint and retainer packages, deposit amounts, wallet instructions, approval-to-payment compression, payment follow-up, tx-hash confirmation, and public balance-collection, renewal, and next-cycle lock paths after a successful sprint."
     />
     <meta
       property="og:url"
@@ -25,7 +25,7 @@
     <meta name="twitter:title" content="Public Pricing | Signal Foundry" />
     <meta
       name="twitter:description"
-      content="Public pricing page with sprint and retainer packages, deposit amounts, wallet instructions, direct crypto payment routing, payment follow-up, tx-hash confirmation, and public balance-collection, renewal, and next-cycle lock paths after a successful sprint."
+      content="Public pricing page with sprint and retainer packages, deposit amounts, wallet instructions, direct crypto payment routing, approval-to-payment compression, payment follow-up, tx-hash confirmation, and public balance-collection, renewal, and next-cycle lock paths after a successful sprint."
     />
     <script type="application/ld+json">
       {
@@ -34,7 +34,7 @@
         "@id": "https://constansino.github.io/revenue-lab-global-crypto/public-pricing.html#page",
         "url": "https://constansino.github.io/revenue-lab-global-crypto/public-pricing.html",
         "name": "Public Pricing | Signal Foundry",
-        "description": "Shareable public pricing page with sprint and retainer packages, deposit amounts, wallet instructions, and public payment, balance-collection, renewal, and next-cycle routing.",
+        "description": "Shareable public pricing page with sprint and retainer packages, deposit amounts, wallet instructions, and public approval-to-payment, payment, balance-collection, renewal, and next-cycle routing.",
         "isPartOf": {
           "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
         },
@@ -107,6 +107,7 @@
         <a class="ghost-button" href="./public-risk-control.html">Public Risk Control</a>
         <a class="ghost-button" href="./public-scope-boundary.html">Public Scope Boundary</a>
         <a class="ghost-button" href="./public-approval.html">Public Approval</a>
+        <a class="ghost-button" href="./public-approval-to-payment.html">Public Approval To Payment</a>
         <a class="ghost-button" href="./public-deposit-lock.html">Public Deposit Lock</a>
         <a class="ghost-button" href="./public-kickoff.html">Public Kickoff</a>
         <a class="ghost-button" href="./public-payment-type.html">Public Payment Type</a>
@@ -139,8 +140,9 @@
             If the tier is already chosen but the transfer label or chain route
             is still fuzzy, use payment type and network check before funds move.
             If the quote is accepted but the transfer still has not landed, use
-            payment follow-up. If the transfer is already sent, use tx hash to
-            close confirmation without another explanation loop.
+            approval to payment first. If the transfer still drifts after that,
+            use payment follow-up. If the transfer is already sent, use tx hash
+            to close confirmation without another explanation loop.
             If the sprint is already delivered and the only money left is the
             remaining balance, use balance collection instead of rewriting the close-out.
             If the finished sprint clearly points to a new paid bottleneck, use
@@ -157,6 +159,7 @@
             </button>
             <a class="secondary-button" href="./public-teardown-vs-sprint.html">Open Public Teardown Vs Sprint</a>
             <a class="secondary-button" href="./public-next-cycle-lock.html">Open Public Next Cycle Lock</a>
+            <a class="secondary-button" href="./public-approval-to-payment.html">Open Public Approval To Payment</a>
             <a class="secondary-button" href="./public-payment-type.html">Open Public Payment Type</a>
             <a class="secondary-button" href="./public-payment-followup.html">Open Public Payment Follow-Up</a>
             <a class="secondary-button" href="./public-tx-hash.html">Open Public Tx Hash</a>
@@ -190,7 +193,8 @@
             </div>
             <div class="funnel-card">
               <strong>2. Send Deposit</strong>
-              <span>Use the listed deposit, ideally in USDC on Base.</span>
+              <span>Use the listed deposit, ideally in USDC on Base, and compress accepted quotes into one payment event.</span>
+              <a class="table-link" href="./public-approval-to-payment.html">Open Public Approval To Payment</a>
               <a class="table-link" href="./public-payment-type.html">Open Public Payment Type</a>
               <a class="table-link" href="./pay.html">Open Payment Page</a>
             </div>
@@ -539,6 +543,7 @@
             <a class="secondary-button" href="./public-risk-control.html">Open Public Risk Control</a>
             <a class="secondary-button" href="./public-scope-boundary.html">Open Public Scope Boundary</a>
             <a class="secondary-button" href="./public-approval.html">Open Public Approval</a>
+            <a class="secondary-button" href="./public-approval-to-payment.html">Open Public Approval To Payment</a>
             <a class="secondary-button" href="./public-async-close.html">Open Public Async Close</a>
             <a class="secondary-button" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
             <a class="secondary-button" href="./public-teardown-vs-sprint.html">Open Public Teardown Vs Sprint</a>
