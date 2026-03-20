@@ -6,7 +6,7 @@
     <title>Public Async Close | Signal Foundry</title>
     <meta
       name="description"
-      content="Public async close page for written, no-call deal flow: confirm scope, route to a smaller paid teardown if needed, collect deposit, and move into kickoff without scheduling friction."
+      content="Public async close page for written, no-call deal flow: confirm scope, route to a smaller paid teardown or bounded retainer if needed, collect payment, and move into kickoff without scheduling friction."
     />
     <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/public-async-close.html" />
     <meta name="theme-color" content="#244534" />
@@ -15,14 +15,14 @@
     <meta property="og:title" content="Public Async Close | Signal Foundry" />
     <meta
       property="og:description"
-      content="Send one public async-close page when a buyer is warm but a call would only slow the deal down: written scope, approval, teardown if needed, deposit, and kickoff."
+      content="Send one public async-close page when a buyer is warm but a call would only slow the deal down: written scope, approval, teardown or retainer if needed, payment, and kickoff."
     />
     <meta property="og:url" content="https://constansino.github.io/revenue-lab-global-crypto/public-async-close.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Public Async Close | Signal Foundry" />
     <meta
       name="twitter:description"
-      content="Public no-call close page for buyers who want everything in writing: one compact scope recap, one proof asset if needed, then teardown or deposit and kickoff."
+      content="Public no-call close page for buyers who want everything in writing: one compact scope recap, one proof asset if needed, then teardown, retainer, or deposit and kickoff."
     />
     <script type="application/ld+json">
       {
@@ -31,7 +31,7 @@
         "@id": "https://constansino.github.io/revenue-lab-global-crypto/public-async-close.html#page",
         "url": "https://constansino.github.io/revenue-lab-global-crypto/public-async-close.html",
         "name": "Public Async Close | Signal Foundry",
-        "description": "Public async close page for written, no-call deal flow: confirm scope, route to a smaller paid teardown if needed, collect deposit, and move into kickoff without scheduling friction.",
+        "description": "Public async close page for written, no-call deal flow: confirm scope, route to a smaller paid teardown or bounded retainer if needed, collect payment, and move into kickoff without scheduling friction.",
         "isPartOf": {
           "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
         },
@@ -94,6 +94,7 @@
         <a class="ghost-button" href="./public-deposit-lock.html">Public Deposit Lock</a>
         <a class="ghost-button" href="./public-payment-followup.html">Public Payment Follow-Up</a>
         <a class="ghost-button" href="./public-kickoff.html">Public Kickoff</a>
+        <a class="ghost-button" href="./public-retainer.html">Public Retainer</a>
         <a class="ghost-button" href="./public-faq.html">Public FAQ</a>
         <a class="ghost-button" href="./pay.html">Payment</a>
       </div>
@@ -111,7 +112,9 @@
             payment, keep the deal asynchronous. If the buyer wants everything
             in writing but the full sprint still feels too large, route them
             into the teardown as the smaller paid first step instead of
-            forcing a call.
+            forcing a call. If the work is already live and the written close
+            is really about bounded ongoing support, route them into the
+            retainer page instead of reshaping it as a first sprint.
           </p>
           <div class="hero-actions">
             <a class="primary-button" href="#async-map">Open Async Map</a>
@@ -124,6 +127,7 @@
               Copy Async Line
             </button>
             <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
+            <a class="secondary-button" href="./public-retainer.html">Open Public Retainer</a>
             <a class="secondary-button" href="./pay.html">Open Payment Page</a>
           </div>
           <ul class="stat-grid">
@@ -218,6 +222,16 @@
             <a class="table-link" href="./public-terms.html">Open Public Terms</a>
           </article>
           <article>
+            <h3>1C. Route To Retainer If The Written Close Is About Ongoing Support</h3>
+            <p>
+              If the buyer is already past initial setup and wants a bounded
+              recurring lane in writing, route them into the retainer page
+              instead of forcing a new sprint quote.
+            </p>
+            <a class="table-link" href="./public-retainer.html">Open Public Retainer</a>
+            <a class="table-link" href="./public-renewal.html">Open Public Renewal</a>
+          </article>
+          <article>
             <h3>2. Send One Proof Asset If Needed</h3>
             <p>
               If confidence is the last blocker, send one matching proof asset
@@ -297,6 +311,13 @@
             <p>
               If the buyer wants everything written but still wants less
               upfront commitment, stay async and route to the teardown.
+            </p>
+          </article>
+          <article>
+            <h3>Wants Recurring Support In Writing</h3>
+            <p>
+              If the buyer wants a written close because the next move is
+              bounded monthly upkeep, keep the deal async and route to retainer.
             </p>
           </article>
           <article>
@@ -438,6 +459,7 @@
             <a class="secondary-button" href="./public-proof.html">Open Public Proof</a>
             <a class="secondary-button" href="./public-pricing.html">Open Public Pricing</a>
             <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
+            <a class="secondary-button" href="./public-retainer.html">Open Public Retainer</a>
             <a class="secondary-button" href="./public-approval.html">Open Public Approval</a>
             <a class="secondary-button" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
             <a class="secondary-button" href="./public-payment-followup.html">Open Public Payment Follow-Up</a>
@@ -450,7 +472,7 @@
     </main>
 
     <footer class="footer">
-      <p>When the buyer is ready, written clarity can close faster than a call.</p>
+      <p>When the buyer is ready, written clarity can close faster than a call, whether the lane is a sprint or a bounded retainer.</p>
     </footer>
 
     <script src="./app.js"></script>
