@@ -6,7 +6,7 @@
     <title>Public Async Close | Signal Foundry</title>
     <meta
       name="description"
-      content="Public async close page for written, no-call deal flow: confirm scope, send proof only if needed, collect deposit, and move into kickoff without scheduling friction."
+      content="Public async close page for written, no-call deal flow: confirm scope, route to a smaller paid teardown if needed, collect deposit, and move into kickoff without scheduling friction."
     />
     <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/public-async-close.html" />
     <meta name="theme-color" content="#244534" />
@@ -15,14 +15,14 @@
     <meta property="og:title" content="Public Async Close | Signal Foundry" />
     <meta
       property="og:description"
-      content="Send one public async-close page when a buyer is warm but a call would only slow the deal down: written scope, approval, deposit, and kickoff."
+      content="Send one public async-close page when a buyer is warm but a call would only slow the deal down: written scope, approval, teardown if needed, deposit, and kickoff."
     />
     <meta property="og:url" content="https://constansino.github.io/revenue-lab-global-crypto/public-async-close.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Public Async Close | Signal Foundry" />
     <meta
       name="twitter:description"
-      content="Public no-call close page for buyers who want everything in writing: one compact scope recap, one proof asset if needed, then deposit and kickoff."
+      content="Public no-call close page for buyers who want everything in writing: one compact scope recap, one proof asset if needed, then teardown or deposit and kickoff."
     />
     <script type="application/ld+json">
       {
@@ -31,7 +31,7 @@
         "@id": "https://constansino.github.io/revenue-lab-global-crypto/public-async-close.html#page",
         "url": "https://constansino.github.io/revenue-lab-global-crypto/public-async-close.html",
         "name": "Public Async Close | Signal Foundry",
-        "description": "Public async close page for written, no-call deal flow: confirm scope, send proof only if needed, collect deposit, and move into kickoff without scheduling friction.",
+        "description": "Public async close page for written, no-call deal flow: confirm scope, route to a smaller paid teardown if needed, collect deposit, and move into kickoff without scheduling friction.",
         "isPartOf": {
           "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
         },
@@ -52,7 +52,7 @@
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "Collect the deposit without scheduling friction"
+              "name": "Collect the deposit or teardown start without scheduling friction"
             },
             {
               "@type": "ListItem",
@@ -89,6 +89,7 @@
         <a class="ghost-button" href="./public-command-center.html">Public Command Center</a>
         <a class="ghost-button" href="./public-proof.html">Public Proof</a>
         <a class="ghost-button" href="./public-pricing.html">Public Pricing</a>
+        <a class="ghost-button" href="./public-teardown.html">Public Teardown</a>
         <a class="ghost-button" href="./public-approval.html">Public Approval</a>
         <a class="ghost-button" href="./public-deposit-lock.html">Public Deposit Lock</a>
         <a class="ghost-button" href="./public-payment-followup.html">Public Payment Follow-Up</a>
@@ -107,7 +108,10 @@
             This page is for buyers who are serious but do not want another
             scheduling step. If the scope is mostly clear, trust is already
             high enough, and the next useful move is written confirmation plus
-            payment, keep the deal asynchronous.
+            payment, keep the deal asynchronous. If the buyer wants everything
+            in writing but the full sprint still feels too large, route them
+            into the teardown as the smaller paid first step instead of
+            forcing a call.
           </p>
           <div class="hero-actions">
             <a class="primary-button" href="#async-map">Open Async Map</a>
@@ -115,10 +119,11 @@
               class="secondary-button copy-snippet"
               type="button"
               data-copied-label="Copied"
-              data-copy="If a call would only repeat what is already clear, I can keep the whole close path written: scope recap, one proof asset if needed, deposit, then kickoff after the tx hash is back."
+              data-copy="If a call would only repeat what is already clear, I can keep the whole close path written: scope recap, one proof asset if needed, teardown or deposit, then kickoff after the tx hash is back."
             >
               Copy Async Line
             </button>
+            <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
             <a class="secondary-button" href="./pay.html">Open Payment Page</a>
           </div>
           <ul class="stat-grid">
@@ -151,9 +156,9 @@
               <a class="table-link" href="./public-proof.html">Open Public Proof</a>
             </div>
             <div class="funnel-card">
-              <strong>3. Move Into Deposit And Kickoff</strong>
-              <span>Keep momentum in writing: deposit first, tx hash next, kickoff after.</span>
-              <a class="table-link" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
+              <strong>3. Move Into Deposit Or Teardown</strong>
+              <span>Keep momentum in writing: direct deposit for the sprint, or teardown if the buyer wants a smaller paid first step.</span>
+              <a class="table-link" href="./public-teardown.html">Open Public Teardown</a>
             </div>
           </div>
         </div>
@@ -201,6 +206,16 @@
             </p>
             <a class="table-link" href="./public-pricing.html">Open Public Pricing</a>
             <a class="table-link" href="./public-scope-boundary.html">Open Public Scope Boundary</a>
+          </article>
+          <article>
+            <h3>1B. Route To Teardown If The Buyer Wants A Smaller Written Start</h3>
+            <p>
+              If the buyer likes the direction but will not authorize the full
+              sprint without another conversation, keep it async and move into
+              the teardown instead of stalling the thread.
+            </p>
+            <a class="table-link" href="./public-teardown.html">Open Public Teardown</a>
+            <a class="table-link" href="./public-terms.html">Open Public Terms</a>
           </article>
           <article>
             <h3>2. Send One Proof Asset If Needed</h3>
@@ -278,6 +293,13 @@
             </p>
           </article>
           <article>
+            <h3>Wants A Smaller Paid Start</h3>
+            <p>
+              If the buyer wants everything written but still wants less
+              upfront commitment, stay async and route to the teardown.
+            </p>
+          </article>
+          <article>
             <h3>No Call Adds Real Value</h3>
             <p>
               If a call would only repeat what the buyer already understands,
@@ -340,6 +362,22 @@
               Copy Deposit Line
             </button>
           </article>
+          <article>
+            <h3>Smaller Start Line</h3>
+            <p>
+              If you want to keep this written but start smaller, I can route
+              it into the teardown: $299 total, $90 deposit, one workflow, and
+              the same tx-hash handoff.
+            </p>
+            <button
+              class="secondary-button copy-snippet"
+              type="button"
+              data-copied-label="Copied"
+              data-copy="If you want to keep this written but start smaller, I can route it into the teardown: $299 total, $90 deposit, one workflow, and the same tx-hash handoff."
+            >
+              Copy Smaller-Start Line
+            </button>
+          </article>
         </div>
       </section>
 
@@ -384,10 +422,12 @@
         <div class="wallet-shell">
           <div>
             <p class="eyebrow">Wallet</p>
-            <h2>Written path stays simple: deposit, tx hash, kickoff.</h2>
+            <h2>Written path stays simple: teardown or deposit, tx hash, kickoff.</h2>
             <p class="wallet-note">
               Preferred asset is USDC. Preferred network is Base. The async
-              path removes scheduling friction, not scope discipline.
+              path removes scheduling friction, not scope discipline. The same
+              wallet can take the $90 teardown deposit or the main sprint
+              deposit.
             </p>
           </div>
           <div class="wallet-box">
@@ -397,6 +437,7 @@
             </button>
             <a class="secondary-button" href="./public-proof.html">Open Public Proof</a>
             <a class="secondary-button" href="./public-pricing.html">Open Public Pricing</a>
+            <a class="secondary-button" href="./public-teardown.html">Open Public Teardown</a>
             <a class="secondary-button" href="./public-approval.html">Open Public Approval</a>
             <a class="secondary-button" href="./public-deposit-lock.html">Open Public Deposit Lock</a>
             <a class="secondary-button" href="./public-payment-followup.html">Open Public Payment Follow-Up</a>
