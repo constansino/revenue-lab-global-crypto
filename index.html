@@ -6,7 +6,7 @@
     <title>Signal Foundry | AI 自动化冲刺服务</title>
     <meta
       name="description"
-      content="面向小团队和独立卖家的 AI 自动化冲刺服务。72 小时内交付可用流程、线索表单、报价页和转化脚本，并提供公开 recurring retainer 入口。"
+      content="面向小团队和独立卖家的 AI 自动化冲刺服务。72 小时内交付可用流程、线索表单、报价页和转化脚本，并提供公开 recurring retainer 和 next-cycle lock 入口。"
     />
     <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/" />
     <meta name="theme-color" content="#244534" />
@@ -15,14 +15,14 @@
     <meta property="og:title" content="Signal Foundry | AI 自动化冲刺服务" />
     <meta
       property="og:description"
-      content="72 小时内交付可销售的 AI 自动化服务页、报价结构、外联脚本和链上收款路径，并可衔接公开 recurring retainer。"
+      content="72 小时内交付可销售的 AI 自动化服务页、报价结构、外联脚本和链上收款路径，并可衔接公开 recurring retainer 和 next-cycle lock。"
     />
     <meta property="og:url" content="https://constansino.github.io/revenue-lab-global-crypto/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Signal Foundry | AI 自动化冲刺服务" />
     <meta
       name="twitter:description"
-      content="72 小时内交付可销售的 AI 自动化服务页、报价结构、外联脚本和链上收款路径，并可衔接公开 recurring retainer。"
+      content="72 小时内交付可销售的 AI 自动化服务页、报价结构、外联脚本和链上收款路径，并可衔接公开 recurring retainer 和 next-cycle lock。"
     />
     <script type="application/ld+json">
       {
@@ -103,6 +103,7 @@
         <a class="ghost-button" href="./public-pricing.html">Public Pricing</a>
         <a class="ghost-button" href="./public-teardown.html">Public Teardown</a>
         <a class="ghost-button" href="./public-retainer.html">Public Retainer</a>
+        <a class="ghost-button" href="./public-next-cycle-lock.html">Public Next Cycle Lock</a>
         <a class="ghost-button" href="./public-faq.html">Public FAQ</a>
         <a class="ghost-button" href="./public-terms.html">公开条款</a>
         <button id="copyWalletTop" class="ghost-button" type="button">
@@ -122,6 +123,7 @@
             单工作流 teardown。买家知道有问题但还没分清该买 teardown、sprint 还是 retainer 时，先走公开 route picker。
             如果买家已经把范围缩到“小额先走还是直接全 Sprint”，则直接走公开 teardown vs sprint 页面。
             如果买家已经走到“到底该续一个 fresh sprint，还是转月度 retainer”这一步，则直接走公开 sprint vs retainer 页面。
+            如果第一轮已经跑通，客户也已经接受继续合作，但下一笔钱到底是在锁下一轮 sprint 还是首月 retainer 还要再确认，则直接走公开 next cycle lock 页面。
             如果买家已经准备付款，但还没确认这笔钱到底是订金、尾款还是月付，先走公开 payment type。
             如果买家只剩下链上转账的资产、网络和钱包确认，先走公开 network check。
             已经上线并且需要持续优化、迭代跟进或月度维护的客户，则直接走公开 retainer 入口。
@@ -131,6 +133,7 @@
             <a class="secondary-button" href="./public-route-picker.html">先判断购买路径</a>
             <a class="secondary-button" href="./public-teardown-vs-sprint.html">比较 Teardown 和 Sprint</a>
             <a class="secondary-button" href="./public-sprint-vs-retainer.html">比较 Sprint 和 Retainer</a>
+            <a class="secondary-button" href="./public-next-cycle-lock.html">锁定下一周期</a>
             <a class="secondary-button" href="./public-payment-type.html">确认付款类型</a>
             <a class="secondary-button" href="./public-teardown.html">先看小额入口</a>
             <a class="secondary-button" href="./public-retainer.html">查看持续支持</a>
@@ -176,6 +179,11 @@
               <span>付款前只确认资产、网络、钱包和 tx hash 回传。</span>
               <a class="table-link" href="./public-network-check.html">Open Public Network Check</a>
               <a class="table-link" href="./pay.html">Open Payment Page</a>
+            </div>
+            <div class="funnel-card">
+              <strong>6. 首单跑通后锁下一周期</strong>
+              <span>第一单成功后，不要回到聊天重新卖，直接发公开 next cycle lock 锁第二笔钱。</span>
+              <a class="table-link" href="./public-next-cycle-lock.html">Open Public Next Cycle Lock</a>
             </div>
           </div>
         </div>
