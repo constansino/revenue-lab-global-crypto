@@ -98,6 +98,8 @@
         <a class="ghost-button" href="./public-proof.html">Public Proof</a>
         <a class="ghost-button" href="./public-approval.html">Public Approval</a>
         <a class="ghost-button" href="./public-deposit-lock.html">Public Deposit Lock</a>
+        <a class="ghost-button" href="./public-payment-type.html">Public Payment Type</a>
+        <a class="ghost-button" href="./public-network-check.html">Public Network Check</a>
         <a class="ghost-button" href="./public-pricing.html">Public Pricing</a>
         <a class="ghost-button" href="./public-teardown.html">Public Teardown</a>
         <a class="ghost-button" href="./public-retainer.html">Public Retainer</a>
@@ -120,6 +122,8 @@
             单工作流 teardown。买家知道有问题但还没分清该买 teardown、sprint 还是 retainer 时，先走公开 route picker。
             如果买家已经把范围缩到“小额先走还是直接全 Sprint”，则直接走公开 teardown vs sprint 页面。
             如果买家已经走到“到底该续一个 fresh sprint，还是转月度 retainer”这一步，则直接走公开 sprint vs retainer 页面。
+            如果买家已经准备付款，但还没确认这笔钱到底是订金、尾款还是月付，先走公开 payment type。
+            如果买家只剩下链上转账的资产、网络和钱包确认，先走公开 network check。
             已经上线并且需要持续优化、迭代跟进或月度维护的客户，则直接走公开 retainer 入口。
           </p>
           <div class="hero-actions">
@@ -127,6 +131,7 @@
             <a class="secondary-button" href="./public-route-picker.html">先判断购买路径</a>
             <a class="secondary-button" href="./public-teardown-vs-sprint.html">比较 Teardown 和 Sprint</a>
             <a class="secondary-button" href="./public-sprint-vs-retainer.html">比较 Sprint 和 Retainer</a>
+            <a class="secondary-button" href="./public-payment-type.html">确认付款类型</a>
             <a class="secondary-button" href="./public-teardown.html">先看小额入口</a>
             <a class="secondary-button" href="./public-retainer.html">查看持续支持</a>
             <a class="secondary-button" href="./public-trust.html">公开信任页</a>
@@ -163,7 +168,13 @@
             </div>
             <div class="funnel-card">
               <strong>4. 再走对应付费入口</strong>
-              <span>路线清楚后，再进入 teardown、报价页或 retainer 页面并推进付款。</span>
+              <span>路线清楚后，先确认付款类型和网络，再进入付款页。</span>
+              <a class="table-link" href="./public-payment-type.html">Open Public Payment Type</a>
+            </div>
+            <div class="funnel-card">
+              <strong>5. 最后完成链上收款</strong>
+              <span>付款前只确认资产、网络、钱包和 tx hash 回传。</span>
+              <a class="table-link" href="./public-network-check.html">Open Public Network Check</a>
               <a class="table-link" href="./pay.html">Open Payment Page</a>
             </div>
           </div>
@@ -355,6 +366,8 @@
             <a class="secondary-button" href="./public-route-picker.html">先判断购买路径</a>
             <a class="secondary-button" href="./public-teardown-vs-sprint.html">比较小额入口和 Sprint</a>
             <a class="secondary-button" href="./public-sprint-vs-retainer.html">比较 Sprint 和 Retainer</a>
+            <a class="secondary-button" href="./public-payment-type.html">确认付款类型</a>
+            <a class="secondary-button" href="./public-network-check.html">确认网络和钱包</a>
             <a class="secondary-button" href="./public-teardown.html">查看小额入口</a>
             <a class="secondary-button" href="./public-retainer.html">查看持续支持</a>
             <a class="secondary-button" href="./public-deposit-lock.html">锁定冲刺窗口</a>
