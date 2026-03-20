@@ -100,6 +100,8 @@
         <a class="ghost-button" href="./public-deposit-lock.html">Public Deposit Lock</a>
         <a class="ghost-button" href="./public-payment-type.html">Public Payment Type</a>
         <a class="ghost-button" href="./public-network-check.html">Public Network Check</a>
+        <a class="ghost-button" href="./public-payment-followup.html">Public Payment Follow-Up</a>
+        <a class="ghost-button" href="./public-tx-hash.html">Public Tx Hash</a>
         <a class="ghost-button" href="./public-pricing.html">Public Pricing</a>
         <a class="ghost-button" href="./public-teardown.html">Public Teardown</a>
         <a class="ghost-button" href="./public-retainer.html">Public Retainer</a>
@@ -126,6 +128,8 @@
             如果第一轮已经跑通，客户也已经接受继续合作，但下一笔钱到底是在锁下一轮 sprint 还是首月 retainer 还要再确认，则直接走公开 next cycle lock 页面。
             如果买家已经准备付款，但还没确认这笔钱到底是订金、尾款还是月付，先走公开 payment type。
             如果买家只剩下链上转账的资产、网络和钱包确认，先走公开 network check。
+            如果买家已经同意付款但转账迟迟还没落地，就直接走公开 payment follow-up。
+            如果转账已经发出，只差把交易哈希、付款类型和项目名回传回来，就直接走公开 tx hash 页面。
             已经上线并且需要持续优化、迭代跟进或月度维护的客户，则直接走公开 retainer 入口。
           </p>
           <div class="hero-actions">
@@ -135,6 +139,8 @@
             <a class="secondary-button" href="./public-sprint-vs-retainer.html">比较 Sprint 和 Retainer</a>
             <a class="secondary-button" href="./public-next-cycle-lock.html">锁定下一周期</a>
             <a class="secondary-button" href="./public-payment-type.html">确认付款类型</a>
+            <a class="secondary-button" href="./public-payment-followup.html">付款卡住就跟进</a>
+            <a class="secondary-button" href="./public-tx-hash.html">付款后回传 Tx Hash</a>
             <a class="secondary-button" href="./public-teardown.html">先看小额入口</a>
             <a class="secondary-button" href="./public-retainer.html">查看持续支持</a>
             <a class="secondary-button" href="./public-trust.html">公开信任页</a>
@@ -176,12 +182,18 @@
             </div>
             <div class="funnel-card">
               <strong>5. 最后完成链上收款</strong>
-              <span>付款前只确认资产、网络、钱包和 tx hash 回传。</span>
+              <span>付款前只确认资产、网络和钱包，再进入公开付款页。</span>
               <a class="table-link" href="./public-network-check.html">Open Public Network Check</a>
               <a class="table-link" href="./pay.html">Open Payment Page</a>
             </div>
             <div class="funnel-card">
-              <strong>6. 首单跑通后锁下一周期</strong>
+              <strong>6. 付款卡住或已发款时压缩确认</strong>
+              <span>转账没落地就发 follow-up；转账已发出就只收 tx hash 和项目标记。</span>
+              <a class="table-link" href="./public-payment-followup.html">Open Public Payment Follow-Up</a>
+              <a class="table-link" href="./public-tx-hash.html">Open Public Tx Hash</a>
+            </div>
+            <div class="funnel-card">
+              <strong>7. 首单跑通后锁下一周期</strong>
               <span>第一单成功后，不要回到聊天重新卖，直接发公开 next cycle lock 锁第二笔钱。</span>
               <a class="table-link" href="./public-next-cycle-lock.html">Open Public Next Cycle Lock</a>
             </div>
@@ -376,6 +388,8 @@
             <a class="secondary-button" href="./public-sprint-vs-retainer.html">比较 Sprint 和 Retainer</a>
             <a class="secondary-button" href="./public-payment-type.html">确认付款类型</a>
             <a class="secondary-button" href="./public-network-check.html">确认网络和钱包</a>
+            <a class="secondary-button" href="./public-payment-followup.html">付款卡住就跟进</a>
+            <a class="secondary-button" href="./public-tx-hash.html">付款后回传 Tx Hash</a>
             <a class="secondary-button" href="./public-teardown.html">查看小额入口</a>
             <a class="secondary-button" href="./public-retainer.html">查看持续支持</a>
             <a class="secondary-button" href="./public-deposit-lock.html">锁定冲刺窗口</a>

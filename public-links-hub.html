@@ -6,7 +6,7 @@
     <title>Revenue Public Links Hub</title>
     <meta
       name="description"
-      content="Public links hub for sending the right visible buyer page first: trust, proof, comparison, ROI, why-now, risk control, objection handling, pricing, route picking, teardown-vs-sprint, sprint-vs-retainer, scope boundary, teardown, buyer checklist, approval, approval-to-payment, refund handling, async close, payment type, network check, payment guide, payment, kickoff, balance collection, renewal, next-cycle lock, and retainer links."
+      content="Public links hub for sending the right visible buyer page first: trust, proof, comparison, ROI, why-now, risk control, objection handling, pricing, route picking, teardown-vs-sprint, sprint-vs-retainer, scope boundary, teardown, buyer checklist, approval, approval-to-payment, refund handling, async close, payment type, network check, payment guide, payment follow-up, tx-hash confirmation, payment, kickoff, balance collection, renewal, next-cycle lock, and retainer links."
     />
     <link rel="canonical" href="https://constansino.github.io/revenue-lab-global-crypto/public-links-hub.html" />
     <meta name="theme-color" content="#244534" />
@@ -15,7 +15,7 @@
     <meta property="og:title" content="Revenue Public Links Hub" />
     <meta
       property="og:description"
-      content="Choose the smallest public trust, proof, comparison, ROI, why-now, risk-control, objection-handling, pricing, route-picker, teardown-vs-sprint, sprint-vs-retainer, scope boundary, teardown, buyer checklist, approval, approval-to-payment, refund-handling, async-close, payment-type, network-check, payment, kickoff, balance-collection, renewal, next-cycle-lock, or retainer link that still moves the next buyer step."
+      content="Choose the smallest public trust, proof, comparison, ROI, why-now, risk-control, objection-handling, pricing, route-picker, teardown-vs-sprint, sprint-vs-retainer, scope boundary, teardown, buyer checklist, approval, approval-to-payment, refund-handling, async-close, payment-type, network-check, payment-followup, tx-hash, payment, kickoff, balance-collection, renewal, next-cycle-lock, or retainer link that still moves the next buyer step."
     />
     <meta
       property="og:url"
@@ -25,7 +25,7 @@
     <meta name="twitter:title" content="Revenue Public Links Hub" />
     <meta
       name="twitter:description"
-      content="Choose the smallest public trust, proof, comparison, ROI, why-now, risk-control, objection-handling, pricing, route-picker, teardown-vs-sprint, sprint-vs-retainer, scope boundary, teardown, buyer checklist, approval, approval-to-payment, refund-handling, async-close, payment-type, network-check, payment, kickoff, balance-collection, renewal, next-cycle-lock, or retainer link that still moves the next buyer step."
+      content="Choose the smallest public trust, proof, comparison, ROI, why-now, risk-control, objection-handling, pricing, route-picker, teardown-vs-sprint, sprint-vs-retainer, scope boundary, teardown, buyer checklist, approval, approval-to-payment, refund-handling, async-close, payment-type, network-check, payment-followup, tx-hash, payment, kickoff, balance-collection, renewal, next-cycle-lock, or retainer link that still moves the next buyer step."
     />
     <script type="application/ld+json">
       {
@@ -34,7 +34,7 @@
         "@id": "https://constansino.github.io/revenue-lab-global-crypto/public-links-hub.html#page",
         "url": "https://constansino.github.io/revenue-lab-global-crypto/public-links-hub.html",
         "name": "Revenue Public Links Hub",
-        "description": "Collection page for the smallest public trust, proof, comparison, ROI, why-now, risk control, objection handling, pricing, route picking, teardown-vs-sprint, sprint-vs-retainer, scope boundary, teardown, buyer checklist, approval, approval-to-payment, refund handling, async close, payment type, network check, payment, kickoff, balance collection, renewal, next-cycle lock, and retainer URLs used to move global crypto buyers.",
+        "description": "Collection page for the smallest public trust, proof, comparison, ROI, why-now, risk control, objection handling, pricing, route picking, teardown-vs-sprint, sprint-vs-retainer, scope boundary, teardown, buyer checklist, approval, approval-to-payment, refund handling, async close, payment type, network check, payment follow-up, tx-hash confirmation, payment, kickoff, balance collection, renewal, next-cycle lock, and retainer URLs used to move global crypto buyers.",
         "isPartOf": {
           "@id": "https://constansino.github.io/revenue-lab-global-crypto/#website"
         },
@@ -166,6 +166,11 @@
           },
           {
             "@type": "WebPage",
+            "name": "Public Tx Hash",
+            "url": "https://constansino.github.io/revenue-lab-global-crypto/public-tx-hash.html"
+          },
+          {
+            "@type": "WebPage",
             "name": "Public Kickoff",
             "url": "https://constansino.github.io/revenue-lab-global-crypto/public-kickoff.html"
           },
@@ -242,6 +247,7 @@
         <a class="ghost-button" href="./public-payment-type.html">Public Payment Type</a>
         <a class="ghost-button" href="./public-network-check.html">Public Network Check</a>
         <a class="ghost-button" href="./public-payment-followup.html">Public Payment Follow-Up</a>
+        <a class="ghost-button" href="./public-tx-hash.html">Public Tx Hash</a>
         <a class="ghost-button" href="./public-kickoff.html">Public Kickoff</a>
         <a class="ghost-button" href="./public-balance-collection.html">Public Balance Collection</a>
         <a class="ghost-button" href="./public-renewal.html">Public Renewal</a>
@@ -279,7 +285,9 @@
             handling when timing or cancellation rules need to be visible,
             async close when a written path is enough, payment type when the
             transfer meaning is still fuzzy, network check when the payer only
-            needs asset and wallet certainty, balance collection when
+            needs asset and wallet certainty, payment follow-up when agreement
+            exists but funds still have not landed, tx hash when the transfer
+            is already sent and only confirmation is missing, balance collection when
             delivery is approved and the remaining payment is next, renewal
             when a finished sprint clearly points to another bottleneck,
             next cycle lock when a successful sprint already earned the next yes,
@@ -290,11 +298,12 @@
           <div class="hero-actions">
             <a class="primary-button" href="#public-links-map">Open Public Links Map</a>
             <a class="secondary-button" href="./public-proof.html">Open Public Proof</a>
+            <a class="secondary-button" href="./public-tx-hash.html">Open Public Tx Hash</a>
             <a class="secondary-button" href="./public-next-cycle-lock.html">Open Public Next Cycle Lock</a>
           </div>
           <ul class="stat-grid">
             <li>
-              <strong>26</strong>
+              <strong>27</strong>
               <span>public link families</span>
             </li>
             <li>
@@ -629,7 +638,18 @@
             <a class="table-link" href="./pay.html">Open Payment Page</a>
           </article>
           <article>
-            <h3>25. Send Next Cycle Lock When A Successful Sprint Already Earned The Next Yes</h3>
+            <h3>25. Send Tx Hash When The Transfer Is Already Sent But Confirmation Is Still Missing</h3>
+            <p>
+              If the payer already sent the transfer and the only remaining job
+              is to tie it back to the right thread, collect the tx hash, payment
+              type, and project label instead of reopening wallet instructions.
+            </p>
+            <a class="table-link" href="./public-tx-hash.html">Open Public Tx Hash</a>
+            <a class="table-link" href="./public-payment-followup.html">Open Public Payment Follow-Up</a>
+            <a class="table-link" href="./public-kickoff.html">Open Public Kickoff</a>
+          </article>
+          <article>
+            <h3>26. Send Next Cycle Lock When A Successful Sprint Already Earned The Next Yes</h3>
             <p>
               If the current sprint already worked and the buyer accepts one
               more sprint or the first retainer month, send next cycle lock so
@@ -641,7 +661,7 @@
             <a class="table-link" href="./pay.html">Open Payment Page</a>
           </article>
           <article>
-            <h3>26. Send The Full Public System Only When The Audience Needs Routing Help</h3>
+            <h3>27. Send The Full Public System Only When The Audience Needs Routing Help</h3>
             <p>
               Some operators need the hub itself so they can choose the right
               lane. Send the broader navigation only when that is the real job.
@@ -822,6 +842,13 @@
                   <td>Payment Page</td>
                 </tr>
                 <tr>
+                  <td>Agreed-but-stalled payer</td>
+                  <td>Public Payment Follow-Up</td>
+                  <td>Public Payment Guide</td>
+                  <td>Public Tx Hash</td>
+                  <td>Payment Page</td>
+                </tr>
+                <tr>
                   <td>Policy-cautious buyer</td>
                   <td>Public Refund And Reschedule</td>
                   <td>Public Terms</td>
@@ -890,6 +917,7 @@
             <a class="secondary-button" href="./public-payment-type.html">Open Public Payment Type</a>
             <a class="secondary-button" href="./public-network-check.html">Open Public Network Check</a>
             <a class="secondary-button" href="./public-payment-followup.html">Open Public Payment Follow-Up</a>
+            <a class="secondary-button" href="./public-tx-hash.html">Open Public Tx Hash</a>
             <a class="secondary-button" href="./public-kickoff.html">Open Public Kickoff</a>
             <a class="secondary-button" href="./public-balance-collection.html">Open Public Balance Collection</a>
             <a class="secondary-button" href="./public-renewal.html">Open Public Renewal</a>
